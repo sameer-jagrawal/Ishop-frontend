@@ -10,7 +10,7 @@ async function  getCategories(query={}) {
     try {
     const response =  await client.get(`category?${filter.toString()}`)
     // console.log(response.data)
-    return response.data
+    return response?.data
         
     } catch (error) {
         console.log(error)
@@ -28,7 +28,7 @@ async function  getBrand(query={}){
     if(query.limit) filter.append("limit",query.limit);
     try {
     const response =  await client.get(`brand?${filter.toString()}`)
-    return response.data
+    return response?.data
         
     } catch (error) {
         console.log(error)
@@ -63,7 +63,7 @@ async function  getProduct(query={}){
     
     try {
     const response =  await client.get(`product?${filter.toString()}`)
-    return response.data
+    return response?.data
         
     } catch (error) {
         console.log(error)
@@ -76,7 +76,7 @@ async function  getColor(query={}){
     if(query.status) filter.append("status",query.status);
     try {
     const response =  await client.get(`color?${filter.toString()}`)
-    return response.data
+    return response?.data
         
     } catch (error) {
         console.log(error)

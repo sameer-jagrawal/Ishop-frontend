@@ -8,10 +8,9 @@ import DeleteBtn from "@/app/components/admin components/DeleteBtn";
 export default async function UserManagementTable() {
   
   const data  = await getBrand();
-  const Brands = data.data;
+  const Brands = data?.data  || []
   // console.log(Brands)
-  const meta = data.meta;
-  console.log(meta)
+  const meta = data?.meta || {}
   return (
     <div className="p-2 md:p-4 min-h-screen">
       {/* Header */}
