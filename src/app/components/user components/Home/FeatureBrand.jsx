@@ -13,7 +13,7 @@ return (
     </h1>
 
     <div className="grid max-h-fit  grid-cols-3 sm:grid-cols-4 gap-4 md:gap-6">
-      {brand.map((item, index) => {
+      {brand?.map((item, index) => {
         return (
           <div
             key={index}

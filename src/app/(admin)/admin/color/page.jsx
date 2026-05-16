@@ -8,9 +8,9 @@ import Status from "@/app/components/admin components/Status";
 export default async function UserManagementTable() {
   const data = await getColor();
 
-  const Brands = data.data;
+  const colors = data?.data;
   // console.log(Brands)
-  const meta = data.meta;
+  const meta = data?.meta;
   console.log(meta);
   return (
     <div className="p-2 md:p-4 min-h-screen">
@@ -60,7 +60,7 @@ export default async function UserManagementTable() {
 
             {/* Table Body */}
             <tbody className="divide-y">
-              {Brands.map((user) => (
+              {colors?.map((user) => (
                 <tr
                   key={user._id}
                   className="hover:bg-gray-50 transition duration-150"

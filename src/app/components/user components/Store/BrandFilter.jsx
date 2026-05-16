@@ -42,7 +42,7 @@ export default function BrandFilter({ brand }) {
     router.replace(`?${query.toString()}`, { scroll: false });
   };
 
-   console.log(selected)
+  //  console.log(selected)
   return (
     <div className="w-full border-r border-gray-300 border-b px-5 p-4 ">
       <h2 className="text-sm font-semibold text-gray-800 mb-4">

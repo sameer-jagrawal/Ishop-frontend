@@ -1,6 +1,6 @@
 'use client'
 
-import { client } from "@/utils/helper";
+import { client, notify } from "@/utils/helper";
 import { useRouter } from "next/navigation";
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
@@ -22,7 +22,10 @@ export default function CheckoutPage({ user }) {
   const totalItems = cart?.items?.reduce((acc, item) => acc + item.qty, 0);
 
   const handleOrder = async () => {
-    if (!addresses[selectedAddress]) return;
+    if (!addresses[selectedAddress]) return alert("wrong address");
+    if(!selectedAddress){
+      return alert("select address please ")
+    }
 
     const orderData = {
       address: addresses[selectedAddress],
@@ -31,6 +34,7 @@ export default function CheckoutPage({ user }) {
 
     try {
       const response = await client.post('order/create', orderData)
+      console.log(response,"order response")
       if (!response.data.success) return;
 
       if (paymentMethod === 'cod') {
@@ -225,7 +229,7 @@ export default function CheckoutPage({ user }) {
 
           <button
             onClick={handleOrder}
-            disabled={isLoading || addresses.length === 0}
+            // disabled={addresses.length === 0}
             className="w-full mt-5 md:mt-6 bg-[#01A49E] text-white py-3 rounded-xl font-semibold hover:opacity-90 active:scale-95 transition-all text-sm md:text-base"
           >
             PLACE ORDER

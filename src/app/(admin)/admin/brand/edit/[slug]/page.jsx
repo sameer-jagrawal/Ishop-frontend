@@ -45,15 +45,15 @@ export default function page() {
     client
       .get(`brand/${slug}`)
       .then((response) => {
-        const formdata = response.data.data;
+        const formdata = response?.data?.data;
         console.log(response.data);
         // console.log(formdata)
-        const imagename = response.data.data.image;
+        const imagename = response?.data?.data?.image;
         setImage(imagename);
         setData(formdata);
         const formatted = formdata.categoryId.map((item) => ({
-          value: item._id,
-          label: item.name,
+          value: item?._id,
+          label: item?.name,
         }));
 
         setPreselcategories(formatted); // for Select UI
@@ -68,7 +68,7 @@ export default function page() {
     const fetchData = async () => {
       try {
         const data = await getCategories();
-        setCategory(data.data);
+        setCategory(data?.data);
       } catch (error) {
         console.log(error);
       }

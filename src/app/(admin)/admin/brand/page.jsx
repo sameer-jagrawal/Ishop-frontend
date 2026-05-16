@@ -61,7 +61,7 @@ export default async function UserManagementTable() {
 
       {/* Table Body */}
       <tbody className="divide-y">
-        {Brands.map((user) => (
+        {Brands?.map((user) => (
           <tr
             key={user._id}
             className="hover:bg-gray-50 transition duration-150"

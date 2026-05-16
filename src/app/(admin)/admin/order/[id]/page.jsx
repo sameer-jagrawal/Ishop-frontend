@@ -6,7 +6,7 @@ export default async function OrderViewPage({ params }) {
   const orderRes = await getSingleOrder(id);
   const order = orderRes?.data?.order;
   const address = order?.shippingAddress
-  console.log(order)
+  // console.log(order)
 
   // console.log(order)
     const statusStyle = {
