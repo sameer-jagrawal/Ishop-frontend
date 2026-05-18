@@ -1,4 +1,7 @@
 import { client } from "@/utils/helper"
+
+console.log("env file console",process.env.NEXT_PUBLIC_API_BASE_URL);
+
 async function  getCategories(query={}) {
     const filter = new URLSearchParams()
     if(query.id) filter.append("id",query.id);
