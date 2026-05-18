@@ -44,7 +44,7 @@ const specs = [
   ["Support", "24/7 customer care"],
 ];
 
-export default async function ProductPage({ params }) {
+export default async function page({ params }) {
   const { slug } = await params;
   const productRes = await client.get(`product/slug/${slug}`);
   const product = productRes?.data?.data || {};

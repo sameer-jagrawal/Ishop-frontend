@@ -2,7 +2,6 @@ import { getAllOrders } from "@/api_call/api";
 import Link from "next/link";
 export default async function RecentOrdersTable() {
   const ordersRes = await getAllOrders();
-  console.log(ordersRes);
   const orders = ordersRes?.data?.orders;
 
   const statusStyles = {
@@ -32,7 +31,7 @@ export default async function RecentOrdersTable() {
 
       {/* Mobile card view */}
       <div className="md:hidden space-y-4">
-        {orders.map((order, index) => (
+        {orders?.map((order, index) => (
           <div key={index} className="border border-orange-100 rounded-2xl p-4 hover:bg-orange-50/40 transition">
             <div className="flex items-start justify-between gap-2 mb-3">
               <div>
