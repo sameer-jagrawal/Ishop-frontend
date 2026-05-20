@@ -11,7 +11,7 @@ import LaptopsSection from '../components/user components/Home/LaptopsSection';
 
 export default function page() {
   return (
-    <div className='bg-gray-200 '>
+    <div className='bg-white lg:bg-gray-200 '>
       <Hero/>
       <div className='flex flex-col max-h-fit md:flex-row max-w-7xl mx-auto gap-4 px-4 md:px-0'>
       <FeatureBrand/>

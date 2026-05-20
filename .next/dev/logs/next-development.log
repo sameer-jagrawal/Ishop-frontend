@@ -1200,3 +1200,125 @@ https://react.dev/link/hydration-mismatch
 [00:21:52.714] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
 [00:21:52.714] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
 [00:21:52.714] Browser ERROR   uncaughtError: Error: Maximum update depth exceeded. This can happen when a component repeatedly calls setState inside componentWillUpdate or componentDidUpdate. React limits the number of nested updates to prevent infinite loops.
+[00:23:21.777] Server  LOG     {}
+[00:23:25.874] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:23:26.030] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-2.jpg" "received" null
+[00:23:26.034] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-1.jpg" "received" null
+[00:23:26.038] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-3.jpg" "received" null
+[00:23:26.339] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-4.jpg" "received" null
+[00:23:26.355] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/watch.png" "received" null
+[00:23:26.663] Browser WARN    Image with src "/images/thumb-1.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:23:26.663] Browser WARN    Image with src "/images/thumb-2.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:23:26.663] Browser WARN    Image with src "/images/thumb-3.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:23:26.663] Browser WARN    Image with src "/images/thumb-4.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:28:18.293] Server  LOG     ✓ Compiled in 4.6s
+[00:28:19.322] Server  LOG     env file console "https://ishop-backend-2mld.onrender.com/api/"
+[00:28:20.561] Server  LOG     ✓ Compiled in 644ms
+[00:28:20.965] Server  LOG     env file console "https://ishop-backend-2mld.onrender.com/api/"
+[00:28:22.190] Server  LOG     {}
+[00:28:22.499] Server  LOG     {}
+[00:29:03.883] Server  LOG     {}
+[00:29:16.286] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-1.jpg" "received" null
+[00:29:16.388] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-2.jpg" "received" null
+[00:29:16.853] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-3.jpg" "received" null
+[00:29:16.893] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-4.jpg" "received" null
+[00:29:17.012] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/watch.png" "received" null
+[00:29:17.304] Browser WARN    Image with src "/images/thumb-1.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:29:17.304] Browser WARN    Image with src "/images/thumb-1.jpg" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+[00:29:17.304] Browser WARN    Image with src "/images/thumb-2.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:29:17.304] Browser WARN    Image with src "/images/thumb-2.jpg" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+[00:29:17.304] Browser WARN    Image with src "/images/thumb-3.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:29:17.304] Browser WARN    Image with src "/images/thumb-3.jpg" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+[00:29:17.304] Browser WARN    Image with src "/images/thumb-4.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:29:17.304] Browser WARN    Image with src "/images/thumb-4.jpg" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+[00:29:17.304] Browser WARN    Image with src "/logo/vector1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:30:55.875] Server  LOG     env file console "https://ishop-backend-2mld.onrender.com/api/"
+[00:30:56.232] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[00:30:56.232] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[00:30:57.199] Server  LOG     {}
+[00:30:58.096] Server  LOG     {}
+[00:30:58.379] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[00:30:58.379] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[00:30:58.379] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[00:30:58.379] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[00:30:58.379] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[00:30:58.379] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[00:30:58.379] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[00:30:58.379] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[00:30:58.379] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[00:30:58.379] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[00:30:58.379] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[00:30:58.379] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[00:30:58.379] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[00:30:58.379] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[00:30:58.379] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[00:30:58.379] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[00:30:58.380] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[00:30:58.380] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[00:30:58.380] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[00:30:58.380] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[00:30:58.380] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[00:30:58.380] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[00:30:58.380] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[00:30:58.380] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[00:30:58.380] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[00:30:58.380] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[00:30:58.380] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[00:30:58.380] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[00:30:58.380] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[00:30:58.380] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[00:30:58.380] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[00:30:58.380] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[00:30:58.380] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[00:30:58.380] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[00:30:58.380] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[00:30:58.380] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[00:30:58.380] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[00:30:58.380] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[00:30:58.380] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[00:30:58.380] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[00:30:58.380] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[00:30:58.380] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[00:30:58.380] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[00:30:58.380] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[00:30:58.380] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[00:30:58.380] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[00:30:58.380] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[00:30:58.380] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[00:30:58.380] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[00:30:58.380] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[00:30:58.380] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[00:30:58.380] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[00:30:58.380] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[00:30:58.380] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[00:30:58.380] Browser ERROR   uncaughtError: Error: Maximum update depth exceeded. This can happen when a component repeatedly calls setState inside componentWillUpdate or componentDidUpdate. React limits the number of nested updates to prevent infinite loops.
+[00:31:32.646] Server  LOG     {}
+[00:31:40.532] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:31:41.265] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-1.jpg" "received" null
+[00:31:41.363] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-2.jpg" "received" null
+[00:31:41.403] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-3.jpg" "received" null
+[00:31:41.602] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-4.jpg" "received" null
+[00:31:41.632] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/watch.png" "received" null
+[00:31:41.921] Browser WARN    Image with src "/images/thumb-1.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:31:41.921] Browser WARN    Image with src "/images/thumb-2.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:31:41.921] Browser WARN    Image with src "/images/thumb-3.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:31:41.921] Browser WARN    Image with src "/images/thumb-4.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:32:28.325] Server  LOG     env file console "https://ishop-backend-2mld.onrender.com/api/"
+[00:32:29.980] Server  LOG     {}
+[00:32:32.484] Server  LOG     env file console "https://ishop-backend-2mld.onrender.com/api/"
+[00:32:33.830] Server  LOG     {}
+[00:32:35.944] Server  LOG     env file console "https://ishop-backend-2mld.onrender.com/api/"
+[00:32:37.556] Server  LOG     {}
+[00:32:38.008] Server  LOG     ✓ Compiled in 379ms
+[00:32:38.647] Server  LOG     env file console "https://ishop-backend-2mld.onrender.com/api/"
+[00:32:39.947] Server  LOG     {}
+[00:32:41.620] Server  LOG     env file console "https://ishop-backend-2mld.onrender.com/api/"
+[00:32:42.957] Server  LOG     {}
+[00:32:47.976] Server  LOG     ✓ Finished writing to filesystem cache in 13.8s
+[00:32:51.507] Server  LOG     ✓ Compiled in 2.4s
+[00:32:52.167] Server  LOG     env file console "https://ishop-backend-2mld.onrender.com/api/"
+[00:32:53.600] Server  LOG     {}
+[00:33:12.325] Server  LOG     ✓ Finished filesystem cache database compaction in 15.4s
+[00:33:14.167] Server  LOG     ✓ Compiled in 1158ms
+[00:33:17.320] Server  LOG     env file console "https://ishop-backend-2mld.onrender.com/api/"
+[00:33:19.072] Server  LOG     {}

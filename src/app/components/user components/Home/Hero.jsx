@@ -8,7 +8,7 @@ export default async function Hero() {
   const catRes = await getCategories({ limit: 5, is_home: true, status: true });
   const categories = catRes?.data;
   return (
-    <div className="bg-gray-200">
+    <div className="bg-white lg:bg-gray-200">
       <div className="flex flex-col md:flex-row gap-4 md:gap-5 py-4 md:py-5 px-4 md:px-0 max-w-7xl mx-auto">
         {/* Category sidebar - hidden on mobile, shown on md+ */}
         <div className="hidden md:block max-h-fit bg-white p-4 md:p-6 md:w-56 lg:w-64 shadow-xl rounded-2xl flex-shrink-0">

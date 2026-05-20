@@ -4999,6 +4999,12 @@
   }
 
   @media (min-width: 64rem) {
+    .lg\:bg-gray-200 {
+      background-color: var(--color-gray-200);
+    }
+  }
+
+  @media (min-width: 64rem) {
     .lg\:p-0 {
       padding: calc(var(--spacing) * 0);
     }
