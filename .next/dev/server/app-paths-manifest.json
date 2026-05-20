@@ -1,0 +1,20 @@
+{
+  "/(admin)/admin/brand/addBrand/page": "app/(admin)/admin/brand/addBrand/page.js",
+  "/(admin)/admin/brand/page": "app/(admin)/admin/brand/page.js",
+  "/(admin)/admin/category/addCategory/page": "app/(admin)/admin/category/addCategory/page.js",
+  "/(admin)/admin/category/page": "app/(admin)/admin/category/page.js",
+  "/(admin)/admin/color/addColor/page": "app/(admin)/admin/color/addColor/page.js",
+  "/(admin)/admin/color/page": "app/(admin)/admin/color/page.js",
+  "/(admin)/admin/page": "app/(admin)/admin/page.js",
+  "/(admin)/admin/product/add/page": "app/(admin)/admin/product/add/page.js",
+  "/(admin)/admin/product/page": "app/(admin)/admin/product/page.js",
+  "/(user)/page": "app/(user)/page.js",
+  "/(user)/products/page": "app/(user)/products/page.js",
+  "/(user)/profile/page": "app/(user)/profile/page.js",
+  "/(user)/singleProduct/[slug]/page": "app/(user)/singleProduct/[slug]/page.js",
+  "/(user-auth)/login/page": "app/(user-auth)/login/page.js",
+  "/(user-auth)/otp-verify/page": "app/(user-auth)/otp-verify/page.js",
+  "/(user-auth)/register/page": "app/(user-auth)/register/page.js",
+  "/_not-found/page": "app/_not-found/page.js",
+  "/admin-auth/admin/login/page": "app/admin-auth/admin/login/page.js"
+}

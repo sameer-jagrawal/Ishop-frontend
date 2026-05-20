@@ -2,7 +2,8 @@ import { getAllOrders } from "@/api_call/api";
 import Link from "next/link";
 export default async function RecentOrdersTable() {
   const ordersRes = await getAllOrders();
-  const orders = ordersRes?.data?.orders;
+  const orders = ordersRes?.data?.orders || [];
+      
 
   const statusStyles = {
     Delivered: "bg-emerald-50 text-emerald-600 border border-emerald-200",

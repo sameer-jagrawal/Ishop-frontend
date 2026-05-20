@@ -1,0 +1,472 @@
+[00:00:14.983] Server  LOG     ✓ Ready in 13.6s
+[00:00:18.049] Server  LOG     ○ Compiling / ...
+[00:00:30.462] Server  LOG     env file console "http://localhost:5000/api/"
+[00:00:30.774] Server  ERROR   (node:5052) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[00:00:33.171] Server  LOG     {}
+[00:00:33.199] Server  LOG     getMe failed: {}
+[00:00:36.586] Server  LOG     getMe failed: {}
+[00:00:38.345] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:43.518] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-4.jpg" "received" null
+[00:00:43.523] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-3.jpg" "received" null
+[00:00:43.583] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-2.jpg" "received" null
+[00:00:43.585] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/watch.png" "received" null
+[00:00:43.588] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-1.jpg" "received" null
+[00:00:53.687] Server  LOG     getMe failed: {}
+[00:00:54.091] Browser LOG     undefined selected array
+[00:00:54.091] Browser LOG     undefined selected array
+[00:00:54.091] Browser LOG     [] selected array
+[00:00:54.091] Browser LOG     [] selected array
+[00:01:07.646] Server  LOG     {}
+[00:01:07.666] Server  LOG     getMe failed: {}
+[00:01:07.890] Server  LOG     getMe failed: {}
+[00:01:09.425] Server  LOG     getMe failed: {}
+[00:01:09.468] Server  LOG     {}
+[00:01:09.535] Server  LOG     getMe failed: {}
+[00:01:10.399] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:01:10.620] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-1.jpg" "received" null
+[00:01:10.644] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-2.jpg" "received" null
+[00:01:10.698] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-3.jpg" "received" null
+[00:01:10.991] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-4.jpg" "received" null
+[00:01:11.037] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/watch.png" "received" null
+[00:01:11.393] Browser WARN    Image with src "/images/thumb-1.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:01:11.393] Browser WARN    Image with src "/images/thumb-2.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:01:11.393] Browser WARN    Image with src "/images/thumb-3.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:01:11.393] Browser WARN    Image with src "/images/thumb-4.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:01:15.782] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:01:56.659] Browser LOG     {}
+[00:01:56.806] Browser LOG     {"code":"ERR_BAD_REQUEST","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:5000/api/","data":{},"env":{},"headers":{"Accept":"application/json, text/plain, */*","Content-Type":"application/x-www-form-urlencoded"},"maxBodyLength":-1,"maxContentLength":-1,"method":"post","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"legacyInterceptorReqResOrdering":true,"silentJSONParsing":true},"url":"/category/create","withCredentials":true,"xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 404","name":"AxiosError","stack":"AxiosError: Request failed with status code 404\n    at settle (http://localhost:3000/_next/static/chunks/node_modules_axios_lib_99e19c7d._.js:2033:16)\n    at XMLHttpRequest.onloadend (http://localhost:3000/_next/static/chunks/node_modules_axios_lib_99e19c7d._.js:2549:174)\n    at Axios.request (http://localhost:3000/_next/static/chunks/node_modules_axios_lib_99e19c7d._.js:3355:49)","status":404}
+[00:02:07.659] Browser LOG     {}
+[00:02:07.659] Browser LOG     {"code":"ERR_BAD_REQUEST","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:5000/api/","data":{},"env":{},"headers":{"Accept":"application/json, text/plain, */*","Content-Type":"application/x-www-form-urlencoded"},"maxBodyLength":-1,"maxContentLength":-1,"method":"post","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"legacyInterceptorReqResOrdering":true,"silentJSONParsing":true},"url":"/category/create","withCredentials":true,"xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 404","name":"AxiosError","stack":"AxiosError: Request failed with status code 404\n    at settle (http://localhost:3000/_next/static/chunks/node_modules_axios_lib_99e19c7d._.js:2033:16)\n    at XMLHttpRequest.onloadend (http://localhost:3000/_next/static/chunks/node_modules_axios_lib_99e19c7d._.js:2549:174)\n    at Axios.request (http://localhost:3000/_next/static/chunks/node_modules_axios_lib_99e19c7d._.js:3355:49)","status":404}
+[00:02:21.424] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:02:26.521] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:02:33.397] Browser LOG     {"code":"ERR_BAD_REQUEST","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:5000/api/","data":"{\"email\":\"sameerjagrawal2@gmail.com\",\"password\":\"123456\"}","env":{},"headers":{"Accept":"application/json, text/plain, */*","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"post","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"legacyInterceptorReqResOrdering":true,"silentJSONParsing":true},"url":"user/login","withCredentials":true,"xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 404","name":"AxiosError","stack":"AxiosError: Request failed with status code 404\n    at settle (http://localhost:3000/_next/static/chunks/node_modules_1c2acfac._.js:3785:16)\n    at XMLHttpRequest.onloadend (http://localhost:3000/_next/static/chunks/node_modules_1c2acfac._.js:4301:174)\n    at Axios.request (http://localhost:3000/_next/static/chunks/node_modules_1c2acfac._.js:5107:49)\n    at async submitHandler (http://localhost:3000/_next/static/chunks/src_6f25a655._.js:135:30)","status":404}
+[00:02:45.171] Server  LOG     getMe failed: {}
+[00:02:45.206] Server  LOG     {}
+[00:02:45.216] Server  LOG     getMe failed: {}
+[00:02:46.238] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:02:46.386] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-1.jpg" "received" null
+[00:02:46.445] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-2.jpg" "received" null
+[00:02:46.496] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-3.jpg" "received" null
+[00:02:46.736] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-4.jpg" "received" null
+[00:02:46.775] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/watch.png" "received" null
+[00:02:47.129] Browser WARN    Image with src "/images/thumb-1.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:02:47.129] Browser WARN    Image with src "/images/thumb-2.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:02:47.129] Browser WARN    Image with src "/images/thumb-3.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:02:47.129] Browser WARN    Image with src "/images/thumb-4.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:02:52.653] Server  LOG     {}
+[00:02:52.666] Server  LOG     getMe failed: {}
+[00:02:55.962] Server  LOG     {}
+[00:02:55.974] Server  LOG     getMe failed: {}
+[00:02:56.128] Server  LOG     getMe failed: {}
+[00:02:57.154] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:02:57.194] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-1.jpg" "received" null
+[00:02:57.198] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-2.jpg" "received" null
+[00:02:57.370] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-3.jpg" "received" null
+[00:02:57.462] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-4.jpg" "received" null
+[00:02:57.520] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/watch.png" "received" null
+[00:02:57.869] Browser WARN    Image with src "/images/thumb-1.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:02:57.869] Browser WARN    Image with src "/images/thumb-2.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:02:57.869] Browser WARN    Image with src "/images/thumb-3.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:02:57.869] Browser WARN    Image with src "/images/thumb-4.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:03:13.634] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:03:30.566] Browser LOG     {"config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:5000/api/","data":"{\"name\":\"Sameer Jagrawal\",\"email\":\"sameerjagrawal2@gmail.com\",\"password\":\"123456\"}","env":{},"headers":{"Accept":"application/json, text/plain, */*","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"post","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"legacyInterceptorReqResOrdering":true,"silentJSONParsing":true},"url":"user/register","withCredentials":true,"xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"data":{"data":{"email":"sameerjagrawal2@gmail.com","id":"6a0d560b421ae626d9eb10fb","name":"Sameer Jagrawal"},"masg":"User Created succesfully","success":true},"headers":{"content-length":"152","content-type":"application/json; charset=utf-8"},"request":{},"status":201,"statusText":"Created"} user response
+[00:05:20.953] Server  LOG     {}
+[00:05:21.613] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:05:21.853] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-1.jpg" "received" null
+[00:05:21.873] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-2.jpg" "received" null
+[00:05:21.887] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-3.jpg" "received" null
+[00:05:22.117] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-4.jpg" "received" null
+[00:05:22.138] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/watch.png" "received" null
+[00:05:22.437] Browser WARN    Image with src "/images/thumb-1.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:05:22.438] Browser WARN    Image with src "/images/thumb-2.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:05:22.438] Browser WARN    Image with src "/images/thumb-3.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:05:22.438] Browser WARN    Image with src "/images/thumb-4.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:05:28.712] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:05:32.928] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:11:29.057] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:13:08.134] Browser LOG     {}
+[00:13:08.134] Browser LOG     {"code":"ERR_BAD_REQUEST","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:5000/api/","data":{},"env":{},"headers":{"Accept":"application/json, text/plain, */*","Content-Type":"application/x-www-form-urlencoded"},"maxBodyLength":-1,"maxContentLength":-1,"method":"post","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"legacyInterceptorReqResOrdering":true,"silentJSONParsing":true},"url":"/category/create","withCredentials":true,"xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 404","name":"AxiosError","stack":"AxiosError: Request failed with status code 404\n    at settle (http://localhost:3000/_next/static/chunks/node_modules_abb09c27._.js:8297:16)\n    at XMLHttpRequest.onloadend (http://localhost:3000/_next/static/chunks/node_modules_abb09c27._.js:8813:174)\n    at Axios.request (http://localhost:3000/_next/static/chunks/node_modules_abb09c27._.js:9619:49)","status":404}
+[00:13:20.437] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:13:26.297] Browser LOG     {"code":"ERR_BAD_REQUEST","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:5000/api/","data":"{\"email\":\"sameerjagrawal2@gmail.com\",\"password\":\"123456\"}","env":{},"headers":{"Accept":"application/json, text/plain, */*","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"post","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"legacyInterceptorReqResOrdering":true,"silentJSONParsing":true},"url":"user/login","withCredentials":true,"xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 404","name":"AxiosError","stack":"AxiosError: Request failed with status code 404\n    at settle (http://localhost:3000/_next/static/chunks/node_modules_1c2acfac._.js:3785:16)\n    at XMLHttpRequest.onloadend (http://localhost:3000/_next/static/chunks/node_modules_1c2acfac._.js:4301:174)\n    at Axios.request (http://localhost:3000/_next/static/chunks/node_modules_1c2acfac._.js:5107:49)\n    at async submitHandler (http://localhost:3000/_next/static/chunks/src_6f25a655._.js:135:30)","status":404}
+[00:15:24.912] Browser LOG     {"config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:5000/api/","data":"{\"name\":\"Anki\",\"email\":\"ankitsharma437936@gmail.com\",\"password\":\"123456\"}","env":{},"headers":{"Accept":"application/json, text/plain, */*","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"post","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"legacyInterceptorReqResOrdering":true,"silentJSONParsing":true},"url":"user/register","withCredentials":true,"xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"data":{"data":{"email":"ankitsharma437936@gmail.com","id":"6a0d58d6421ae626d9eb1115","name":"Anki"},"masg":"User Created succesfully","success":true},"headers":{"content-length":"143","content-type":"application/json; charset=utf-8"},"request":{},"status":201,"statusText":"Created"} user response
+[00:16:18.024] Browser LOG     {"finalTotal":154700,"items":[{"_id":"6a06dbf05797b97b3609af83","brand":"Apple","discount":9,"final_price":154700,"name":"I Phone 17 Pro Max, 516gb storage,","original_price":170000,"qty":1,"stock":true,"thumbnail":"http://localhost:5000/product/1778834416416i phone 3.webp"}],"originalTotal":170000} sameer frontend
+[00:16:18.024] Browser LOG     [{"_id":"6a06dbf05797b97b3609af83","brand":"Apple","discount":9,"final_price":154700,"name":"I Phone 17 Pro Max, 516gb storage,","original_price":170000,"qty":1,"stock":true,"thumbnail":"http://localhost:5000/product/1778834416416i phone 3.webp"}] frontend local cart
+[00:16:18.227] Browser LOG     [] sameer
+[00:16:18.349] Server  LOG     {}
+[00:16:18.571] Server  LOG     {}
+[00:16:19.344] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:16:19.608] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-1.jpg" "received" null
+[00:16:19.612] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-2.jpg" "received" null
+[00:16:19.643] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-3.jpg" "received" null
+[00:16:19.839] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-4.jpg" "received" null
+[00:16:19.862] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/watch.png" "received" null
+[00:16:20.204] Browser WARN    Image with src "/images/thumb-1.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:16:20.204] Browser WARN    Image with src "/images/thumb-2.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:16:20.204] Browser WARN    Image with src "/images/thumb-3.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:16:20.204] Browser WARN    Image with src "/images/thumb-4.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:16:47.920] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:17:02.346] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:17:17.143] Browser LOG     {"config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:5000/api/","data":"{\"name\":\"Sameer Jagrawal\",\"email\":\"sameerjagrawal2@gmail.com\",\"password\":\"123456\"}","env":{},"headers":{"Accept":"application/json, text/plain, */*","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"post","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"legacyInterceptorReqResOrdering":true,"silentJSONParsing":true},"url":"user/register","withCredentials":true,"xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"data":{"data":{"email":"sameerjagrawal2@gmail.com","id":"6a0d5947421ae626d9eb113c","name":"Sameer Jagrawal"},"masg":"User Created succesfully","success":true},"headers":{"content-length":"152","content-type":"application/json; charset=utf-8"},"request":{},"status":201,"statusText":"Created"} user response
+[00:18:29.656] Browser LOG     {"finalTotal":0,"items":[],"originalTotal":0} sameer frontend
+[00:18:29.656] Browser LOG     [] frontend local cart
+[00:18:29.656] Browser LOG     [] sameer
+[00:18:29.850] Server  LOG     {}
+[00:18:30.171] Server  LOG     {}
+[00:18:31.101] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:18:32.170] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-1.jpg" "received" null
+[00:18:32.182] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-2.jpg" "received" null
+[00:18:32.190] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-3.jpg" "received" null
+[00:18:32.542] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-4.jpg" "received" null
+[00:18:32.560] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/watch.png" "received" null
+[00:18:33.015] Browser WARN    Image with src "/images/thumb-1.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:18:33.015] Browser WARN    Image with src "/images/thumb-2.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:18:33.015] Browser WARN    Image with src "/images/thumb-3.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:18:33.015] Browser WARN    Image with src "/images/thumb-4.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:20:22.812] Server  LOG     ✓ Compiled in 6.3s
+[00:26:19.472] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:26:25.597] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:26:52.408] Browser LOG     {}
+[00:26:52.524] Browser LOG     {"code":"ERR_BAD_REQUEST","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:5000/api/","data":{},"env":{},"headers":{"Accept":"application/json, text/plain, */*","Content-Type":"application/x-www-form-urlencoded"},"maxBodyLength":-1,"maxContentLength":-1,"method":"post","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"legacyInterceptorReqResOrdering":true,"silentJSONParsing":true},"url":"/category/create","withCredentials":true,"xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 401","name":"AxiosError","stack":"AxiosError: Request failed with status code 401\n    at settle (http://localhost:3000/_next/static/chunks/node_modules_axios_lib_99e19c7d._.js:2033:16)\n    at XMLHttpRequest.onloadend (http://localhost:3000/_next/static/chunks/node_modules_axios_lib_99e19c7d._.js:2549:174)\n    at Axios.request (http://localhost:3000/_next/static/chunks/node_modules_axios_lib_99e19c7d._.js:3355:49)","status":401}
+[00:27:11.959] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:27:20.661] Browser LOG     {}
+[00:27:20.800] Browser LOG     {"code":"ERR_BAD_REQUEST","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:5000/api/","data":{},"env":{},"headers":{"Accept":"application/json, text/plain, */*","Content-Type":"application/x-www-form-urlencoded"},"maxBodyLength":-1,"maxContentLength":-1,"method":"post","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"legacyInterceptorReqResOrdering":true,"silentJSONParsing":true},"url":"/category/create","withCredentials":true,"xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 401","name":"AxiosError","stack":"AxiosError: Request failed with status code 401\n    at settle (http://localhost:3000/_next/static/chunks/node_modules_1004abc2._.js:3558:16)\n    at XMLHttpRequest.onloadend (http://localhost:3000/_next/static/chunks/node_modules_1004abc2._.js:4074:174)\n    at Axios.request (http://localhost:3000/_next/static/chunks/node_modules_1004abc2._.js:4880:49)","status":401}
+[00:27:30.566] Server  LOG     Sameer Jagrawal "user at profile"
+[00:27:31.297] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
+[00:27:31.297] Browser ERROR   Image is missing required "src" property: <img>
+[00:27:31.297] Browser ERROR   Image is missing required "src" property: <img>
+[00:28:54.625] Browser LOG     {}
+[00:28:54.764] Browser LOG     {"code":"ERR_BAD_REQUEST","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:5000/api/","data":{},"env":{},"headers":{"Accept":"application/json, text/plain, */*","Content-Type":"application/x-www-form-urlencoded"},"maxBodyLength":-1,"maxContentLength":-1,"method":"post","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"legacyInterceptorReqResOrdering":true,"silentJSONParsing":true},"url":"/category/create","withCredentials":true,"xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 401","name":"AxiosError","stack":"AxiosError: Request failed with status code 401\n    at settle (http://localhost:3000/_next/static/chunks/node_modules_1004abc2._.js:3558:16)\n    at XMLHttpRequest.onloadend (http://localhost:3000/_next/static/chunks/node_modules_1004abc2._.js:4074:174)\n    at Axios.request (http://localhost:3000/_next/static/chunks/node_modules_1004abc2._.js:4880:49)","status":401}
+[00:30:26.346] Server  LOG     ✓ Compiled in 7.1s
+[00:30:27.303] Server  LOG     Sameer Jagrawal "user at profile"
+[00:30:34.889] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:30:51.733] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:31:00.151] Server  LOG     ✓ Finished filesystem cache database compaction in 30.0s
+[00:31:00.210] Server  LOG     ✓ Finished writing to filesystem cache in 23.3s
+[00:31:15.454] Browser LOG     {}
+[00:31:15.577] Browser LOG     {"code":"ERR_BAD_REQUEST","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:5000/api/","data":{},"env":{},"headers":{"Accept":"application/json, text/plain, */*","Content-Type":"application/x-www-form-urlencoded"},"maxBodyLength":-1,"maxContentLength":-1,"method":"post","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"legacyInterceptorReqResOrdering":true,"silentJSONParsing":true},"url":"/category/create","withCredentials":true,"xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 401","name":"AxiosError","stack":"AxiosError: Request failed with status code 401\n    at settle (http://localhost:3000/_next/static/chunks/node_modules_axios_lib_99e19c7d._.js:2033:16)\n    at XMLHttpRequest.onloadend (http://localhost:3000/_next/static/chunks/node_modules_axios_lib_99e19c7d._.js:2549:174)\n    at Axios.request (http://localhost:3000/_next/static/chunks/node_modules_axios_lib_99e19c7d._.js:3355:49)","status":401}
+[00:39:22.470] Server  LOG     env file console "http://localhost:5000/api/"
+[00:39:23.374] Server  LOG     AggregateError
+[00:39:28.427] Server  LOG     ○ Compiling /admin/product/add ...
+[00:39:42.535] Browser LOG     env file console http://localhost:5000/api/
+[00:39:45.200] Browser LOG     {"code":"ERR_NETWORK","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:5000/api/","env":{},"headers":{"Accept":"application/json, text/plain, */*"},"maxBodyLength":-1,"maxContentLength":-1,"method":"get","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"legacyInterceptorReqResOrdering":true,"silentJSONParsing":true},"url":"category","withCredentials":true,"xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Network Error","name":"AxiosError","stack":"AxiosError: Network Error\n    at XMLHttpRequest.handleError (http://localhost:3000/_next/static/chunks/node_modules_axios_lib_99e19c7d._.js:2595:25)\n    at Axios.request (http://localhost:3000/_next/static/chunks/node_modules_axios_lib_99e19c7d._.js:3355:49)\n    at async getSelectData (http://localhost:3000/_next/static/chunks/src_8897354a._.js:128:26)\n    at async Page[useEffect() > fetchData] (http://localhost:3000/_next/static/chunks/src_8897354a._.js:326:49)"}
+[00:39:45.200] Browser LOG     {}
+[00:39:45.447] Browser LOG     {"code":"ERR_NETWORK","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:5000/api/","env":{},"headers":{"Accept":"application/json, text/plain, */*"},"maxBodyLength":-1,"maxContentLength":-1,"method":"get","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"legacyInterceptorReqResOrdering":true,"silentJSONParsing":true},"url":"category","withCredentials":true,"xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Network Error","name":"AxiosError","stack":"AxiosError: Network Error\n    at XMLHttpRequest.handleError (http://localhost:3000/_next/static/chunks/node_modules_axios_lib_99e19c7d._.js:2595:25)\n    at Axios.request (http://localhost:3000/_next/static/chunks/node_modules_axios_lib_99e19c7d._.js:3355:49)\n    at async getSelectData (http://localhost:3000/_next/static/chunks/src_8897354a._.js:128:26)\n    at async Page[useEffect() > fetchData] (http://localhost:3000/_next/static/chunks/src_8897354a._.js:326:49)"}
+[00:39:45.448] Browser LOG     {}
+[01:53:08.600] Server  LOG     Sameer Jagrawal "user at profile"
+[01:53:09.198] Server  ERROR   An empty string ("") was passed to the src attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to src instead of an empty string.
+[01:53:09.853] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:53:11.311] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
+[01:53:11.312] Browser ERROR   Image is missing required "src" property: <img>
+[01:56:50.247] Browser LOG     {}
+[01:56:50.977] Browser LOG     category user delete address 
+[01:56:50.977] Browser LOG     category user delete address 
+[01:56:59.823] Server  LOG     Error: read ECONNRESET
+[01:57:09.735] Server  LOG     category "user delete address "
+[01:57:11.078] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:57:13.712] Browser LOG     category user delete address 
+[01:57:13.713] Browser LOG     category user delete address 
+[01:57:16.386] Browser LOG     category user delete address 
+[01:57:16.386] Browser LOG     category user delete address 
+[01:57:18.616] Browser LOG     category user delete address 
+[01:57:18.616] Browser LOG     category user delete address 
+[01:57:31.085] Server  LOG     {}
+[01:57:32.197] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-4.jpg" "received" null
+[01:57:32.200] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-2.jpg" "received" null
+[01:57:32.204] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-1.jpg" "received" null
+[01:57:32.207] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-3.jpg" "received" null
+[01:57:32.210] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/watch.png" "received" null
+[01:59:23.873] Browser LOG     {}
+[01:59:24.371] Browser LOG     category user delete address 
+[01:59:24.371] Browser LOG     category user delete address 
+[01:59:24.371] Browser LOG     category user delete address 
+[01:59:24.371] Browser LOG     category user delete address 
+[01:59:46.085] Browser LOG     {}
+[01:59:46.446] Browser LOG     category user delete address 
+[01:59:46.446] Browser LOG     category user delete address 
+[01:59:46.446] Browser LOG     category user delete address 
+[01:59:46.446] Browser LOG     category user delete address 
+[01:59:46.446] Browser LOG     category user delete address 
+[01:59:46.446] Browser LOG     category user delete address 
+[02:00:03.277] Browser LOG     {}
+[02:00:03.724] Browser LOG     category user delete address 
+[02:00:03.724] Browser LOG     category user delete address 
+[02:00:03.724] Browser LOG     category user delete address 
+[02:00:03.724] Browser LOG     category user delete address 
+[02:00:03.724] Browser LOG     category user delete address 
+[02:00:03.724] Browser LOG     category user delete address 
+[02:00:03.724] Browser LOG     category user delete address 
+[02:00:03.724] Browser LOG     category user delete address 
+[02:00:38.889] Browser LOG     {}
+[02:00:39.380] Browser LOG     category user delete address 
+[02:00:39.380] Browser LOG     category user delete address 
+[02:00:39.380] Browser LOG     category user delete address 
+[02:00:39.380] Browser LOG     category user delete address 
+[02:00:39.380] Browser LOG     category user delete address 
+[02:00:39.380] Browser LOG     category user delete address 
+[02:00:39.380] Browser LOG     category user delete address 
+[02:00:39.380] Browser LOG     category user delete address 
+[02:00:39.380] Browser LOG     category user delete address 
+[02:00:39.380] Browser LOG     category user delete address 
+[02:00:48.001] Browser LOG     env file console http://localhost:5000/api/
+[02:01:09.608] Browser LOG     SUBMIT CALLED
+[02:01:10.073] Browser LOG     brand user delete address 
+[02:01:10.073] Browser LOG     brand user delete address 
+[02:01:33.812] Browser LOG     SUBMIT CALLED
+[02:01:34.337] Browser LOG     brand user delete address 
+[02:01:34.337] Browser LOG     brand user delete address 
+[02:01:34.337] Browser LOG     brand user delete address 
+[02:01:34.337] Browser LOG     brand user delete address 
+[02:01:52.498] Browser LOG     SUBMIT CALLED
+[02:01:52.968] Browser LOG     brand user delete address 
+[02:01:52.968] Browser LOG     brand user delete address 
+[02:01:52.968] Browser LOG     brand user delete address 
+[02:01:52.968] Browser LOG     brand user delete address 
+[02:01:52.968] Browser LOG     brand user delete address 
+[02:01:52.968] Browser LOG     brand user delete address 
+[02:02:09.431] Browser LOG     SUBMIT CALLED
+[02:02:09.851] Browser LOG     brand user delete address 
+[02:02:09.851] Browser LOG     brand user delete address 
+[02:02:09.851] Browser LOG     brand user delete address 
+[02:02:09.851] Browser LOG     brand user delete address 
+[02:02:09.851] Browser LOG     brand user delete address 
+[02:02:09.851] Browser LOG     brand user delete address 
+[02:02:09.851] Browser LOG     brand user delete address 
+[02:02:09.851] Browser LOG     brand user delete address 
+[02:02:51.218] Browser LOG     SUBMIT CALLED
+[02:02:51.747] Browser LOG     SUBMIT CALLED
+[02:02:51.748] Browser LOG     brand user delete address 
+[02:02:51.748] Browser LOG     brand user delete address 
+[02:02:51.748] Browser LOG     brand user delete address 
+[02:02:51.748] Browser LOG     brand user delete address 
+[02:02:51.748] Browser LOG     brand user delete address 
+[02:02:51.748] Browser LOG     brand user delete address 
+[02:02:51.748] Browser LOG     brand user delete address 
+[02:02:51.748] Browser LOG     brand user delete address 
+[02:02:51.748] Browser LOG     {"code":"ERR_BAD_REQUEST","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:5000/api/","data":{},"env":{},"headers":{"Accept":"application/json, text/plain, */*","Content-Type":"application/x-www-form-urlencoded"},"maxBodyLength":-1,"maxContentLength":-1,"method":"post","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"legacyInterceptorReqResOrdering":true,"silentJSONParsing":true},"url":"/brand/create","withCredentials":true,"xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 400","name":"AxiosError","stack":"AxiosError: Request failed with status code 400\n    at settle (http://localhost:3000/_next/static/chunks/node_modules_axios_lib_99e19c7d._.js:2033:16)\n    at XMLHttpRequest.onloadend (http://localhost:3000/_next/static/chunks/node_modules_axios_lib_99e19c7d._.js:2549:174)\n    at Axios.request (http://localhost:3000/_next/static/chunks/node_modules_axios_lib_99e19c7d._.js:3355:49)","status":400}
+[02:02:51.748] Browser LOG     brand user delete address 
+[02:02:51.748] Browser LOG     brand user delete address 
+[02:02:51.748] Browser LOG     brand user delete address 
+[02:02:51.748] Browser LOG     brand user delete address 
+[02:02:51.748] Browser LOG     brand user delete address 
+[02:02:51.748] Browser LOG     brand user delete address 
+[02:02:51.748] Browser LOG     brand user delete address 
+[02:02:51.748] Browser LOG     brand user delete address 
+[02:02:51.748] Browser LOG     brand user delete address 
+[02:02:51.748] Browser LOG     brand user delete address 
+[02:03:27.758] Server  LOG     {}
+[02:04:13.598] Server  LOG     {}
+[02:04:13.758] Browser LOG     color user delete address 
+[02:04:13.758] Browser LOG     color user delete address 
+[02:04:39.108] Server  LOG     {}
+[02:04:39.267] Browser LOG     color user delete address 
+[02:04:39.267] Browser LOG     color user delete address 
+[02:04:39.267] Browser LOG     color user delete address 
+[02:04:39.267] Browser LOG     color user delete address 
+[02:07:10.896] Browser LOG     product user delete address 
+[02:07:10.896] Browser LOG     product user delete address 
+[02:07:18.264] Browser LOG     category user delete address 
+[02:07:18.264] Browser LOG     category user delete address 
+[02:07:18.264] Browser LOG     category user delete address 
+[02:07:18.264] Browser LOG     category user delete address 
+[02:07:18.264] Browser LOG     category user delete address 
+[02:07:18.264] Browser LOG     category user delete address 
+[02:07:18.265] Browser LOG     category user delete address 
+[02:07:18.265] Browser LOG     category user delete address 
+[02:07:18.265] Browser LOG     category user delete address 
+[02:07:18.265] Browser LOG     category user delete address 
+[02:07:22.164] Browser LOG     category user delete address 
+[02:07:22.164] Browser LOG     category user delete address 
+[02:07:22.164] Browser LOG     category user delete address 
+[02:07:22.164] Browser LOG     category user delete address 
+[02:07:22.164] Browser LOG     category user delete address 
+[02:07:22.164] Browser LOG     category user delete address 
+[02:07:22.164] Browser LOG     category user delete address 
+[02:07:22.164] Browser LOG     category user delete address 
+[02:07:22.164] Browser LOG     category user delete address 
+[02:07:22.164] Browser LOG     category user delete address 
+[02:07:24.496] Browser LOG     category user delete address 
+[02:07:24.496] Browser LOG     category user delete address 
+[02:07:24.496] Browser LOG     category user delete address 
+[02:07:24.496] Browser LOG     category user delete address 
+[02:07:24.496] Browser LOG     category user delete address 
+[02:07:24.496] Browser LOG     category user delete address 
+[02:07:24.496] Browser LOG     category user delete address 
+[02:07:24.496] Browser LOG     category user delete address 
+[02:07:24.496] Browser LOG     category user delete address 
+[02:07:24.496] Browser LOG     category user delete address 
+[02:07:25.698] Browser LOG     category user delete address 
+[02:07:25.698] Browser LOG     category user delete address 
+[02:07:25.698] Browser LOG     category user delete address 
+[02:07:25.698] Browser LOG     category user delete address 
+[02:07:25.698] Browser LOG     category user delete address 
+[02:07:25.698] Browser LOG     category user delete address 
+[02:07:25.698] Browser LOG     category user delete address 
+[02:07:25.698] Browser LOG     category user delete address 
+[02:07:25.698] Browser LOG     category user delete address 
+[02:07:25.698] Browser LOG     category user delete address 
+[02:07:30.603] Browser LOG     category user delete address 
+[02:07:30.603] Browser LOG     category user delete address 
+[02:07:30.603] Browser LOG     category user delete address 
+[02:07:30.603] Browser LOG     category user delete address 
+[02:07:30.603] Browser LOG     category user delete address 
+[02:07:30.603] Browser LOG     category user delete address 
+[02:07:30.603] Browser LOG     category user delete address 
+[02:07:30.603] Browser LOG     category user delete address 
+[02:07:30.603] Browser LOG     category user delete address 
+[02:07:30.603] Browser LOG     category user delete address 
+[02:07:31.818] Browser LOG     category user delete address 
+[02:07:31.818] Browser LOG     category user delete address 
+[02:07:31.818] Browser LOG     category user delete address 
+[02:07:31.818] Browser LOG     category user delete address 
+[02:07:31.818] Browser LOG     category user delete address 
+[02:07:31.818] Browser LOG     category user delete address 
+[02:07:31.818] Browser LOG     category user delete address 
+[02:07:31.818] Browser LOG     category user delete address 
+[02:07:31.818] Browser LOG     category user delete address 
+[02:07:31.818] Browser LOG     category user delete address 
+[02:07:33.146] Browser LOG     category user delete address 
+[02:07:33.146] Browser LOG     category user delete address 
+[02:07:33.146] Browser LOG     category user delete address 
+[02:07:33.146] Browser LOG     category user delete address 
+[02:07:33.146] Browser LOG     category user delete address 
+[02:07:33.146] Browser LOG     category user delete address 
+[02:07:33.146] Browser LOG     category user delete address 
+[02:07:33.146] Browser LOG     category user delete address 
+[02:07:33.146] Browser LOG     category user delete address 
+[02:07:33.146] Browser LOG     category user delete address 
+[02:07:36.569] Browser LOG     category user delete address 
+[02:07:36.569] Browser LOG     category user delete address 
+[02:07:36.569] Browser LOG     category user delete address 
+[02:07:36.569] Browser LOG     category user delete address 
+[02:07:36.569] Browser LOG     category user delete address 
+[02:07:36.569] Browser LOG     category user delete address 
+[02:07:36.569] Browser LOG     category user delete address 
+[02:07:36.569] Browser LOG     category user delete address 
+[02:07:36.569] Browser LOG     category user delete address 
+[02:07:36.569] Browser LOG     category user delete address 
+[02:07:38.421] Browser LOG     category user delete address 
+[02:07:38.421] Browser LOG     category user delete address 
+[02:07:38.421] Browser LOG     category user delete address 
+[02:07:38.421] Browser LOG     category user delete address 
+[02:07:38.421] Browser LOG     category user delete address 
+[02:07:38.421] Browser LOG     category user delete address 
+[02:07:38.421] Browser LOG     category user delete address 
+[02:07:38.421] Browser LOG     category user delete address 
+[02:07:38.421] Browser LOG     category user delete address 
+[02:07:38.421] Browser LOG     category user delete address 
+[02:07:39.379] Browser LOG     category user delete address 
+[02:07:39.379] Browser LOG     category user delete address 
+[02:07:39.379] Browser LOG     category user delete address 
+[02:07:39.379] Browser LOG     category user delete address 
+[02:07:39.379] Browser LOG     category user delete address 
+[02:07:39.379] Browser LOG     category user delete address 
+[02:07:39.379] Browser LOG     category user delete address 
+[02:07:39.379] Browser LOG     category user delete address 
+[02:07:39.379] Browser LOG     category user delete address 
+[02:07:39.379] Browser LOG     category user delete address 
+[02:07:42.904] Browser LOG     category user delete address 
+[02:07:42.904] Browser LOG     category user delete address 
+[02:07:42.904] Browser LOG     category user delete address 
+[02:07:42.904] Browser LOG     category user delete address 
+[02:07:42.904] Browser LOG     category user delete address 
+[02:07:42.904] Browser LOG     category user delete address 
+[02:07:42.904] Browser LOG     category user delete address 
+[02:07:42.904] Browser LOG     category user delete address 
+[02:07:42.904] Browser LOG     category user delete address 
+[02:07:42.904] Browser LOG     category user delete address 
+[02:07:44.061] Browser LOG     category user delete address 
+[02:07:44.061] Browser LOG     category user delete address 
+[02:07:44.061] Browser LOG     category user delete address 
+[02:07:44.061] Browser LOG     category user delete address 
+[02:07:44.061] Browser LOG     category user delete address 
+[02:07:44.061] Browser LOG     category user delete address 
+[02:07:44.061] Browser LOG     category user delete address 
+[02:07:44.061] Browser LOG     category user delete address 
+[02:07:44.061] Browser LOG     category user delete address 
+[02:07:44.061] Browser LOG     category user delete address 
+[02:07:45.964] Browser LOG     category user delete address 
+[02:07:45.965] Browser LOG     category user delete address 
+[02:07:45.965] Browser LOG     category user delete address 
+[02:07:45.965] Browser LOG     category user delete address 
+[02:07:45.965] Browser LOG     category user delete address 
+[02:07:45.965] Browser LOG     category user delete address 
+[02:07:45.965] Browser LOG     category user delete address 
+[02:07:45.965] Browser LOG     category user delete address 
+[02:07:45.965] Browser LOG     category user delete address 
+[02:07:45.965] Browser LOG     category user delete address 
+[02:07:54.424] Server  LOG     {}
+[02:07:55.354] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:07:55.599] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-2.jpg" "received" null
+[02:07:55.601] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-1.jpg" "received" null
+[02:07:55.603] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-3.jpg" "received" null
+[02:07:55.768] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-4.jpg" "received" null
+[02:07:55.797] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/watch.png" "received" null
+[02:07:56.110] Browser WARN    Image with src "/images/thumb-1.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[02:07:56.110] Browser WARN    Image with src "/images/thumb-2.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[02:07:56.110] Browser WARN    Image with src "/images/thumb-3.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[02:07:56.110] Browser WARN    Image with src "/images/thumb-4.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[02:31:44.134] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:34:21.232] Server  LOG       Reload env: .env
+[02:34:25.250] Server  WARN    ⚠ Fast Refresh had to perform a full reload when ./src/utils/helper.js changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[02:34:25.566] Server  WARN    ⚠ Fast Refresh had to perform a full reload when ./src/utils/helper.js changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[02:34:25.573] Server  WARN    ⚠ Fast Refresh had to perform a full reload when ./src/utils/helper.js changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[02:34:25.678] Server  WARN    ⚠ Fast Refresh had to perform a full reload when ./src/utils/helper.js changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[02:34:25.771] Server  WARN    ⚠ Fast Refresh had to perform a full reload when ./src/utils/helper.js changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[02:34:25.826] Server  WARN    ⚠ Fast Refresh had to perform a full reload when ./src/utils/helper.js changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[02:34:26.427] Server  LOG     env file console "https://ishop-backend-2mld.onrender.com/api/"
+[02:34:26.930] Server  LOG     env file console "https://ishop-backend-2mld.onrender.com/api/"
+[02:34:27.579] Server  LOG     ✓ Compiled in 4.9s
+[02:34:28.539] Server  WARN    ⚠ Fast Refresh had to perform a full reload when ./src/utils/helper.js changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[02:34:30.151] Server  LOG     category "user delete address "
+[02:34:30.160] Server  LOG     category "user delete address "
+[02:34:30.169] Server  LOG     category "user delete address "
+[02:34:30.178] Server  LOG     category "user delete address "
+[02:34:30.189] Server  LOG     category "user delete address "
+[02:34:30.288] Server  LOG     category "user delete address "
+[02:34:30.297] Server  LOG     category "user delete address "
+[02:34:30.307] Server  LOG     category "user delete address "
+[02:34:30.319] Server  LOG     category "user delete address "
+[02:34:30.328] Server  LOG     category "user delete address "
+[02:34:30.415] Server  LOG     category "user delete address "
+[02:34:30.422] Server  LOG     category "user delete address "
+[02:34:30.438] Server  LOG     category "user delete address "
+[02:34:30.447] Server  LOG     category "user delete address "
+[02:34:30.474] Server  LOG     category "user delete address "
+[02:34:30.542] Server  LOG     category "user delete address "
+[02:34:30.555] Server  LOG     category "user delete address "
+[02:34:30.563] Server  LOG     category "user delete address "
+[02:34:30.572] Server  LOG     category "user delete address "
+[02:34:30.579] Server  LOG     category "user delete address "
+[02:34:31.106] Server  LOG     category "user delete address "
+[02:34:31.112] Server  LOG     category "user delete address "
+[02:34:31.121] Server  LOG     category "user delete address "
+[02:34:31.128] Server  LOG     category "user delete address "
+[02:34:31.136] Server  LOG     category "user delete address "
+[02:34:36.585] Server  LOG     category "user delete address "
+[02:34:36.590] Server  LOG     category "user delete address "
+[02:34:36.595] Server  LOG     category "user delete address "
+[02:34:36.601] Server  LOG     category "user delete address "
+[02:34:36.606] Server  LOG     category "user delete address "
+[02:34:36.661] Server  LOG     category "user delete address "
+[02:34:36.666] Server  LOG     category "user delete address "
+[02:34:36.672] Server  LOG     category "user delete address "
+[02:34:36.677] Server  LOG     category "user delete address "
+[02:34:36.685] Server  LOG     category "user delete address "
+[02:34:37.120] Server  LOG     category "user delete address "
+[02:34:37.125] Server  LOG     category "user delete address "
+[02:34:37.130] Server  LOG     category "user delete address "
+[02:34:37.135] Server  LOG     category "user delete address "
+[02:34:37.141] Server  LOG     category "user delete address "
+[02:34:37.935] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:34:39.295] Browser LOG     category user delete address 
+[02:34:39.295] Browser LOG     category user delete address 
+[02:34:39.295] Browser LOG     category user delete address 
+[02:34:39.295] Browser LOG     category user delete address 
+[02:34:39.295] Browser LOG     category user delete address 
+[02:34:39.295] Browser LOG     category user delete address 
+[02:34:39.295] Browser LOG     category user delete address 
+[02:34:39.295] Browser LOG     category user delete address 
+[02:34:39.295] Browser LOG     category user delete address 
+[02:34:39.295] Browser LOG     category user delete address 
+[02:34:50.329] Server  LOG     ✓ Finished filesystem cache database compaction in 16.2s

@@ -39,16 +39,12 @@ export default function AdminLoginPage() {
         form
       );
 
-      notify(
-        response.data.masg,
-        response.data.success
-      );
-
+      
       // LOGIN FAILED
       if (!response.data.success) {
         return;
       }
-
+      
       // CHECK ADMIN ROLE
       if (response.data.data.role !== "admin") {
 

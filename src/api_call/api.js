@@ -120,7 +120,7 @@ async function  getSelectData(type){
 async function  getAllOrders(){
     try {
     const response =  await client.get("order")
-    return response?.data
+    return response?.data 
         
     } catch (error) {
         console.log(error)

@@ -8,7 +8,7 @@ import { FaEye } from "react-icons/fa";
 
 export default async function UserManagementTable() {
   const data = await getProduct();
-  const Brands = data?.data;
+  const Brands = data?.data || [];
   // console.log("console", Brands[0].brandId);
   // console.log(Brands.thumbnail)
   // const meta = data.meta;

@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 14, "column": 0}, "map": {"version":3,"sources":["file:///D:/Wsjp119/Fullstack%20Project/frontend/src/app/%28admin%29/admin/product/edit/%5Bslug%5D/page.jsx"],"sourcesContent":["import React from 'react'\r\n\r\nexport default function page() {\r\n  return (\r\n    <div>\r\n      edit product\r\n    </div>\r\n  )\r\n}\r\n"],"names":[],"mappings":";;;;;AAAA;;;AAEe,SAAS;IACtB,qBACE,8OAAC;kBAAI;;;;;;AAIT"}}]
+}

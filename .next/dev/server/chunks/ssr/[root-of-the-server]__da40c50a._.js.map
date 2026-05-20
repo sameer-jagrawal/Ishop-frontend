@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 88, "column": 0}, "map": {"version":3,"sources":["file:///D:/Wsjp119/Fullstack%20Project/frontend/src/utils/helper.js"],"sourcesContent":["import axios from 'axios';\r\nimport { toast } from 'react-toastify'\r\n\r\nconst client = axios.create({\r\n    baseURL: process.env.NEXT_PUBLIC_API_BASE_URL\r\n  });\r\n  \r\nconst notify = (massage,flag) => toast(massage, {type: flag === true ? \"success\" : \"error\"});\r\n\r\nconst deleteRequest = (type, id) => {\r\n  return client.delete(`/${type}/delete/${id}`);\r\n};\r\nexport {\r\n    notify,client,deleteRequest\r\n}"],"names":[],"mappings":";;;;;;;;AAAA;AACA;;;AAEA,MAAM,SAAS,gJAAK,CAAC,MAAM,CAAC;IACxB,OAAO;AACT;AAEF,MAAM,SAAS,CAAC,SAAQ,OAAS,IAAA,4JAAK,EAAC,SAAS;QAAC,MAAM,SAAS,OAAO,YAAY;IAAO;AAE1F,MAAM,gBAAgB,CAAC,MAAM;IAC3B,OAAO,OAAO,MAAM,CAAC,CAAC,CAAC,EAAE,KAAK,QAAQ,EAAE,IAAI;AAC9C"}}]
+}
