@@ -21,7 +21,7 @@ return (
           >
             <Link href="/">
               <img
-                src={`http://localhost:5000/brand/${item.image}`}
+                src={`https://ishop-backend-2mld.onrender.com/brand/${item.image}`}
                 alt="brand"
                 className="w-full md:w-14 md:h-14 object-contain rounded-xl"
               />

@@ -151,7 +151,7 @@ export default function page() {
           {/* Existing image preview */}
           <div className="flex items-center gap-3 mt-2 px-3 py-2.5 rounded-lg  bg-gray-50">
             <img
-              src={`http://localhost:5000/category/${image}`}
+              src={`https://ishop-backend-2mld.onrender.com/category/${image}`}
               alt="preview"
               width={100}
               className="rounded-md object-cover border border-gray-200"

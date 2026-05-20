@@ -4,7 +4,7 @@ import AddToCartButton from "./AddToCart";
 
 export default function ProductCard({ items, user }) {
   const imageUrl = items?.thumbnail
-    ? `http://localhost:5000/product/${items.thumbnail}`
+    ? `https://ishop-backend-2mld.onrender.com/product/${items.thumbnail}`
     : "/headPhone.png";
 
   const brandName = items?.brandId?.name || items?.brand || "Premium";

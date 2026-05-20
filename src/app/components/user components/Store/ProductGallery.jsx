@@ -4,6 +4,7 @@ import React, { useEffect, useMemo, useState } from "react";
 import { Heart, Share2 } from "lucide-react";
 
 export default function ProductGallery({ product }) {
+  console.log(product?.thumbnail)
   const images = useMemo(() => {
     const allImages = [product?.thumbnail, ...(product?.images || [])].filter(
       Boolean,
@@ -12,7 +13,7 @@ export default function ProductGallery({ product }) {
 
     if (uniqueImages.length > 0) {
       return uniqueImages.map(
-        (image) => `http://localhost:5000/product/${image}`,
+        (image) => `https://ishop-backend-2mld.onrender.com/product/${image}`,
       );
     }
 

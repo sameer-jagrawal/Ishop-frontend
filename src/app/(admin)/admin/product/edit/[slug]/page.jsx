@@ -157,7 +157,6 @@ const [newImages, setNewImages] = useState([]); // uploaded files
         if (response.data.success) {
           notify("Image deleted successfully", true);
   
-          // 🔥 THIS is what fixes your UI instantly
           setExistingImages((prev) =>
             prev.filter((img) => img !== image_name)
           );
@@ -472,7 +471,7 @@ const [newImages, setNewImages] = useState([]); // uploaded files
 
                 <div className=" w-auto items-center gap-3 mt-2 p-3 border rounded-lg bg-gray-50">
                   <img
-                    src={`http://localhost:5000/product/${data?.thumbnail}`}
+                    src={`https://ishop-backend-2mld.onrender.com/product/${data?.thumbnail}`}
                     alt="preview"
                     className=" rounded-md object-cover"
                     width={200}
@@ -528,7 +527,7 @@ const [newImages, setNewImages] = useState([]); // uploaded files
 {existingImages.map((img, index) => (
   <div key={index} className="relative border rounded-md">
     <img
-      src={`http://localhost:5000/product/${img}`}
+      src={`https://ishop-backend-2mld.onrender.com/product/${img}`}
       className="object-cover w-full h-full rounded-md"
     />
 

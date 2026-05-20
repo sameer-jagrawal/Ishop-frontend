@@ -72,7 +72,7 @@ export default async function MyOrdersPage() {
                     <div className="flex items-center gap-4">
                       <img
                         src={`
-                          http://localhost:5000/product/${item?.product_id?.thumbnail}
+                          https://ishop-backend-2mld.onrender.com/product/${item?.product_id?.thumbnail}
                         `}
                         alt={item?.product_id?.name}
                         className="w-24 h-24 object-cover rounded-2xl border"

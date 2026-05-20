@@ -4,6 +4,7 @@ import { getCategories } from "@/api_call/api";
 export default async function Topcategories() {
   const category_res = await getCategories({is_top:true,status:true})
   const categories = category_res?.data;
+
   const imagePath = category_res?.meta?.imagebaseurl;
   console.log(category_res)
   return (
@@ -20,7 +21,7 @@ export default async function Topcategories() {
               className="flex flex-col items-center text-center"
             >
                 <img
-                  src={`http://localhost:5000/category/${item.image}`}
+                  src={`https://ishop-backend-2mld.onrender.com/category/${item.image}`}
                   alt="category"
                   className="w-10 h-10 md:w-14 md:h-14 object-contain rounded-xl"
                 />

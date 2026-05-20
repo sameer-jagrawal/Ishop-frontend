@@ -20,7 +20,7 @@ export default async function Hero() {
                   <li className="flex border border-gray-300 py-2 px-2 rounded-xl justify-between my-4 md:my-5 items-center gap-4">
                     <div className="flex justify-between items-center gap-3">
                       <img
-                        src={`http://localhost:5000/category/${items.image}`}
+                        src={`https://ishop-backend-2mld.onrender.com/category/${items.image}`}
                         width={20}
                         height={20}
                         alt={items.name}

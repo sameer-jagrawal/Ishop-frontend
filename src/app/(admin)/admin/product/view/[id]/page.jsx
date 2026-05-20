@@ -30,7 +30,7 @@ export default function ProductDetails() {
 
         // Default Thumbnail
         setSelectedImage(
-          `http://localhost:5000/product/${formdata?.thumbnail}`
+          `https://ishop-backend-2mld.onrender.com/product/${formdata?.thumbnail}`
         );
       })
       .catch((error) => {
@@ -60,18 +60,18 @@ export default function ProductDetails() {
                 <div
                   onClick={() =>
                     setSelectedImage(
-                      `http://localhost:5000/product/${data?.thumbnail}`
+                      `https://ishop-backend-2mld.onrender.com/product/${data?.thumbnail}`
                     )
                   }
                   className={`min-w-[90px] h-[90px] rounded-2xl border-2 cursor-pointer overflow-hidden bg-white transition-all ${
                     selectedImage ===
-                    `http://localhost:5000/product/${data?.thumbnail}`
+                    `https://ishop-backend-2mld.onrender.com/product/${data?.thumbnail}`
                       ? "border-black"
                       : "border-gray-200"
                   }`}
                 >
                   <img
-                    src={`http://localhost:5000/product/${data?.thumbnail}`}
+                    src={`https://ishop-backend-2mld.onrender.com/product/${data?.thumbnail}`}
                     alt="thumbnail"
                     className="w-full h-full object-cover"
                   />
@@ -80,7 +80,7 @@ export default function ProductDetails() {
 
               {/* Other Images */}
               {data?.images?.map((img, index) => {
-                const imageUrl = `http://localhost:5000/product/${img}`;
+                const imageUrl = `https://ishop-backend-2mld.onrender.com/product/${img}`;
 
                 return (
                   <div

@@ -69,7 +69,7 @@ export default async function UserManagementTable() {
             {/* Image */}
             <td className="px-6 py-4">
               <img
-                src={`http://localhost:5000/brand/${user?.image}`}
+                src={`https://ishop-backend-2mld.onrender.com/brand/${user?.image}`}
                 alt={user.name}
                 className="w-12 h-12 rounded-xl object-cover border"
               />

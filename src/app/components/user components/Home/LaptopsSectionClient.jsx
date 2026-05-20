@@ -16,7 +16,7 @@ function getCategoryCount(category) {
 
 function ProductCard({ product }) {
   const imageUrl = product?.thumbnail
-    ? `http://localhost:5000/product/${product.thumbnail}`
+    ? `https://ishop-backend-2mld.onrender.com/product/${product.thumbnail}`
     : "/headPhone.png";
   const productName = product?.name || "Premium Laptop";
   const finalPrice = Number(product?.final_price || product?.price || 0);
@@ -127,7 +127,7 @@ export default function LaptopsSectionClient({ categories = [], products = [] })
               <img
                 src={
                   category?.image
-                    ? `http://localhost:5000/category/${category.image}`
+                    ? `https://ishop-backend-2mld.onrender.com/category/${category.image}`
                     : "/headPhone.png"
                 }
                 className="h-8 w-10 rounded object-cover md:h-9 md:w-12"
