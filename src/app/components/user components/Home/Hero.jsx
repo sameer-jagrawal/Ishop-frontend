@@ -35,13 +35,15 @@ export default async function Hero() {
         </div>
 
         {/* Hero banner */}
-<div className="relative w-full h-[320px] sm:h-[360px] md:h-[360px] lg:h-[400px] flex-1 overflow-hidden rounded-2xl md:rounded-3xl">
-  <HeroSlider />
+        <div className="relative w-full shrink-0 h-[320px] sm:h-[360px] md:h-[360px] lg:h-[400px] flex-1 overflow-hidden rounded-2xl md:rounded-3xl isolate">
+          <div className="absolute inset-0 z-0">
+            <HeroSlider />
+          </div>
 
-  {/* Glow effect */}
-  <div className="absolute top-10 left-10 w-40 h-40 bg-amber-400/20 blur-3xl rounded-full"></div>
+          {/* Glow effect */}
+          <div className="pointer-events-none absolute top-10 left-10 z-[1] h-40 w-40 rounded-full bg-amber-400/20 blur-3xl" />
 
-  <div className="absolute top-0 left-0 px-5 sm:px-10 md:px-14 lg:px-20 py-5 md:py-8 lg:py-10 leading-tight z-10 max-w-full">
+          <div className="pointer-events-none absolute inset-0 z-10 flex max-w-full flex-col justify-center px-5 py-5 leading-tight sm:px-10 md:px-14 md:py-8 lg:px-20 lg:py-10">
     
     {/* Small tag */}
     <span className="inline-block px-3 sm:px-4 py-1 mb-3 sm:mb-4 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-[#01a49e] text-[10px] sm:text-xs md:text-sm tracking-widest uppercase font-semibold">
@@ -61,7 +63,7 @@ export default async function Hero() {
     </p>
 
     {/* Subscribe box */}
-    <div className="flex border border-white/20 w-fit items-center rounded-full text-white bg-white/10 backdrop-blur-md shadow-2xl ps-3 md:ps-4 overflow-hidden">
+    <div className="pointer-events-auto flex w-fit max-w-full items-center overflow-hidden rounded-full border border-white/20 bg-white/10 ps-3 text-white shadow-2xl backdrop-blur-md md:ps-4">
       
       <div className="flex items-center gap-2 md:gap-3 pe-3 md:pe-5">
         <div className="text-base md:text-xl text-[#01a49e]">
@@ -77,8 +79,8 @@ export default async function Hero() {
         Explore Now
       </div>
     </div>
-  </div>
-</div>
+          </div>
+        </div>
       </div>
     </div>
   );

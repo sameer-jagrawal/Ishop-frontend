@@ -3,6 +3,7 @@ import { client, notify } from "@/utils/helper";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 import ButtonLoader from "@/app/components/user components/ButtonLoader";
+import Link from "next/link";
 
 export default function LoginPage() {
   // const next = searchParams.get("next");
@@ -174,9 +175,12 @@ export default function LoginPage() {
 
         <div className="mt-6 text-center text-sm text-gray-600">
           Don&apos;t have an account?{" "}
+          <Link href="/register">
           <span className="text-[#01A49E] font-semibold cursor-pointer hover:underline">
             Register
           </span>
+          </Link>
+
         </div>
       </div>
     </div>

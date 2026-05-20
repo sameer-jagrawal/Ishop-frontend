@@ -23,24 +23,25 @@ export default function HeroSlider() {
       effect="fade"
       speed={700}
       autoplay={{
-        delay: 2000,
+        delay: 4000,
         disableOnInteraction: false,
       }}
       pagination={{ clickable: true }}
-      className="h-full w-full rounded-2xl md:rounded-3xl"
+      className="hero-swiper !h-[320px] sm:!h-[360px] md:!h-full w-full rounded-2xl md:rounded-3xl !pb-10"
     >
       {heroImages.map((image) => (
-        <SwiperSlide key={image.src}>
-          <div className="relative w-full h-full">
+        <SwiperSlide key={image.src} className="!h-full">
+          <div className="relative h-full min-h-[320px] w-full sm:min-h-[360px] md:min-h-0">
             <Image
               src={image.src}
               alt={image.alt}
               fill
-              priority
+              priority={image.src === "/hero.png"}
+              sizes="(max-width: 768px) 100vw, 70vw"
               className="object-cover rounded-2xl md:rounded-3xl"
             />
 
-            <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/40 to-transparent rounded-2xl md:rounded-3xl"></div>
+            <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/40 to-transparent rounded-2xl md:rounded-3xl" />
           </div>
         </SwiperSlide>
       ))}
