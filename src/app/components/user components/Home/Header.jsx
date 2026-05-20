@@ -101,7 +101,7 @@ export default function Header({ user }) {
               </a>
             </div>
             {/* Desktop nav links - hidden on mobile */}
-            <div className="hidden  lg:flex gap-6 xl:gap-10 font-semibold uppercase">
+            <div className="hidden  lg:flex gap-6 xl:gap-10  uppercase">
               {navitmes.map((itmes, index) => {
                 return (
                   <Link key={index} href={itmes.path} className="">
