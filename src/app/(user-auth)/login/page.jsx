@@ -8,7 +8,6 @@ export default function LoginPage() {
   // const next = searchParams.get("next");
   const [loader, setLoader] = useState(false);
   const router = useRouter();
-
   const [form, setForm] = useState({
     email: "",
     password: "",
