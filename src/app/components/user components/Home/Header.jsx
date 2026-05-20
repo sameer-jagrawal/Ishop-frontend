@@ -175,7 +175,7 @@ export default function Header({ user }) {
                 <Link
                   key={index}
                   href={item.path}
-                  className="font-bold uppercase py-2 border-b border-gray-100"
+                  className=" uppercase py-2 border-b border-gray-100"
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   {item.name}

@@ -102,7 +102,7 @@ function AddToCartButton({ user, product }) {
                     final_price: product?.final_price,
                     _id: product?._id,
                     discount: product?.discount_percentage,
-                    thumbnail: `http://localhost:5000/product/${product.thumbnail}`,
+                    thumbnail: `https://ishop-backend-2mld.onrender.com/product/${product.thumbnail}`,
                     stock: product?.stock,
                     brand: product?.brandId?.name,
                     qty: 1
@@ -157,13 +157,14 @@ var _s = __turbopack_context__.k.signature();
 function ProductGallery(t0) {
     _s();
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(27);
-    if ($[0] !== "6b9d37c8dcf91b676e4bbc3971fef8fa3245a52edd256e2557437f08d88783ec") {
+    if ($[0] !== "5ce4c17cc757c422185600507ee28ea43cf83c76fd2451e26edee59b6158299f") {
         for(let $i = 0; $i < 27; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "6b9d37c8dcf91b676e4bbc3971fef8fa3245a52edd256e2557437f08d88783ec";
+        $[0] = "5ce4c17cc757c422185600507ee28ea43cf83c76fd2451e26edee59b6158299f";
     }
     const { product } = t0;
+    console.log(product?.thumbnail);
     let t1;
     bb0: {
         const t2 = product?.thumbnail;
@@ -266,18 +267,18 @@ function ProductGallery(t0) {
                             className: "h-full w-full object-contain"
                         }, void 0, false, {
                             fileName: "[project]/src/app/components/user components/Store/ProductGallery.jsx",
-                            lineNumber: 96,
+                            lineNumber: 97,
                             columnNumber: 320
                         }, this)
                     }, image_0, false, {
                         fileName: "[project]/src/app/components/user components/Store/ProductGallery.jsx",
-                        lineNumber: 94,
+                        lineNumber: 95,
                         columnNumber: 61
                     }, this)
             }["ProductGallery[images.map()]"])
         }, void 0, false, {
             fileName: "[project]/src/app/components/user components/Store/ProductGallery.jsx",
-            lineNumber: 93,
+            lineNumber: 94,
             columnNumber: 10
         }, this);
         $[15] = activeImage;
@@ -293,7 +294,7 @@ function ProductGallery(t0) {
             children: "Best Deal"
         }, void 0, false, {
             fileName: "[project]/src/app/components/user components/Store/ProductGallery.jsx",
-            lineNumber: 106,
+            lineNumber: 107,
             columnNumber: 10
         }, this);
         $[18] = t5;
@@ -308,12 +309,12 @@ function ProductGallery(t0) {
                 size: 18
             }, void 0, false, {
                 fileName: "[project]/src/app/components/user components/Store/ProductGallery.jsx",
-                lineNumber: 113,
+                lineNumber: 114,
                 columnNumber: 165
             }, this)
         }, void 0, false, {
             fileName: "[project]/src/app/components/user components/Store/ProductGallery.jsx",
-            lineNumber: 113,
+            lineNumber: 114,
             columnNumber: 10
         }, this);
         $[19] = t6;
@@ -332,18 +333,18 @@ function ProductGallery(t0) {
                         size: 18
                     }, void 0, false, {
                         fileName: "[project]/src/app/components/user components/Store/ProductGallery.jsx",
-                        lineNumber: 120,
+                        lineNumber: 121,
                         columnNumber: 225
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/src/app/components/user components/Store/ProductGallery.jsx",
-                    lineNumber: 120,
+                    lineNumber: 121,
                     columnNumber: 70
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/app/components/user components/Store/ProductGallery.jsx",
-            lineNumber: 120,
+            lineNumber: 121,
             columnNumber: 10
         }, this);
         $[20] = t7;
@@ -364,13 +365,13 @@ function ProductGallery(t0) {
                     className: "max-h-full max-w-full object-contain"
                 }, void 0, false, {
                     fileName: "[project]/src/app/components/user components/Store/ProductGallery.jsx",
-                    lineNumber: 128,
+                    lineNumber: 129,
                     columnNumber: 143
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/app/components/user components/Store/ProductGallery.jsx",
-            lineNumber: 128,
+            lineNumber: 129,
             columnNumber: 10
         }, this);
         $[21] = activeImage;
@@ -391,12 +392,12 @@ function ProductGallery(t0) {
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/components/user components/Store/ProductGallery.jsx",
-                lineNumber: 137,
+                lineNumber: 138,
                 columnNumber: 53
             }, this)
         }, void 0, false, {
             fileName: "[project]/src/app/components/user components/Store/ProductGallery.jsx",
-            lineNumber: 137,
+            lineNumber: 138,
             columnNumber: 11
         }, this);
         $[24] = t4;
@@ -410,7 +411,7 @@ function ProductGallery(t0) {
 _s(ProductGallery, "GuBHbuBOAyRyPwc9MaEYkPXLUMk=");
 _c = ProductGallery;
 function _ProductGalleryUniqueImagesMap(image) {
-    return `http://localhost:5000/product/${image}`;
+    return `https://ishop-backend-2mld.onrender.com/product/${image}`;
 }
 var _c;
 __turbopack_context__.k.register(_c, "ProductGallery");
@@ -441,14 +442,14 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$
 ;
 function ProductCard(t0) {
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(43);
-    if ($[0] !== "5d1add024b53ba9b2ecc69c4a6a2e7b2ef79b2b2bc4dcb294ea80d0e97e4b6e3") {
+    if ($[0] !== "450fb69a3b85537394541e1d071503ed2da585a02ceb6d9f0f577d854e16c443") {
         for(let $i = 0; $i < 43; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "5d1add024b53ba9b2ecc69c4a6a2e7b2ef79b2b2bc4dcb294ea80d0e97e4b6e3";
+        $[0] = "450fb69a3b85537394541e1d071503ed2da585a02ceb6d9f0f577d854e16c443";
     }
     const { items } = t0;
-    const imageUrl = items?.thumbnail ? `http://localhost:5000/product/${items.thumbnail}` : "/headPhone.png";
+    const imageUrl = items?.thumbnail ? `https://ishop-backend-2mld.onrender.com/product/${items.thumbnail}` : "/headPhone.png";
     const brandName = items?.brandId?.name || items?.brand || "Premium";
     const productName = items?.name || "Wireless Noise Cancelling Headphones";
     const finalPrice = Number(items?.final_price || 0);

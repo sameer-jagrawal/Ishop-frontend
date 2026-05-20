@@ -39,11 +39,11 @@ const heroImages = [
 ];
 function HeroSlider() {
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(5);
-    if ($[0] !== "348776c5b33c065b5b10e85cd342ed2b09bac29b01207f1423639eb8cb974d81") {
+    if ($[0] !== "9ba9fdfcea26e1e8eab4092e7fc4d4c0a4fb528c114280be8e0e447afae1bb2a") {
         for(let $i = 0; $i < 5; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "348776c5b33c065b5b10e85cd342ed2b09bac29b01207f1423639eb8cb974d81";
+        $[0] = "9ba9fdfcea26e1e8eab4092e7fc4d4c0a4fb528c114280be8e0e447afae1bb2a";
     }
     let t0;
     if ($[1] === Symbol.for("react.memo_cache_sentinel")) {
@@ -60,7 +60,7 @@ function HeroSlider() {
     let t2;
     if ($[2] === Symbol.for("react.memo_cache_sentinel")) {
         t1 = {
-            delay: 2000,
+            delay: 4000,
             disableOnInteraction: false
         };
         t2 = {
@@ -82,7 +82,7 @@ function HeroSlider() {
             speed: 700,
             autoplay: t1,
             pagination: t2,
-            className: "h-full w-full rounded-2xl md:rounded-3xl",
+            className: "hero-swiper !h-[320px] sm:!h-[360px] md:!h-full w-full rounded-2xl md:rounded-3xl !pb-10",
             children: heroImages.map(_HeroSliderHeroImagesMap)
         }, void 0, false, {
             fileName: "[project]/src/app/components/user components/Home/HeroSlider.jsx",
@@ -98,32 +98,34 @@ function HeroSlider() {
 _c = HeroSlider;
 function _HeroSliderHeroImagesMap(image) {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$swiper$2f$swiper$2d$react$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SwiperSlide"], {
+        className: "!h-full",
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: "relative w-full h-full",
+            className: "relative h-full min-h-[320px] w-full sm:min-h-[360px] md:min-h-0",
             children: [
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                     src: image.src,
                     alt: image.alt,
                     fill: true,
-                    priority: true,
+                    priority: image.src === "/hero.png",
+                    sizes: "(max-width: 768px) 100vw, 70vw",
                     className: "object-cover rounded-2xl md:rounded-3xl"
                 }, void 0, false, {
                     fileName: "[project]/src/app/components/user components/Home/HeroSlider.jsx",
                     lineNumber: 61,
-                    columnNumber: 79
+                    columnNumber: 141
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "absolute inset-0 bg-gradient-to-r from-black/70 via-black/40 to-transparent rounded-2xl md:rounded-3xl"
                 }, void 0, false, {
                     fileName: "[project]/src/app/components/user components/Home/HeroSlider.jsx",
                     lineNumber: 61,
-                    columnNumber: 200
+                    columnNumber: 322
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/app/components/user components/Home/HeroSlider.jsx",
             lineNumber: 61,
-            columnNumber: 39
+            columnNumber: 59
         }, this)
     }, image.src, false, {
         fileName: "[project]/src/app/components/user components/Home/HeroSlider.jsx",
@@ -240,7 +242,7 @@ function AddToCartButton({ user, product }) {
                     final_price: product?.final_price,
                     _id: product?._id,
                     discount: product?.discount_percentage,
-                    thumbnail: `http://localhost:5000/product/${product.thumbnail}`,
+                    thumbnail: `https://ishop-backend-2mld.onrender.com/product/${product.thumbnail}`,
                     stock: product?.stock,
                     brand: product?.brandId?.name,
                     qty: 1
@@ -297,14 +299,14 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$
 ;
 function ProductCard(t0) {
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(43);
-    if ($[0] !== "5d1add024b53ba9b2ecc69c4a6a2e7b2ef79b2b2bc4dcb294ea80d0e97e4b6e3") {
+    if ($[0] !== "450fb69a3b85537394541e1d071503ed2da585a02ceb6d9f0f577d854e16c443") {
         for(let $i = 0; $i < 43; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "5d1add024b53ba9b2ecc69c4a6a2e7b2ef79b2b2bc4dcb294ea80d0e97e4b6e3";
+        $[0] = "450fb69a3b85537394541e1d071503ed2da585a02ceb6d9f0f577d854e16c443";
     }
     const { items } = t0;
-    const imageUrl = items?.thumbnail ? `http://localhost:5000/product/${items.thumbnail}` : "/headPhone.png";
+    const imageUrl = items?.thumbnail ? `https://ishop-backend-2mld.onrender.com/product/${items.thumbnail}` : "/headPhone.png";
     const brandName = items?.brandId?.name || items?.brand || "Premium";
     const productName = items?.name || "Wireless Noise Cancelling Headphones";
     const finalPrice = Number(items?.final_price || 0);
@@ -999,14 +1001,14 @@ function getCategoryCount(category) {
 }
 function ProductCard(t0) {
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(31);
-    if ($[0] !== "516fe970a3b0fbb9178f2f8ba955e471879cf5e2b2d95782a9ee6d7231a9f882") {
+    if ($[0] !== "050ddb455a8298a027c44de9d7192f2713b22dc68217572e51409eaecf5d8cdc") {
         for(let $i = 0; $i < 31; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "516fe970a3b0fbb9178f2f8ba955e471879cf5e2b2d95782a9ee6d7231a9f882";
+        $[0] = "050ddb455a8298a027c44de9d7192f2713b22dc68217572e51409eaecf5d8cdc";
     }
     const { product } = t0;
-    const imageUrl = product?.thumbnail ? `http://localhost:5000/product/${product.thumbnail}` : "/headPhone.png";
+    const imageUrl = product?.thumbnail ? `https://ishop-backend-2mld.onrender.com/product/${product.thumbnail}` : "/headPhone.png";
     const productName = product?.name || "Premium Laptop";
     const finalPrice = Number(product?.final_price || product?.price || 0);
     const originalPrice = Number(product?.original_price || 0);
@@ -1239,11 +1241,11 @@ _c = ProductCard;
 function LaptopsSectionClient(t0) {
     _s();
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(31);
-    if ($[0] !== "516fe970a3b0fbb9178f2f8ba955e471879cf5e2b2d95782a9ee6d7231a9f882") {
+    if ($[0] !== "050ddb455a8298a027c44de9d7192f2713b22dc68217572e51409eaecf5d8cdc") {
         for(let $i = 0; $i < 31; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "516fe970a3b0fbb9178f2f8ba955e471879cf5e2b2d95782a9ee6d7231a9f882";
+        $[0] = "050ddb455a8298a027c44de9d7192f2713b22dc68217572e51409eaecf5d8cdc";
     }
     const { categories: t1, products: t2 } = t0;
     let t3;
@@ -1564,7 +1566,7 @@ function _LaptopsSectionClientCategoriesMap(category) {
         className: "flex items-center gap-2 rounded-lg bg-white p-2 shadow-sm",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
-                src: category?.image ? `http://localhost:5000/category/${category.image}` : "/headPhone.png",
+                src: category?.image ? `https://ishop-backend-2mld.onrender.com/category/${category.image}` : "/headPhone.png",
                 className: "h-8 w-10 rounded object-cover md:h-9 md:w-12",
                 alt: category?.name || "category"
             }, void 0, false, {
@@ -1580,7 +1582,7 @@ function _LaptopsSectionClientCategoriesMap(category) {
                     }, void 0, false, {
                         fileName: "[project]/src/app/components/user components/Home/LaptopsSectionClient.jsx",
                         lineNumber: 286,
-                        columnNumber: 397
+                        columnNumber: 415
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "text-xs text-gray-400",
@@ -1591,13 +1593,13 @@ function _LaptopsSectionClientCategoriesMap(category) {
                     }, void 0, true, {
                         fileName: "[project]/src/app/components/user components/Home/LaptopsSectionClient.jsx",
                         lineNumber: 286,
-                        columnNumber: 469
+                        columnNumber: 487
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/components/user components/Home/LaptopsSectionClient.jsx",
                 lineNumber: 286,
-                columnNumber: 392
+                columnNumber: 410
             }, this)
         ]
     }, category?._id || category?.slug || category?.name, true, {

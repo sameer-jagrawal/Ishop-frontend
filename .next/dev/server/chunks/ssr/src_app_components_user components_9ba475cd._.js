@@ -98,7 +98,7 @@ function AddToCartButton({ user, product }) {
                     final_price: product?.final_price,
                     _id: product?._id,
                     discount: product?.discount_percentage,
-                    thumbnail: `http://localhost:5000/product/${product.thumbnail}`,
+                    thumbnail: `https://ishop-backend-2mld.onrender.com/product/${product.thumbnail}`,
                     stock: product?.stock,
                     brand: product?.brandId?.name,
                     qty: 1
@@ -136,6 +136,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$re
 ;
 ;
 function ProductGallery({ product }) {
+    console.log(product?.thumbnail);
     const images = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useMemo"])(()=>{
         const allImages = [
             product?.thumbnail,
@@ -145,7 +146,7 @@ function ProductGallery({ product }) {
             ...new Set(allImages)
         ];
         if (uniqueImages.length > 0) {
-            return uniqueImages.map((image)=>`http://localhost:5000/product/${image}`);
+            return uniqueImages.map((image)=>`https://ishop-backend-2mld.onrender.com/product/${image}`);
         }
         return [
             "/headPhone.png",
@@ -178,17 +179,17 @@ function ProductGallery({ product }) {
                                 className: "h-full w-full object-contain"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/components/user components/Store/ProductGallery.jsx",
-                                lineNumber: 43,
+                                lineNumber: 44,
                                 columnNumber: 15
                             }, this)
                         }, image, false, {
                             fileName: "[project]/src/app/components/user components/Store/ProductGallery.jsx",
-                            lineNumber: 33,
+                            lineNumber: 34,
                             columnNumber: 13
                         }, this))
                 }, void 0, false, {
                     fileName: "[project]/src/app/components/user components/Store/ProductGallery.jsx",
-                    lineNumber: 31,
+                    lineNumber: 32,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -199,7 +200,7 @@ function ProductGallery({ product }) {
                             children: "Best Deal"
                         }, void 0, false, {
                             fileName: "[project]/src/app/components/user components/Store/ProductGallery.jsx",
-                            lineNumber: 53,
+                            lineNumber: 54,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -211,12 +212,12 @@ function ProductGallery({ product }) {
                                         size: 18
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/components/user components/Store/ProductGallery.jsx",
-                                        lineNumber: 59,
+                                        lineNumber: 60,
                                         columnNumber: 13
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/components/user components/Store/ProductGallery.jsx",
-                                    lineNumber: 58,
+                                    lineNumber: 59,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -225,18 +226,18 @@ function ProductGallery({ product }) {
                                         size: 18
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/components/user components/Store/ProductGallery.jsx",
-                                        lineNumber: 62,
+                                        lineNumber: 63,
                                         columnNumber: 13
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/components/user components/Store/ProductGallery.jsx",
-                                    lineNumber: 61,
+                                    lineNumber: 62,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/app/components/user components/Store/ProductGallery.jsx",
-                            lineNumber: 57,
+                            lineNumber: 58,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
@@ -245,24 +246,24 @@ function ProductGallery({ product }) {
                             className: "max-h-full max-w-full object-contain"
                         }, void 0, false, {
                             fileName: "[project]/src/app/components/user components/Store/ProductGallery.jsx",
-                            lineNumber: 66,
+                            lineNumber: 67,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/app/components/user components/Store/ProductGallery.jsx",
-                    lineNumber: 52,
+                    lineNumber: 53,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/app/components/user components/Store/ProductGallery.jsx",
-            lineNumber: 30,
+            lineNumber: 31,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/src/app/components/user components/Store/ProductGallery.jsx",
-        lineNumber: 29,
+        lineNumber: 30,
         columnNumber: 5
     }, this);
 }
@@ -287,7 +288,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$
 ;
 ;
 function ProductCard({ items, user }) {
-    const imageUrl = items?.thumbnail ? `http://localhost:5000/product/${items.thumbnail}` : "/headPhone.png";
+    const imageUrl = items?.thumbnail ? `https://ishop-backend-2mld.onrender.com/product/${items.thumbnail}` : "/headPhone.png";
     const brandName = items?.brandId?.name || items?.brand || "Premium";
     const productName = items?.name || "Wireless Noise Cancelling Headphones";
     const finalPrice = Number(items?.final_price || 0);

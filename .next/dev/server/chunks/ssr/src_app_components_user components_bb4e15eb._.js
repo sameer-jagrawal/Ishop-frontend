@@ -47,22 +47,24 @@ function HeroSlider() {
         effect: "fade",
         speed: 700,
         autoplay: {
-            delay: 2000,
+            delay: 4000,
             disableOnInteraction: false
         },
         pagination: {
             clickable: true
         },
-        className: "h-full w-full rounded-2xl md:rounded-3xl",
+        className: "hero-swiper !h-[320px] sm:!h-[360px] md:!h-full w-full rounded-2xl md:rounded-3xl !pb-10",
         children: heroImages.map((image)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$swiper$2f$swiper$2d$react$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["SwiperSlide"], {
+                className: "!h-full",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "relative w-full h-full",
+                    className: "relative h-full min-h-[320px] w-full sm:min-h-[360px] md:min-h-0",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                             src: image.src,
                             alt: image.alt,
                             fill: true,
-                            priority: true,
+                            priority: image.src === "/hero.png",
+                            sizes: "(max-width: 768px) 100vw, 70vw",
                             className: "object-cover rounded-2xl md:rounded-3xl"
                         }, void 0, false, {
                             fileName: "[project]/src/app/components/user components/Home/HeroSlider.jsx",
@@ -73,7 +75,7 @@ function HeroSlider() {
                             className: "absolute inset-0 bg-gradient-to-r from-black/70 via-black/40 to-transparent rounded-2xl md:rounded-3xl"
                         }, void 0, false, {
                             fileName: "[project]/src/app/components/user components/Home/HeroSlider.jsx",
-                            lineNumber: 43,
+                            lineNumber: 44,
                             columnNumber: 13
                         }, this)
                     ]
@@ -193,7 +195,7 @@ function AddToCartButton({ user, product }) {
                     final_price: product?.final_price,
                     _id: product?._id,
                     discount: product?.discount_percentage,
-                    thumbnail: `http://localhost:5000/product/${product.thumbnail}`,
+                    thumbnail: `https://ishop-backend-2mld.onrender.com/product/${product.thumbnail}`,
                     stock: product?.stock,
                     brand: product?.brandId?.name,
                     qty: 1
@@ -235,7 +237,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$
 ;
 ;
 function ProductCard({ items, user }) {
-    const imageUrl = items?.thumbnail ? `http://localhost:5000/product/${items.thumbnail}` : "/headPhone.png";
+    const imageUrl = items?.thumbnail ? `https://ishop-backend-2mld.onrender.com/product/${items.thumbnail}` : "/headPhone.png";
     const brandName = items?.brandId?.name || items?.brand || "Premium";
     const productName = items?.name || "Wireless Noise Cancelling Headphones";
     const finalPrice = Number(items?.final_price || 0);
@@ -615,7 +617,7 @@ function getCategoryCount(category) {
     return category?.product_count || category?.products_count || category?.productCount || category?.count || 0;
 }
 function ProductCard({ product }) {
-    const imageUrl = product?.thumbnail ? `http://localhost:5000/product/${product.thumbnail}` : "/headPhone.png";
+    const imageUrl = product?.thumbnail ? `https://ishop-backend-2mld.onrender.com/product/${product.thumbnail}` : "/headPhone.png";
     const productName = product?.name || "Premium Laptop";
     const finalPrice = Number(product?.final_price || product?.price || 0);
     const originalPrice = Number(product?.original_price || 0);
@@ -831,7 +833,7 @@ function LaptopsSectionClient({ categories = [], products = [] }) {
                                 className: "flex items-center gap-2 rounded-lg bg-white p-2 shadow-sm",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
-                                        src: category?.image ? `http://localhost:5000/category/${category.image}` : "/headPhone.png",
+                                        src: category?.image ? `https://ishop-backend-2mld.onrender.com/category/${category.image}` : "/headPhone.png",
                                         className: "h-8 w-10 rounded object-cover md:h-9 md:w-12",
                                         alt: category?.name || "category"
                                     }, void 0, false, {

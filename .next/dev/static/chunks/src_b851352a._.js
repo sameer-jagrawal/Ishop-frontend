@@ -296,11 +296,11 @@ var _s = __turbopack_context__.k.signature();
 function Header(t0) {
     _s();
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(41);
-    if ($[0] !== "c4cbe1d72ae85ad0b65ad15a8dc633df9204e11023593473070292a5cea31338") {
+    if ($[0] !== "994ff4591923f6033700f296f3a0041ee3ed8b0cab0a4812a9f8de0dcd0f748e") {
         for(let $i = 0; $i < 41; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "c4cbe1d72ae85ad0b65ad15a8dc633df9204e11023593473070292a5cea31338";
+        $[0] = "994ff4591923f6033700f296f3a0041ee3ed8b0cab0a4812a9f8de0dcd0f748e";
     }
     const { user } = t0;
     const [mobileMenuOpen, setMobileMenuOpen] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
@@ -573,7 +573,7 @@ function Header(t0) {
             children: [
                 t8,
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "hidden  lg:flex gap-6 xl:gap-10 font-semibold uppercase",
+                    className: "hidden  lg:flex gap-6 xl:gap-10  uppercase",
                     children: navitmes.map(_HeaderNavitmesMap)
                 }, void 0, false, {
                     fileName: "[project]/src/app/components/user components/Home/Header.jsx",
@@ -846,7 +846,7 @@ function Header(t0) {
                     children: navitmes.map({
                         "Header[navitmes.map()]": (item, index_0)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                                 href: item.path,
-                                className: "font-bold uppercase py-2 border-b border-gray-100",
+                                className: " uppercase py-2 border-b border-gray-100",
                                 onClick: {
                                     "Header[navitmes.map() > <Link>.onClick]": ()=>setMobileMenuOpen(false)
                                 }["Header[navitmes.map() > <Link>.onClick]"],
