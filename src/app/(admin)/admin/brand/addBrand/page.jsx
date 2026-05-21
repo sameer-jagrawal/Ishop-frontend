@@ -4,6 +4,7 @@ import React, { useEffect, useRef, useState } from "react";
 import Select from "react-select";
 import { client, notify } from "@/utils/helper";
 import { getCategories } from "@/api_call/api";
+import ButtonLoader from "@/app/components/user components/ButtonLoader";
 export default function page() {
   const router = useRouter();
   const [loader, setLoader] = useState(false);
@@ -250,7 +251,7 @@ export default function page() {
             type="submit"
             className="px-5 py-2.5 rounded-lg bg-orange-500 text-sm font-medium text-white hover:bg-orange-600 active:scale-95 transition-all duration-150 shadow-sm"
           >
-            {loader ? "Saving..." : "Save Brand"}
+            {loader ? <ButtonLoader /> : "Save Brand"}
           </button>
         </div>
   

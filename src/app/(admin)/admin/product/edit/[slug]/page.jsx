@@ -6,6 +6,7 @@ import { client, notify } from "@/utils/helper";
 import { getSelectData } from "@/api_call/api";
 import { CiCircleRemove } from "react-icons/ci";
 import { Editor } from 'primereact/editor';
+import ButtonLoader from "@/app/components/user components/ButtonLoader";
 
 
 export default function page() {
@@ -568,7 +569,7 @@ const [newImages, setNewImages] = useState([]); // uploaded files
               className="px-5 py-2.5 rounded-lg bg-orange-500 text-sm font-medium text-white hover:bg-orange-600 active:scale-95 transition-all duration-150 shadow-sm"
               disabled={loader}
             >
-              {loader ? "Saving..." : "Save Product"}
+              {loader ? <ButtonLoader /> : "Save Product"}
             </button>
           </div>
         </form>

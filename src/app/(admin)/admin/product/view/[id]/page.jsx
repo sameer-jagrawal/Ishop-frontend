@@ -4,6 +4,7 @@ import React, { useState, useEffect } from "react";
 import { client } from "@/utils/helper";
 import { useParams } from "next/navigation";
 import Status from "@/app/components/admin components/Status";
+import { ProductDetailsSkeleton } from "@/app/components/user components/LoadingSkeletons";
 import {
   Package,
   Tag,
@@ -37,6 +38,10 @@ export default function ProductDetails() {
         console.log(error, "error is coming");
       });
   }, [id]);
+
+  if (!data) {
+    return <ProductDetailsSkeleton />;
+  }
 
   return (
     <div className="min-h-screen bg-gray-100 p-4 md:p-8">

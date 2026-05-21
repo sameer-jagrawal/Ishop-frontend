@@ -1027,3 +1027,35 @@ https://react.dev/link/hydration-mismatch
 [10:06:18.008] Server  LOG     ✓ Finished filesystem cache database compaction in 12.2s
 [10:08:11.077] Browser WARN    Image with src "/logo/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
 [10:08:11.467] Browser WARN    Image with src "/logo/vector1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[10:29:06.036] Server  LOG     ✓ Compiled in 41.2s
+[10:29:11.131] Server  LOG     env file console "https://ishop-backend-2mld.onrender.com/api/"
+[10:29:16.182] Server  LOG     {}
+[10:29:16.260] Server  LOG     {}
+[10:29:18.253] Server  LOG     {}
+[10:29:18.801] Server  LOG     {}
+[10:29:19.198] Server  LOG     {}
+[10:29:19.475] Server  LOG     {}
+[10:29:19.809] Browser LOG     user/address user delete address 
+[10:29:19.809] Browser LOG     user/address user delete address 
+[10:29:19.810] Browser LOG     user/address user delete address 
+[10:29:19.810] Browser LOG     user/address user delete address 
+[10:29:19.810] Browser LOG     user/address user delete address 
+[10:29:19.810] Browser LOG     user/address user delete address 
+[10:29:19.810] Browser LOG     user/address user delete address 
+[10:29:19.810] Browser LOG     user/address user delete address 
+[10:29:20.290] Server  LOG     {}
+[10:29:20.998] Server  LOG     {}
+[10:29:21.040] Server  LOG     ✓ Finished writing to filesystem cache in 12.1s
+[10:29:21.528] Server  LOG     {}
+[10:29:22.086] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-3.jpg" "received" null
+[10:29:22.092] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-1.jpg" "received" null
+[10:29:22.205] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-2.jpg" "received" null
+[10:29:22.380] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-4.jpg" "received" null
+[10:29:22.403] Server  LOG     {}
+[10:29:22.427] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/watch.png" "received" null
+[10:29:23.678] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-1.jpg" "received" null
+[10:29:23.701] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-3.jpg" "received" null
+[10:29:23.728] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-2.jpg" "received" null
+[10:29:23.977] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-4.jpg" "received" null
+[10:29:24.009] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/watch.png" "received" null
+[10:29:42.013] Server  LOG     ✓ Finished filesystem cache database compaction in 21.0s

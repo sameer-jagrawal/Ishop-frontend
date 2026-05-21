@@ -3,6 +3,7 @@ import { useParams } from "next/navigation";
 import { useRouter } from "next/navigation";
 import React, { useEffect, useRef, useState } from "react";
 import { client, notify } from "@/utils/helper";
+import ButtonLoader from "@/app/components/user components/ButtonLoader";
 export default function page() {
   const { slug } = useParams();
   console.log(slug);
@@ -176,7 +177,7 @@ export default function page() {
             type="submit"
             className="px-5 py-2.5 rounded-lg bg-orange-500 text-sm font-medium text-white hover:bg-orange-600 active:scale-95 transition-all duration-150 shadow-sm"
           >
-            {loader ? "Updating..." : "Update Category"}
+            {loader ? <ButtonLoader /> : "Update Category"}
           </button>
         </div>
   
