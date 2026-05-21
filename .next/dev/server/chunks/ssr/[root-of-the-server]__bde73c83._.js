@@ -73,7 +73,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$
 ;
 ;
 function ProductCard({ items, user }) {
-    const imageUrl = items?.thumbnail ? `http://localhost:5000/product/${items.thumbnail}` : "/headPhone.png";
+    const imageUrl = items?.thumbnail ? `https://ishop-backend-2mld.onrender.com/product/${items.thumbnail}` : "/headPhone.png";
     const brandName = items?.brandId?.name || items?.brand || "Premium";
     const productName = items?.name || "Wireless Noise Cancelling Headphones";
     const finalPrice = Number(items?.final_price || 0);

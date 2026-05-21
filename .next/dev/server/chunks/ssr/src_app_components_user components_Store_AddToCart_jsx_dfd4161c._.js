@@ -98,7 +98,7 @@ function AddToCartButton({ user, product }) {
                     final_price: product?.final_price,
                     _id: product?._id,
                     discount: product?.discount_percentage,
-                    thumbnail: `http://localhost:5000/product/${product.thumbnail}`,
+                    thumbnail: `https://ishop-backend-2mld.onrender.com/product/${product.thumbnail}`,
                     stock: product?.stock,
                     brand: product?.brandId?.name,
                     qty: 1

@@ -19,9 +19,8 @@ export default function page() {
       </div>
       <DealsOfTheDay/>
       <PreOrder/>
-      <MultiTabs/>
-      {/* <LaptopsSection /> */}
       <LaptopsSection/>
+      <MultiTabs/>
     </div>
   )
 }

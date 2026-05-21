@@ -75,6 +75,7 @@ export default function Header({ user }) {
         <div className="px-4 md:px-6 w-full mb-3 md:mb-5 flex justify-between items-center mt-3 md:mt-4">
           {/* nav left section */}
           <div className="flex gap-20 md:gap-40 lg:gap-60 items-center">
+            <Link href={"/"}>
             <div className="flex gap-3 items-center">
               {/* logo */}
               <div className="relative">
@@ -96,10 +97,13 @@ export default function Header({ user }) {
                   />
                 </div>
               </div>
-              <a className="font-bold text-sm md:text-base" href="">
+
+              <a className="font-bold text-sm md:text-base" href="/">
                 ISHOP
               </a>
             </div>
+            </Link>
+
             {/* Desktop nav links - hidden on mobile */}
             <div className="hidden  lg:flex gap-6 xl:gap-10  uppercase">
               {navitmes.map((itmes, index) => {

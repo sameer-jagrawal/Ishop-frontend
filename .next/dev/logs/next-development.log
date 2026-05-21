@@ -1,272 +1,63 @@
-[00:00:10.998] Server  LOG     ✓ Ready in 9.5s
-[00:00:14.167] Server  LOG     ○ Compiling / ...
-[00:00:37.653] Server  LOG     env file console "https://ishop-backend-2mld.onrender.com/api/"
-[00:00:37.897] Server  ERROR   (node:3168) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+[00:00:09.967] Server  LOG     ✓ Ready in 9.2s
+[01:39:45.405] Server  LOG     ✓ Finished writing to filesystem cache in 99.6min
+[01:41:40.389] Server  LOG     ○ Compiling / ...
+[01:41:52.974] Server  LOG     env file console "https://ishop-backend-2mld.onrender.com/api/"
+[01:41:53.191] Server  ERROR   (node:17436) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
 (Use `node --trace-deprecation ...` to show where the warning was created)
-[00:00:41.761] Server  LOG     {}
-[00:00:41.765] Server  LOG     {}
-[00:00:42.295] Server  LOG     {}
-[00:00:46.940] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:49.398] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-2.jpg" "received" null
-[00:00:49.402] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/watch.png" "received" null
-[00:00:49.408] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-1.jpg" "received" null
-[00:00:49.414] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-3.jpg" "received" null
-[00:00:49.630] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-4.jpg" "received" null
-[00:00:50.011] Browser WARN    Image with src "/images/thumb-1.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:00:50.011] Browser WARN    Image with src "/images/thumb-2.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:00:50.011] Browser WARN    Image with src "/images/thumb-3.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:00:50.011] Browser WARN    Image with src "/images/thumb-4.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:01:33.611] Browser LOG     1779266316466i phone 2.webp
-[00:01:33.611] Browser LOG     1779266316466i phone 2.webp
-[00:01:39.421] Server  LOG     {}
-[00:01:40.921] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-2.jpg" "received" null
-[00:01:40.924] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-1.jpg" "received" null
-[00:01:40.928] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-4.jpg" "received" null
-[00:01:40.948] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-3.jpg" "received" null
-[00:01:40.964] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/watch.png" "received" null
-[00:01:52.007] Server  LOG     {}
-[00:01:53.976] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/watch.png" "received" null
-[00:01:54.366] Browser WARN    Image with src "/logo/vector1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:01:56.006] Server  LOG     {}
-[00:01:57.242] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:01:57.791] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-1.jpg" "received" null
-[00:01:57.811] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-2.jpg" "received" null
-[00:01:57.845] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-3.jpg" "received" null
-[00:01:58.118] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-4.jpg" "received" null
-[00:01:58.142] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/watch.png" "received" null
-[00:01:58.398] Browser WARN    Image with src "/images/thumb-1.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:01:58.398] Browser WARN    Image with src "/images/thumb-2.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:01:58.398] Browser WARN    Image with src "/images/thumb-3.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:01:58.398] Browser WARN    Image with src "/images/thumb-4.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:03:32.165] Server  LOG     env file console "https://ishop-backend-2mld.onrender.com/api/"
-[00:03:32.925] Server  LOG     ✓ Compiled in 7.4s
-[00:03:34.123] Server  ERROR   ⨯ ReferenceError: Swiper is not defined
-[00:03:34.537] Server  LOG     {}
-[00:03:36.239] Browser ERROR   uncaughtError: ReferenceError: Swiper is not defined
-[00:03:40.885] Server  LOG     ✓ Compiled in 253ms
-[00:03:41.193] Server  LOG     env file console "https://ishop-backend-2mld.onrender.com/api/"
-[00:03:43.051] Server  ERROR   ⨯ ReferenceError: Swiper is not defined
-[00:03:43.270] Server  LOG     {}
-[00:03:48.309] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:03:49.530] Browser ERROR   uncaughtError: ReferenceError: Swiper is not defined
-[00:04:02.782] Server  LOG     env file console "https://ishop-backend-2mld.onrender.com/api/"
-[00:04:07.399] Server  LOG     ✓ Finished filesystem cache database compaction in 31.8s
-[00:04:07.426] Server  LOG     {}
-[00:04:07.614] Server  ERROR   ⨯ ReferenceError: Image is not defined
-[00:04:07.726] Server  LOG     ✓ Finished writing to filesystem cache in 30.0s
-[00:04:10.595] Server  LOG     ✓ Compiled in 945ms
-[00:04:11.829] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:04:14.495] Browser ERROR   uncaughtError: ReferenceError: Image is not defined
-[00:04:18.688] Server  LOG     env file console "https://ishop-backend-2mld.onrender.com/api/"
-[00:04:20.262] Server  LOG     ✓ Compiled in 2.5s
-[00:04:20.476] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[00:04:21.534] Server  LOG     {}
-[00:04:23.000] Server  ERROR   ⨯ ReferenceError: Image is not defined
-[00:04:25.250] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:04:28.497] Browser ERROR   uncaughtError: ReferenceError: Image is not defined
-[00:04:37.559] Server  LOG     ✓ Compiled in 1366ms
-[00:04:41.264] Server  LOG     env file console "https://ishop-backend-2mld.onrender.com/api/"
-[00:04:46.698] Server  LOG     ✓ Compiled in 5.6s
-[00:04:46.779] Server  LOG     ✓ Finished filesystem cache database compaction in 39.3s
-[00:04:47.598] Server  LOG     ✓ Finished writing to filesystem cache in 26.5s
-[00:04:47.951] Server  LOG     {}
-[00:04:48.075] Server  ERROR   ⨯ ReferenceError: Image is not defined
-[00:04:49.476] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:04:51.972] Server  LOG     ✓ Compiled in 763ms
-[00:04:55.275] Browser ERROR   uncaughtError: ReferenceError: Image is not defined
-[00:04:55.955] Server  LOG     env file console "https://ishop-backend-2mld.onrender.com/api/"
-[00:04:57.562] Server  LOG     ✓ Compiled in 11ms
-[00:04:59.470] Server  LOG     {}
-[00:04:59.549] Server  ERROR   ⨯ ReferenceError: Image is not defined
-[00:05:03.579] Server  LOG     ✓ Compiled in 1310ms
-[00:05:04.769] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:05:07.045] Server  LOG     ✓ Compiled in 1085ms
-[00:05:07.929] Server  LOG     env file console "https://ishop-backend-2mld.onrender.com/api/"
-[00:05:11.845] Browser ERROR   uncaughtError: ReferenceError: Image is not defined
-[00:05:11.890] Server  LOG     ✓ Compiled in 4ms
-[00:05:12.846] Server  LOG     {}
-[00:05:13.258] Server  ERROR   ⨯ ReferenceError: Image is not defined
-[00:05:18.694] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:05:19.583] Browser ERROR   uncaughtError: ReferenceError: Image is not defined
-[00:05:40.707] Server  LOG     ✓ Finished filesystem cache database compaction in 53s
-[00:05:41.689] Browser ERROR   ./src/app/components/user components/Home/Hero.jsx:7:1
-Parsing ecmascript source code failed
-   5 | import Image
-   6 |
->  7 | export default async function Hero() {
-     | ^^^^^^
-   8 |   const catRes = await getCategories({ limit: 5, is_home: true, status: true });
-   9 |   const categories = catRes?.data;
-  10 |   return (
-
-Expected ',', got 'export'
-
-Import trace:
-  Server Component:
-    ./src/app/components/user components/Home/Hero.jsx
-    ./src/app/(user)/page.jsx
-[00:05:43.171] Server  LOG     ✓ Finished writing to filesystem cache in 49s
-[00:05:45.934] Server  LOG     ✓ Compiled in 5.2s
-[00:05:46.824] Server  LOG     env file console "https://ishop-backend-2mld.onrender.com/api/"
-[00:05:48.899] Server  LOG     {}
-[00:05:51.429] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:05:52.473] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-1.jpg" "received" null
-[00:05:52.857] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-2.jpg" "received" null
-[00:05:52.863] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-3.jpg" "received" null
-[00:05:53.473] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-4.jpg" "received" null
-[00:05:53.591] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/watch.png" "received" null
-[00:05:54.301] Browser WARN    Image with src "/images/thumb-1.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:05:54.302] Browser WARN    Image with src "/images/thumb-2.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:05:54.302] Browser WARN    Image with src "/images/thumb-3.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:05:54.302] Browser WARN    Image with src "/images/thumb-4.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:05:58.251] Server  LOG     {}
-[00:06:01.196] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/watch.png" "received" null
-[00:06:01.781] Browser WARN    Image with src "/logo/vector1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:06:06.794] Server  LOG     {}
-[00:06:06.837] Server  LOG     {}
-[00:06:08.574] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:06:09.361] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-1.jpg" "received" null
-[00:06:09.502] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-2.jpg" "received" null
-[00:06:09.507] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-3.jpg" "received" null
-[00:06:10.018] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-4.jpg" "received" null
-[00:06:10.059] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/watch.png" "received" null
-[00:06:10.398] Browser WARN    Image with src "/images/thumb-1.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:06:10.398] Browser WARN    Image with src "/images/thumb-2.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:06:10.398] Browser WARN    Image with src "/images/thumb-3.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:06:10.398] Browser WARN    Image with src "/images/thumb-4.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:07:03.495] Browser ERROR   ./src/app/components/user components/Home/Hero.jsx:93:8
-Parsing ecmascript source code failed
-  91 |           </div>
-  92 |         </div>
-> 93 |       </div>
-     |        ^^^^^
-  94 |     </div>
-  95 |   );
-  96 | }
-
-Unterminated regexp literal
-
-Import trace:
-  Server Component:
-    ./src/app/components/user components/Home/Hero.jsx
-    ./src/app/(user)/page.jsx
-[00:07:06.170] Server  LOG     ✓ Compiled in 447ms
-[00:07:06.900] Server  LOG     env file console "https://ishop-backend-2mld.onrender.com/api/"
-[00:07:08.159] Server  LOG     {}
-[00:07:19.781] Server  LOG     {}
-[00:07:21.612] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/watch.png" "received" null
-[00:07:21.979] Browser WARN    Image with src "/logo/vector1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:07:21.980] Browser WARN    Image with src "/hero.png" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
-[00:07:23.306] Server  LOG     {}
-[00:07:24.176] Server  LOG     {}
-[00:07:25.350] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:07:25.758] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-1.jpg" "received" null
-[00:07:25.820] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-2.jpg" "received" null
-[00:07:25.841] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-3.jpg" "received" null
-[00:07:26.053] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-4.jpg" "received" null
-[00:07:26.079] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/watch.png" "received" null
-[00:07:26.298] Browser WARN    Image with src "/images/thumb-1.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:07:26.298] Browser WARN    Image with src "/images/thumb-2.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:07:26.298] Browser WARN    Image with src "/images/thumb-3.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:07:26.298] Browser WARN    Image with src "/images/thumb-4.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:07:32.087] Server  LOG     ✓ Compiled in 255ms
-[00:07:32.459] Server  LOG     env file console "https://ishop-backend-2mld.onrender.com/api/"
-[00:07:33.864] Server  LOG     {}
-[00:07:36.785] Server  LOG     {}
-[00:07:38.278] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:07:38.857] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-1.jpg" "received" null
-[00:07:38.863] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-2.jpg" "received" null
-[00:07:38.893] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-3.jpg" "received" null
-[00:07:39.405] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-4.jpg" "received" null
-[00:07:39.474] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/watch.png" "received" null
-[00:07:39.834] Browser WARN    Image with src "/images/thumb-1.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:07:39.834] Browser WARN    Image with src "/images/thumb-2.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:07:39.834] Browser WARN    Image with src "/images/thumb-3.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:07:39.834] Browser WARN    Image with src "/images/thumb-4.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:07:46.557] Server  LOG     {}
-[00:07:48.718] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-1.jpg" "received" null
-[00:07:48.833] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-2.jpg" "received" null
-[00:07:48.888] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-3.jpg" "received" null
-[00:07:49.212] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-4.jpg" "received" null
-[00:07:49.224] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/watch.png" "received" null
-[00:07:49.520] Browser WARN    Image with src "/images/thumb-1.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:07:49.520] Browser WARN    Image with src "/images/thumb-1.jpg" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
-[00:07:49.520] Browser WARN    Image with src "/images/thumb-2.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:07:49.520] Browser WARN    Image with src "/images/thumb-2.jpg" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
-[00:07:49.520] Browser WARN    Image with src "/images/thumb-3.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:07:49.520] Browser WARN    Image with src "/images/thumb-3.jpg" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
-[00:07:49.520] Browser WARN    Image with src "/images/thumb-4.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:07:49.520] Browser WARN    Image with src "/images/thumb-4.jpg" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
-[00:07:49.520] Browser WARN    Image with src "/logo/vector1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:07:49.520] Browser WARN    Image with src "/hero.png" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
-[00:07:50.618] Server  LOG     {}
-[00:07:53.094] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-1.jpg" "received" null
-[00:07:53.134] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-2.jpg" "received" null
-[00:07:53.143] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-3.jpg" "received" null
-[00:07:53.520] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:07:53.522] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-4.jpg" "received" null
-[00:07:53.550] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/watch.png" "received" null
-[00:07:54.563] Browser WARN    Image with src "/images/thumb-1.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:07:54.563] Browser WARN    Image with src "/images/thumb-2.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:07:54.564] Browser WARN    Image with src "/images/thumb-3.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:07:54.564] Browser WARN    Image with src "/images/thumb-4.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:07:57.683] Browser WARN    Image with src "/hero.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
-Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[00:07:58.277] Server  LOG     env file console "https://ishop-backend-2mld.onrender.com/api/"
-[00:07:59.768] Server  LOG     {}
-[00:08:05.601] Server  LOG     {}
-[00:08:09.030] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/watch.png" "received" null
-[00:08:09.604] Server  LOG     {}
-[00:08:10.985] Server  LOG     {}
-[00:08:11.849] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:08:12.250] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-1.jpg" "received" null
-[00:08:12.387] Server  LOG     {}
-[00:08:12.588] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-2.jpg" "received" null
-[00:08:12.918] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-3.jpg" "received" null
-[00:08:13.253] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-4.jpg" "received" null
-[00:08:13.319] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/watch.png" "received" null
-[00:08:13.785] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
-
-- A server/client branch `if (typeof window !== 'undefined')`.
-- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
-- Date formatting in a user's locale which doesn't match the server.
-- External changing data without sending a snapshot of it along with the HTML.
-- Invalid HTML tag nesting.
-
-It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
-
-https://react.dev/link/hydration-mismatch
+[01:42:47.162] Server  LOG     {}
+[01:42:49.004] Server  LOG     {}
+[01:42:49.662] Server  LOG     {}
+[01:42:51.007] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:42:52.333] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:42:52.759] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-2.jpg" "received" null
+[01:42:52.764] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-1.jpg" "received" null
+[01:42:52.772] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-3.jpg" "received" null
+[01:42:53.524] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-4.jpg" "received" null
+[01:42:53.535] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/watch.png" "received" null
+[01:42:54.308] Browser ERROR   In HTML, %s cannot be a descendant of <%s>.
+This will cause a hydration error.%s <a> a 
 
   ...
-    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
-      <AppDevOverlayErrorBoundary globalError={[...]}>
-        <ReplaySsrOnlyErrors>
-        <DevRootHTTPAccessFallbackBoundary>
-          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
-            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
-              <RedirectBoundary>
-                <RedirectErrorBoundary router={{...}}>
-                  <Head headCacheNode={{rsc:<Fragment>, ...}}>
-                    <__next_viewport_boundary__>
-                    <MetadataWrapper>
-+                     <div hidden={true}>
--                     {"\n        "}
+    <SegmentViewNode type="layout" pagePath="(user)/lay...">
+      <SegmentTrieNode>
+      <link>
+      <script>
+      <script>
+      <script>
+      <script>
+      <script>
+      <script>
+      <script>
+      <script>
+      <RootLayout>
+        <html lang="en" className="poppins_3c...">
+          <body className="geist_fc8c...">
+            <ReduxProvider>
+              <Provider store={{...}}>
+                <Header user={null}>
+                  <header className="w-full sti...">
+                    <div>
+                    <div className="px-4 md:px...">
+                      <div className="flex gap-2...">
+                        <LinkComponent href="/">
+>                         <a
+>                           ref={function}
+>                           onClick={function onClick}
+>                           onMouseEnter={function onMouseEnter}
+>                           onTouchStart={function onTouchStart}
+>                           href="/"
+>                         >
+                            <div className="flex gap-3...">
+                              <div>
+>                             <a className="font-bold text-sm md:text-base" href="/">
+                        ...
+                      ...
                     ...
-                  ...
+                ...
 
-[00:08:18.331] Server  LOG     {}
-[00:08:19.165] Server  LOG     {}
-[00:08:21.461] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-1.jpg" "received" null
-[00:08:21.778] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:08:21.834] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-2.jpg" "received" null
-[00:08:21.860] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-3.jpg" "received" null
-[00:08:21.864] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-4.jpg" "received" null
-[00:08:22.051] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/watch.png" "received" null
-[00:08:22.848] Server  LOG     {}
-[00:08:25.639] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/watch.png" "received" null
-[00:08:25.905] Browser WARN    Image with src "/logo/vector1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:08:25.905] Browser WARN    Image with src "/hero.png" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
-[00:08:30.187] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+[01:42:54.308] Browser ERROR   <%s> cannot contain a nested %s.
+See this log for the ancestor stack trace. a <a>
+[01:42:54.308] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
 
 - A server/client branch `if (typeof window !== 'undefined')`.
 - Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
@@ -279,70 +70,81 @@ It can also happen if the client has a browser extension installed which messes 
 https://react.dev/link/hydration-mismatch
 
   ...
-    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
-      <AppDevOverlayErrorBoundary globalError={[...]}>
-        <ReplaySsrOnlyErrors>
-        <DevRootHTTPAccessFallbackBoundary>
-          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
-            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
-              <RedirectBoundary>
-                <RedirectErrorBoundary router={{...}}>
-                  <Head headCacheNode={{rsc:<Fragment>, ...}}>
-                    <__next_viewport_boundary__>
-                    <MetadataWrapper>
-+                     <div hidden={true}>
--                     {"\n        "}
+    <SegmentViewNode type="layout" pagePath="(user)/lay...">
+      <SegmentTrieNode>
+      <link>
+      <script>
+      <script>
+      <script>
+      <script>
+      <script>
+      <script>
+      <script>
+      <script>
+      <RootLayout>
+        <html lang="en" className="poppins_3c...">
+          <body className="geist_fc8c...">
+            <ReduxProvider>
+              <Provider store={{...}}>
+                <Header user={null}>
+                  <header className="w-full sti...">
+                    <div>
+                    <div className="px-4 md:px...">
+                      <div className="flex gap-2...">
+                        <LinkComponent href="/">
+                          <a ref={function} onClick={function onClick} onMouseEnter={function onMouseEnter} ...>
++                           <div className="flex gap-3 items-center">
+                        ...
+                      ...
                     ...
-                  ...
+                ...
 
-[00:09:46.113] Server  LOG     ✓ Compiled in 1756ms
-[00:09:46.233] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:09:46.233] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:09:46.810] Server  LOG     env file console "https://ishop-backend-2mld.onrender.com/api/"
-[00:09:48.591] Server  LOG     {}
-[00:09:53.889] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
-[00:10:08.364] Server  LOG     ✓ Finished filesystem cache database compaction in 18.4s
-[00:10:11.514] Server  LOG     {}
-[00:11:10.973] Server  LOG     Error: read ECONNRESET
-[00:11:15.596] Server  LOG     {}
-[00:11:15.829] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:11:22.676] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
-
-- A server/client branch `if (typeof window !== 'undefined')`.
-- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
-- Date formatting in a user's locale which doesn't match the server.
-- External changing data without sending a snapshot of it along with the HTML.
-- Invalid HTML tag nesting.
-
-It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
-
-https://react.dev/link/hydration-mismatch
+[01:42:54.485] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-1.jpg" "received" null
+[01:42:54.617] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-2.jpg" "received" null
+[01:42:55.158] Browser ERROR   In HTML, %s cannot be a descendant of <%s>.
+This will cause a hydration error.%s <a> a 
 
   ...
-    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
-      <AppDevOverlayErrorBoundary globalError={[...]}>
-        <ReplaySsrOnlyErrors>
-        <DevRootHTTPAccessFallbackBoundary>
-          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
-            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
-              <RedirectBoundary>
-                <RedirectErrorBoundary router={{...}}>
-                  <Head headCacheNode={{rsc:<Fragment>, ...}}>
-                    <__next_viewport_boundary__>
-                    <MetadataWrapper>
-+                     <div hidden={true}>
--                     {"\n        "}
+    <SegmentViewNode type="layout" pagePath="(user)/lay...">
+      <SegmentTrieNode>
+      <link>
+      <script>
+      <script>
+      <script>
+      <script>
+      <script>
+      <script>
+      <script>
+      <script>
+      <RootLayout>
+        <html lang="en" className="poppins_3c...">
+          <body className="geist_fc8c...">
+            <ReduxProvider>
+              <Provider store={{...}}>
+                <Header user={null}>
+                  <header className="w-full sti...">
+                    <div>
+                    <div className="px-4 md:px...">
+                      <div className="flex gap-2...">
+                        <LinkComponent href="/">
+>                         <a
+>                           ref={function}
+>                           onClick={function onClick}
+>                           onMouseEnter={function onMouseEnter}
+>                           onTouchStart={function onTouchStart}
+>                           href="/"
+>                         >
+                            <div className="flex gap-3...">
+                              <div>
+>                             <a className="font-bold text-sm md:text-base" href="/">
+                        ...
+                      ...
                     ...
-                  ...
+                ...
 
-[00:11:28.128] Server  LOG     {}
-[00:11:29.965] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:11:30.294] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-1.jpg" "received" null
-[00:11:30.436] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-2.jpg" "received" null
-[00:11:30.466] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-3.jpg" "received" null
-[00:11:30.696] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-4.jpg" "received" null
-[00:11:30.720] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/watch.png" "received" null
-[00:11:31.264] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+[01:42:55.158] Browser ERROR   <%s> cannot contain a nested %s.
+See this log for the ancestor stack trace. a <a>
+[01:42:55.158] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
 
 - A server/client branch `if (typeof window !== 'undefined')`.
 - Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
@@ -355,421 +157,95 @@ It can also happen if the client has a browser extension installed which messes 
 https://react.dev/link/hydration-mismatch
 
   ...
-    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
-      <AppDevOverlayErrorBoundary globalError={[...]}>
-        <ReplaySsrOnlyErrors>
-        <DevRootHTTPAccessFallbackBoundary>
-          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
-            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
-              <RedirectBoundary>
-                <RedirectErrorBoundary router={{...}}>
-                  <Head headCacheNode={{rsc:<Fragment>, ...}}>
-                    <__next_viewport_boundary__>
-                    <MetadataWrapper>
-+                     <div hidden={true}>
--                     {"\n        "}
+    <SegmentViewNode type="layout" pagePath="(user)/lay...">
+      <SegmentTrieNode>
+      <link>
+      <script>
+      <script>
+      <script>
+      <script>
+      <script>
+      <script>
+      <script>
+      <script>
+      <RootLayout>
+        <html lang="en" className="poppins_3c...">
+          <body className="geist_fc8c...">
+            <ReduxProvider>
+              <Provider store={{...}}>
+                <Header user={null}>
+                  <header className="w-full sti...">
+                    <div>
+                    <div className="px-4 md:px...">
+                      <div className="flex gap-2...">
+                        <LinkComponent href="/">
+                          <a ref={function} onClick={function onClick} onMouseEnter={function onMouseEnter} ...>
++                           <div className="flex gap-3 items-center">
+                        ...
+                      ...
                     ...
-                  ...
+                ...
 
-[00:11:31.956] Server  LOG     {}
-[00:11:34.885] Server  LOG     {}
-[00:11:36.005] Server  LOG     {}
-[00:11:36.521] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:11:36.796] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-1.jpg" "received" null
-[00:11:36.817] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-2.jpg" "received" null
-[00:11:36.833] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-3.jpg" "received" null
-[00:11:37.038] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-4.jpg" "received" null
-[00:11:37.069] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/watch.png" "received" null
-[00:11:37.315] Browser WARN    Image with src "/images/thumb-1.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:11:37.315] Browser WARN    Image with src "/images/thumb-2.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:11:37.315] Browser WARN    Image with src "/images/thumb-3.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:11:37.315] Browser WARN    Image with src "/images/thumb-4.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:11:43.198] Server  LOG     {}
-[00:11:44.847] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-1.jpg" "received" null
-[00:11:44.874] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-2.jpg" "received" null
-[00:11:44.893] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-3.jpg" "received" null
-[00:11:45.080] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-4.jpg" "received" null
-[00:11:45.114] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/watch.png" "received" null
-[00:11:45.338] Browser WARN    Image with src "/images/thumb-1.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:11:45.338] Browser WARN    Image with src "/images/thumb-1.jpg" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
-[00:11:45.338] Browser WARN    Image with src "/images/thumb-2.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:11:45.338] Browser WARN    Image with src "/images/thumb-2.jpg" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
-[00:11:45.338] Browser WARN    Image with src "/images/thumb-3.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:11:45.338] Browser WARN    Image with src "/images/thumb-3.jpg" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
-[00:11:45.338] Browser WARN    Image with src "/images/thumb-4.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:11:45.338] Browser WARN    Image with src "/images/thumb-4.jpg" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
-[00:11:45.338] Browser WARN    Image with src "/logo/vector1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:12:00.170] Server  LOG     {}
-[00:12:02.993] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:12:15.489] Server  LOG     env file console "https://ishop-backend-2mld.onrender.com/api/"
-[00:12:16.127] Server  LOG     ✓ Compiled in 3.2s
-[00:12:17.770] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-4.jpg" "received" null
-[00:12:17.775] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-3.jpg" "received" null
-[00:12:17.789] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-1.jpg" "received" null
-[00:12:17.825] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-2.jpg" "received" null
-[00:12:18.156] Server  LOG     env file console "https://ishop-backend-2mld.onrender.com/api/"
-[00:12:18.680] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:12:18.680] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:12:18.712] Server  LOG     {}
-[00:12:18.856] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/watch.png" "received" null
-[00:12:19.846] Server  LOG     {}
-[00:12:20.442] Server  LOG     {}
-[00:12:20.830] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:12:20.830] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:12:20.831] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:12:20.831] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:12:20.831] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:12:20.831] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:12:20.831] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:12:20.831] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:12:20.831] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:12:20.831] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:12:20.831] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:12:20.831] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:12:20.831] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:12:20.831] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:12:20.831] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:12:20.831] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:12:20.831] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:12:20.831] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:12:20.831] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:12:20.831] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:12:20.831] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:12:20.831] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:12:20.831] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:12:20.831] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:12:20.831] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:12:20.831] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:12:20.831] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:12:20.831] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:12:20.831] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:12:20.831] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:12:20.831] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:12:20.831] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:12:20.831] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:12:20.831] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:12:20.831] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:12:20.831] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:12:20.831] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:12:20.831] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:12:20.831] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:12:20.831] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:12:20.831] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:12:20.831] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:12:20.831] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:12:20.831] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:12:20.831] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:12:20.831] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:12:20.831] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:12:20.831] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:12:20.831] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:12:20.831] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:12:20.831] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:12:20.831] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:12:20.831] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:12:20.831] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:12:20.831] Browser ERROR   uncaughtError: Error: Maximum update depth exceeded. This can happen when a component repeatedly calls setState inside componentWillUpdate or componentDidUpdate. React limits the number of nested updates to prevent infinite loops.
-[00:12:22.271] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-1.jpg" "received" null
-[00:12:22.620] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-2.jpg" "received" null
-[00:12:22.800] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-3.jpg" "received" null
-[00:12:22.919] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-4.jpg" "received" null
-[00:12:23.188] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/watch.png" "received" null
-[00:12:23.494] Browser WARN    Image with src "/images/thumb-1.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:12:23.494] Browser WARN    Image with src "/images/thumb-1.jpg" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
-[00:12:23.494] Browser WARN    Image with src "/images/thumb-2.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:12:23.494] Browser WARN    Image with src "/images/thumb-2.jpg" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
-[00:12:23.494] Browser WARN    Image with src "/images/thumb-3.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:12:23.494] Browser WARN    Image with src "/images/thumb-3.jpg" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
-[00:12:23.494] Browser WARN    Image with src "/images/thumb-4.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:12:23.494] Browser WARN    Image with src "/images/thumb-4.jpg" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
-[00:12:23.494] Browser WARN    Image with src "/logo/vector1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:12:25.566] Server  LOG     {}
-[00:12:28.949] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:12:31.118] Server  LOG     ✓ Compiled in 700ms
-[00:12:31.252] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-2.jpg" "received" null
-[00:12:31.340] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-4.jpg" "received" null
-[00:12:31.351] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-3.jpg" "received" null
-[00:12:31.356] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/watch.png" "received" null
-[00:12:31.641] Server  LOG     env file console "https://ishop-backend-2mld.onrender.com/api/"
-[00:12:31.765] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-1.jpg" "received" null
-[00:12:32.949] Server  LOG     {}
-[00:12:40.075] Server  LOG     {}
-[00:12:47.502] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/watch.png" "received" null
-[00:12:48.169] Browser WARN    Image with src "/logo/vector1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:12:49.623] Server  LOG     ✓ Finished filesystem cache database compaction in 15.7s
-[00:13:24.573] Server  LOG     env file console "https://ishop-backend-2mld.onrender.com/api/"
-[00:13:25.499] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:13:25.499] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:13:25.986] Server  LOG     {}
-[00:13:26.663] Server  LOG     env file console "https://ishop-backend-2mld.onrender.com/api/"
-[00:13:26.862] Server  LOG     ✓ Compiled in 735ms
-[00:13:26.897] Server  LOG     {}
-[00:13:27.648] Browser ERROR   unhandledRejection: Error: No link element found for chunk /_next/static/chunks/%5Broot-of-the-server%5D__1f664da9._.css
-[00:13:27.668] Server  LOG     {}
-[00:13:28.090] Server  LOG     {}
-[00:13:28.512] Server  LOG     env file console "https://ishop-backend-2mld.onrender.com/api/"
-[00:13:28.721] Browser ERROR   unhandledRejection: Error: No link element found for chunk /_next/static/chunks/%5Broot-of-the-server%5D__1f664da9._.css
-[00:13:29.712] Server  LOG     {}
-[00:13:29.845] Server  LOG     {}
-[00:13:31.728] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:13:31.728] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:13:31.729] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:13:31.729] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:13:31.729] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:13:31.729] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:13:31.729] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:13:31.729] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:13:31.729] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:13:31.729] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:13:31.729] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:13:31.729] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:13:31.729] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:13:31.729] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:13:31.729] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:13:31.729] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:13:31.729] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:13:31.729] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:13:31.729] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:13:31.729] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:13:31.729] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:13:31.729] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:13:31.729] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:13:31.729] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:13:31.729] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:13:31.729] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:13:31.729] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:13:31.729] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:13:31.729] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:13:31.729] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:13:31.729] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:13:31.729] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:13:31.729] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:13:31.729] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:13:31.729] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:13:31.729] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:13:31.729] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:13:31.729] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:13:31.729] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:13:31.729] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:13:31.729] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:13:31.729] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:13:31.729] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:13:31.729] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:13:31.729] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:13:31.729] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:13:31.729] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:13:31.729] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:13:31.729] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:13:31.729] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:13:31.729] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:13:31.729] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:13:31.729] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:13:31.729] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:13:31.729] Browser ERROR   uncaughtError: Error: Maximum update depth exceeded. This can happen when a component repeatedly calls setState inside componentWillUpdate or componentDidUpdate. React limits the number of nested updates to prevent infinite loops.
-[00:13:34.734] Server  LOG     {}
-[00:13:36.304] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:13:36.460] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-2.jpg" "received" null
-[00:13:36.485] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-1.jpg" "received" null
-[00:13:36.680] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-3.jpg" "received" null
-[00:13:36.889] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-4.jpg" "received" null
-[00:13:36.920] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/watch.png" "received" null
-[00:13:37.294] Browser WARN    Image with src "/images/thumb-1.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:13:37.294] Browser WARN    Image with src "/images/thumb-2.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:13:37.294] Browser WARN    Image with src "/images/thumb-3.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:13:37.294] Browser WARN    Image with src "/images/thumb-4.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:13:42.784] Server  LOG     ✓ Compiled in 615ms
-[00:13:43.159] Server  LOG     env file console "https://ishop-backend-2mld.onrender.com/api/"
-[00:13:45.669] Server  LOG     env file console "https://ishop-backend-2mld.onrender.com/api/"
-[00:13:46.683] Server  LOG     {}
-[00:13:46.743] Server  LOG     {}
-[00:13:52.179] Server  LOG     ✓ Finished filesystem cache database compaction in 19.0s
-[00:14:03.985] Server  LOG     ✓ Compiled in 620ms
-[00:14:04.615] Server  LOG     env file console "https://ishop-backend-2mld.onrender.com/api/"
-[00:14:05.930] Server  LOG     {}
-[00:14:16.793] Server  LOG     env file console "https://ishop-backend-2mld.onrender.com/api/"
-[00:14:18.404] Server  LOG     {}
-[00:14:25.474] Server  LOG     env file console "https://ishop-backend-2mld.onrender.com/api/"
-[00:14:26.729] Server  LOG     env file console "https://ishop-backend-2mld.onrender.com/api/"
-[00:14:26.899] Server  LOG     {}
-[00:14:27.827] Server  LOG     env file console "https://ishop-backend-2mld.onrender.com/api/"
-[00:14:27.909] Server  LOG     {}
-[00:14:28.714] Server  LOG     {}
-[00:14:35.624] Server  LOG     env file console "https://ishop-backend-2mld.onrender.com/api/"
-[00:14:36.911] Server  LOG     {}
-[00:14:37.731] Server  LOG     ✓ Compiled in 342ms
-[00:14:38.083] Server  LOG     env file console "https://ishop-backend-2mld.onrender.com/api/"
-[00:14:38.943] Server  LOG     {}
-[00:14:43.821] Server  LOG     {}
-[00:14:49.256] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/watch.png" "received" null
-[00:14:49.603] Browser WARN    Image with src "/logo/vector1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:14:56.093] Server  LOG     env file console "https://ishop-backend-2mld.onrender.com/api/"
-[00:14:56.633] Browser ERROR   unhandledRejection: Error: No link element found for chunk /_next/static/chunks/%5Broot-of-the-server%5D__1f664da9._.css
-[00:14:57.446] Server  LOG     {}
-[00:14:57.808] Server  LOG     {}
-[00:14:58.564] Server  LOG     env file console "https://ishop-backend-2mld.onrender.com/api/"
-[00:14:59.132] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:14:59.132] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:14:59.132] Browser ERROR   unhandledRejection: Error: No link element found for chunk /_next/static/chunks/%5Broot-of-the-server%5D__1f664da9._.css
-[00:14:59.595] Server  LOG     {}
-[00:14:59.887] Server  LOG     {}
-[00:15:00.976] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:15:00.976] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:15:00.976] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:15:00.976] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:15:00.976] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:15:00.976] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:15:00.976] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:15:00.976] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:15:00.976] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:15:00.976] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:15:00.976] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:15:00.976] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:15:00.976] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:15:00.976] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:15:00.976] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:15:00.976] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:15:00.976] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:15:00.976] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:15:00.976] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:15:00.976] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:15:00.976] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:15:00.976] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:15:00.976] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:15:00.976] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:15:00.976] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:15:00.976] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:15:00.976] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:15:00.976] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:15:00.976] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:15:00.976] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:15:00.976] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:15:00.976] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:15:00.976] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:15:00.976] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:15:00.976] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:15:00.976] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:15:00.976] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:15:00.976] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:15:00.976] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:15:00.976] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:15:00.976] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:15:00.976] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:15:00.977] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:15:00.977] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:15:00.977] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:15:00.977] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:15:00.977] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:15:00.977] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:15:00.977] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:15:00.977] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:15:00.977] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:15:00.977] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:15:00.977] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:15:00.977] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:15:00.977] Browser ERROR   uncaughtError: Error: Maximum update depth exceeded. This can happen when a component repeatedly calls setState inside componentWillUpdate or componentDidUpdate. React limits the number of nested updates to prevent infinite loops.
-[00:15:22.761] Server  LOG     ✓ Finished filesystem cache database compaction in 18.5s
-[00:15:33.116] Server  LOG     ✓ Compiled in 482ms
-[00:15:34.063] Server  LOG     env file console "https://ishop-backend-2mld.onrender.com/api/"
-[00:15:36.151] Server  LOG     ✓ Compiled in 1005ms
-[00:15:36.935] Server  LOG     env file console "https://ishop-backend-2mld.onrender.com/api/"
-[00:15:39.041] Server  ERROR   ⨯ Error: Module [project]/node_modules/next/dist/esm/lib/framework/boundary-components.js [app-ssr] (ecmascript) was instantiated because it was required from module [project]/node_modules/next/dist/esm/build/templates/app-page.js?page=/(user)/page { GLOBAL_ERROR_MODULE => "[project]/node_modules/next/dist/client/components/builtin/global-error.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_0 => "[project]/node_modules/next/dist/client/components/builtin/not-found.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_1 => "[project]/node_modules/next/dist/client/components/builtin/forbidden.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_2 => "[project]/node_modules/next/dist/client/components/builtin/unauthorized.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_3 => "[project]/node_modules/next/dist/client/components/builtin/global-error.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_4 => "[project]/src/app/(user)/layout.jsx [app-rsc] (ecmascript, Next.js Server Component)", MODULE_5 => "[project]/src/app/(user)/not-found.jsx [app-rsc] (ecmascript, Next.js Server Component)", MODULE_6 => "[project]/node_modules/next/dist/client/components/builtin/forbidden.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_7 => "[project]/node_modules/next/dist/client/components/builtin/unauthorized.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_8 => "[project]/src/app/(user)/page.jsx [app-rsc] (ecmascript, Next.js Server Component)" } [app-rsc] (ecmascript) <locals>, but the module factory is not available.
-[00:15:39.137] Server  LOG     {}
-[00:15:39.147] Server  LOG     {}
-[00:15:39.290] Server  LOG     {}
-[00:15:40.125] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:15:44.726] Server  LOG     {}
-[00:15:45.816] Server  LOG     {}
-[00:15:48.726] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:15:49.002] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-1.jpg" "received" null
-[00:15:49.004] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-2.jpg" "received" null
-[00:15:49.066] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-3.jpg" "received" null
-[00:15:49.305] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-4.jpg" "received" null
-[00:15:49.310] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/watch.png" "received" null
-[00:15:49.569] Browser WARN    Image with src "/images/thumb-1.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:15:49.569] Browser WARN    Image with src "/images/thumb-2.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:15:49.569] Browser WARN    Image with src "/images/thumb-3.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:15:49.569] Browser WARN    Image with src "/images/thumb-4.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:15:51.129] Server  LOG     {}
-[00:15:53.390] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/watch.png" "received" null
-[00:15:53.633] Browser WARN    Image with src "/logo/vector1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:16:34.175] Server  LOG     env file console "https://ishop-backend-2mld.onrender.com/api/"
-[00:16:35.769] Server  LOG     {}
-[00:16:35.882] Server  LOG     {}
-[00:16:38.502] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:16:38.502] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:16:38.502] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:16:38.502] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:16:38.502] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:16:38.502] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:16:38.502] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:16:38.502] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:16:38.502] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:16:38.502] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:16:38.502] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:16:38.502] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:16:38.502] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:16:38.502] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:16:38.502] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:16:38.502] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:16:38.502] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:16:38.502] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:16:38.502] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:16:38.502] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:16:38.502] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:16:38.502] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:16:38.502] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:16:38.502] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:16:38.502] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:16:38.502] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:16:38.502] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:16:38.502] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:16:38.502] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:16:38.502] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:16:38.502] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:16:38.502] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:16:38.502] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:16:38.502] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:16:38.502] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:16:38.502] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:16:38.502] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:16:38.502] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:16:38.502] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:16:38.502] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:16:38.502] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:16:38.502] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:16:38.502] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:16:38.502] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:16:38.502] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:16:38.502] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:16:38.502] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:16:38.502] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:16:38.502] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:16:38.502] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:16:38.502] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:16:38.502] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:16:38.502] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:16:38.502] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:16:38.502] Browser ERROR   uncaughtError: Error: Maximum update depth exceeded. This can happen when a component repeatedly calls setState inside componentWillUpdate or componentDidUpdate. React limits the number of nested updates to prevent infinite loops.
-[00:16:38.854] Server  LOG     env file console "https://ishop-backend-2mld.onrender.com/api/"
-[00:16:39.192] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[00:16:39.499] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:16:39.499] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:16:39.499] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:16:39.499] Browser ERROR   unhandledRejection: Error: No link element found for chunk /_next/static/chunks/%5Broot-of-the-server%5D__1f664da9._.css
-[00:16:39.767] Server  LOG     {}
-[00:16:40.365] Server  LOG     {}
-[00:16:43.300] Server  LOG     {}
-[00:16:44.093] Server  LOG     ✓ Compiled in 445ms
-[00:16:45.420] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:16:46.411] Server  LOG     ✓ Compiled in 538ms
-[00:16:46.819] Server  LOG     env file console "https://ishop-backend-2mld.onrender.com/api/"
-[00:16:47.070] Server  LOG     ✓ Compiled in 232ms
-[00:16:47.367] Server  LOG     env file console "https://ishop-backend-2mld.onrender.com/api/"
-[00:16:47.557] Browser ERROR   Can't perform a React state update on a component that hasn't mounted yet. This indicates that you have a side-effect in your render function that asynchronously tries to update the component. Move this work to useEffect instead.
-[00:16:47.980] Server  LOG     {}
-[00:16:49.065] Server  LOG     {}
-[00:16:51.336] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/watch.png" "received" null
-[00:16:51.553] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+[01:42:55.240] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-1.jpg" "received" null
+[01:42:55.246] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-2.jpg" "received" null
+[01:42:55.256] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-3.jpg" "received" null
+[01:42:55.261] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-4.jpg" "received" null
+[01:42:55.273] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/watch.png" "received" null
+[01:42:55.389] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-3.jpg" "received" null
+[01:42:55.585] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-4.jpg" "received" null
+[01:42:55.767] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/watch.png" "received" null
+[01:42:56.017] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-1.jpg" "received" null
+[01:42:56.042] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-2.jpg" "received" null
+[01:42:56.084] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:42:56.927] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-1.jpg" "received" null
+[01:42:57.094] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-2.jpg" "received" null
+[01:42:57.206] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-3.jpg" "received" null
+[01:42:57.333] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-4.jpg" "received" null
+[01:42:57.356] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/watch.png" "received" null
+[01:42:57.792] Browser ERROR   In HTML, %s cannot be a descendant of <%s>.
+This will cause a hydration error.%s <a> a 
+
+  ...
+    <SegmentViewNode type="layout" pagePath="(user)/lay...">
+      <SegmentTrieNode>
+      <link>
+      <script>
+      <script>
+      <script>
+      <script>
+      <script>
+      <script>
+      <script>
+      <script>
+      <RootLayout>
+        <html lang="en" className="poppins_3c...">
+          <body className="geist_fc8c...">
+            <ReduxProvider>
+              <Provider store={{...}}>
+                <Header user={null}>
+                  <header className="w-full sti...">
+                    <div>
+                    <div className="px-4 md:px...">
+                      <div className="flex gap-2...">
+                        <LinkComponent href="/">
+>                         <a
+>                           ref={function}
+>                           onClick={function onClick}
+>                           onMouseEnter={function onMouseEnter}
+>                           onTouchStart={function onTouchStart}
+>                           href="/"
+>                         >
+                            <div className="flex gap-3...">
+                              <div>
+>                             <a className="font-bold text-sm md:text-base" href="/">
+                        ...
+                      ...
+                    ...
+                ...
+
+[01:42:57.792] Browser ERROR   <%s> cannot contain a nested %s.
+See this log for the ancestor stack trace. a <a>
+[01:42:57.792] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
 
 - A server/client branch `if (typeof window !== 'undefined')`.
 - Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
@@ -782,230 +258,112 @@ It can also happen if the client has a browser extension installed which messes 
 https://react.dev/link/hydration-mismatch
 
   ...
-    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
-      <AppDevOverlayErrorBoundary globalError={[...]}>
-        <ReplaySsrOnlyErrors>
-        <DevRootHTTPAccessFallbackBoundary>
-          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
-            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
-              <RedirectBoundary>
-                <RedirectErrorBoundary router={{...}}>
-                  <Head headCacheNode={{rsc:Promise, ...}}>
-                    <__next_viewport_boundary__>
-                    <MetadataWrapper>
-+                     <div hidden={true}>
--                     {"\n        "}
-                  ...
+    <SegmentViewNode type="layout" pagePath="(user)/lay...">
+      <SegmentTrieNode>
+      <link>
+      <script>
+      <script>
+      <script>
+      <script>
+      <script>
+      <script>
+      <script>
+      <script>
+      <RootLayout>
+        <html lang="en" className="poppins_3c...">
+          <body className="geist_fc8c...">
+            <ReduxProvider>
+              <Provider store={{...}}>
+                <Header user={null}>
+                  <header className="w-full sti...">
+                    <div>
+                    <div className="px-4 md:px...">
+                      <div className="flex gap-2...">
+                        <LinkComponent href="/">
+                          <a ref={function} onClick={function onClick} onMouseEnter={function onMouseEnter} ...>
++                           <div className="flex gap-3 items-center">
+                        ...
+                      ...
+                    ...
+                ...
 
-[00:16:52.304] Server  LOG     env file console "https://ishop-backend-2mld.onrender.com/api/"
-[00:16:52.476] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:16:52.476] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:16:53.236] Server  LOG     {}
-[00:16:53.930] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
-[00:16:56.259] Server  LOG     {}
-[00:16:56.923] Server  LOG     {}
-[00:16:58.786] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:16:59.298] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-1.jpg" "received" null
-[00:16:59.315] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-2.jpg" "received" null
-[00:16:59.592] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-3.jpg" "received" null
-[00:16:59.944] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-4.jpg" "received" null
-[00:16:59.986] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/watch.png" "received" null
-[00:17:00.334] Browser WARN    Image with src "/images/thumb-1.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:17:00.334] Browser WARN    Image with src "/images/thumb-2.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:17:00.334] Browser WARN    Image with src "/images/thumb-3.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:17:00.334] Browser WARN    Image with src "/images/thumb-4.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:17:04.305] Server  LOG     ✓ Finished filesystem cache database compaction in 21.8s
-[00:17:04.644] Server  LOG     ✓ Finished writing to filesystem cache in 15.5s
-[00:17:08.568] Server  LOG     {}
-[00:17:15.808] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-1.jpg" "received" null
-[00:17:15.840] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-2.jpg" "received" null
-[00:17:15.914] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-3.jpg" "received" null
-[00:17:16.232] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-4.jpg" "received" null
-[00:17:16.282] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/watch.png" "received" null
-[00:17:16.565] Browser WARN    Image with src "/images/thumb-1.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:17:16.565] Browser WARN    Image with src "/images/thumb-1.jpg" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
-[00:17:16.565] Browser WARN    Image with src "/images/thumb-2.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:17:16.565] Browser WARN    Image with src "/images/thumb-2.jpg" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
-[00:17:16.565] Browser WARN    Image with src "/images/thumb-3.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:17:16.565] Browser WARN    Image with src "/images/thumb-3.jpg" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
-[00:17:16.565] Browser WARN    Image with src "/images/thumb-4.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:17:16.565] Browser WARN    Image with src "/images/thumb-4.jpg" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
-[00:17:16.565] Browser WARN    Image with src "/logo/vector1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:17:20.189] Server  LOG     ✓ Finished filesystem cache database compaction in 15.5s
-[00:17:20.464] Server  LOG     ✓ Finished writing to filesystem cache in 13.8s
-[00:17:39.678] Server  LOG     ✓ Compiled in 1590ms
-[00:17:41.759] Server  LOG     env file console "https://ishop-backend-2mld.onrender.com/api/"
-[00:17:42.758] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:17:42.758] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:17:42.758] Browser ERROR   unhandledRejection: Error: No link element found for chunk /_next/static/chunks/%5Broot-of-the-server%5D__1f664da9._.css
-[00:17:44.208] Server  LOG     env file console "https://ishop-backend-2mld.onrender.com/api/"
-[00:17:44.753] Browser ERROR   unhandledRejection: Error: No link element found for chunk /_next/static/chunks/%5Broot-of-the-server%5D__1f664da9._.css
-[00:17:45.668] Server  LOG     {}
-[00:17:45.998] Server  LOG     {}
-[00:17:46.136] Server  LOG     {}
-[00:17:46.934] Server  LOG     {}
-[00:17:47.880] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:17:47.881] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:17:47.881] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:17:47.881] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:17:47.881] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:17:47.881] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:17:47.881] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:17:47.881] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:17:47.881] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:17:47.881] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:17:47.881] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:17:47.881] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:17:47.881] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:17:47.881] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:17:47.881] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:17:47.881] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:17:47.881] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:17:47.881] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:17:47.881] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:17:47.881] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:17:47.881] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:17:47.881] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:17:47.881] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:17:47.881] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:17:47.883] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:17:47.883] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:17:47.883] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:17:47.883] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:17:47.883] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:17:47.883] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:17:47.883] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:17:47.883] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:17:47.883] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:17:47.883] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:17:47.883] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:17:47.883] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:17:47.883] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:17:47.883] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:17:47.883] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:17:47.883] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:17:47.883] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:17:47.883] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:17:47.884] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:17:47.885] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:17:47.885] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:17:47.885] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:17:47.885] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:17:47.885] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:17:47.885] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:17:47.885] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:17:47.885] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:17:47.885] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:17:47.885] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:17:47.885] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:17:47.885] Browser ERROR   uncaughtError: Error: Maximum update depth exceeded. This can happen when a component repeatedly calls setState inside componentWillUpdate or componentDidUpdate. React limits the number of nested updates to prevent infinite loops.
-[00:17:50.711] Server  LOG     ✓ Compiled in 247ms
-[00:17:53.097] Server  LOG     env file console "https://ishop-backend-2mld.onrender.com/api/"
-[00:17:54.534] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[00:17:54.543] Server  LOG     {}
-[00:17:54.937] Server  LOG     env file console "https://ishop-backend-2mld.onrender.com/api/"
-[00:17:55.121] Browser ERROR   unhandledRejection: Error: No link element found for chunk /_next/static/chunks/%5Broot-of-the-server%5D__1f664da9._.css
-[00:17:55.869] Server  LOG     {}
-[00:17:57.638] Server  ERROR   ⨯ Error: Module [project]/node_modules/next/dist/esm/lib/framework/boundary-components.js [app-ssr] (ecmascript) was instantiated because it was required from module [project]/node_modules/next/dist/esm/build/templates/app-page.js?page=/(user)/page { GLOBAL_ERROR_MODULE => "[project]/node_modules/next/dist/client/components/builtin/global-error.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_0 => "[project]/node_modules/next/dist/client/components/builtin/not-found.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_1 => "[project]/node_modules/next/dist/client/components/builtin/forbidden.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_2 => "[project]/node_modules/next/dist/client/components/builtin/unauthorized.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_3 => "[project]/node_modules/next/dist/client/components/builtin/global-error.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_4 => "[project]/src/app/(user)/layout.jsx [app-rsc] (ecmascript, Next.js Server Component)", MODULE_5 => "[project]/src/app/(user)/not-found.jsx [app-rsc] (ecmascript, Next.js Server Component)", MODULE_6 => "[project]/node_modules/next/dist/client/components/builtin/forbidden.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_7 => "[project]/node_modules/next/dist/client/components/builtin/unauthorized.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_8 => "[project]/src/app/(user)/page.jsx [app-rsc] (ecmascript, Next.js Server Component)" } [app-rsc] (ecmascript) <locals>, but the module factory is not available.
-[00:17:58.025] Server  LOG     {}
-[00:17:59.426] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:18:01.387] Server  LOG     {}
-[00:18:04.298] Server  LOG     {}
-[00:18:04.687] Server  LOG     {}
-[00:18:06.147] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:18:06.390] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-1.jpg" "received" null
-[00:18:06.421] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-2.jpg" "received" null
-[00:18:06.630] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-3.jpg" "received" null
-[00:18:06.786] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-4.jpg" "received" null
-[00:18:06.866] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/watch.png" "received" null
-[00:18:07.108] Browser WARN    Image with src "/images/thumb-1.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:18:07.108] Browser WARN    Image with src "/images/thumb-2.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:18:07.108] Browser WARN    Image with src "/images/thumb-3.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:18:07.108] Browser WARN    Image with src "/images/thumb-4.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:18:08.688] Server  LOG     {}
-[00:18:10.260] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/watch.png" "received" null
-[00:18:10.603] Browser WARN    Image with src "/logo/vector1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:18:30.125] Server  LOG     env file console "https://ishop-backend-2mld.onrender.com/api/"
-[00:18:31.571] Server  LOG     {}
-[00:18:31.731] Server  LOG     {}
-[00:18:31.846] Server  LOG     ✓ Compiled in 245ms
-[00:18:32.408] Server  LOG     env file console "https://ishop-backend-2mld.onrender.com/api/"
-[00:18:33.161] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:18:33.161] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:18:33.700] Server  LOG     {}
-[00:18:33.928] Server  LOG     {}
-[00:18:35.532] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:18:35.532] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:18:35.532] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:18:35.532] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:18:35.532] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:18:35.532] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:18:35.532] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:18:35.532] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:18:35.532] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:18:35.532] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:18:35.532] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:18:35.532] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:18:35.532] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:18:35.532] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:18:35.532] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:18:35.532] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:18:35.532] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:18:35.532] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:18:35.532] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:18:35.532] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:18:35.532] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:18:35.532] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:18:35.532] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:18:35.532] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:18:35.532] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:18:35.532] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:18:35.532] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:18:35.532] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:18:35.532] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:18:35.532] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:18:35.532] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:18:35.532] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:18:35.532] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:18:35.532] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:18:35.532] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:18:35.532] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:18:35.532] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:18:35.532] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:18:35.532] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:18:35.532] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:18:35.532] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:18:35.532] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:18:35.532] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:18:35.532] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:18:35.532] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:18:35.532] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:18:35.532] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:18:35.532] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:18:35.532] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:18:35.532] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:18:35.532] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:18:35.532] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:18:35.532] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:18:35.532] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:18:35.532] Browser ERROR   uncaughtError: Error: Maximum update depth exceeded. This can happen when a component repeatedly calls setState inside componentWillUpdate or componentDidUpdate. React limits the number of nested updates to prevent infinite loops.
-[00:18:41.747] Server  LOG     ✓ Compiled in 142ms
-[00:18:42.103] Server  LOG     env file console "https://ishop-backend-2mld.onrender.com/api/"
-[00:18:44.362] Server  LOG     {}
-[00:18:44.466] Server  LOG     ✓ Compiled in 369ms
-[00:18:44.729] Server  LOG     {}
-[00:18:45.932] Server  LOG     env file console "https://ishop-backend-2mld.onrender.com/api/"
-[00:18:46.858] Server  LOG     {}
-[00:18:51.769] Server  LOG     {}
-[00:18:53.203] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:19:02.435] Server  LOG     ✓ Compiled in 939ms
-[00:19:02.884] Server  LOG     env file console "https://ishop-backend-2mld.onrender.com/api/"
-[00:19:03.287] Browser ERROR   Can't perform a React state update on a component that hasn't mounted yet. This indicates that you have a side-effect in your render function that asynchronously tries to update the component. Move this work to useEffect instead.
-[00:19:04.418] Browser WARN    Image with src "/logo/vector1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:19:04.681] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/watch.png" "received" null
-[00:19:04.727] Server  LOG     {}
-[00:19:04.834] Server  LOG     {}
-[00:19:05.997] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+[01:43:51.298] Server  LOG     ○ Compiling /login ...
+[01:43:52.128] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:44:05.500] Browser LOG     {"code":"ERR_NETWORK","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"https://ishop-backend-2mld.onrender.com/api/","data":"{\"email\":\"sameerjagrawal2@gmail.com\",\"password\":\"123456\"}","env":{},"headers":{"Accept":"application/json, text/plain, */*","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"post","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"legacyInterceptorReqResOrdering":true,"silentJSONParsing":true},"url":"user/login","withCredentials":true,"xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Network Error","name":"AxiosError","stack":"AxiosError: Network Error\n    at XMLHttpRequest.handleError (http://localhost:3000/_next/static/chunks/node_modules_86e77ea7._.js:4347:25)\n    at Axios.request (http://localhost:3000/_next/static/chunks/node_modules_86e77ea7._.js:5107:49)\n    at async submitHandler (http://localhost:3000/_next/static/chunks/src_27fb7307._.js:138:30)"}
+[01:44:56.097] Browser LOG     {"code":"ERR_NETWORK","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"https://ishop-backend-2mld.onrender.com/api/","data":"{\"email\":\"sameerjagrawal2@gmail.com\",\"password\":\"123456\"}","env":{},"headers":{"Accept":"application/json, text/plain, */*","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"post","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"legacyInterceptorReqResOrdering":true,"silentJSONParsing":true},"url":"user/login","withCredentials":true,"xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Network Error","name":"AxiosError","stack":"AxiosError: Network Error\n    at XMLHttpRequest.handleError (http://localhost:3000/_next/static/chunks/node_modules_86e77ea7._.js:4347:25)\n    at Axios.request (http://localhost:3000/_next/static/chunks/node_modules_86e77ea7._.js:5107:49)\n    at async submitHandler (http://localhost:3000/_next/static/chunks/src_27fb7307._.js:138:30)"}
+[01:44:58.513] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:45:00.413] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:45:08.967] Browser LOG     {"code":"ERR_NETWORK","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"https://ishop-backend-2mld.onrender.com/api/","data":"{\"email\":\"ankitsharma437936@gmail.com\",\"password\":\"123456\"}","env":{},"headers":{"Accept":"application/json, text/plain, */*","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"post","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"legacyInterceptorReqResOrdering":true,"silentJSONParsing":true},"url":"user/login","withCredentials":true,"xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Network Error","name":"AxiosError","stack":"AxiosError: Network Error\n    at XMLHttpRequest.handleError (http://localhost:3000/_next/static/chunks/node_modules_86e77ea7._.js:4347:25)\n    at Axios.request (http://localhost:3000/_next/static/chunks/node_modules_86e77ea7._.js:5107:49)\n    at async submitHandler (http://localhost:3000/_next/static/chunks/src_27fb7307._.js:138:30)"}
+[01:45:11.230] Browser LOG     {"code":"ERR_NETWORK","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"https://ishop-backend-2mld.onrender.com/api/","data":"{\"email\":\"ankitsharma437936@gmail.com\",\"password\":\"123456\"}","env":{},"headers":{"Accept":"application/json, text/plain, */*","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"post","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"legacyInterceptorReqResOrdering":true,"silentJSONParsing":true},"url":"user/login","withCredentials":true,"xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Network Error","name":"AxiosError","stack":"AxiosError: Network Error\n    at XMLHttpRequest.handleError (http://localhost:3000/_next/static/chunks/node_modules_86e77ea7._.js:4347:25)\n    at Axios.request (http://localhost:3000/_next/static/chunks/node_modules_86e77ea7._.js:5107:49)\n    at async submitHandler (http://localhost:3000/_next/static/chunks/src_27fb7307._.js:138:30)"}
+[01:45:12.155] Browser LOG     {"code":"ERR_NETWORK","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"https://ishop-backend-2mld.onrender.com/api/","data":"{\"email\":\"ankitsharma437936@gmail.com\",\"password\":\"123456\"}","env":{},"headers":{"Accept":"application/json, text/plain, */*","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"post","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"legacyInterceptorReqResOrdering":true,"silentJSONParsing":true},"url":"user/login","withCredentials":true,"xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Network Error","name":"AxiosError","stack":"AxiosError: Network Error\n    at XMLHttpRequest.handleError (http://localhost:3000/_next/static/chunks/node_modules_86e77ea7._.js:4347:25)\n    at Axios.request (http://localhost:3000/_next/static/chunks/node_modules_86e77ea7._.js:5107:49)\n    at async submitHandler (http://localhost:3000/_next/static/chunks/src_27fb7307._.js:138:30)"}
+[01:45:17.384] Browser LOG     {"code":"ERR_NETWORK","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"https://ishop-backend-2mld.onrender.com/api/","data":"{\"email\":\"ankitsharma437936@gmail.com\",\"password\":\"123456\"}","env":{},"headers":{"Accept":"application/json, text/plain, */*","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"post","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"legacyInterceptorReqResOrdering":true,"silentJSONParsing":true},"url":"user/login","withCredentials":true,"xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Network Error","name":"AxiosError","stack":"AxiosError: Network Error\n    at XMLHttpRequest.handleError (http://localhost:3000/_next/static/chunks/node_modules_86e77ea7._.js:4347:25)\n    at Axios.request (http://localhost:3000/_next/static/chunks/node_modules_86e77ea7._.js:5107:49)\n    at async submitHandler (http://localhost:3000/_next/static/chunks/src_27fb7307._.js:138:30)"}
+[01:47:54.579] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:48:01.318] Browser LOG     {"code":"ERR_NETWORK","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"https://ishop-backend-2mld.onrender.com/api/","data":"{\"email\":\"sameerjagrawal2@gmail.com\",\"password\":\"123456\"}","env":{},"headers":{"Accept":"application/json, text/plain, */*","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"post","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"legacyInterceptorReqResOrdering":true,"silentJSONParsing":true},"url":"user/login","withCredentials":true,"xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Network Error","name":"AxiosError","stack":"AxiosError: Network Error\n    at XMLHttpRequest.handleError (http://localhost:3000/_next/static/chunks/node_modules_86e77ea7._.js:4347:25)\n    at Axios.request (http://localhost:3000/_next/static/chunks/node_modules_86e77ea7._.js:5107:49)\n    at async submitHandler (http://localhost:3000/_next/static/chunks/src_27fb7307._.js:138:30)"}
+[02:05:28.996] Server  LOG     env file console "https://ishop-backend-2mld.onrender.com/api/"
+[02:05:29.945] Server  LOG     ✓ Compiled in 17.6s
+[02:05:30.357] Server  WARN    ⚠ Fast Refresh had to perform a full reload when ./node_modules/next/dist/client/image-component.js changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[02:05:30.704] Server  WARN    ⚠ Fast Refresh had to perform a full reload when ./node_modules/next/dist/client/image-component.js changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[02:05:39.148] Server  LOG     {}
+[02:05:40.197] Server  LOG     {}
+[02:05:42.445] Server  LOG     {}
+[02:05:43.217] Server  LOG     {}
+[02:05:47.658] Server  LOG     {}
+[02:05:47.706] Server  LOG     {}
+[02:05:48.590] Server  LOG     {}
+[02:05:50.512] Browser ERROR   Failed to fetch RSC payload for http://localhost:3000/. Falling back to browser navigation. {}
+[02:05:51.154] Server  LOG     {}
+[02:05:52.360] Server  LOG     {}
+[02:05:53.112] Server  LOG     {}
+[02:05:53.263] Server  LOG     {}
+[02:05:53.740] Server  LOG     {}
+[02:05:55.660] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:05:58.545] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:05:58.829] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-1.jpg" "received" null
+[02:05:58.840] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-2.jpg" "received" null
+[02:05:58.844] Browser ERROR   In HTML, %s cannot be a descendant of <%s>.
+This will cause a hydration error.%s <a> a 
+
+  ...
+    <SegmentViewNode type="layout" pagePath="(user)/lay...">
+      <SegmentTrieNode>
+      <link>
+      <script>
+      <script>
+      <script>
+      <script>
+      <script>
+      <script>
+      <script>
+      <script>
+      <RootLayout>
+        <html lang="en" className="poppins_3c...">
+          <body className="geist_fc8c...">
+            <ReduxProvider>
+              <Provider store={{...}}>
+                <Header user={null}>
+                  <header className="w-full sti...">
+                    <div>
+                    <div className="px-4 md:px...">
+                      <div className="flex gap-2...">
+                        <LinkComponent href="/">
+>                         <a
+>                           ref={function}
+>                           onClick={function onClick}
+>                           onMouseEnter={function onMouseEnter}
+>                           onTouchStart={function onTouchStart}
+>                           href="/"
+>                         >
+                            <div className="flex gap-3...">
+                              <div>
+>                             <a className="font-bold text-sm md:text-base" href="/">
+                        ...
+                      ...
+                    ...
+                ...
+
+[02:05:58.844] Browser ERROR   <%s> cannot contain a nested %s.
+See this log for the ancestor stack trace. a <a>
+[02:05:58.844] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
 
 - A server/client branch `if (typeof window !== 'undefined')`.
 - Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
@@ -1018,307 +376,127 @@ It can also happen if the client has a browser extension installed which messes 
 https://react.dev/link/hydration-mismatch
 
   ...
-    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
-      <AppDevOverlayErrorBoundary globalError={[...]}>
-        <ReplaySsrOnlyErrors>
-        <DevRootHTTPAccessFallbackBoundary>
-          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
-            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
-              <RedirectBoundary>
-                <RedirectErrorBoundary router={{...}}>
-                  <Head headCacheNode={{rsc:Promise, ...}}>
-                    <__next_viewport_boundary__>
-                    <MetadataWrapper>
-+                     <div hidden={true}>
--                     {"\n        "}
-                  ...
+    <SegmentViewNode type="layout" pagePath="(user)/lay...">
+      <SegmentTrieNode>
+      <link>
+      <script>
+      <script>
+      <script>
+      <script>
+      <script>
+      <script>
+      <script>
+      <script>
+      <RootLayout>
+        <html lang="en" className="poppins_3c...">
+          <body className="geist_fc8c...">
+            <ReduxProvider>
+              <Provider store={{...}}>
+                <Header user={null}>
+                  <header className="w-full sti...">
+                    <div>
+                    <div className="px-4 md:px...">
+                      <div className="flex gap-2...">
+                        <LinkComponent href="/">
+                          <a ref={function} onClick={function onClick} onMouseEnter={function onMouseEnter} ...>
++                           <div className="flex gap-3 items-center">
+                        ...
+                      ...
+                    ...
+                ...
 
-[00:19:07.361] Server  LOG     ✓ Finished filesystem cache database compaction in 19.4s
-[00:19:09.350] Server  LOG     {}
-[00:19:10.594] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:19:10.887] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-1.jpg" "received" null
-[00:19:10.981] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-2.jpg" "received" null
-[00:19:11.020] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-3.jpg" "received" null
-[00:19:11.303] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-4.jpg" "received" null
-[00:19:11.392] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/watch.png" "received" null
-[00:19:11.844] Browser WARN    Image with src "/images/thumb-1.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:19:11.844] Browser WARN    Image with src "/images/thumb-2.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:19:11.844] Browser WARN    Image with src "/images/thumb-3.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:19:11.844] Browser WARN    Image with src "/images/thumb-4.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:19:15.413] Server  LOG     {}
-[00:19:31.859] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/watch.png" "received" null
-[00:19:32.187] Browser WARN    Image with src "/logo/vector1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:20:01.330] Server  LOG     env file console "https://ishop-backend-2mld.onrender.com/api/"
-[00:20:01.941] Server  LOG     env file console "https://ishop-backend-2mld.onrender.com/api/"
-[00:20:02.064] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:20:02.064] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:20:03.430] Server  LOG     {}
-[00:20:03.664] Server  LOG     {}
-[00:20:03.842] Server  LOG     {}
-[00:20:03.890] Server  LOG     {}
-[00:20:04.876] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:20:04.876] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:20:04.876] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:20:04.876] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:20:04.876] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:20:04.876] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:20:04.876] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:20:04.876] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:20:04.876] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:20:04.876] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:20:04.876] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:20:04.876] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:20:04.876] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:20:04.876] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:20:04.876] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:20:04.876] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:20:04.876] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:20:04.876] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:20:04.876] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:20:04.876] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:20:04.876] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:20:04.876] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:20:04.876] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:20:04.876] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:20:04.876] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:20:04.876] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:20:04.876] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:20:04.876] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:20:04.876] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:20:04.876] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:20:04.876] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:20:04.876] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:20:04.876] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:20:04.876] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:20:04.876] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:20:04.876] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:20:04.876] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:20:04.876] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:20:04.876] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:20:04.876] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:20:04.876] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:20:04.876] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:20:04.876] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:20:04.876] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:20:04.876] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:20:04.876] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:20:04.876] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:20:04.876] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:20:04.876] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:20:04.876] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:20:04.876] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:20:04.876] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:20:04.876] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:20:04.876] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:20:04.876] Browser ERROR   uncaughtError: Error: Maximum update depth exceeded. This can happen when a component repeatedly calls setState inside componentWillUpdate or componentDidUpdate. React limits the number of nested updates to prevent infinite loops.
-[00:20:15.540] Server  LOG     ✓ Compiled in 388ms
-[00:20:16.454] Server  LOG     env file console "https://ishop-backend-2mld.onrender.com/api/"
-[00:20:18.359] Server  LOG     ✓ Compiled in 220ms
-[00:20:18.704] Server  LOG     env file console "https://ishop-backend-2mld.onrender.com/api/"
-[00:20:19.680] Server  LOG     {}
-[00:20:19.970] Server  LOG     {}
-[00:20:20.057] Server  LOG     {}
-[00:20:24.288] Server  ERROR   ⨯ Error: Module [project]/node_modules/next/dist/esm/lib/framework/boundary-components.js [app-ssr] (ecmascript) was instantiated because it was required from module [project]/node_modules/next/dist/esm/build/templates/app-page.js?page=/(user)/page { GLOBAL_ERROR_MODULE => "[project]/node_modules/next/dist/client/components/builtin/global-error.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_0 => "[project]/node_modules/next/dist/client/components/builtin/not-found.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_1 => "[project]/node_modules/next/dist/client/components/builtin/forbidden.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_2 => "[project]/node_modules/next/dist/client/components/builtin/unauthorized.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_3 => "[project]/node_modules/next/dist/client/components/builtin/global-error.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_4 => "[project]/src/app/(user)/layout.jsx [app-rsc] (ecmascript, Next.js Server Component)", MODULE_5 => "[project]/src/app/(user)/not-found.jsx [app-rsc] (ecmascript, Next.js Server Component)", MODULE_6 => "[project]/node_modules/next/dist/client/components/builtin/forbidden.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_7 => "[project]/node_modules/next/dist/client/components/builtin/unauthorized.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_8 => "[project]/src/app/(user)/page.jsx [app-rsc] (ecmascript, Next.js Server Component)" } [app-rsc] (ecmascript) <locals>, but the module factory is not available.
-[00:20:24.443] Server  LOG     ✓ Compiled in 379ms
-[00:20:28.403] Server  LOG     env file console "https://ishop-backend-2mld.onrender.com/api/"
-[00:20:31.066] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:20:31.278] Server  LOG     ✓ Compiled in 68ms
-[00:20:33.845] Server  LOG     env file console "https://ishop-backend-2mld.onrender.com/api/"
-[00:20:35.044] Server  LOG     {}
-[00:20:36.235] Server  LOG     {}
-[00:20:37.551] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:20:38.562] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-2.jpg" "received" null
-[00:20:38.575] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-1.jpg" "received" null
-[00:20:38.655] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-3.jpg" "received" null
-[00:20:41.521] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-4.jpg" "received" null
-[00:20:41.674] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/watch.png" "received" null
-[00:20:42.008] Browser WARN    Image with src "/images/thumb-1.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:20:42.008] Browser WARN    Image with src "/images/thumb-2.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:20:42.008] Browser WARN    Image with src "/images/thumb-3.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:20:42.008] Browser WARN    Image with src "/images/thumb-4.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:21:03.340] Server  LOG     {}
-[00:21:04.586] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/watch.png" "received" null
-[00:21:04.856] Browser WARN    Image with src "/logo/vector1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:21:49.979] Server  LOG     ✓ Compiled in 1127ms
-[00:21:50.463] Server  LOG     env file console "https://ishop-backend-2mld.onrender.com/api/"
-[00:21:50.948] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:21:50.949] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:21:51.922] Server  LOG     {}
-[00:21:52.066] Server  LOG     {}
-[00:21:52.714] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:21:52.714] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:21:52.714] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:21:52.714] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:21:52.714] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:21:52.714] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:21:52.714] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:21:52.714] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:21:52.714] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:21:52.714] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:21:52.714] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:21:52.714] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:21:52.714] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:21:52.714] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:21:52.714] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:21:52.714] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:21:52.714] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:21:52.714] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:21:52.714] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:21:52.714] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:21:52.714] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:21:52.714] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:21:52.714] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:21:52.714] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:21:52.714] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:21:52.714] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:21:52.714] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:21:52.714] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:21:52.714] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:21:52.714] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:21:52.714] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:21:52.714] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:21:52.714] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:21:52.714] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:21:52.714] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:21:52.714] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:21:52.714] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:21:52.714] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:21:52.714] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:21:52.714] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:21:52.714] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:21:52.714] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:21:52.714] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:21:52.714] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:21:52.714] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:21:52.714] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:21:52.714] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:21:52.714] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:21:52.714] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:21:52.714] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:21:52.714] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:21:52.714] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:21:52.714] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:21:52.714] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:21:52.714] Browser ERROR   uncaughtError: Error: Maximum update depth exceeded. This can happen when a component repeatedly calls setState inside componentWillUpdate or componentDidUpdate. React limits the number of nested updates to prevent infinite loops.
-[00:23:21.777] Server  LOG     {}
-[00:23:25.874] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:23:26.030] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-2.jpg" "received" null
-[00:23:26.034] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-1.jpg" "received" null
-[00:23:26.038] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-3.jpg" "received" null
-[00:23:26.339] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-4.jpg" "received" null
-[00:23:26.355] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/watch.png" "received" null
-[00:23:26.663] Browser WARN    Image with src "/images/thumb-1.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:23:26.663] Browser WARN    Image with src "/images/thumb-2.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:23:26.663] Browser WARN    Image with src "/images/thumb-3.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:23:26.663] Browser WARN    Image with src "/images/thumb-4.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:28:18.293] Server  LOG     ✓ Compiled in 4.6s
-[00:28:19.322] Server  LOG     env file console "https://ishop-backend-2mld.onrender.com/api/"
-[00:28:20.561] Server  LOG     ✓ Compiled in 644ms
-[00:28:20.965] Server  LOG     env file console "https://ishop-backend-2mld.onrender.com/api/"
-[00:28:22.190] Server  LOG     {}
-[00:28:22.499] Server  LOG     {}
-[00:29:03.883] Server  LOG     {}
-[00:29:16.286] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-1.jpg" "received" null
-[00:29:16.388] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-2.jpg" "received" null
-[00:29:16.853] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-3.jpg" "received" null
-[00:29:16.893] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-4.jpg" "received" null
-[00:29:17.012] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/watch.png" "received" null
-[00:29:17.304] Browser WARN    Image with src "/images/thumb-1.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:29:17.304] Browser WARN    Image with src "/images/thumb-1.jpg" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
-[00:29:17.304] Browser WARN    Image with src "/images/thumb-2.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:29:17.304] Browser WARN    Image with src "/images/thumb-2.jpg" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
-[00:29:17.304] Browser WARN    Image with src "/images/thumb-3.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:29:17.304] Browser WARN    Image with src "/images/thumb-3.jpg" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
-[00:29:17.304] Browser WARN    Image with src "/images/thumb-4.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:29:17.304] Browser WARN    Image with src "/images/thumb-4.jpg" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
-[00:29:17.304] Browser WARN    Image with src "/logo/vector1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:30:55.875] Server  LOG     env file console "https://ishop-backend-2mld.onrender.com/api/"
-[00:30:56.232] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:30:56.232] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:30:57.199] Server  LOG     {}
-[00:30:58.096] Server  LOG     {}
-[00:30:58.379] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:30:58.379] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:30:58.379] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:30:58.379] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:30:58.379] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:30:58.379] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:30:58.379] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:30:58.379] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:30:58.379] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:30:58.379] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:30:58.379] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:30:58.379] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:30:58.379] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:30:58.379] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:30:58.379] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:30:58.379] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:30:58.380] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:30:58.380] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:30:58.380] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:30:58.380] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:30:58.380] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:30:58.380] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:30:58.380] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:30:58.380] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:30:58.380] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:30:58.380] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:30:58.380] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:30:58.380] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:30:58.380] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:30:58.380] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:30:58.380] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:30:58.380] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:30:58.380] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:30:58.380] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:30:58.380] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:30:58.380] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:30:58.380] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:30:58.380] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:30:58.380] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:30:58.380] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:30:58.380] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:30:58.380] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:30:58.380] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:30:58.380] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:30:58.380] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:30:58.380] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:30:58.380] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:30:58.380] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:30:58.380] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:30:58.380] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:30:58.380] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:30:58.380] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:30:58.380] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:30:58.380] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:30:58.380] Browser ERROR   uncaughtError: Error: Maximum update depth exceeded. This can happen when a component repeatedly calls setState inside componentWillUpdate or componentDidUpdate. React limits the number of nested updates to prevent infinite loops.
-[00:31:32.646] Server  LOG     {}
-[00:31:40.532] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:31:41.265] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-1.jpg" "received" null
-[00:31:41.363] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-2.jpg" "received" null
-[00:31:41.403] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-3.jpg" "received" null
-[00:31:41.602] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-4.jpg" "received" null
-[00:31:41.632] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/watch.png" "received" null
-[00:31:41.921] Browser WARN    Image with src "/images/thumb-1.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:31:41.921] Browser WARN    Image with src "/images/thumb-2.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:31:41.921] Browser WARN    Image with src "/images/thumb-3.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:31:41.921] Browser WARN    Image with src "/images/thumb-4.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:32:28.325] Server  LOG     env file console "https://ishop-backend-2mld.onrender.com/api/"
-[00:32:29.980] Server  LOG     {}
-[00:32:32.484] Server  LOG     env file console "https://ishop-backend-2mld.onrender.com/api/"
-[00:32:33.830] Server  LOG     {}
-[00:32:35.944] Server  LOG     env file console "https://ishop-backend-2mld.onrender.com/api/"
-[00:32:37.556] Server  LOG     {}
-[00:32:38.008] Server  LOG     ✓ Compiled in 379ms
-[00:32:38.647] Server  LOG     env file console "https://ishop-backend-2mld.onrender.com/api/"
-[00:32:39.947] Server  LOG     {}
-[00:32:41.620] Server  LOG     env file console "https://ishop-backend-2mld.onrender.com/api/"
-[00:32:42.957] Server  LOG     {}
-[00:32:47.976] Server  LOG     ✓ Finished writing to filesystem cache in 13.8s
-[00:32:51.507] Server  LOG     ✓ Compiled in 2.4s
-[00:32:52.167] Server  LOG     env file console "https://ishop-backend-2mld.onrender.com/api/"
-[00:32:53.600] Server  LOG     {}
-[00:33:12.325] Server  LOG     ✓ Finished filesystem cache database compaction in 15.4s
-[00:33:14.167] Server  LOG     ✓ Compiled in 1158ms
-[00:33:17.320] Server  LOG     env file console "https://ishop-backend-2mld.onrender.com/api/"
-[00:33:19.072] Server  LOG     {}
+[02:05:58.963] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-3.jpg" "received" null
+[02:05:59.623] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-4.jpg" "received" null
+[02:05:59.679] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/watch.png" "received" null
+[02:06:00.852] Browser ERROR   In HTML, %s cannot be a descendant of <%s>.
+This will cause a hydration error.%s <a> a 
+
+  ...
+    <SegmentViewNode type="layout" pagePath="(user)/lay...">
+      <SegmentTrieNode>
+      <link>
+      <script>
+      <script>
+      <script>
+      <script>
+      <script>
+      <script>
+      <script>
+      <script>
+      <RootLayout>
+        <html lang="en" className="poppins_3c...">
+          <body className="geist_fc8c...">
+            <ReduxProvider>
+              <Provider store={{...}}>
+                <Header user={null}>
+                  <header className="w-full sti...">
+                    <div>
+                    <div className="px-4 md:px...">
+                      <div className="flex gap-2...">
+                        <LinkComponent href="/">
+>                         <a
+>                           ref={function}
+>                           onClick={function onClick}
+>                           onMouseEnter={function onMouseEnter}
+>                           onTouchStart={function onTouchStart}
+>                           href="/"
+>                         >
+                            <div className="flex gap-3...">
+                              <div>
+>                             <a className="font-bold text-sm md:text-base" href="/">
+                        ...
+                      ...
+                    ...
+                ...
+
+[02:06:00.852] Browser ERROR   <%s> cannot contain a nested %s.
+See this log for the ancestor stack trace. a <a>
+[02:06:00.852] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <SegmentViewNode type="layout" pagePath="(user)/lay...">
+      <SegmentTrieNode>
+      <link>
+      <script>
+      <script>
+      <script>
+      <script>
+      <script>
+      <script>
+      <script>
+      <script>
+      <RootLayout>
+        <html lang="en" className="poppins_3c...">
+          <body className="geist_fc8c...">
+            <ReduxProvider>
+              <Provider store={{...}}>
+                <Header user={null}>
+                  <header className="w-full sti...">
+                    <div>
+                    <div className="px-4 md:px...">
+                      <div className="flex gap-2...">
+                        <LinkComponent href="/">
+                          <a ref={function} onClick={function onClick} onMouseEnter={function onMouseEnter} ...>
++                           <div className="flex gap-3 items-center">
+                        ...
+                      ...
+                    ...
+                ...
+
+[02:06:00.867] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-1.jpg" "received" null
+[02:06:01.031] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-2.jpg" "received" null
+[02:06:01.034] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-3.jpg" "received" null
+[02:06:01.133] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-4.jpg" "received" null
+[02:06:01.205] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/watch.png" "received" null
+[02:06:12.838] Server  LOG     ✓ Finished filesystem cache database compaction in 38.4s
+[02:06:12.919] Server  LOG     ✓ Finished writing to filesystem cache in 27.3s

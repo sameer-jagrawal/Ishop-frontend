@@ -1,5 +1,6 @@
 "use client";
 import { client, notify } from "@/utils/helper";
+import { setAuthSession } from "@/lib/auth";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 import ButtonLoader from "@/app/components/user components/ButtonLoader";
@@ -36,6 +37,11 @@ export default function LoginPage() {
         setLoader(false)
         return
      }
+
+      const token = response.data?.data?.token;
+      if (token) {
+        await setAuthSession(token);
+      }
 
       // GET LATEST LOCAL CART DIRECTLY
       const localCartData = JSON.parse(localStorage.getItem("cart"));
@@ -104,7 +110,7 @@ export default function LoginPage() {
         password: "",
       });
 
-      // REDIRECT
+      router.refresh();
       router.push("/");
     } catch (error) {
       console.log(error);
