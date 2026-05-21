@@ -116,11 +116,11 @@ var _s = __turbopack_context__.k.signature();
 function AddAddressPage() {
     _s();
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(12);
-    if ($[0] !== "408560cb87fb11b2bb1136a2b1f7edb3cb7c59b69e807afe8e20ae3222ad03af") {
+    if ($[0] !== "557c2f08835820670db08bc8b788634cf446cc52f2d9de7794a6066a96e0c23f") {
         for(let $i = 0; $i < 12; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "408560cb87fb11b2bb1136a2b1f7edb3cb7c59b69e807afe8e20ae3222ad03af";
+        $[0] = "557c2f08835820670db08bc8b788634cf446cc52f2d9de7794a6066a96e0c23f";
     }
     const router = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRouter"])();
     let t0;
@@ -165,11 +165,21 @@ function AddAddressPage() {
                 setLoader(true);
                 ;
                 try {
-                    await __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$utils$2f$helper$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["client"].post("user/address", form).then({
-                        "AddAddressPage[handleSubmit > (anonymous)()]": (response)=>{
-                            console.log(response, "address response");
-                            if (response.data.success) {
+                    await fetch("/api/user/address", {
+                        method: "POST",
+                        headers: {
+                            "Content-Type": "application/json"
+                        },
+                        body: JSON.stringify(form)
+                    }).then({
+                        "AddAddressPage[handleSubmit > (anonymous)()]": async (response)=>{
+                            const data = await response.json();
+                            if (data.success) {
+                                (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$utils$2f$helper$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["notify"])(data.masg, true);
+                                router.refresh();
                                 router.push("/profile/address");
+                            } else {
+                                (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$utils$2f$helper$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["notify"])(data.masg || "Address not saved", false);
                             }
                         }
                     }["AddAddressPage[handleSubmit > (anonymous)()]"]).catch(_AddAddressPageHandleSubmitAnonymous).finally({
@@ -194,7 +204,7 @@ function AddAddressPage() {
         t3 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
             children: loader ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$user__components$2f$GlobalLoader$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "[project]/src/app/(user)/profile/address/add/page.jsx",
-                lineNumber: 87,
+                lineNumber: 97,
                 columnNumber: 25
             }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "min-h-screen bg-gray-50 flex items-center justify-center px-4 py-10",
@@ -209,7 +219,7 @@ function AddAddressPage() {
                                     children: "Add New Address"
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/(user)/profile/address/add/page.jsx",
-                                    lineNumber: 87,
+                                    lineNumber: 97,
                                     columnNumber: 250
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -217,13 +227,13 @@ function AddAddressPage() {
                                     children: "Fill in your delivery details"
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/(user)/profile/address/add/page.jsx",
-                                    lineNumber: 87,
+                                    lineNumber: 97,
                                     columnNumber: 319
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/app/(user)/profile/address/add/page.jsx",
-                            lineNumber: 87,
+                            lineNumber: 97,
                             columnNumber: 228
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("form", {
@@ -240,7 +250,7 @@ function AddAddressPage() {
                                                     children: "Full Name"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/(user)/profile/address/add/page.jsx",
-                                                    lineNumber: 87,
+                                                    lineNumber: 97,
                                                     columnNumber: 492
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -251,7 +261,7 @@ function AddAddressPage() {
                                                             size: 18
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/(user)/profile/address/add/page.jsx",
-                                                            lineNumber: 87,
+                                                            lineNumber: 97,
                                                             columnNumber: 581
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -263,19 +273,19 @@ function AddAddressPage() {
                                                             required: true
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/(user)/profile/address/add/page.jsx",
-                                                            lineNumber: 87,
+                                                            lineNumber: 97,
                                                             columnNumber: 647
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/app/(user)/profile/address/add/page.jsx",
-                                                    lineNumber: 87,
+                                                    lineNumber: 97,
                                                     columnNumber: 550
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/app/(user)/profile/address/add/page.jsx",
-                                            lineNumber: 87,
+                                            lineNumber: 97,
                                             columnNumber: 487
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -285,7 +295,7 @@ function AddAddressPage() {
                                                     children: "Phone"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/(user)/profile/address/add/page.jsx",
-                                                    lineNumber: 87,
+                                                    lineNumber: 97,
                                                     columnNumber: 880
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -296,7 +306,7 @@ function AddAddressPage() {
                                                             size: 18
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/(user)/profile/address/add/page.jsx",
-                                                            lineNumber: 87,
+                                                            lineNumber: 97,
                                                             columnNumber: 965
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -308,25 +318,25 @@ function AddAddressPage() {
                                                             required: true
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/(user)/profile/address/add/page.jsx",
-                                                            lineNumber: 87,
+                                                            lineNumber: 97,
                                                             columnNumber: 1032
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/app/(user)/profile/address/add/page.jsx",
-                                                    lineNumber: 87,
+                                                    lineNumber: 97,
                                                     columnNumber: 934
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/app/(user)/profile/address/add/page.jsx",
-                                            lineNumber: 87,
+                                            lineNumber: 97,
                                             columnNumber: 875
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/app/(user)/profile/address/add/page.jsx",
-                                    lineNumber: 87,
+                                    lineNumber: 97,
                                     columnNumber: 444
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -336,7 +346,7 @@ function AddAddressPage() {
                                             children: "Address Line 1"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/(user)/profile/address/add/page.jsx",
-                                            lineNumber: 87,
+                                            lineNumber: 97,
                                             columnNumber: 1271
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -347,7 +357,7 @@ function AddAddressPage() {
                                                     size: 18
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/(user)/profile/address/add/page.jsx",
-                                                    lineNumber: 87,
+                                                    lineNumber: 97,
                                                     columnNumber: 1365
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -359,19 +369,19 @@ function AddAddressPage() {
                                                     required: true
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/(user)/profile/address/add/page.jsx",
-                                                    lineNumber: 87,
+                                                    lineNumber: 97,
                                                     columnNumber: 1431
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/app/(user)/profile/address/add/page.jsx",
-                                            lineNumber: 87,
+                                            lineNumber: 97,
                                             columnNumber: 1334
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/app/(user)/profile/address/add/page.jsx",
-                                    lineNumber: 87,
+                                    lineNumber: 97,
                                     columnNumber: 1266
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -381,7 +391,7 @@ function AddAddressPage() {
                                             children: "Address Line 2 (Optional)"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/(user)/profile/address/add/page.jsx",
-                                            lineNumber: 87,
+                                            lineNumber: 97,
                                             columnNumber: 1686
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -392,13 +402,13 @@ function AddAddressPage() {
                                             className: "w-full px-4 py-3 border rounded-xl focus:outline-none focus:ring-2 focus:ring-[#01A49E]"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/(user)/profile/address/add/page.jsx",
-                                            lineNumber: 87,
+                                            lineNumber: 97,
                                             columnNumber: 1760
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/app/(user)/profile/address/add/page.jsx",
-                                    lineNumber: 87,
+                                    lineNumber: 97,
                                     columnNumber: 1681
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -411,7 +421,7 @@ function AddAddressPage() {
                                                     children: "Type"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/(user)/profile/address/add/page.jsx",
-                                                    lineNumber: 87,
+                                                    lineNumber: 97,
                                                     columnNumber: 2027
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -423,13 +433,13 @@ function AddAddressPage() {
                                                     required: true
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/(user)/profile/address/add/page.jsx",
-                                                    lineNumber: 87,
+                                                    lineNumber: 97,
                                                     columnNumber: 2080
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/app/(user)/profile/address/add/page.jsx",
-                                            lineNumber: 87,
+                                            lineNumber: 97,
                                             columnNumber: 2022
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -439,7 +449,7 @@ function AddAddressPage() {
                                                     children: "Postal Code"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/(user)/profile/address/add/page.jsx",
-                                                    lineNumber: 87,
+                                                    lineNumber: 97,
                                                     columnNumber: 2300
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -450,19 +460,19 @@ function AddAddressPage() {
                                                     required: true
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/(user)/profile/address/add/page.jsx",
-                                                    lineNumber: 87,
+                                                    lineNumber: 97,
                                                     columnNumber: 2360
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/app/(user)/profile/address/add/page.jsx",
-                                            lineNumber: 87,
+                                            lineNumber: 97,
                                             columnNumber: 2295
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/app/(user)/profile/address/add/page.jsx",
-                                    lineNumber: 87,
+                                    lineNumber: 97,
                                     columnNumber: 1979
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -472,7 +482,7 @@ function AddAddressPage() {
                                             children: "City"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/(user)/profile/address/add/page.jsx",
-                                            lineNumber: 87,
+                                            lineNumber: 97,
                                             columnNumber: 2568
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -483,13 +493,13 @@ function AddAddressPage() {
                                             required: true
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/(user)/profile/address/add/page.jsx",
-                                            lineNumber: 87,
+                                            lineNumber: 97,
                                             columnNumber: 2621
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/app/(user)/profile/address/add/page.jsx",
-                                    lineNumber: 87,
+                                    lineNumber: 97,
                                     columnNumber: 2563
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -499,7 +509,7 @@ function AddAddressPage() {
                                             children: "State"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/(user)/profile/address/add/page.jsx",
-                                            lineNumber: 87,
+                                            lineNumber: 97,
                                             columnNumber: 2811
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -510,13 +520,13 @@ function AddAddressPage() {
                                             required: true
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/(user)/profile/address/add/page.jsx",
-                                            lineNumber: 87,
+                                            lineNumber: 97,
                                             columnNumber: 2865
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/app/(user)/profile/address/add/page.jsx",
-                                    lineNumber: 87,
+                                    lineNumber: 97,
                                     columnNumber: 2806
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -526,7 +536,7 @@ function AddAddressPage() {
                                             children: "Country"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/(user)/profile/address/add/page.jsx",
-                                            lineNumber: 87,
+                                            lineNumber: 97,
                                             columnNumber: 3057
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -537,13 +547,13 @@ function AddAddressPage() {
                                             disabled: true
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/(user)/profile/address/add/page.jsx",
-                                            lineNumber: 87,
+                                            lineNumber: 97,
                                             columnNumber: 3113
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/app/(user)/profile/address/add/page.jsx",
-                                    lineNumber: 87,
+                                    lineNumber: 97,
                                     columnNumber: 3052
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -555,7 +565,7 @@ function AddAddressPage() {
                                             children: "Cancel"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/(user)/profile/address/add/page.jsx",
-                                            lineNumber: 87,
+                                            lineNumber: 97,
                                             columnNumber: 3322
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -564,35 +574,35 @@ function AddAddressPage() {
                                             children: "Save Address"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/(user)/profile/address/add/page.jsx",
-                                            lineNumber: 87,
+                                            lineNumber: 97,
                                             columnNumber: 3448
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/app/(user)/profile/address/add/page.jsx",
-                                    lineNumber: 87,
+                                    lineNumber: 97,
                                     columnNumber: 3277
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/app/(user)/profile/address/add/page.jsx",
-                            lineNumber: 87,
+                            lineNumber: 97,
                             columnNumber: 392
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/app/(user)/profile/address/add/page.jsx",
-                    lineNumber: 87,
+                    lineNumber: 97,
                     columnNumber: 129
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/app/(user)/profile/address/add/page.jsx",
-                lineNumber: 87,
+                lineNumber: 97,
                 columnNumber: 44
             }, this)
         }, void 0, false, {
             fileName: "[project]/src/app/(user)/profile/address/add/page.jsx",
-            lineNumber: 87,
+            lineNumber: 97,
             columnNumber: 10
         }, this);
         $[7] = form;
@@ -613,6 +623,7 @@ _s(AddAddressPage, "SmNadj485o20mSXX6LUFIfPlnRY=", false, function() {
 _c = AddAddressPage;
 function _AddAddressPageHandleSubmitAnonymous(error_0) {
     console.log(error_0);
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$utils$2f$helper$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["notify"])("Address not saved", false);
 }
 var _c;
 __turbopack_context__.k.register(_c, "AddAddressPage");

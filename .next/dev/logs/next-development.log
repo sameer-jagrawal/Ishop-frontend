@@ -504,3 +504,486 @@ https://react.dev/link/hydration-mismatch
 [02:32:37.860] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
 [09:32:22.044] Server  LOG     ✓ Compiled in 6.3s
 [09:32:57.271] Server  LOG     ✓ Finished filesystem cache database compaction in 29.3s
+[09:38:15.873] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[09:38:21.209] Server  LOG     {}
+[09:38:26.692] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[09:38:29.792] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-2.jpg" "received" null
+[09:38:29.803] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-1.jpg" "received" null
+[09:38:29.941] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-3.jpg" "received" null
+[09:38:30.378] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-4.jpg" "received" null
+[09:38:30.386] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/watch.png" "received" null
+[09:38:31.801] Browser ERROR   In HTML, %s cannot be a descendant of <%s>.
+This will cause a hydration error.%s <a> a 
+
+  ...
+    <SegmentViewNode type="layout" pagePath="(user)/lay...">
+      <SegmentTrieNode>
+      <link>
+      <script>
+      <script>
+      <script>
+      <script>
+      <script>
+      <script>
+      <script>
+      <script>
+      <RootLayout>
+        <html lang="en" className="poppins_3c...">
+          <body className="geist_fc8c...">
+            <ReduxProvider>
+              <Provider store={{...}}>
+                <Header user={null}>
+                  <header className="w-full sti...">
+                    <div>
+                    <div className="px-4 md:px...">
+                      <div className="flex gap-2...">
+                        <LinkComponent href="/">
+>                         <a
+>                           ref={function}
+>                           onClick={function onClick}
+>                           onMouseEnter={function onMouseEnter}
+>                           onTouchStart={function onTouchStart}
+>                           href="/"
+>                         >
+                            <div className="flex gap-3...">
+                              <div>
+>                             <a className="font-bold text-sm md:text-base" href="/">
+                        ...
+                      ...
+                    ...
+                ...
+
+[09:38:31.801] Browser ERROR   <%s> cannot contain a nested %s.
+See this log for the ancestor stack trace. a <a>
+[09:38:31.801] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <SegmentViewNode type="layout" pagePath="(user)/lay...">
+      <SegmentTrieNode>
+      <link>
+      <script>
+      <script>
+      <script>
+      <script>
+      <script>
+      <script>
+      <script>
+      <script>
+      <RootLayout>
+        <html lang="en" className="poppins_3c...">
+          <body className="geist_fc8c...">
+            <ReduxProvider>
+              <Provider store={{...}}>
+                <Header user={null}>
+                  <header className="w-full sti...">
+                    <div>
+                    <div className="px-4 md:px...">
+                      <div className="flex gap-2...">
+                        <LinkComponent href="/">
+                          <a ref={function} onClick={function onClick} onMouseEnter={function onMouseEnter} ...>
++                           <div className="flex gap-3 items-center">
+                        ...
+                      ...
+                    ...
+                ...
+
+[09:40:32.544] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-1.jpg" "received" null
+[09:40:32.546] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-2.jpg" "received" null
+[09:40:32.550] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-3.jpg" "received" null
+[09:40:32.572] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/watch.png" "received" null
+[09:40:32.575] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-4.jpg" "received" null
+[09:40:34.920] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[09:40:41.520] Server  LOG     ○ Compiling /api/auth/session ...
+[09:40:52.090] Browser LOG     {"finalTotal":172800,"items":[{"_id":"6a0d730c27925348208e5631","brand":"Apple","discount":4,"final_price":172800,"name":"I phone 18, 512gb storage","original_price":180000,"qty":1,"stock":true,"thumbnail":"https://ishop-backend-2mld.onrender.com/product/1779266316466i phone 2.webp"}],"originalTotal":180000} sameer frontend
+[09:40:52.090] Browser LOG     [{"_id":"6a0d730c27925348208e5631","brand":"Apple","discount":4,"final_price":172800,"name":"I phone 18, 512gb storage","original_price":180000,"qty":1,"stock":true,"thumbnail":"https://ishop-backend-2mld.onrender.com/product/1779266316466i phone 2.webp"}] frontend local cart
+[09:40:54.699] Browser LOG     [{"_id":"6a0d730c27925348208e5631","discount_percentage":4,"final_price":172800,"name":"I phone 18, 512gb storage","original_price":180000,"qty":35,"stock":true,"thumbnail":"https://ishop-backend-2mld.onrender.com/product1779266316466i phone 2.webp"}] sameer
+[09:40:55.994] Server  LOG     {}
+[09:40:56.040] Server  LOG     {}
+[09:40:57.882] Server  LOG     {}
+[09:40:58.182] Server  LOG     {}
+[09:40:58.271] Server  LOG     {}
+[09:40:59.311] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[09:40:59.652] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-1.jpg" "received" null
+[09:40:59.707] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-2.jpg" "received" null
+[09:40:59.918] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-3.jpg" "received" null
+[09:41:00.124] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-4.jpg" "received" null
+[09:41:00.151] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/watch.png" "received" null
+[09:41:00.573] Browser ERROR   In HTML, %s cannot be a descendant of <%s>.
+This will cause a hydration error.%s <a> a 
+
+  ...
+    <SegmentViewNode type="layout" pagePath="(user)/lay...">
+      <SegmentTrieNode>
+      <link>
+      <script>
+      <script>
+      <script>
+      <script>
+      <script>
+      <script>
+      <script>
+      <script>
+      <RootLayout>
+        <html lang="en" className="poppins_3c...">
+          <body className="geist_fc8c...">
+            <ReduxProvider>
+              <Provider store={{...}}>
+                <Header user={{success:true, ...}}>
+                  <header className="w-full sti...">
+                    <div>
+                    <div className="px-4 md:px...">
+                      <div className="flex gap-2...">
+                        <LinkComponent href="/">
+>                         <a
+>                           ref={function}
+>                           onClick={function onClick}
+>                           onMouseEnter={function onMouseEnter}
+>                           onTouchStart={function onTouchStart}
+>                           href="/"
+>                         >
+                            <div className="flex gap-3...">
+                              <div>
+>                             <a className="font-bold text-sm md:text-base" href="/">
+                        ...
+                      ...
+                    ...
+                ...
+
+[09:41:00.574] Browser ERROR   <%s> cannot contain a nested %s.
+See this log for the ancestor stack trace. a <a>
+[09:41:00.574] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <SegmentViewNode type="layout" pagePath="(user)/lay...">
+      <SegmentTrieNode>
+      <link>
+      <script>
+      <script>
+      <script>
+      <script>
+      <script>
+      <script>
+      <script>
+      <script>
+      <RootLayout>
+        <html lang="en" className="poppins_3c...">
+          <body className="geist_fc8c...">
+            <ReduxProvider>
+              <Provider store={{...}}>
+                <Header user={{success:true, ...}}>
+                  <header className="w-full sti...">
+                    <div>
+                    <div className="px-4 md:px...">
+                      <div className="flex gap-2...">
+                        <LinkComponent href="/">
+                          <a ref={function} onClick={function onClick} onMouseEnter={function onMouseEnter} ...>
++                           <div className="flex gap-3 items-center">
+                        ...
+                      ...
+                    ...
+                ...
+
+[09:41:01.048] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-1.jpg" "received" null
+[09:41:01.049] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-2.jpg" "received" null
+[09:41:01.091] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-3.jpg" "received" null
+[09:41:01.097] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-4.jpg" "received" null
+[09:41:01.101] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/watch.png" "received" null
+[09:41:03.748] Server  LOG     Sameer Jagrawal "user at profile"
+[09:41:04.008] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
+[09:41:04.008] Browser ERROR   Image is missing required "src" property: <img>
+[09:41:04.008] Browser ERROR   Image is missing required "src" property: <img>
+[09:41:08.062] Browser LOG     user/address user delete address 
+[09:41:08.062] Browser LOG     user/address user delete address 
+[09:41:08.062] Browser LOG     user/address user delete address 
+[09:41:08.062] Browser LOG     user/address user delete address 
+[09:41:17.365] Server  LOG     Error: socket hang up
+[09:45:59.307] Browser ERROR   A component is changing an uncontrolled input to be controlled. This is likely caused by the value changing from undefined to a defined value, which should not happen. Decide between using a controlled or uncontrolled input element for the lifetime of the component. More info: https://react.dev/link/controlled-components
+[09:46:08.217] Browser LOG     {"config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"https://ishop-backend-2mld.onrender.com/api/","data":"{\"fullName\":\"Sameer Jagrawal\",\"phone\":\"+919294535375\",\"addressLine1\":\"KOTKHAWADA\",\"addressLine2\":\"New Colony\",\"city\":\"Kot Khawada\",\"state\":\"KOT KHAWADA CHAKSU JAIPUR RAJASTHAN\",\"postalCode\":\"303908\",\"country\":\"India\",\"type\":\"Home\"}","env":{},"headers":{"Accept":"application/json, text/plain, */*","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"post","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"legacyInterceptorReqResOrdering":true,"silentJSONParsing":true},"url":"user/address","withCredentials":true,"xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"data":{"data":{},"masg":"Address added successfully","meta":{},"success":true},"headers":{"content-length":"61","content-type":"application/json; charset=utf-8"},"request":{},"status":200,"statusText":""} address response
+[09:46:10.283] Browser LOG     user/address user delete address 
+[09:46:10.283] Browser LOG     user/address user delete address 
+[09:46:10.283] Browser LOG     user/address user delete address 
+[09:46:10.283] Browser LOG     user/address user delete address 
+[09:46:10.283] Browser LOG     user/address user delete address 
+[09:46:10.283] Browser LOG     user/address user delete address 
+[09:46:10.283] Browser LOG     user/address user delete address 
+[09:46:10.283] Browser LOG     user/address user delete address 
+[09:50:12.569] Server  LOG     env file console "https://ishop-backend-2mld.onrender.com/api/"
+[09:50:13.249] Server  LOG     ✓ Compiled in 7.3s
+[09:50:13.903] Server  WARN    ⚠ Fast Refresh had to perform a full reload when ./node_modules/next/dist/client/image-component.js changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[09:50:13.907] Server  WARN    ⚠ Fast Refresh had to perform a full reload when ./node_modules/next/dist/client/image-component.js changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[09:50:13.953] Server  WARN    ⚠ Fast Refresh had to perform a full reload when ./node_modules/next/dist/client/image-component.js changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[09:50:13.971] Server  WARN    ⚠ Fast Refresh had to perform a full reload when ./node_modules/next/dist/client/image-component.js changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[09:50:14.081] Server  WARN    ⚠ Fast Refresh had to perform a full reload when ./node_modules/next/dist/client/image-component.js changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[09:50:16.307] Server  WARN    ⚠ Fast Refresh had to perform a full reload when ./node_modules/next/dist/client/image-component.js changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[09:50:17.896] Server  LOG     {}
+[09:50:18.365] Server  LOG     {}
+[09:50:20.441] Server  ERROR   ⨯ Error: Module [project]/node_modules/next/dist/esm/lib/framework/boundary-components.js [app-ssr] (ecmascript) was instantiated because it was required from module [project]/node_modules/next/dist/esm/build/templates/app-page.js?page=/(user)/profile/address/page { GLOBAL_ERROR_MODULE => "[project]/node_modules/next/dist/client/components/builtin/global-error.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_0 => "[project]/node_modules/next/dist/client/components/builtin/not-found.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_1 => "[project]/node_modules/next/dist/client/components/builtin/forbidden.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_2 => "[project]/node_modules/next/dist/client/components/builtin/unauthorized.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_3 => "[project]/node_modules/next/dist/client/components/builtin/global-error.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_4 => "[project]/src/app/(user)/layout.jsx [app-rsc] (ecmascript, Next.js Server Component)", MODULE_5 => "[project]/src/app/(user)/not-found.jsx [app-rsc] (ecmascript, Next.js Server Component)", MODULE_6 => "[project]/node_modules/next/dist/client/components/builtin/forbidden.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_7 => "[project]/node_modules/next/dist/client/components/builtin/unauthorized.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_8 => "[project]/src/app/(user)/profile/address/page.jsx [app-rsc] (ecmascript, Next.js Server Component)" } [app-rsc] (ecmascript) <locals>, but the module factory is not available.
+[09:50:21.500] Server  LOG     {}
+[09:50:21.525] Server  LOG     {}
+[09:50:22.428] Server  LOG     user/address "user delete address "
+[09:50:22.438] Server  LOG     user/address "user delete address "
+[09:50:22.446] Server  LOG     user/address "user delete address "
+[09:50:22.450] Server  LOG     user/address "user delete address "
+[09:50:23.306] Server  LOG     {}
+[09:50:23.386] Server  LOG     {}
+[09:50:23.904] Server  LOG     {}
+[09:50:23.996] Server  LOG     {}
+[09:50:26.553] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[09:50:27.379] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[09:50:31.074] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[09:50:33.168] Browser ERROR   In HTML, %s cannot be a descendant of <%s>.
+This will cause a hydration error.%s <a> a 
+
+  ...
+    <SegmentViewNode type="layout" pagePath="(user)/lay...">
+      <SegmentTrieNode>
+      <link>
+      <script>
+      <script>
+      <script>
+      <script>
+      <script>
+      <script>
+      <script>
+      <script>
+      <RootLayout>
+        <html lang="en" className="poppins_3c...">
+          <body className="geist_fc8c...">
+            <ReduxProvider>
+              <Provider store={{...}}>
+                <Header user={null}>
+                  <header className="w-full sti...">
+                    <div>
+                    <div className="px-4 md:px...">
+                      <div className="flex gap-2...">
+                        <LinkComponent href="/">
+>                         <a
+>                           ref={function}
+>                           onClick={function onClick}
+>                           onMouseEnter={function onMouseEnter}
+>                           onTouchStart={function onTouchStart}
+>                           href="/"
+>                         >
+                            <div className="flex gap-3...">
+                              <div>
+>                             <a className="font-bold text-sm md:text-base" href="/">
+                        ...
+                      ...
+                    ...
+                ...
+
+[09:50:33.168] Browser ERROR   <%s> cannot contain a nested %s.
+See this log for the ancestor stack trace. a <a>
+[09:50:33.168] Browser WARN    SerializableStateInvariantMiddleware took 53ms, which is more than the warning threshold of 32ms. 
+If your state or actions are very large, you may want to disable the middleware as it might cause too much of a slowdown in development mode. See https://redux-toolkit.js.org/api/getDefaultMiddleware for instructions.
+It is disabled in production builds, so you don't need to worry about that.
+[09:50:35.462] Browser ERROR   In HTML, %s cannot be a descendant of <%s>.
+This will cause a hydration error.%s <a> a 
+
+  ...
+    <SegmentViewNode type="layout" pagePath="(user)/lay...">
+      <SegmentTrieNode>
+      <link>
+      <script>
+      <script>
+      <script>
+      <script>
+      <script>
+      <script>
+      <script>
+      <script>
+      <RootLayout>
+        <html lang="en" className="poppins_3c...">
+          <body className="geist_fc8c...">
+            <ReduxProvider>
+              <Provider store={{...}}>
+                <Header user={null}>
+                  <header className="w-full sti...">
+                    <div>
+                    <div className="px-4 md:px...">
+                      <div className="flex gap-2...">
+                        <LinkComponent href="/">
+>                         <a
+>                           ref={function}
+>                           onClick={function onClick}
+>                           onMouseEnter={function onMouseEnter}
+>                           onTouchStart={function onTouchStart}
+>                           href="/"
+>                         >
+                            <div className="flex gap-3...">
+                              <div>
+>                             <a className="font-bold text-sm md:text-base" href="/">
+                        ...
+                      ...
+                    ...
+                ...
+
+[09:50:35.462] Browser ERROR   <%s> cannot contain a nested %s.
+See this log for the ancestor stack trace. a <a>
+[09:50:35.462] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <SegmentViewNode type="layout" pagePath="(user)/lay...">
+      <SegmentTrieNode>
+      <link>
+      <script>
+      <script>
+      <script>
+      <script>
+      <script>
+      <script>
+      <script>
+      <script>
+      <RootLayout>
+        <html lang="en" className="poppins_3c...">
+          <body className="geist_fc8c...">
+            <ReduxProvider>
+              <Provider store={{...}}>
+                <Header user={null}>
+                  <header className="w-full sti...">
+                    <div>
+                    <div className="px-4 md:px...">
+                      <div className="flex gap-2...">
+                        <LinkComponent href="/">
+                          <a ref={function} onClick={function onClick} onMouseEnter={function onMouseEnter} ...>
++                           <div className="flex gap-3 items-center">
+                        ...
+                      ...
+                    ...
+                ...
+
+[09:50:35.502] Browser ERROR   In HTML, %s cannot be a descendant of <%s>.
+This will cause a hydration error.%s <a> a 
+
+  ...
+    <SegmentViewNode type="layout" pagePath="(user)/lay...">
+      <SegmentTrieNode>
+      <link>
+      <script>
+      <script>
+      <script>
+      <script>
+      <script>
+      <script>
+      <script>
+      <script>
+      <RootLayout>
+        <html lang="en" className="poppins_3c...">
+          <body className="geist_fc8c...">
+            <ReduxProvider>
+              <Provider store={{...}}>
+                <Header user={{success:true, ...}}>
+                  <header className="w-full sti...">
+                    <div>
+                    <div className="px-4 md:px...">
+                      <div className="flex gap-2...">
+                        <LinkComponent href="/">
+>                         <a
+>                           ref={function}
+>                           onClick={function onClick}
+>                           onMouseEnter={function onMouseEnter}
+>                           onTouchStart={function onTouchStart}
+>                           href="/"
+>                         >
+                            <div className="flex gap-3...">
+                              <div>
+>                             <a className="font-bold text-sm md:text-base" href="/">
+                        ...
+                      ...
+                    ...
+                ...
+
+[09:50:35.502] Browser ERROR   <%s> cannot contain a nested %s.
+See this log for the ancestor stack trace. a <a>
+[09:50:35.503] Browser LOG     user/address user delete address 
+[09:50:35.503] Browser LOG     user/address user delete address 
+[09:50:35.503] Browser LOG     user/address user delete address 
+[09:50:35.503] Browser LOG     user/address user delete address 
+[09:50:35.503] Browser LOG     user/address user delete address 
+[09:50:35.503] Browser LOG     user/address user delete address 
+[09:50:35.503] Browser LOG     user/address user delete address 
+[09:50:35.503] Browser LOG     user/address user delete address 
+[09:50:35.503] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <SegmentViewNode type="layout" pagePath="(user)/lay...">
+      <SegmentTrieNode>
+      <link>
+      <script>
+      <script>
+      <script>
+      <script>
+      <script>
+      <script>
+      <script>
+      <script>
+      <RootLayout>
+        <html lang="en" className="poppins_3c...">
+          <body className="geist_fc8c...">
+            <ReduxProvider>
+              <Provider store={{...}}>
+                <Header user={{success:true, ...}}>
+                  <header className="w-full sti...">
+                    <div>
+                    <div className="px-4 md:px...">
+                      <div className="flex gap-2...">
+                        <LinkComponent href="/">
+                          <a ref={function} onClick={function onClick} onMouseEnter={function onMouseEnter} ...>
++                           <div className="flex gap-3 items-center">
+                        ...
+                      ...
+                    ...
+                ...
+
+[09:50:35.885] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-1.jpg" "received" null
+[09:50:36.428] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-2.jpg" "received" null
+[09:50:36.455] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-3.jpg" "received" null
+[09:50:36.956] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-1.jpg" "received" null
+[09:50:37.545] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-2.jpg" "received" null
+[09:50:37.551] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-3.jpg" "received" null
+[09:50:37.882] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-4.jpg" "received" null
+[09:50:37.916] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/watch.png" "received" null
+[09:50:38.462] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/thumb-4.jpg" "received" null
+[09:50:38.523] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/watch.png" "received" null
+[09:50:41.301] Server  LOG     ✓ Finished writing to filesystem cache in 31.3s
+[09:50:57.852] Server  LOG     ✓ Finished writing to filesystem cache in 14.5s

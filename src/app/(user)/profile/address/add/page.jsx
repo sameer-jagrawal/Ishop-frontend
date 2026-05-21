@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { MapPin, User, Phone, Home, Building } from "lucide-react";
 import Link from "next/link";
-import { client } from "@/utils/helper";
+import { notify } from "@/utils/helper";
 import { useRouter } from "next/navigation";
 import GlobalLoader from "@/app/components/user components/GlobalLoader";
 
@@ -30,16 +30,27 @@ export default function AddAddressPage() {
     e.preventDefault();
     setLoader(true)
     try {
-        await client
-            .post("user/address",form)
-            .then((response)=>{
-                console.log(response,"address response")
-                if(response.data.success){
+        await fetch("/api/user/address", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify(form),
+        })
+            .then(async (response)=>{
+                const data = await response.json()
+
+                if(data.success){
+                    notify(data.masg, true)
+                    router.refresh()
                     router.push('/profile/address')
+                } else {
+                    notify(data.masg || "Address not saved", false)
                 }
             })
             .catch((error)=>{
                 console.log(error)
+                notify("Address not saved", false)
             }).finally(()=>{
                 setLoader(false)
             })

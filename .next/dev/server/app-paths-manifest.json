@@ -1,5 +1,9 @@
 {
   "/(user)/page": "app/(user)/page.js",
+  "/(user)/profile/address/add/page": "app/(user)/profile/address/add/page.js",
+  "/(user)/profile/address/page": "app/(user)/profile/address/page.js",
+  "/(user)/profile/page": "app/(user)/profile/page.js",
   "/(user-auth)/login/page": "app/(user-auth)/login/page.js",
-  "/_not-found/page": "app/_not-found/page.js"
+  "/_not-found/page": "app/_not-found/page.js",
+  "/api/auth/session/route": "app/api/auth/session/route.js"
 }

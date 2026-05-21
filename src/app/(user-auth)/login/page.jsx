@@ -46,9 +46,9 @@ export default function LoginPage() {
       // GET LATEST LOCAL CART DIRECTLY
       const localCartData = JSON.parse(localStorage.getItem("cart"));
 
-      console.log(localCartData,"sameer frontend")
+      // console.log(localCartData,"sameer frontend")
       const localCart = localCartData?.items || [];
-      console.log(localCart,"frontend local cart")  
+      // console.log(localCart,"frontend local cart")  
 
       // SYNC CART
       const cartRes = await client.post("cart/sync", {
