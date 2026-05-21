@@ -1,244 +1,254 @@
 "use client";
-// import React, { Children } from "react
-import CurrencySelect from "./Dropdown";
+
 import Image from "next/image";
 import Link from "next/link";
-import { ShoppingCart } from "lucide-react";
-import { FaChevronDown, FaSearch, FaBars, FaTimes } from "react-icons/fa";
+import { usePathname } from "next/navigation";
+import {
+  ChevronDown,
+  CircleUser,
+  Menu,
+  Phone,
+  RotateCcw,
+  Search,
+  ShieldCheck,
+  ShoppingCart,
+  Truck,
+  X,
+} from "lucide-react";
 import { useDispatch, useSelector } from "react-redux";
 import { useEffect, useState } from "react";
 import { lsToCart } from "@/redux/features/cartslice";
-import { CircleUser } from 'lucide-react';
+
+const navItems = [
+  { path: "/", name: "Home" },
+  { path: "/about", name: "About Us" },
+  { path: "/products", name: "Products" },
+  { path: "/contact", name: "Contact Us" },
+];
+
+const perks = [
+  { icon: Truck, label: "Free shipping over $199" },
+  { icon: RotateCcw, label: "30 days money back" },
+  { icon: ShieldCheck, label: "100% secure payment" },
+];
+
 export default function Header({ user }) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-
-  const navitmes = [
-    {
-      path: "/",
-      name: "Home",
-    },
-
-    {
-      path: "/about",
-      name: "About Us",
-    },
-
-    {
-      path: "/products",
-      name: "Products",
-    },
-
-    {
-      path: "/contact",
-      name: "Contact Us",
-    },
-  ];
-
+  const pathname = usePathname();
   const cart = useSelector((store) => store.cart);
-
-  const dispatcher = useDispatch();
+  const dispatch = useDispatch();
 
   useEffect(() => {
-    dispatcher(lsToCart());
-  }, []);
+    dispatch(lsToCart());
+  }, [dispatch]);
+
+  const isActive = (path) =>
+    path === "/" ? pathname === "/" : pathname?.startsWith(path);
+
+  const navLinkClass = (path) =>
+    `relative py-2 text-[13px] font-semibold uppercase tracking-[0.08em] transition-colors duration-200 ${
+      isActive(path)
+        ? "text-[#01A49E] after:w-full"
+        : "text-gray-700 hover:text-[#01A49E] after:w-0"
+    } after:absolute after:left-0 after:bottom-0 after:h-[2px] after:rounded-full after:bg-[#01A49E] after:transition-all after:duration-300 hover:after:w-full`;
 
   return (
-    <>
-      <header className="w-full sticky top-[-60px] z-100 bg-white ms-auto duration-75">
-        {/* top section - hidden on mobile */}
-        <div className="hidden md:block w-full py-3 px-6">
-          <div className="w-full flex justify-between font items-center">
-            <div className="flex items-center gap-5">
-              <div className="px-2 py-1 rounded-md bg-[#EBEEF6] text-black">
-                Hotline 24/7
-              </div>
-              <div className="font-semibold">(025) 3886 25 16</div>
-            </div>
-            <div className="flex items-center gap-6">
-              <div className="flex gap-5">
-                <a href="">Sell on Ishop</a>
-                <a href="">Order Tracking</a>
-              </div>
-              <div className="flex items-center gap-2">
-                <select className="border-r h-6 border-gray-300" name="" id="">
-                  <option value="">USD</option>
-                  <option value="">INR</option>
-                  <option value="">YEN</option>
-                  <option value="">EUR</option>
-                </select>
-              </div>
-            </div>
+    <header className="sticky top-0 z-50 w-full bg-white/95 shadow-[0_10px_30px_-24px_rgba(15,23,42,0.6)] backdrop-blur">
+      <div className="hidden border-b border-gray-100 md:block">
+        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-2.5 text-sm text-gray-600">
+          <div className="flex items-center gap-3">
+            <span className="inline-flex items-center gap-2 rounded-full bg-[#01A49E]/10 px-3 py-1 text-xs font-semibold text-[#01857f]">
+              <Phone size={14} />
+              Hotline 24/7
+            </span>
+            <span className="font-semibold text-gray-800">(025) 3886 25 16</span>
           </div>
-        </div>
 
-        {/* nav section */}
-        <div className="px-4 md:px-6 w-full mb-3 md:mb-5 flex justify-between items-center mt-3 md:mt-4">
-          {/* nav left section */}
-          <div className="flex gap-20 md:gap-40 lg:gap-60 items-center">
-            <Link href={"/"}>
-            <div className="flex gap-3 items-center">
-              {/* logo */}
-              <div className="relative">
-                <Image
-                  src="/logo/logo.png"
-                  alt="Company logo"
-                  width={45}
-                  height={40}
-                  priority
-                  className="md:w-[55px] md:h-[49px]"
-                />
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <Image
-                    src={"/logo/vector1.png"}
-                    alt="vector"
-                    width={12}
-                    height={8}
-                    className="md:w-[15px] md:h-[10px]"
-                  />
-                </div>
-              </div>
-
-              <a className="font-bold text-sm md:text-base" href="/">
-                ISHOP
-              </a>
-            </div>
+          <div className="flex items-center gap-6">
+            <Link href="/contact" className="transition-colors hover:text-[#01A49E]">
+              Sell on Ishop
             </Link>
-
-            {/* Desktop nav links - hidden on mobile */}
-            <div className="hidden  lg:flex gap-6 xl:gap-10  uppercase">
-              {navitmes.map((itmes, index) => {
-                return (
-                  <Link key={index} href={itmes.path} className="">
-                    {itmes.name}
-                  </Link>
-                );
-              })}
-            </div>
-          </div>
-
-          {/* nav right section */}
-          <div className="flex items-center gap-4 md:gap-8 lg:gap-12">
-            {/* login / register - hidden on mobile (shown in mobile menu) */}
-            <div className="hidden md:block">
-              <div className="font-semibold">
-                {user ? (
-                  <Link
-                    href="/profile"
-                    className="flex items-center gap-2 hover:underline transition-all duration-300"
-                  >
-                    <CircleUser className="w-5 h-5" />
-                    <span>{user?.data?.name}</span>
-                  </Link>
-                ) : (
-                  <Link
-                    href="/login"
-                    className="hover:underline transition-all duration-300"
-                  >
-                    <span>LOG IN</span>
-                  </Link>
-                )}
-              </div>
-            </div>
-
-            {/* cart section */}
-            <div className="flex items-center gap-2 md:gap-3">
-              <div className="relative inline-flex items-center justify-center">
-                <Link href={"/cart"}>
-                  <ShoppingCart className="w-5 h-5 md:w-6 md:h-6 text-gray-800" />
-                </Link>
-                <span className="absolute -top-2 -right-2 min-w-[18px] h-[18px] px-1 flex items-center justify-center text-[10px] font-semibold text-white bg-red-600 rounded-full leading-none shadow">
-                  {cart?.items?.length || 0}
-                </span>
-              </div>
-              <div className="hidden sm:block">
-                <p className="text-gray-400 text-xs">CART</p>
-                <p className="font-bold text-sm">${cart?.finalTotal}</p>
-              </div>
-            </div>
-
-            {/* Hamburger - visible on mobile/tablet */}
-            <button
-              className="lg:hidden p-2"
-              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              aria-label="Toggle menu"
+            <Link href="/veiw-orders" className="transition-colors hover:text-[#01A49E]">
+              Order Tracking
+            </Link>
+            <select
+              className="rounded-full border border-gray-200 bg-white px-3 py-1 text-xs font-semibold outline-none transition focus:border-[#01A49E] focus:ring-2 focus:ring-[#01A49E]/15"
+              aria-label="Currency"
             >
-              {mobileMenuOpen ? (
-                <FaTimes className="text-xl" />
-              ) : (
-                <FaBars className="text-xl" />
-              )}
-            </button>
+              <option value="USD">USD</option>
+              <option value="INR">INR</option>
+              <option value="YEN">YEN</option>
+              <option value="EUR">EUR</option>
+            </select>
           </div>
         </div>
+      </div>
 
-        {/* Mobile Menu Dropdown */}
-        {mobileMenuOpen && (
-          <div className="lg:hidden bg-white border-t border-gray-200 px-4 py-4 shadow-md">
-            <nav className="flex flex-col gap-3 mb-4">
-              {navitmes.map((item, index) => (
-                <Link
-                  key={index}
-                  href={item.path}
-                  className=" uppercase py-2 border-b border-gray-100"
-                  onClick={() => setMobileMenuOpen(false)}
-                >
-                  {item.name}
-                </Link>
-              ))}
-            </nav>
-            <div className="font-bold py-2">
+      <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-3 md:px-6 lg:py-4">
+        <div className="flex items-center gap-8 xl:gap-12">
+          <Link href="/" className="group flex items-center gap-3" aria-label="IShop home">
+            <div className="relative grid h-11 w-11 place-items-center rounded-2xl bg-gray-50 ring-1 ring-gray-100 transition group-hover:ring-[#01A49E]/30 md:h-12 md:w-12">
+              <Image
+                src="/logo/logo.png"
+                alt="IShop logo"
+                width={50}
+                height={44}
+                priority
+                className="h-10 w-10 object-contain md:h-11 md:w-11"
+              />
+              <Image
+                src="/logo/vector1.png"
+                alt=""
+                width={13}
+                height={9}
+                className="absolute"
+              />
+            </div>
+            <span className="text-lg font-extrabold tracking-wide text-gray-900 transition-colors group-hover:text-[#01A49E] md:text-xl">
+              ISHOP
+            </span>
+          </Link>
+
+          <nav className="hidden items-center gap-7 lg:flex xl:gap-9" aria-label="Main navigation">
+            {navItems.map((item) => (
+              <Link key={item.path} href={item.path} className={navLinkClass(item.path)}>
+                {item.name}
+              </Link>
+            ))}
+          </nav>
+        </div>
+
+        <div className="flex items-center gap-3 md:gap-4">
+          <div className="hidden md:block">
+            {user ? (
+              <Link
+                href="/profile"
+                className="inline-flex items-center gap-2 rounded-full border border-gray-200 px-3.5 py-2 text-sm font-semibold text-gray-800 transition hover:border-[#01A49E]/40 hover:bg-[#01A49E]/10 hover:text-[#01857f]"
+              >
+                <CircleUser size={18} />
+                <span className="max-w-28 truncate">{user?.data?.name}</span>
+              </Link>
+            ) : (
+              <Link
+                href="/login"
+                className="inline-flex items-center gap-2 rounded-full border border-gray-200 px-4 py-2 text-sm font-bold text-gray-800 transition hover:border-[#01A49E]/40 hover:bg-[#01A49E]/10 hover:text-[#01857f]"
+              >
+                <CircleUser size={18} />
+                Log In
+              </Link>
+            )}
+          </div>
+
+          <Link
+            href="/cart"
+            className="group inline-flex items-center gap-3 rounded-full border border-gray-200 px-3 py-2 transition hover:border-[#01A49E]/40 hover:bg-[#01A49E]/10"
+            aria-label="Cart"
+          >
+            <span className="relative grid h-9 w-9 place-items-center rounded-full bg-gray-100 text-gray-800 transition group-hover:bg-white group-hover:text-[#01A49E]">
+              <ShoppingCart size={20} />
+              <span className="absolute -right-1 -top-1 grid min-w-[19px] place-items-center rounded-full bg-red-600 px-1 text-[10px] font-bold leading-[19px] text-white shadow">
+                {cart?.items?.length || 0}
+              </span>
+            </span>
+            <span className="hidden leading-tight sm:block">
+              <span className="block text-[11px] font-semibold uppercase tracking-wide text-gray-400">
+                Cart
+              </span>
+              <span className="block text-sm font-bold text-gray-900">
+                ${cart?.finalTotal || 0}
+              </span>
+            </span>
+          </Link>
+
+          <button
+            type="button"
+            className="grid h-10 w-10 place-items-center rounded-full border border-gray-200 text-gray-800 transition hover:border-[#01A49E]/40 hover:bg-[#01A49E]/10 hover:text-[#01857f] lg:hidden"
+            onClick={() => setMobileMenuOpen((open) => !open)}
+            aria-label="Toggle menu"
+            aria-expanded={mobileMenuOpen}
+          >
+            {mobileMenuOpen ? <X size={21} /> : <Menu size={21} />}
+          </button>
+        </div>
+      </div>
+
+      {mobileMenuOpen && (
+        <div className="border-t border-gray-100 bg-white px-4 py-4 shadow-lg lg:hidden">
+          <nav className="mx-auto flex max-w-7xl flex-col gap-1" aria-label="Mobile navigation">
+            {navItems.map((item) => (
+              <Link
+                key={item.path}
+                href={item.path}
+                className={`rounded-xl px-3 py-3 text-sm font-semibold uppercase tracking-wide transition ${
+                  isActive(item.path)
+                    ? "bg-[#01A49E]/10 text-[#01857f]"
+                    : "text-gray-700 hover:bg-gray-50 hover:text-[#01A49E]"
+                }`}
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                {item.name}
+              </Link>
+            ))}
+
+            <div className="mt-3 border-t border-gray-100 pt-3">
               {user ? (
                 <Link
                   href="/profile"
-                  className="flex items-center gap-2"
+                  className="flex items-center gap-2 rounded-xl px-3 py-3 text-sm font-semibold text-gray-800 transition hover:bg-[#01A49E]/10 hover:text-[#01857f]"
                   onClick={() => setMobileMenuOpen(false)}
                 >
-                  <CircleUser className="w-5 h-5" />
+                  <CircleUser size={18} />
                   <span>{user?.data?.name}</span>
                 </Link>
               ) : (
                 <Link
                   href="/login"
+                  className="flex items-center gap-2 rounded-xl px-3 py-3 text-sm font-bold text-gray-800 transition hover:bg-[#01A49E]/10 hover:text-[#01857f]"
                   onClick={() => setMobileMenuOpen(false)}
                 >
-                  LOG IN
+                  <CircleUser size={18} />
+                  Log In
                 </Link>
               )}
             </div>
-          </div>
-        )}
-
-        {/* search section */}
-        <div className="w-full">
-          <div className="px-4 md:px-6 flex flex-col sm:flex-row items-stretch sm:items-center w-full py-3 md:py-4 bg-[#01A49E] gap-3 md:gap-6">
-            {/* Search bar */}
-            <div className="rounded-full bg-white flex items-center flex-1 py-2 px-4 text-black gap-3">
-              {/* Category - hidden on small screens */}
-              <div className="hidden sm:flex items-center gap-2 whitespace-nowrap">
-                <span className="text-sm">All Categories</span>
-                <FaChevronDown className="text-gray-500 text-xs" />
-              </div>
-
-              {/* Input */}
-              <input
-                className="flex-1 outline-none text-sm min-w-0"
-                type="text"
-                placeholder="Search for Products, Brand & More"
-              />
-
-              {/* Search icon */}
-              <FaSearch className="text-gray-500 cursor-pointer flex-shrink-0" />
-            </div>
-
-            {/* Promo items - hidden on mobile */}
-            <ul className="hidden xl:flex text-white gap-8 2xl:gap-12 uppercase text-xs whitespace-nowrap">
-              <li>free shipping over $199</li>
-              <li>30 days money back</li>
-              <li>100% secure payment</li>
-            </ul>
-          </div>
+          </nav>
         </div>
-      </header>
-    </>
+      )}
+
+      <div className="bg-[#01A49E]">
+        <div className="mx-auto flex max-w-7xl flex-col gap-3 px-4 py-3 md:px-6 lg:flex-row lg:items-center lg:justify-between">
+          <div className="flex min-h-12 flex-1 items-center gap-3 rounded-full bg-white px-4 shadow-sm ring-1 ring-white/20 transition focus-within:ring-4 focus-within:ring-white/25">
+            <button
+              type="button"
+              className="hidden items-center gap-2 rounded-full bg-gray-50 px-3 py-2 text-sm font-semibold text-gray-700 transition hover:bg-[#01A49E]/10 hover:text-[#01857f] sm:inline-flex"
+            >
+              All Categories
+              <ChevronDown size={15} />
+            </button>
+            <input
+              className="min-w-0 flex-1 bg-transparent text-sm font-medium text-gray-800 outline-none placeholder:text-gray-400"
+              type="text"
+              placeholder="Search for products, brands and more"
+            />
+            <button
+              type="button"
+              className="grid h-9 w-9 place-items-center rounded-full bg-[#01A49E] text-white transition hover:bg-[#01857f]"
+              aria-label="Search"
+            >
+              <Search size={18} />
+            </button>
+          </div>
+
+          <ul className="hidden items-center gap-5 text-xs font-semibold uppercase tracking-wide text-white xl:flex">
+            {perks.map(({ icon: Icon, label }) => (
+              <li key={label} className="flex items-center gap-2">
+                <Icon size={16} />
+                {label}
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    </header>
   );
 }
