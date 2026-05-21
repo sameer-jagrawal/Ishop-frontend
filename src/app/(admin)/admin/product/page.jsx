@@ -6,6 +6,9 @@ import DeleteBtn from "@/app/components/admin components/DeleteBtn";
 import ProductStatusDropdown from "@/app/components/admin components/ProductStatusDropdown";
 import { FaEye } from "react-icons/fa";
 
+export const dynamic = "force-dynamic";
+export const revalidate = 0;
+
 export default async function UserManagementTable() {
   const data = await getProduct();
   const Brands = data?.data || [];

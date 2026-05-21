@@ -5,6 +5,9 @@ import Link from "next/link";
 import DeleteBtn from "@/app/components/admin components/DeleteBtn";
 import Status from "@/app/components/admin components/Status";
 
+export const dynamic = "force-dynamic";
+export const revalidate = 0;
+
 export default async function UserManagementTable() {
   const data = await getColor();
 

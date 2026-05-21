@@ -6,7 +6,8 @@ export default function Status({value,id,feild,type,onChange}) {
 
     const router = useRouter()
     const [isUpdating, setIsUpdating] = useState(false)
-    const isActive = Boolean(value)
+    const [localValue, setLocalValue] = useState(null)
+    const isActive = localValue ?? Boolean(value)
 
     function activeHandler(){
         if (isUpdating || !id || !feild) return
@@ -15,21 +16,27 @@ export default function Status({value,id,feild,type,onChange}) {
         const nextValue = !previousValue
 
         setIsUpdating(true)
+        setLocalValue(nextValue)
         onChange?.(feild, nextValue)
 
-        client.put(`${type}/update/${id}`,{feild}).then(
+        client.put(`${type}/update/${id}`,{ feild, value: nextValue }).then(
             (response)=>{
               notify(feild  +  response.data.masg, response.data.success)
               if(response.data.success){
                 const updatedValue = response.data?.data?.[feild]
                 if (typeof updatedValue === "boolean") {
+                  setLocalValue(updatedValue)
                   onChange?.(feild, updatedValue)
                 }
                 router.refresh()
 
+              } else {
+                setLocalValue(previousValue)
+                onChange?.(feild, previousValue)
               }
             }
         ).catch((error) => {
+          setLocalValue(previousValue)
           onChange?.(feild, previousValue)
           console.log(error?.response,"user error")
           notify(
