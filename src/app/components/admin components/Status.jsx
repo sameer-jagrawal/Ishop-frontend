@@ -1,20 +1,36 @@
 'use client'
-import React  from "react"
+import React, { useState } from "react"
 import { useRouter } from "next/navigation"
 import { client, notify } from "@/utils/helper"
-export default function Status({value,id,feild,type}) {
+export default function Status({value,id,feild,type,onChange}) {
 
     const router = useRouter()
+    const [isUpdating, setIsUpdating] = useState(false)
+    const isActive = Boolean(value)
+
     function activeHandler(){
+        if (isUpdating || !id || !feild) return
+
+        const previousValue = isActive
+        const nextValue = !previousValue
+
+        setIsUpdating(true)
+        onChange?.(feild, nextValue)
+
         client.put(`${type}/update/${id}`,{feild}).then(
             (response)=>{
               notify(feild  +  response.data.masg, response.data.success)
               if(response.data.success){
+                const updatedValue = response.data?.data?.[feild]
+                if (typeof updatedValue === "boolean") {
+                  onChange?.(feild, updatedValue)
+                }
                 router.refresh()
 
               }
             }
         ).catch((error) => {
+          onChange?.(feild, previousValue)
           console.log(error?.response,"user error")
           notify(
               error?.response?.data?.masg || "Not updated",
@@ -22,6 +38,8 @@ export default function Status({value,id,feild,type}) {
           );
       
           console.log(error);
+      }).finally(() => {
+        setIsUpdating(false)
       })
     }
     const lable = {
@@ -41,13 +59,16 @@ export default function Status({value,id,feild,type}) {
   return (
     <span
       onClick={activeHandler}
+      aria-disabled={isUpdating}
       className={`cursor-pointer px-4 py-1.5 text-xs font-semibold rounded-full whitespace-nowrap transition-all duration-300 shadow-sm border ${
-        value === true
+        isUpdating ? "opacity-70" : ""
+      } ${
+        isActive === true
           ? "bg-green-50 text-green-700 border-green-200 hover:bg-green-100"
           : "bg-red-50 text-red-700 border-red-200 hover:bg-red-100"
       }`}
     >
-      {value ? Trulabel : Falselabel}
+      {isActive ? Trulabel : Falselabel}
     </span>
   );
 }

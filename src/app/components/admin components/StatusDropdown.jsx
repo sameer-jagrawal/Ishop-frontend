@@ -2,6 +2,7 @@
 
 import { Menu, MenuButton, MenuItems } from "@headlessui/react";
 import { ChevronDown } from "lucide-react";
+import { useState } from "react";
 import Status from "./Status";
 
 export const PRODUCT_STATUS_FIELDS = [
@@ -22,8 +23,25 @@ export const CATEGORY_STATUS_FIELDS = [
   { field: "is_popular", label: "Popular" },
 ];
 
+const getStatusValues = (item, fields) =>
+  fields.reduce((values, { field }) => {
+    values[field] = Boolean(item?.[field]);
+    return values;
+  }, {});
+
 export default function StatusDropdown({ item, type, fields }) {
-  const activeCount = fields.filter(({ field }) => item?.[field]).length;
+  const [statusValues, setStatusValues] = useState(() =>
+    getStatusValues(item, fields),
+  );
+
+  const activeCount = fields.filter(({ field }) => statusValues[field]).length;
+
+  const handleStatusChange = (field, nextValue) => {
+    setStatusValues((current) => ({
+      ...current,
+      [field]: nextValue,
+    }));
+  };
 
   return (
     <Menu as="div" className="relative inline-block text-left">
@@ -46,10 +64,11 @@ export default function StatusDropdown({ item, type, fields }) {
           >
             <span className="text-xs font-semibold text-gray-600">{label}</span>
             <Status
-              value={item?.[field]}
+              value={statusValues[field]}
               type={type}
               id={item?._id}
               feild={field}
+              onChange={handleStatusChange}
             />
           </div>
         ))}

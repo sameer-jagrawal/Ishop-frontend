@@ -500,3 +500,7 @@ https://react.dev/link/hydration-mismatch
 [02:06:01.205] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/watch.png" "received" null
 [02:06:12.838] Server  LOG     ✓ Finished filesystem cache database compaction in 38.4s
 [02:06:12.919] Server  LOG     ✓ Finished writing to filesystem cache in 27.3s
+[02:32:05.796] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:32:37.860] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[09:32:22.044] Server  LOG     ✓ Compiled in 6.3s
+[09:32:57.271] Server  LOG     ✓ Finished filesystem cache database compaction in 29.3s

@@ -3125,6 +3125,10 @@
     opacity: .35;
   }
 
+  .opacity-70 {
+    opacity: .7;
+  }
+
   .opacity-80 {
     opacity: .8;
   }
