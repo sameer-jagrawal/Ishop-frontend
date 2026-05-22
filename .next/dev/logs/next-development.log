@@ -5628,3 +5628,54 @@ Check the render method of `Cart`.
 [25:48:37.104] Server  LOG     ✓ Finished filesystem cache database compaction in 26.1s
 [25:48:37.681] Server  LOG     ✓ Finished writing to filesystem cache in 24.7s
 [25:48:55.573] Server  LOG     ✓ Finished filesystem cache database compaction in 17.8s
+[26:03:49.412] Server  LOG     ✓ Compiled in 2.6s
+[26:03:49.965] Server  LOG     ✓ Compiled in 413ms
+[26:03:50.799] Browser ERROR   ./src/utils/socket.js:4:10
+Parsing ecmascript source code failed
+  2 |
+  3 | export const socket = io(
+> 4 |     https://ishop-backend-2mld.onrender.com
+    |          ^
+  5 |   {
+  6 |     withCredentials: true,
+  7 |   }
+
+Expected ',', got ':'
+
+Import traces:
+  Client Component Browser:
+    ./src/utils/socket.js [Client Component Browser]
+    ./src/app/components/admin components/Notification.jsx [Client Component Browser]
+    ./src/app/components/admin components/Notification.jsx [Server Component]
+    ./src/app/(admin)/admin/notification/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./src/utils/socket.js [Client Component SSR]
+    ./src/app/components/admin components/Notification.jsx [Client Component SSR]
+    ./src/app/components/admin components/Notification.jsx [Server Component]
+    ./src/app/(admin)/admin/notification/page.jsx [Server Component]
+[26:03:50.800] Browser ERROR   ./src/utils/socket.js:5:3
+Parsing ecmascript source code failed
+  3 | export const socket = io(
+  4 |     "https://ishop-backend-2mld.onrender.com"
+> 5 |   {
+    |   ^
+  6 |     withCredentials: true,
+  7 |   }
+  8 | );
+
+Expected ',', got '{'
+
+Import traces:
+  Client Component Browser:
+    ./src/utils/socket.js [Client Component Browser]
+    ./src/app/components/admin components/Notification.jsx [Client Component Browser]
+    ./src/app/components/admin components/Notification.jsx [Server Component]
+    ./src/app/(admin)/admin/notification/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./src/utils/socket.js [Client Component SSR]
+    ./src/app/components/admin components/Notification.jsx [Client Component SSR]
+    ./src/app/components/admin components/Notification.jsx [Server Component]
+    ./src/app/(admin)/admin/notification/page.jsx [Server Component]
+[26:03:56.069] Server  LOG     ✓ Compiled in 2.7s
