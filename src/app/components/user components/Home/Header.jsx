@@ -53,7 +53,7 @@ export default function Header({ user }) {
     } after:absolute after:left-0 after:bottom-0 after:h-[2px] after:rounded-full after:bg-[#01A49E] after:transition-all after:duration-300 hover:after:w-full`;
 
   return (
-    <header className="sticky top-0 z-50 w-full bg-white/95 shadow-[0_10px_30px_-24px_rgba(15,23,42,0.6)] backdrop-blur">
+    <header className="sticky top-[-70px] z-50 w-full bg-white/95 shadow-[0_10px_30px_-24px_rgba(15,23,42,0.6)] backdrop-blur">
       <div className="hidden border-b border-gray-100 md:block">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-2.5 text-sm text-gray-600">
           <div className="flex items-center gap-3">

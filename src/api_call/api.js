@@ -56,6 +56,7 @@ async function  getProduct(query={}){
     if(query.status) filter.append("status",query.status);
     if(query.is_home) filter.append("is_home",query.is_home);
     if(query.is_top) filter.append("is_top",query.is_top);  
+    if(query.is_hot) filter.append("is_hot",query.is_hot);  
     if(query.limit) filter.append("limit",query.limit);
     if(query.category_slug) filter.append("category_slug",query.category_slug);
     if(query.min_price) filter.append("min_price",query.min_price);

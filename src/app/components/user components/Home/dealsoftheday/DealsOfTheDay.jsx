@@ -1,24 +1,17 @@
-import React from 'react'
-import Dealsofthedayproduct from './Dealsofthedayproduct'
+import { getProduct } from "@/api_call/api";
+import Dealsofthedayproduct from "./Dealsofthedayproduct";
 
-export default function DealsOfTheDay() {
+export default async function ProductCard() {
+  const product_res = await getProduct({is_hot:true,status:true})
+  const product = product_res?.data
+  // console.log(product_res,"is hot response")
   return (
-    <div className='max-w-7xl bg-gray-200 mx-auto mt-4 px-4 md:px-0 flex flex-col lg:flex-row gap-4 md:gap-6'>
-        {/* left side */}
-      <div className='flex-1'>
-        <div className='py-4 px-6 md:px-10 items-center bg-[#01A49E] rounded-xl font-semibold text-white text-lg md:text-xl'>
-            DEALS OF THE DAY
-        </div>
-        <div>
-        <Dealsofthedayproduct/>
-        </div>
+    <div>
+<div className="py-4 px-6 md:px-10 items-center bg-[#01A49E] rounded-t-xl font-semibold text-white text-lg md:text-xl">
+        DEALS OF THE DAY
       </div>
-      {/* right side - hidden on mobile */}
-      <div className='hidden lg:flex flex-col'>
-        <img className='rounded-xl mb-4 md:mb-6' src="/dealsoftheday/rightside/3.png" width={350} alt="" />
-        <img className='rounded-xl mb-4 md:mb-6' src="/dealsoftheday/rightside/1.png" width={350} alt="" />
-        <img className='rounded-xl mb-4 md:mb-6' src="/dealsoftheday/rightside/2.png" width={350} alt="" />
-      </div>
+    <Dealsofthedayproduct product = {product}/>
     </div>
-  )
+    
+  );
 }

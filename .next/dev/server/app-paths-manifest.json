@@ -1,4 +1,9 @@
 {
+  "/(admin)/admin/notification/page": "app/(admin)/admin/notification/page.js",
+  "/(admin)/admin/page": "app/(admin)/admin/page.js",
+  "/(user)/cart/page": "app/(user)/cart/page.js",
+  "/(user)/checkout/[id]/page": "app/(user)/checkout/[id]/page.js",
+  "/(user)/checkout/page": "app/(user)/checkout/page.js",
   "/(user)/page": "app/(user)/page.js",
   "/(user)/profile/address/add/page": "app/(user)/profile/address/add/page.js",
   "/(user)/profile/address/page": "app/(user)/profile/address/page.js",
