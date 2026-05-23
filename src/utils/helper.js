@@ -1,8 +1,12 @@
 import axios from 'axios';
 import { toast } from 'react-toastify'
 
+const API_BASE_URL =
+  process.env.NEXT_PUBLIC_API_BASE_URL ||
+  "https://ishop-backend-2mld.onrender.com/api/";
+
 const client = axios.create({
-    baseURL: process.env.NEXT_PUBLIC_API_BASE_URL,
+    baseURL: API_BASE_URL,
     withCredentials:true
   });
   

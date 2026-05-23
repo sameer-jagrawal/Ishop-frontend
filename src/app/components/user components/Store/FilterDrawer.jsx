@@ -24,17 +24,17 @@ export default function FilterDrawer({ children }) {
           type="button"
           aria-label="Close filters"
           onClick={() => setFiltersOpen(false)}
-          className="fixed inset-0 z-40 bg-black/40 md:hidden"
+          className="fixed inset-x-0 bottom-0 top-[80px] z-30 bg-black/40 md:hidden"
         />
       )}
 
       <aside
         className={`
-          fixed md:sticky top-0 left-0 z-50
-          h-dvh md:h-fit md:max-h-[calc(100vh-24px)]
+          fixed md:sticky top-[80px] left-0 z-40 md:z-10
+          h-[calc(100dvh-80px)] md:h-fit md:max-h-[calc(100vh-140px)]
           w-[85vw] max-w-80 md:w-56 lg:w-64
           bg-white shadow-xl md:shadow-none
-          overflow-y-auto
+          overflow-y-auto md:top-[92px]
           transition-transform duration-300
           ${filtersOpen ? "translate-x-0" : "-translate-x-full"}
           md:translate-x-0

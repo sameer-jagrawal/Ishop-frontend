@@ -10,7 +10,7 @@ import { emptyCart } from "@/redux/features/cartslice";
 
 export default function CheckoutPage({ user }) {
   const dispatcher = useDispatch()
-  const { error, isLoading } = useRazorpay();
+  const { Razorpay, error, isLoading } = useRazorpay();
   const router = useRouter()
   const addresses = user?.data?.addresses || [];
 
@@ -18,14 +18,17 @@ export default function CheckoutPage({ user }) {
   const cart = useSelector((store) => store.cart);
 
   const [paymentMethod, setPaymentMode] = useState("cod");
+  const [isPlacingOrder, setIsPlacingOrder] = useState(false);
 
   const totalItems = cart?.items?.reduce((acc, item) => acc + item.qty, 0);
 
   const handleOrder = async () => {
-    if (!addresses[selectedAddress]) return alert("wrong address");
-    if(!selectedAddress){
+    if (isPlacingOrder) return;
+    if (selectedAddress === null || selectedAddress === undefined) {
       return alert("select address please ")
     }
+    if (!addresses[selectedAddress]) return alert("wrong address");
+    if (!cart?.items?.length) return alert("Your cart is empty");
 
     const orderData = {
       address: addresses[selectedAddress],
@@ -33,9 +36,18 @@ export default function CheckoutPage({ user }) {
     };
 
     try {
+      setIsPlacingOrder(true);
+
+      await client.post("cart/sync", {
+        localCart: JSON.stringify(cart.items),
+      });
+
       const response = await client.post('order/create', orderData)
       console.log(response,"order response")
-      if (!response.data.success) return;
+      if (!response.data.success) {
+        notify(response.data?.masg || "Unable to place order", false);
+        return;
+      }
 
       if (paymentMethod === 'cod') {
         try {
@@ -46,7 +58,7 @@ export default function CheckoutPage({ user }) {
         } catch (error) {
           console.log(error)
         }
-        router.push(`checkout/${response.data.data.orderId}`)
+        router.push(`/checkout/${response.data.data.orderId}`)
       } else {
         if (isLoading ) return;
 
@@ -69,10 +81,13 @@ export default function CheckoutPage({ user }) {
                 } catch (error) {
                   console.log(error)
                 }
-                router.push(`checkout/${paymentRes?.data?.orderId}`)
+                router.push(`/checkout/${paymentRes?.data?.orderId}`)
+              } else {
+                notify(paymentRes?.data?.masg || "Payment verification failed", false);
               }
             } catch (error) {
               console.log(error)
+              notify(error?.response?.data?.masg || "Payment verification failed", false);
             }
           },
           prefill: {
@@ -88,6 +103,9 @@ export default function CheckoutPage({ user }) {
     } catch (error) {
       console.log(error.response?.data);
       console.log(error.message);
+      notify(error?.response?.data?.masg || error?.response?.data?.message || "Unable to place order", false);
+    } finally {
+      setIsPlacingOrder(false);
     }
   }
 
@@ -144,8 +162,9 @@ export default function CheckoutPage({ user }) {
                   <input
                     type="radio"
                     name="address"
+                    checked={selectedAddress === index}
                     className="mt-1 accent-[#01A49E]"
-                    onClick={() => setSelectedAddress(index)}
+                    onChange={() => setSelectedAddress(index)}
                   />
                   <div className="min-w-0">
                     <h3 className="font-semibold text-sm md:text-base">{item?.type}</h3>
@@ -229,10 +248,10 @@ export default function CheckoutPage({ user }) {
 
           <button
             onClick={handleOrder}
-            // disabled={addresses.length === 0}
-            className="w-full mt-5 md:mt-6 bg-[#01A49E] text-white py-3 rounded-xl font-semibold hover:opacity-90 active:scale-95 transition-all text-sm md:text-base"
+            disabled={addresses.length === 0 || !cart?.items?.length || isLoading || isPlacingOrder}
+            className="w-full mt-5 md:mt-6 bg-[#01A49E] text-white py-3 rounded-xl font-semibold hover:opacity-90 active:scale-95 transition-all text-sm md:text-base disabled:cursor-not-allowed disabled:opacity-60"
           >
-            PLACE ORDER
+            {isPlacingOrder ? "PLACING ORDER..." : "PLACE ORDER"}
           </button>
           {error && (
             <p className="mt-3 text-sm text-red-500">
