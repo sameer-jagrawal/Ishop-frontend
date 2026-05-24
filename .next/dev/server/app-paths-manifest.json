@@ -4,6 +4,7 @@
   "/(user)/checkout/page": "app/(user)/checkout/page.js",
   "/(user)/page": "app/(user)/page.js",
   "/(user)/products/page": "app/(user)/products/page.js",
+  "/(user)/profile/edit/[id]/page": "app/(user)/profile/edit/[id]/page.js",
   "/(user)/profile/page": "app/(user)/profile/page.js",
   "/(user)/singleProduct/[slug]/page": "app/(user)/singleProduct/[slug]/page.js",
   "/(user-auth)/login/page": "app/(user-auth)/login/page.js",

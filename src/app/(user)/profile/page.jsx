@@ -2,6 +2,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { MapPin, PackageCheck, Pencil, Phone, UserRound } from "lucide-react";
 import { getMe } from "@/api_call/serverApi";
+import Logout from "@/app/components/user components/Logout";
+
 
 export default async function ProfilePage() {
   const user = await getMe()
@@ -13,11 +15,12 @@ export default async function ProfilePage() {
     .join("")
     .toUpperCase() || "U";
 
+  
   return (
-    <main className="mx-auto max-w-6xl px-4 py-6 md:px-6 md:py-10">
-      <div className="overflow-hidden rounded-lg border border-gray-200 bg-white">
-        <section className="flex flex-col gap-5 border-b border-gray-200 px-5 py-6 md:flex-row md:items-center md:justify-between md:px-7">
-          <div className="flex items-center gap-4">
+    <main className="mx-auto max-w-6xl px-4 py-6 md:px-6 md:py-10 ">
+      <div className="overflow-hidden rounded-lg border border-gray-200 bg-white py-2">
+        <section className="flex flex-col gap-5 border-b border-gray-200  md:flex-row md:items-center md:justify-between md:px-7 px-5">
+          <div className="flex items-center gap-4 ">
             {profile?.image ? (
               <Image
                 src={profile.image}
@@ -32,7 +35,6 @@ export default async function ProfilePage() {
               </div>
             )}
             <div className="min-w-0">
-              <p className="text-sm font-medium text-gray-500">My Profile</p>
               <h1 className="mt-1 truncate text-2xl font-bold text-gray-900">
                 {profile?.name || "User"}
               </h1>
@@ -41,10 +43,11 @@ export default async function ProfilePage() {
           </div>
           <Link
             href={profile?._id ? `/profile/edit/${profile._id}` : "/profile"}
-            className="inline-flex w-fit items-center gap-2 rounded-md bg-[#01A49E] px-4 py-2 text-sm font-semibold text-white transition hover:bg-[#01857f]"
+            className="inline-flex w-fit items-center gap-2 rounded-md bg-[#01A49E] px-4 py-2 text-sm font-semibold text-white transition hover:bg-[#01857f] my-3 "
           >
             <Pencil size={16} /> Edit Profile
           </Link>
+
         </section>
 
         <section className="grid grid-cols-1 md:grid-cols-[1fr_280px]">
@@ -95,6 +98,7 @@ export default async function ProfilePage() {
             </p>
           </aside>
         </section>
+        <Logout/>
       </div>
     </main>
   );

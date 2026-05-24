@@ -3,7 +3,7 @@ import { client, notify } from "@/utils/helper";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 import ButtonLoader from "@/app/components/user components/ButtonLoader";
-
+import Link from "next/link";
 export default function RegisterPage() {
   const [loader, setLoader] = useState(false);
   const router = useRouter();
@@ -115,9 +115,11 @@ export default function RegisterPage() {
 
         <div className="mt-6 text-center text-sm text-gray-600">
           Already have an account?{" "}
+          <Link href="/login">
           <span className="text-[#01A49E] font-semibold cursor-pointer hover:underline">
             Login
           </span>
+          </Link>
         </div>
       </div>
     </div>
