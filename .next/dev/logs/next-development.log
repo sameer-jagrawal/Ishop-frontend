@@ -1,78 +1,308 @@
-[00:00:09.053] Server  LOG     ✓ Ready in 7.6s
-[00:00:16.737] Server  LOG     ○ Compiling / ...
-[00:00:29.586] Server  LOG     env file console "https://ishop-backend-2mld.onrender.com/api/"
-[00:00:30.036] Server  ERROR   (node:16436) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+[00:00:17.855] Server  LOG     ✓ Ready in 16s
+[00:00:21.016] Server  LOG     ○ Compiling / ...
+[00:00:31.996] Server  LOG     env file console "https://ishop-backend-2mld.onrender.com/api/"
+[00:00:32.309] Server  ERROR   (node:14828) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
 (Use `node --trace-deprecation ...` to show where the warning was created)
-[00:00:35.728] Server  LOG     {}
-[00:00:35.813] Server  LOG     {}
-[00:00:35.819] Server  LOG     {}
-[00:00:35.888] Server  LOG     {}
-[00:00:36.921] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:37.715] Browser WARN    Image with src "/logo/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:00:37.715] Browser WARN    Image with src "/logo/vector1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:00:39.226] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/watch.png" "received" null
-[00:00:46.353] Server  LOG     ✓ Finished filesystem cache database compaction in 14.5s
-[00:01:10.413] Browser LOG     [] selected array
-[00:01:10.413] Browser LOG     [] selected array
-[00:01:20.530] Browser LOG     1779266316466i phone 2.webp
-[00:01:20.530] Browser LOG     1779266316466i phone 2.webp
-[00:01:22.094] Browser LOG     {"_id":"6a0d730c27925348208e5631","brand":"Apple","discount":4,"final_price":172800,"name":"I phone 18, 512gb storage","original_price":180000,"qty":1,"stock":true,"thumbnail":"https://ishop-backend-2mld.onrender.com/product/1779266316466i phone 2.webp"}
-[00:01:24.243] Browser ERROR   Each child in a list should have a unique "key" prop.%s%s See https://react.dev/link/warning-keys for more information. 
+[00:00:35.718] Server  LOG     {}
+[00:00:36.276] Server  ERROR   ⨯ TypeError: products.slice is not a function
+[00:00:36.400] Server  LOG     {}
+[00:00:36.947] Server  ERROR   ⨯ TypeError: products.slice is not a function
+[00:00:37.443] Server  ERROR   ⨯ TypeError: products.slice is not a function
+[00:00:37.696] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:38.578] Browser WARN    Image with src "/logo/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:00:38.578] Browser WARN    Image with src "/logo/vector1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:00:38.579] Browser ERROR   uncaughtError: Error: Switched to client rendering because the server rendering errored:
 
-Check the render method of `Cart`. 
-[00:01:29.172] Browser LOG     [react-razorpay]: init... (Logs won't appear in production env)
-[00:01:29.172] Browser LOG     [react-razorpay]: loading script: https://checkout.razorpay.com/v1/checkout.js
-[00:01:29.172] Browser LOG     [react-razorpay]: init... (Logs won't appear in production env)
-[00:01:29.172] Browser LOG     [react-razorpay]: loading script: https://checkout.razorpay.com/v1/checkout.js
-[00:01:29.573] Browser LOG     [react-razorpay]: script loaded success..
-[00:01:29.573] Browser LOG     [react-razorpay]: script loaded success..
-[00:02:13.369] Server  LOG     ✓ Compiled in 792ms
-[00:02:19.513] Server  LOG     ✓ Compiled in 2.6s
-[00:02:22.807] Server  LOG     ✓ Compiled in 275ms
-[00:03:15.513] Browser LOG     {"address":{"_id":"6a0f3a31b2fc9798d5e2f185","addressLine1":"KOTKHAWADA","addressLine2":"New Colony","city":"Kot Khawada","country":"India","fullName":"Sameer Jagrawal","isDefault":false,"phone":"+919294535375","postalCode":"303908","state":"KOT KHAWADA CHAKSU JAIPUR RAJASTHAN","type":"Home"},"paymentMethod":"cod"} order data
-[00:03:17.259] Browser LOG     {"message":"Cannot destructure property '_id' of 'item.productId' as it is null.","success":false}
-[00:03:17.259] Browser LOG     Request failed with status code 500
-[00:03:46.504] Browser LOG     {"address":{"_id":"6a0f3a31b2fc9798d5e2f185","addressLine1":"KOTKHAWADA","addressLine2":"New Colony","city":"Kot Khawada","country":"India","fullName":"Sameer Jagrawal","isDefault":false,"phone":"+919294535375","postalCode":"303908","state":"KOT KHAWADA CHAKSU JAIPUR RAJASTHAN","type":"Home"},"paymentMethod":"cod"} order data
-[00:03:48.261] Browser LOG     {"message":"Cannot destructure property '_id' of 'item.productId' as it is null.","success":false}
-[00:03:48.261] Browser LOG     Request failed with status code 500
-[00:05:47.664] Browser LOG     {"address":{"_id":"6a0f3a31b2fc9798d5e2f185","addressLine1":"KOTKHAWADA","addressLine2":"New Colony","city":"Kot Khawada","country":"India","fullName":"Sameer Jagrawal","isDefault":false,"phone":"+919294535375","postalCode":"303908","state":"KOT KHAWADA CHAKSU JAIPUR RAJASTHAN","type":"Home"},"paymentMethod":"cod"} order data
-[00:05:48.654] Browser LOG     {"message":"Cannot destructure property '_id' of 'item.productId' as it is null.","success":false}
-[00:05:48.654] Browser LOG     Request failed with status code 500
-[00:11:22.885] Server  LOG     ○ Compiling /profile ...
-[00:11:54.716] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:12:05.800] Browser LOG     [{"_id":"6a0d730c27925348208e5631","discount_percentage":4,"final_price":172800,"name":"I phone 18, 512gb storage","original_price":180000,"qty":6,"stock":true,"thumbnail":"https://ishop-backend-2mld.onrender.com/product1779266316466i phone 2.webp"}] sameer
-[00:12:07.493] Server  LOG     {}
-[00:12:07.921] Server  LOG     {}
-[00:12:08.088] Server  LOG     {}
-[00:12:08.788] Server  LOG     {}
-[00:12:09.490] Server  LOG     {}
-[00:12:09.925] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:12:10.474] Browser WARN    Image with src "/logo/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:12:10.474] Browser WARN    Image with src "/logo/vector1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:12:11.296] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/watch.png" "received" null
-[00:12:11.544] Browser ERROR   Each child in a list should have a unique "key" prop.%s%s See https://react.dev/link/warning-keys for more information. 
+products.slice is not a function
+[00:00:38.730] Browser ERROR   uncaughtError: TypeError: products.slice is not a function
+[00:00:40.225] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:41.332] Browser WARN    Image with src "/logo/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:00:41.332] Browser WARN    Image with src "/logo/vector1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:00:41.332] Browser ERROR   uncaughtError: Error: Switched to client rendering because the server rendering errored:
 
-Check the render method of `Cart`. 
-[00:12:14.930] Browser LOG     [react-razorpay]: init... (Logs won't appear in production env)
-[00:12:14.930] Browser LOG     [react-razorpay]: loading script: https://checkout.razorpay.com/v1/checkout.js
-[00:12:14.930] Browser LOG     [react-razorpay]: init... (Logs won't appear in production env)
-[00:12:14.930] Browser LOG     [react-razorpay]: loading script: https://checkout.razorpay.com/v1/checkout.js
-[00:12:15.949] Browser LOG     [react-razorpay]: script loaded success..
-[00:12:15.950] Browser LOG     [react-razorpay]: script loaded success..
-[00:12:20.036] Browser LOG     {"address":{"_id":"6a0f3ce8b2fc9798d5e2f2eb","addressLine1":"KOTKHAWADA","addressLine2":"New Colony","city":"Kot Khawada","country":"India","fullName":"Sameer Jagrawal","isDefault":false,"phone":"+919294535375","postalCode":"303908","state":"KOT KHAWADA CHAKSU JAIPUR RAJASTHAN","type":"Home"},"paymentMethod":"cod"} order data
-[00:12:21.703] Browser LOG     {"message":"Cannot destructure property '_id' of 'item.productId' as it is null.","success":false}
-[00:12:21.703] Browser LOG     Request failed with status code 500
-[00:12:22.569] Server  LOG     ✓ Finished filesystem cache database compaction in 18.8s
-[00:12:22.602] Server  LOG     ✓ Finished writing to filesystem cache in 13.2s
-[00:12:40.974] Server  LOG     ✓ Finished filesystem cache database compaction in 18.4s
-[00:12:41.009] Server  LOG     ✓ Finished writing to filesystem cache in 16.4s
-[00:15:05.861] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:15:09.369] Browser WARN    Image with src "/logo/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:15:09.369] Browser WARN    Image with src "/logo/vector1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:15:11.050] Browser ERROR   Each child in a list should have a unique "key" prop.%s%s See https://react.dev/link/warning-keys for more information. 
+products.slice is not a function
+[00:00:41.363] Server  ERROR   ⨯ TypeError: products.slice is not a function
+[00:00:41.821] Browser ERROR   uncaughtError: TypeError: products.slice is not a function
+[00:00:47.188] Server  LOG     ✓ Finished filesystem cache database compaction in 10.7s
+[00:02:35.641] Server  LOG     ✓ Compiled in 1542ms
+[00:02:35.665] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:02:35.679] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:02:36.636] Server  LOG     env file console "https://ishop-backend-2mld.onrender.com/api/"
+[00:02:39.227] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/watch.png" "received" null
+[00:02:39.726] Server  LOG     {}
+[00:02:39.882] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:02:40.081] Server  LOG     {}
+[00:02:40.615] Server  ERROR   ⨯ TypeError: products.slice is not a function
+[00:02:40.712] Server  ERROR   ⨯ TypeError: products.slice is not a function
+[00:02:41.636] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:02:41.638] Browser WARN    Image with src "/logo/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:02:41.638] Browser ERROR   uncaughtError: Error: Switched to client rendering because the server rendering errored:
 
-Check the render method of `Cart`. 
-[00:15:12.874] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+products.slice is not a function
+[00:02:41.638] Browser WARN    Image with src "/logo/vector1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:02:42.395] Server  ERROR   ⨯ ReferenceError: clg is not defined
+[00:02:42.803] Browser ERROR   uncaughtError: Error: Switched to client rendering because the server rendering errored:
+
+products.slice is not a function
+[00:02:42.803] Browser ERROR   uncaughtError: TypeError: products.slice is not a function
+[00:02:44.386] Server  ERROR   ⨯ ReferenceError: clg is not defined
+[00:02:44.918] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/watch.png" "received" null
+[00:02:45.589] Browser ERROR   uncaughtError: TypeError: products.slice is not a function
+[00:02:49.683] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:02:49.707] Server  LOG     ✓ Compiled in 6s
+[00:02:50.138] Server  LOG     env file console "https://ishop-backend-2mld.onrender.com/api/"
+[00:02:50.919] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:02:52.004] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/watch.png" "received" null
+[00:02:52.472] Server  LOG     {}
+[00:02:52.732] Server  ERROR   ⨯ ReferenceError: clg is not defined
+[00:02:53.155] Server  ERROR   ⨯ TypeError: products.slice is not a function
+[00:02:53.277] Server  LOG     {}
+[00:02:53.538] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:02:53.699] Server  ERROR   ⨯ ReferenceError: clg is not defined
+[00:02:54.932] Browser WARN    Image with src "/logo/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:02:54.932] Browser ERROR   uncaughtError: Error: Switched to client rendering because the server rendering errored:
+
+clg is not defined
+[00:02:54.941] Server  ERROR   ⨯ TypeError: products.slice is not a function
+[00:02:55.635] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:02:55.846] Browser ERROR   uncaughtError: TypeError: products.slice is not a function
+[00:02:56.599] Browser WARN    Image with src "/logo/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:02:56.599] Browser WARN    Image with src "/logo/vector1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:02:56.599] Browser ERROR   uncaughtError: TypeError: products.slice is not a function
+[00:02:58.253] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/watch.png" "received" null
+[00:03:03.498] Server  LOG     ✓ Finished filesystem cache database compaction in 25.0s
+[00:03:03.584] Server  LOG     ✓ Finished writing to filesystem cache in 22.8s
+[00:03:38.570] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:03:38.601] Server  LOG     ✓ Compiled in 330ms
+[00:03:39.016] Server  LOG     env file console "https://ishop-backend-2mld.onrender.com/api/"
+[00:03:39.341] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:03:40.305] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/watch.png" "received" null
+[00:03:40.712] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:03:40.766] Server  LOG     {}
+[00:03:40.826] Server  ERROR   ⨯ TypeError: products.slice is not a function
+[00:03:41.550] Server  ERROR   ⨯ ReferenceError: clg is not defined
+[00:03:41.704] Server  LOG     {}
+[00:03:41.730] Server  ERROR   ⨯ TypeError: products.slice is not a function
+[00:03:42.106] Server  ERROR   ⨯ TypeError: products.slice is not a function
+[00:03:42.403] Server  LOG     {}
+[00:03:42.485] Server  ERROR   ⨯ ReferenceError: clg is not defined
+[00:03:42.581] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:03:42.611] Browser WARN    Image with src "/logo/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:03:42.611] Browser ERROR   uncaughtError: Error: Switched to client rendering because the server rendering errored:
+
+products.slice is not a function
+[00:03:42.611] Browser WARN    Image with src "/logo/vector1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:03:43.102] Server  ERROR   ⨯ ReferenceError: clg is not defined
+[00:03:43.734] Browser WARN    Image with src "/logo/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:03:43.734] Browser WARN    Image with src "/logo/vector1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:03:43.734] Browser ERROR   uncaughtError: TypeError: products.slice is not a function
+[00:03:44.614] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/watch.png" "received" null
+[00:03:44.671] Browser ERROR   uncaughtError: TypeError: products.slice is not a function
+[00:04:26.430] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:04:26.444] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:04:26.747] Server  LOG     env file console "https://ishop-backend-2mld.onrender.com/api/"
+[00:04:27.196] Server  LOG     ✓ Compiled in 973ms
+[00:04:27.541] Server  LOG     ✓ Compiled in 568ms
+[00:04:27.752] Server  LOG     env file console "https://ishop-backend-2mld.onrender.com/api/"
+[00:04:28.083] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:04:28.084] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:04:28.335] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/watch.png" "received" null
+[00:04:28.630] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:04:29.645] Browser WARN    Image with src "/logo/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:04:29.745] Server  LOG     {}
+[00:04:29.883] Server  LOG     {}
+[00:04:30.007] Server  ERROR   ⨯ TypeError: products.slice is not a function
+[00:04:30.059] Server  ERROR   ⨯ ReferenceError: clg is not defined
+[00:04:30.469] Server  ERROR   ⨯ ReferenceError: clg is not defined
+[00:04:30.602] Browser WARN    Image with src "/logo/vector1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:04:31.080] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:04:31.349] Server  ERROR   ⨯ TypeError: products.slice is not a function
+[00:04:31.613] Browser ERROR   uncaughtError: ReferenceError: productsd is not defined
+[00:04:32.868] Server  LOG     ✓ Compiled in 4s
+[00:04:33.000] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/watch.png" "received" null
+[00:04:33.369] Browser WARN    SerializableStateInvariantMiddleware took 43ms, which is more than the warning threshold of 32ms. 
+If your state or actions are very large, you may want to disable the middleware as it might cause too much of a slowdown in development mode. See https://redux-toolkit.js.org/api/getDefaultMiddleware for instructions.
+It is disabled in production builds, so you don't need to worry about that.
+[00:04:33.369] Browser ERROR   uncaughtError: ReferenceError: productsd is not defined
+[00:04:34.113] Server  LOG     env file console "https://ishop-backend-2mld.onrender.com/api/"
+[00:04:34.715] Server  LOG     ✓ Compiled in 747ms
+[00:04:35.032] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:04:35.034] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:04:35.824] Server  ERROR   ⨯ ReferenceError: clg is not defined
+[00:04:35.867] Server  LOG     {}
+[00:04:35.917] Server  ERROR   ⨯ TypeError: products.slice is not a function
+[00:04:35.936] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/watch.png" "received" null
+[00:04:36.986] Server  LOG     {}
+[00:04:37.276] Server  ERROR   ⨯ TypeError: products.slice is not a function
+[00:04:37.666] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:04:38.282] Server  ERROR   ⨯ ReferenceError: clg is not defined
+[00:04:39.634] Browser WARN    Image with src "/logo/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:04:39.634] Browser ERROR   uncaughtError: TypeError: Cannot read properties of undefined (reading 'map')
+[00:04:40.224] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:04:40.907] Browser WARN    Image with src "/logo/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:04:40.907] Browser WARN    Image with src "/logo/vector1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:04:41.079] Browser ERROR   uncaughtError: TypeError: Cannot read properties of undefined (reading 'map')
+[00:04:42.914] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/watch.png" "received" null
+[00:06:07.857] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:06:07.925] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:06:07.928] Server  LOG     ✓ Compiled in 1498ms
+[00:06:08.283] Server  LOG     env file console "https://ishop-backend-2mld.onrender.com/api/"
+[00:06:09.753] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/watch.png" "received" null
+[00:06:10.109] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:06:10.557] Server  LOG     {}
+[00:06:10.653] Browser WARN    Image with src "/logo/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:06:10.673] Server  ERROR   ⨯ ReferenceError: clg is not defined
+[00:06:11.503] Server  ERROR   ⨯ TypeError: products.slice is not a function
+[00:06:11.642] Browser WARN    Image with src "/logo/vector1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:06:11.642] Browser ERROR   uncaughtError: Error: Switched to client rendering because the server rendering errored:
+
+clg is not defined
+[00:06:11.666] Server  ERROR   ⨯ TypeError: products.slice is not a function
+[00:06:12.060] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:06:12.437] Server  ERROR   ⨯ ReferenceError: clg is not defined
+[00:06:12.807] Browser LOG     [{"__v":0,"_id":"6a0d70a0c0b00873ce7c8821","createdAt":"2026-05-20T08:28:16.325Z","image":"1779265696265Laptop icon.png","is_home":false,"is_popular":true,"is_top":false,"name":"Laptops","slug":"laptops","status":true,"updatedAt":"2026-05-21T18:28:31.662Z"},{"__v":0,"_id":"6a0d713927925348208e55b1","createdAt":"2026-05-20T08:30:49.977Z","image":"1779265849957Mobile icons.png","is_home":false,"is_popular":true,"is_top":false,"name":"Phones","slug":"phones","status":true,"updatedAt":"2026-05-21T18:28:36.745Z"},{"__v":0,"_id":"6a0d715027925348208e55b7","createdAt":"2026-05-20T08:31:12.100Z","image":"1779265872095Moniters.png","is_home":true,"is_popular":true,"is_top":true,"name":"Moniters","slug":"moniters","status":true,"updatedAt":"2026-05-21T17:39:04.565Z"},{"__v":0,"_id":"6a0d716127925348208e55bd","createdAt":"2026-05-20T08:31:29.272Z","image":"1779265889268Head Phone icon.webp","is_home":true,"is_popular":true,"is_top":true,"name":"HeadPhones","slug":"headphones","status":true,"updatedAt":"2026-05-21T17:39:16.599Z"},{"__v":0,"_id":"6a0d718427925348208e55c3","createdAt":"2026-05-20T08:32:04.937Z","image":"1779265924878Camera icon.webp","is_home":true,"is_popular":true,"is_top":true,"name":"Camera","slug":"camera","status":true,"updatedAt":"2026-05-20T08:39:11.578Z"}]
+[00:06:12.807] Browser LOG     [{"__v":0,"_id":"6a0d70a0c0b00873ce7c8821","createdAt":"2026-05-20T08:28:16.325Z","image":"1779265696265Laptop icon.png","is_home":false,"is_popular":true,"is_top":false,"name":"Laptops","slug":"laptops","status":true,"updatedAt":"2026-05-21T18:28:31.662Z"},{"__v":0,"_id":"6a0d713927925348208e55b1","createdAt":"2026-05-20T08:30:49.977Z","image":"1779265849957Mobile icons.png","is_home":false,"is_popular":true,"is_top":false,"name":"Phones","slug":"phones","status":true,"updatedAt":"2026-05-21T18:28:36.745Z"},{"__v":0,"_id":"6a0d715027925348208e55b7","createdAt":"2026-05-20T08:31:12.100Z","image":"1779265872095Moniters.png","is_home":true,"is_popular":true,"is_top":true,"name":"Moniters","slug":"moniters","status":true,"updatedAt":"2026-05-21T17:39:04.565Z"},{"__v":0,"_id":"6a0d716127925348208e55bd","createdAt":"2026-05-20T08:31:29.272Z","image":"1779265889268Head Phone icon.webp","is_home":true,"is_popular":true,"is_top":true,"name":"HeadPhones","slug":"headphones","status":true,"updatedAt":"2026-05-21T17:39:16.599Z"},{"__v":0,"_id":"6a0d718427925348208e55c3","createdAt":"2026-05-20T08:32:04.937Z","image":"1779265924878Camera icon.webp","is_home":true,"is_popular":true,"is_top":true,"name":"Camera","slug":"camera","status":true,"updatedAt":"2026-05-20T08:39:11.578Z"}]
+[00:06:13.057] Browser WARN    Image with src "/logo/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:06:13.057] Browser WARN    Image with src "/logo/vector1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:06:13.057] Browser ERROR   uncaughtError: Error: Switched to client rendering because the server rendering errored:
+
+products.slice is not a function
+[00:06:14.241] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/watch.png" "received" null
+[00:06:19.563] Server  LOG     {}
+[00:06:19.793] Browser LOG     [{"__v":0,"_id":"6a0d70a0c0b00873ce7c8821","createdAt":"2026-05-20T08:28:16.325Z","image":"1779265696265Laptop icon.png","is_home":false,"is_popular":true,"is_top":false,"name":"Laptops","slug":"laptops","status":true,"updatedAt":"2026-05-21T18:28:31.662Z"},{"__v":0,"_id":"6a0d713927925348208e55b1","createdAt":"2026-05-20T08:30:49.977Z","image":"1779265849957Mobile icons.png","is_home":false,"is_popular":true,"is_top":false,"name":"Phones","slug":"phones","status":true,"updatedAt":"2026-05-21T18:28:36.745Z"},{"__v":0,"_id":"6a0d715027925348208e55b7","createdAt":"2026-05-20T08:31:12.100Z","image":"1779265872095Moniters.png","is_home":true,"is_popular":true,"is_top":true,"name":"Moniters","slug":"moniters","status":true,"updatedAt":"2026-05-21T17:39:04.565Z"},{"__v":0,"_id":"6a0d716127925348208e55bd","createdAt":"2026-05-20T08:31:29.272Z","image":"1779265889268Head Phone icon.webp","is_home":true,"is_popular":true,"is_top":true,"name":"HeadPhones","slug":"headphones","status":true,"updatedAt":"2026-05-21T17:39:16.599Z"},{"__v":0,"_id":"6a0d718427925348208e55c3","createdAt":"2026-05-20T08:32:04.937Z","image":"1779265924878Camera icon.webp","is_home":true,"is_popular":true,"is_top":true,"name":"Camera","slug":"camera","status":true,"updatedAt":"2026-05-20T08:39:11.578Z"}]
+[00:06:19.793] Browser LOG     [{"__v":0,"_id":"6a0d70a0c0b00873ce7c8821","createdAt":"2026-05-20T08:28:16.325Z","image":"1779265696265Laptop icon.png","is_home":false,"is_popular":true,"is_top":false,"name":"Laptops","slug":"laptops","status":true,"updatedAt":"2026-05-21T18:28:31.662Z"},{"__v":0,"_id":"6a0d713927925348208e55b1","createdAt":"2026-05-20T08:30:49.977Z","image":"1779265849957Mobile icons.png","is_home":false,"is_popular":true,"is_top":false,"name":"Phones","slug":"phones","status":true,"updatedAt":"2026-05-21T18:28:36.745Z"},{"__v":0,"_id":"6a0d715027925348208e55b7","createdAt":"2026-05-20T08:31:12.100Z","image":"1779265872095Moniters.png","is_home":true,"is_popular":true,"is_top":true,"name":"Moniters","slug":"moniters","status":true,"updatedAt":"2026-05-21T17:39:04.565Z"},{"__v":0,"_id":"6a0d716127925348208e55bd","createdAt":"2026-05-20T08:31:29.272Z","image":"1779265889268Head Phone icon.webp","is_home":true,"is_popular":true,"is_top":true,"name":"HeadPhones","slug":"headphones","status":true,"updatedAt":"2026-05-21T17:39:16.599Z"},{"__v":0,"_id":"6a0d718427925348208e55c3","createdAt":"2026-05-20T08:32:04.937Z","image":"1779265924878Camera icon.webp","is_home":true,"is_popular":true,"is_top":true,"name":"Camera","slug":"camera","status":true,"updatedAt":"2026-05-20T08:39:11.578Z"}]
+[00:06:19.931] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/watch.png" "received" null
+[00:07:00.066] Server  LOG     ✓ Compiled in 378ms
+[00:07:05.031] Server  LOG     ✓ Compiled in 245ms
+[00:07:22.489] Server  LOG     ✓ Finished filesystem cache database compaction in 14.8s
+[00:07:22.904] Server  LOG     ✓ Compiled in 536ms
+[00:07:23.019] Browser ERROR   uncaughtError: TypeError: Cannot read properties of undefined (reading 'map')
+[00:07:23.586] Browser ERROR   uncaughtError: TypeError: Cannot read properties of undefined (reading 'map')
+[00:07:27.185] Server  LOG     env file console "https://ishop-backend-2mld.onrender.com/api/"
+[00:07:29.140] Server  ERROR   ⨯ TypeError: Cannot read properties of undefined (reading 'map')
+[00:07:29.395] Server  LOG     {}
+[00:07:29.621] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:07:30.599] Browser WARN    Image with src "/logo/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:07:30.599] Browser WARN    Image with src "/logo/vector1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:07:30.599] Browser ERROR   uncaughtError: TypeError: Cannot read properties of undefined (reading 'map')
+[00:07:55.142] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:07:55.146] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:07:55.163] Server  LOG     ✓ Compiled in 271ms
+[00:07:55.521] Server  LOG     env file console "https://ishop-backend-2mld.onrender.com/api/"
+[00:07:56.709] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/watch.png" "received" null
+[00:07:57.072] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:07:57.415] Server  LOG     {}
+[00:07:57.604] Browser WARN    Image with src "/logo/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:07:57.604] Browser WARN    Image with src "/logo/vector1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:07:57.918] Server  ERROR   ⨯ TypeError: products.slice is not a function
+[00:07:58.085] Server  LOG     {}
+[00:07:58.391] Server  ERROR   ⨯ ReferenceError: clg is not defined
+[00:07:58.678] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:07:59.221] Server  ERROR   ⨯ ReferenceError: clg is not defined
+[00:07:59.715] Browser ERROR   uncaughtError: Error: Switched to client rendering because the server rendering errored:
+
+clg is not defined
+[00:07:59.867] Server  ERROR   ⨯ TypeError: products.slice is not a function
+[00:08:00.361] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/watch.png" "received" null
+[00:08:00.803] Browser LOG     {"imageBaseUrl":"https://ishop-backend-2mld.onrender.com/product","limit":8,"pages":1,"product":[{"__v":0,"_id":"6a0f4d6770dc6e38d83d0b5d","brandId":{"__v":0,"_id":"6a0d71a327925348208e55cf","categoryId":["6a0d70a0c0b00873ce7c8821","6a0d713927925348208e55b1","6a0d715027925348208e55b7"],"createdAt":"2026-05-20T08:32:35.607Z","image":"1779265955597Apple.png","is_home":false,"is_popular":false,"is_top":false,"name":"Apple","slug":"apple","status":true,"updatedAt":"2026-05-20T08:32:35.607Z"},"categoryId":{"__v":0,"_id":"6a0d70a0c0b00873ce7c8821","createdAt":"2026-05-20T08:28:16.325Z","image":"1779265696265Laptop icon.png","is_home":false,"is_popular":true,"is_top":false,"name":"Laptops","slug":"laptops","status":true,"updatedAt":"2026-05-21T18:28:31.662Z"},"colorId":[{"__v":0,"_id":"6a0d725b27925348208e5615","colorCode":"#000080","createdAt":"2026-05-20T08:35:39.403Z","name":"Blue","slug":"blue","status":true,"updatedAt":"2026-05-20T08:35:39.403Z"}],"createdAt":"2026-05-21T18:22:31.393Z","discount_percentage":3,"final_price":77600,"images":["1779387751385image 1.webp","1779387751387image 3.avif","1779387751387image 4.webp","1779387751388images 1.jpg","1779387751388thumbnail.jpg"],"is_best":true,"is_home":true,"is_hot":true,"is_popular":true,"is_return":true,"is_top":true,"long_description":"<p>MacBook Pro is a premium high-performance laptop developed by <a href=\"https://www.apple.com/macbook-pro/?utm_source=chatgpt.com\" rel=\"noopener noreferrer\" target=\"_blank\">Apple</a>, designed for professionals, creators, developers, and users who need powerful computing capabilities. Built with Apple’s advanced M-series chips, the MacBook Pro delivers exceptional speed, energy efficiency, and smooth multitasking performance for demanding tasks such as video editing, software development, graphic design, 3D rendering, music production, and professional workflows.</p><p>It features a stunning Liquid Retina XDR display with vibrant colors, deep contrast, and high brightness for an immersive viewing experience. The laptop also offers long-lasting battery life, fast SSD storage, high-quality speakers, an advanced cooling system, and a sleek aluminum body that combines durability with a modern minimalist design.</p><p>MacBook Pro includes features like Touch ID for secure authentication, a high-resolution webcam, studio-quality microphones, multiple connectivity ports including Thunderbolt and HDMI, and seamless integration with the Apple ecosystem. With macOS optimization and powerful hardware, it provides a smooth, reliable, and efficient user experience for both professional and everyday use.</p>","name":"MacBook Pro","original_price":80000,"short_description":"MacBook Pro is a high-performance premium laptop by Apple, designed for professionals, creators, and power users. It features Apple’s M-series chips, a Retina display, long battery life, fast performance, and advanced tools for tasks like video editing, programming, design, and multitasking.","slug":"macbook-pro","status":true,"stock":true,"thumbnail":"1779387751388thumbnail.jpg","updatedAt":"2026-05-22T07:12:00.762Z"},{"__v":0,"_id":"6a0d730c27925348208e5631","brandId":{"__v":0,"_id":"6a0d71a327925348208e55cf","categoryId":["6a0d70a0c0b00873ce7c8821","6a0d713927925348208e55b1","6a0d715027925348208e55b7"],"createdAt":"2026-05-20T08:32:35.607Z","image":"1779265955597Apple.png","is_home":false,"is_popular":false,"is_top":false,"name":"Apple","slug":"apple","status":true,"updatedAt":"2026-05-20T08:32:35.607Z"},"categoryId":{"__v":0,"_id":"6a0d713927925348208e55b1","createdAt":"2026-05-20T08:30:49.977Z","image":"1779265849957Mobile icons.png","is_home":false,"is_popular":true,"is_top":false,"name":"Phones","slug":"phones","status":true,"updatedAt":"2026-05-21T18:28:36.745Z"},"colorId":[{"__v":0,"_id":"6a0d725b27925348208e5615","colorCode":"#000080","createdAt":"2026-05-20T08:35:39.403Z","name":"Blue","slug":"blue","status":true,"updatedAt":"2026-05-20T08:35:39.403Z"}],"createdAt":"2026-05-20T08:38:36.474Z","discount_percentage":4,"final_price":172800,"images":["1779266316455i phone 2.webp","1779266316458i phone 3.webp","1779266316459i phone 4.webp","1779266316462I phone 6.avif","1779266316463i phone 6.webp"],"is_best":true,"is_home":true,"is_hot":false,"is_popular":true,"is_return":true,"is_top":true,"long_description":"<p>The iPhone 18 is designed to push smartphone innovation to the next level with cutting-edge technology, elegant craftsmanship, and powerful intelligent features. Featuring a refined aerospace-grade body and an immersive Super Retina display, the device offers vibrant colors, sharper contrast, and an ultra-smooth viewing experience for gaming, streaming, and everyday use.</p><p><br></p><p>Powered by Apple’s latest-generation chipset, the iPhone 18 delivers lightning-fast performance, enhanced power efficiency, and advanced AI capabilities that make multitasking effortless. The upgraded camera system combines professional-grade photography with intelligent computational imaging, allowing users to capture stunning photos and cinematic-quality videos in any lighting condition.</p>","name":"I phone 18, 512gb storage","original_price":180000,"short_description":"The iPhone 18 delivers next-generation performance, an ultra-advanced AI-powered camera system, a stunning edge-to-edge display, and all-day battery life in a sleek premium design. Built for speed, creativity, and seamless connectivity, it redefines the modern smartphone experience.","slug":"i-phone-18-512gb-storage","status":true,"stock":true,"thumbnail":"1779266316466i phone 2.webp","updatedAt":"2026-05-21T18:27:23.142Z"}],"total":2}
+[00:08:00.803] Browser LOG     {"imageBaseUrl":"https://ishop-backend-2mld.onrender.com/product","limit":8,"pages":1,"product":[{"__v":0,"_id":"6a0f4d6770dc6e38d83d0b5d","brandId":{"__v":0,"_id":"6a0d71a327925348208e55cf","categoryId":["6a0d70a0c0b00873ce7c8821","6a0d713927925348208e55b1","6a0d715027925348208e55b7"],"createdAt":"2026-05-20T08:32:35.607Z","image":"1779265955597Apple.png","is_home":false,"is_popular":false,"is_top":false,"name":"Apple","slug":"apple","status":true,"updatedAt":"2026-05-20T08:32:35.607Z"},"categoryId":{"__v":0,"_id":"6a0d70a0c0b00873ce7c8821","createdAt":"2026-05-20T08:28:16.325Z","image":"1779265696265Laptop icon.png","is_home":false,"is_popular":true,"is_top":false,"name":"Laptops","slug":"laptops","status":true,"updatedAt":"2026-05-21T18:28:31.662Z"},"colorId":[{"__v":0,"_id":"6a0d725b27925348208e5615","colorCode":"#000080","createdAt":"2026-05-20T08:35:39.403Z","name":"Blue","slug":"blue","status":true,"updatedAt":"2026-05-20T08:35:39.403Z"}],"createdAt":"2026-05-21T18:22:31.393Z","discount_percentage":3,"final_price":77600,"images":["1779387751385image 1.webp","1779387751387image 3.avif","1779387751387image 4.webp","1779387751388images 1.jpg","1779387751388thumbnail.jpg"],"is_best":true,"is_home":true,"is_hot":true,"is_popular":true,"is_return":true,"is_top":true,"long_description":"<p>MacBook Pro is a premium high-performance laptop developed by <a href=\"https://www.apple.com/macbook-pro/?utm_source=chatgpt.com\" rel=\"noopener noreferrer\" target=\"_blank\">Apple</a>, designed for professionals, creators, developers, and users who need powerful computing capabilities. Built with Apple’s advanced M-series chips, the MacBook Pro delivers exceptional speed, energy efficiency, and smooth multitasking performance for demanding tasks such as video editing, software development, graphic design, 3D rendering, music production, and professional workflows.</p><p>It features a stunning Liquid Retina XDR display with vibrant colors, deep contrast, and high brightness for an immersive viewing experience. The laptop also offers long-lasting battery life, fast SSD storage, high-quality speakers, an advanced cooling system, and a sleek aluminum body that combines durability with a modern minimalist design.</p><p>MacBook Pro includes features like Touch ID for secure authentication, a high-resolution webcam, studio-quality microphones, multiple connectivity ports including Thunderbolt and HDMI, and seamless integration with the Apple ecosystem. With macOS optimization and powerful hardware, it provides a smooth, reliable, and efficient user experience for both professional and everyday use.</p>","name":"MacBook Pro","original_price":80000,"short_description":"MacBook Pro is a high-performance premium laptop by Apple, designed for professionals, creators, and power users. It features Apple’s M-series chips, a Retina display, long battery life, fast performance, and advanced tools for tasks like video editing, programming, design, and multitasking.","slug":"macbook-pro","status":true,"stock":true,"thumbnail":"1779387751388thumbnail.jpg","updatedAt":"2026-05-22T07:12:00.762Z"},{"__v":0,"_id":"6a0d730c27925348208e5631","brandId":{"__v":0,"_id":"6a0d71a327925348208e55cf","categoryId":["6a0d70a0c0b00873ce7c8821","6a0d713927925348208e55b1","6a0d715027925348208e55b7"],"createdAt":"2026-05-20T08:32:35.607Z","image":"1779265955597Apple.png","is_home":false,"is_popular":false,"is_top":false,"name":"Apple","slug":"apple","status":true,"updatedAt":"2026-05-20T08:32:35.607Z"},"categoryId":{"__v":0,"_id":"6a0d713927925348208e55b1","createdAt":"2026-05-20T08:30:49.977Z","image":"1779265849957Mobile icons.png","is_home":false,"is_popular":true,"is_top":false,"name":"Phones","slug":"phones","status":true,"updatedAt":"2026-05-21T18:28:36.745Z"},"colorId":[{"__v":0,"_id":"6a0d725b27925348208e5615","colorCode":"#000080","createdAt":"2026-05-20T08:35:39.403Z","name":"Blue","slug":"blue","status":true,"updatedAt":"2026-05-20T08:35:39.403Z"}],"createdAt":"2026-05-20T08:38:36.474Z","discount_percentage":4,"final_price":172800,"images":["1779266316455i phone 2.webp","1779266316458i phone 3.webp","1779266316459i phone 4.webp","1779266316462I phone 6.avif","1779266316463i phone 6.webp"],"is_best":true,"is_home":true,"is_hot":false,"is_popular":true,"is_return":true,"is_top":true,"long_description":"<p>The iPhone 18 is designed to push smartphone innovation to the next level with cutting-edge technology, elegant craftsmanship, and powerful intelligent features. Featuring a refined aerospace-grade body and an immersive Super Retina display, the device offers vibrant colors, sharper contrast, and an ultra-smooth viewing experience for gaming, streaming, and everyday use.</p><p><br></p><p>Powered by Apple’s latest-generation chipset, the iPhone 18 delivers lightning-fast performance, enhanced power efficiency, and advanced AI capabilities that make multitasking effortless. The upgraded camera system combines professional-grade photography with intelligent computational imaging, allowing users to capture stunning photos and cinematic-quality videos in any lighting condition.</p>","name":"I phone 18, 512gb storage","original_price":180000,"short_description":"The iPhone 18 delivers next-generation performance, an ultra-advanced AI-powered camera system, a stunning edge-to-edge display, and all-day battery life in a sleek premium design. Built for speed, creativity, and seamless connectivity, it redefines the modern smartphone experience.","slug":"i-phone-18-512gb-storage","status":true,"stock":true,"thumbnail":"1779266316466i phone 2.webp","updatedAt":"2026-05-21T18:27:23.142Z"}],"total":2}
+[00:08:00.803] Browser ERROR   uncaughtError: TypeError: Cannot read properties of undefined (reading 'map')
+[00:08:02.178] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:08:02.186] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:08:02.192] Browser LOG     {"imageBaseUrl":"https://ishop-backend-2mld.onrender.com/product","limit":8,"pages":1,"product":[{"__v":0,"_id":"6a0f4d6770dc6e38d83d0b5d","brandId":{"__v":0,"_id":"6a0d71a327925348208e55cf","categoryId":["6a0d70a0c0b00873ce7c8821","6a0d713927925348208e55b1","6a0d715027925348208e55b7"],"createdAt":"2026-05-20T08:32:35.607Z","image":"1779265955597Apple.png","is_home":false,"is_popular":false,"is_top":false,"name":"Apple","slug":"apple","status":true,"updatedAt":"2026-05-20T08:32:35.607Z"},"categoryId":{"__v":0,"_id":"6a0d70a0c0b00873ce7c8821","createdAt":"2026-05-20T08:28:16.325Z","image":"1779265696265Laptop icon.png","is_home":false,"is_popular":true,"is_top":false,"name":"Laptops","slug":"laptops","status":true,"updatedAt":"2026-05-21T18:28:31.662Z"},"colorId":[{"__v":0,"_id":"6a0d725b27925348208e5615","colorCode":"#000080","createdAt":"2026-05-20T08:35:39.403Z","name":"Blue","slug":"blue","status":true,"updatedAt":"2026-05-20T08:35:39.403Z"}],"createdAt":"2026-05-21T18:22:31.393Z","discount_percentage":3,"final_price":77600,"images":["1779387751385image 1.webp","1779387751387image 3.avif","1779387751387image 4.webp","1779387751388images 1.jpg","1779387751388thumbnail.jpg"],"is_best":true,"is_home":true,"is_hot":true,"is_popular":true,"is_return":true,"is_top":true,"long_description":"<p>MacBook Pro is a premium high-performance laptop developed by <a href=\"https://www.apple.com/macbook-pro/?utm_source=chatgpt.com\" rel=\"noopener noreferrer\" target=\"_blank\">Apple</a>, designed for professionals, creators, developers, and users who need powerful computing capabilities. Built with Apple’s advanced M-series chips, the MacBook Pro delivers exceptional speed, energy efficiency, and smooth multitasking performance for demanding tasks such as video editing, software development, graphic design, 3D rendering, music production, and professional workflows.</p><p>It features a stunning Liquid Retina XDR display with vibrant colors, deep contrast, and high brightness for an immersive viewing experience. The laptop also offers long-lasting battery life, fast SSD storage, high-quality speakers, an advanced cooling system, and a sleek aluminum body that combines durability with a modern minimalist design.</p><p>MacBook Pro includes features like Touch ID for secure authentication, a high-resolution webcam, studio-quality microphones, multiple connectivity ports including Thunderbolt and HDMI, and seamless integration with the Apple ecosystem. With macOS optimization and powerful hardware, it provides a smooth, reliable, and efficient user experience for both professional and everyday use.</p>","name":"MacBook Pro","original_price":80000,"short_description":"MacBook Pro is a high-performance premium laptop by Apple, designed for professionals, creators, and power users. It features Apple’s M-series chips, a Retina display, long battery life, fast performance, and advanced tools for tasks like video editing, programming, design, and multitasking.","slug":"macbook-pro","status":true,"stock":true,"thumbnail":"1779387751388thumbnail.jpg","updatedAt":"2026-05-22T07:12:00.762Z"},{"__v":0,"_id":"6a0d730c27925348208e5631","brandId":{"__v":0,"_id":"6a0d71a327925348208e55cf","categoryId":["6a0d70a0c0b00873ce7c8821","6a0d713927925348208e55b1","6a0d715027925348208e55b7"],"createdAt":"2026-05-20T08:32:35.607Z","image":"1779265955597Apple.png","is_home":false,"is_popular":false,"is_top":false,"name":"Apple","slug":"apple","status":true,"updatedAt":"2026-05-20T08:32:35.607Z"},"categoryId":{"__v":0,"_id":"6a0d713927925348208e55b1","createdAt":"2026-05-20T08:30:49.977Z","image":"1779265849957Mobile icons.png","is_home":false,"is_popular":true,"is_top":false,"name":"Phones","slug":"phones","status":true,"updatedAt":"2026-05-21T18:28:36.745Z"},"colorId":[{"__v":0,"_id":"6a0d725b27925348208e5615","colorCode":"#000080","createdAt":"2026-05-20T08:35:39.403Z","name":"Blue","slug":"blue","status":true,"updatedAt":"2026-05-20T08:35:39.403Z"}],"createdAt":"2026-05-20T08:38:36.474Z","discount_percentage":4,"final_price":172800,"images":["1779266316455i phone 2.webp","1779266316458i phone 3.webp","1779266316459i phone 4.webp","1779266316462I phone 6.avif","1779266316463i phone 6.webp"],"is_best":true,"is_home":true,"is_hot":false,"is_popular":true,"is_return":true,"is_top":true,"long_description":"<p>The iPhone 18 is designed to push smartphone innovation to the next level with cutting-edge technology, elegant craftsmanship, and powerful intelligent features. Featuring a refined aerospace-grade body and an immersive Super Retina display, the device offers vibrant colors, sharper contrast, and an ultra-smooth viewing experience for gaming, streaming, and everyday use.</p><p><br></p><p>Powered by Apple’s latest-generation chipset, the iPhone 18 delivers lightning-fast performance, enhanced power efficiency, and advanced AI capabilities that make multitasking effortless. The upgraded camera system combines professional-grade photography with intelligent computational imaging, allowing users to capture stunning photos and cinematic-quality videos in any lighting condition.</p>","name":"I phone 18, 512gb storage","original_price":180000,"short_description":"The iPhone 18 delivers next-generation performance, an ultra-advanced AI-powered camera system, a stunning edge-to-edge display, and all-day battery life in a sleek premium design. Built for speed, creativity, and seamless connectivity, it redefines the modern smartphone experience.","slug":"i-phone-18-512gb-storage","status":true,"stock":true,"thumbnail":"1779266316466i phone 2.webp","updatedAt":"2026-05-21T18:27:23.142Z"}],"total":2}
+[00:08:02.192] Browser LOG     {"imageBaseUrl":"https://ishop-backend-2mld.onrender.com/product","limit":8,"pages":1,"product":[{"__v":0,"_id":"6a0f4d6770dc6e38d83d0b5d","brandId":{"__v":0,"_id":"6a0d71a327925348208e55cf","categoryId":["6a0d70a0c0b00873ce7c8821","6a0d713927925348208e55b1","6a0d715027925348208e55b7"],"createdAt":"2026-05-20T08:32:35.607Z","image":"1779265955597Apple.png","is_home":false,"is_popular":false,"is_top":false,"name":"Apple","slug":"apple","status":true,"updatedAt":"2026-05-20T08:32:35.607Z"},"categoryId":{"__v":0,"_id":"6a0d70a0c0b00873ce7c8821","createdAt":"2026-05-20T08:28:16.325Z","image":"1779265696265Laptop icon.png","is_home":false,"is_popular":true,"is_top":false,"name":"Laptops","slug":"laptops","status":true,"updatedAt":"2026-05-21T18:28:31.662Z"},"colorId":[{"__v":0,"_id":"6a0d725b27925348208e5615","colorCode":"#000080","createdAt":"2026-05-20T08:35:39.403Z","name":"Blue","slug":"blue","status":true,"updatedAt":"2026-05-20T08:35:39.403Z"}],"createdAt":"2026-05-21T18:22:31.393Z","discount_percentage":3,"final_price":77600,"images":["1779387751385image 1.webp","1779387751387image 3.avif","1779387751387image 4.webp","1779387751388images 1.jpg","1779387751388thumbnail.jpg"],"is_best":true,"is_home":true,"is_hot":true,"is_popular":true,"is_return":true,"is_top":true,"long_description":"<p>MacBook Pro is a premium high-performance laptop developed by <a href=\"https://www.apple.com/macbook-pro/?utm_source=chatgpt.com\" rel=\"noopener noreferrer\" target=\"_blank\">Apple</a>, designed for professionals, creators, developers, and users who need powerful computing capabilities. Built with Apple’s advanced M-series chips, the MacBook Pro delivers exceptional speed, energy efficiency, and smooth multitasking performance for demanding tasks such as video editing, software development, graphic design, 3D rendering, music production, and professional workflows.</p><p>It features a stunning Liquid Retina XDR display with vibrant colors, deep contrast, and high brightness for an immersive viewing experience. The laptop also offers long-lasting battery life, fast SSD storage, high-quality speakers, an advanced cooling system, and a sleek aluminum body that combines durability with a modern minimalist design.</p><p>MacBook Pro includes features like Touch ID for secure authentication, a high-resolution webcam, studio-quality microphones, multiple connectivity ports including Thunderbolt and HDMI, and seamless integration with the Apple ecosystem. With macOS optimization and powerful hardware, it provides a smooth, reliable, and efficient user experience for both professional and everyday use.</p>","name":"MacBook Pro","original_price":80000,"short_description":"MacBook Pro is a high-performance premium laptop by Apple, designed for professionals, creators, and power users. It features Apple’s M-series chips, a Retina display, long battery life, fast performance, and advanced tools for tasks like video editing, programming, design, and multitasking.","slug":"macbook-pro","status":true,"stock":true,"thumbnail":"1779387751388thumbnail.jpg","updatedAt":"2026-05-22T07:12:00.762Z"},{"__v":0,"_id":"6a0d730c27925348208e5631","brandId":{"__v":0,"_id":"6a0d71a327925348208e55cf","categoryId":["6a0d70a0c0b00873ce7c8821","6a0d713927925348208e55b1","6a0d715027925348208e55b7"],"createdAt":"2026-05-20T08:32:35.607Z","image":"1779265955597Apple.png","is_home":false,"is_popular":false,"is_top":false,"name":"Apple","slug":"apple","status":true,"updatedAt":"2026-05-20T08:32:35.607Z"},"categoryId":{"__v":0,"_id":"6a0d713927925348208e55b1","createdAt":"2026-05-20T08:30:49.977Z","image":"1779265849957Mobile icons.png","is_home":false,"is_popular":true,"is_top":false,"name":"Phones","slug":"phones","status":true,"updatedAt":"2026-05-21T18:28:36.745Z"},"colorId":[{"__v":0,"_id":"6a0d725b27925348208e5615","colorCode":"#000080","createdAt":"2026-05-20T08:35:39.403Z","name":"Blue","slug":"blue","status":true,"updatedAt":"2026-05-20T08:35:39.403Z"}],"createdAt":"2026-05-20T08:38:36.474Z","discount_percentage":4,"final_price":172800,"images":["1779266316455i phone 2.webp","1779266316458i phone 3.webp","1779266316459i phone 4.webp","1779266316462I phone 6.avif","1779266316463i phone 6.webp"],"is_best":true,"is_home":true,"is_hot":false,"is_popular":true,"is_return":true,"is_top":true,"long_description":"<p>The iPhone 18 is designed to push smartphone innovation to the next level with cutting-edge technology, elegant craftsmanship, and powerful intelligent features. Featuring a refined aerospace-grade body and an immersive Super Retina display, the device offers vibrant colors, sharper contrast, and an ultra-smooth viewing experience for gaming, streaming, and everyday use.</p><p><br></p><p>Powered by Apple’s latest-generation chipset, the iPhone 18 delivers lightning-fast performance, enhanced power efficiency, and advanced AI capabilities that make multitasking effortless. The upgraded camera system combines professional-grade photography with intelligent computational imaging, allowing users to capture stunning photos and cinematic-quality videos in any lighting condition.</p>","name":"I phone 18, 512gb storage","original_price":180000,"short_description":"The iPhone 18 delivers next-generation performance, an ultra-advanced AI-powered camera system, a stunning edge-to-edge display, and all-day battery life in a sleek premium design. Built for speed, creativity, and seamless connectivity, it redefines the modern smartphone experience.","slug":"i-phone-18-512gb-storage","status":true,"stock":true,"thumbnail":"1779266316466i phone 2.webp","updatedAt":"2026-05-21T18:27:23.142Z"}],"total":2}
+[00:08:02.193] Browser ERROR   uncaughtError: TypeError: Cannot read properties of undefined (reading 'map')
+[00:08:02.388] Server  LOG     env file console "https://ishop-backend-2mld.onrender.com/api/"
+[00:08:02.708] Server  LOG     ✓ Compiled in 889ms
+[00:08:03.463] Server  LOG     {}
+[00:08:03.623] Server  LOG     {} "sameer"
+[00:08:03.768] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/watch.png" "received" null
+[00:08:04.306] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:08:04.517] Server  LOG     {}
+[00:08:04.665] Server  ERROR   ⨯ TypeError: products.slice is not a function
+[00:08:05.582] Browser WARN    Image with src "/logo/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:08:05.582] Browser WARN    Image with src "/logo/vector1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:08:05.820] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:08:10.905] Browser WARN    ImmutableStateInvariantMiddleware took 102ms, which is more than the warning threshold of 32ms. 
+If your state or actions are very large, you may want to disable the middleware as it might cause too much of a slowdown in development mode. See https://redux-toolkit.js.org/api/getDefaultMiddleware for instructions.
+It is disabled in production builds, so you don't need to worry about that.
+[00:08:10.905] Browser LOG     {"imageBaseUrl":"https://ishop-backend-2mld.onrender.com/product","limit":8,"pages":1,"product":[{"__v":0,"_id":"6a0f4d6770dc6e38d83d0b5d","brandId":{"__v":0,"_id":"6a0d71a327925348208e55cf","categoryId":["6a0d70a0c0b00873ce7c8821","6a0d713927925348208e55b1","6a0d715027925348208e55b7"],"createdAt":"2026-05-20T08:32:35.607Z","image":"1779265955597Apple.png","is_home":false,"is_popular":false,"is_top":false,"name":"Apple","slug":"apple","status":true,"updatedAt":"2026-05-20T08:32:35.607Z"},"categoryId":{"__v":0,"_id":"6a0d70a0c0b00873ce7c8821","createdAt":"2026-05-20T08:28:16.325Z","image":"1779265696265Laptop icon.png","is_home":false,"is_popular":true,"is_top":false,"name":"Laptops","slug":"laptops","status":true,"updatedAt":"2026-05-21T18:28:31.662Z"},"colorId":[{"__v":0,"_id":"6a0d725b27925348208e5615","colorCode":"#000080","createdAt":"2026-05-20T08:35:39.403Z","name":"Blue","slug":"blue","status":true,"updatedAt":"2026-05-20T08:35:39.403Z"}],"createdAt":"2026-05-21T18:22:31.393Z","discount_percentage":3,"final_price":77600,"images":["1779387751385image 1.webp","1779387751387image 3.avif","1779387751387image 4.webp","1779387751388images 1.jpg","1779387751388thumbnail.jpg"],"is_best":true,"is_home":true,"is_hot":true,"is_popular":true,"is_return":true,"is_top":true,"long_description":"<p>MacBook Pro is a premium high-performance laptop developed by <a href=\"https://www.apple.com/macbook-pro/?utm_source=chatgpt.com\" rel=\"noopener noreferrer\" target=\"_blank\">Apple</a>, designed for professionals, creators, developers, and users who need powerful computing capabilities. Built with Apple’s advanced M-series chips, the MacBook Pro delivers exceptional speed, energy efficiency, and smooth multitasking performance for demanding tasks such as video editing, software development, graphic design, 3D rendering, music production, and professional workflows.</p><p>It features a stunning Liquid Retina XDR display with vibrant colors, deep contrast, and high brightness for an immersive viewing experience. The laptop also offers long-lasting battery life, fast SSD storage, high-quality speakers, an advanced cooling system, and a sleek aluminum body that combines durability with a modern minimalist design.</p><p>MacBook Pro includes features like Touch ID for secure authentication, a high-resolution webcam, studio-quality microphones, multiple connectivity ports including Thunderbolt and HDMI, and seamless integration with the Apple ecosystem. With macOS optimization and powerful hardware, it provides a smooth, reliable, and efficient user experience for both professional and everyday use.</p>","name":"MacBook Pro","original_price":80000,"short_description":"MacBook Pro is a high-performance premium laptop by Apple, designed for professionals, creators, and power users. It features Apple’s M-series chips, a Retina display, long battery life, fast performance, and advanced tools for tasks like video editing, programming, design, and multitasking.","slug":"macbook-pro","status":true,"stock":true,"thumbnail":"1779387751388thumbnail.jpg","updatedAt":"2026-05-22T07:12:00.762Z"},{"__v":0,"_id":"6a0d730c27925348208e5631","brandId":{"__v":0,"_id":"6a0d71a327925348208e55cf","categoryId":["6a0d70a0c0b00873ce7c8821","6a0d713927925348208e55b1","6a0d715027925348208e55b7"],"createdAt":"2026-05-20T08:32:35.607Z","image":"1779265955597Apple.png","is_home":false,"is_popular":false,"is_top":false,"name":"Apple","slug":"apple","status":true,"updatedAt":"2026-05-20T08:32:35.607Z"},"categoryId":{"__v":0,"_id":"6a0d713927925348208e55b1","createdAt":"2026-05-20T08:30:49.977Z","image":"1779265849957Mobile icons.png","is_home":false,"is_popular":true,"is_top":false,"name":"Phones","slug":"phones","status":true,"updatedAt":"2026-05-21T18:28:36.745Z"},"colorId":[{"__v":0,"_id":"6a0d725b27925348208e5615","colorCode":"#000080","createdAt":"2026-05-20T08:35:39.403Z","name":"Blue","slug":"blue","status":true,"updatedAt":"2026-05-20T08:35:39.403Z"}],"createdAt":"2026-05-20T08:38:36.474Z","discount_percentage":4,"final_price":172800,"images":["1779266316455i phone 2.webp","1779266316458i phone 3.webp","1779266316459i phone 4.webp","1779266316462I phone 6.avif","1779266316463i phone 6.webp"],"is_best":true,"is_home":true,"is_hot":false,"is_popular":true,"is_return":true,"is_top":true,"long_description":"<p>The iPhone 18 is designed to push smartphone innovation to the next level with cutting-edge technology, elegant craftsmanship, and powerful intelligent features. Featuring a refined aerospace-grade body and an immersive Super Retina display, the device offers vibrant colors, sharper contrast, and an ultra-smooth viewing experience for gaming, streaming, and everyday use.</p><p><br></p><p>Powered by Apple’s latest-generation chipset, the iPhone 18 delivers lightning-fast performance, enhanced power efficiency, and advanced AI capabilities that make multitasking effortless. The upgraded camera system combines professional-grade photography with intelligent computational imaging, allowing users to capture stunning photos and cinematic-quality videos in any lighting condition.</p>","name":"I phone 18, 512gb storage","original_price":180000,"short_description":"The iPhone 18 delivers next-generation performance, an ultra-advanced AI-powered camera system, a stunning edge-to-edge display, and all-day battery life in a sleek premium design. Built for speed, creativity, and seamless connectivity, it redefines the modern smartphone experience.","slug":"i-phone-18-512gb-storage","status":true,"stock":true,"thumbnail":"1779266316466i phone 2.webp","updatedAt":"2026-05-21T18:27:23.142Z"}],"total":2} sameer
+[00:08:10.905] Browser LOG     {"imageBaseUrl":"https://ishop-backend-2mld.onrender.com/product","limit":8,"pages":1,"product":[{"__v":0,"_id":"6a0f4d6770dc6e38d83d0b5d","brandId":{"__v":0,"_id":"6a0d71a327925348208e55cf","categoryId":["6a0d70a0c0b00873ce7c8821","6a0d713927925348208e55b1","6a0d715027925348208e55b7"],"createdAt":"2026-05-20T08:32:35.607Z","image":"1779265955597Apple.png","is_home":false,"is_popular":false,"is_top":false,"name":"Apple","slug":"apple","status":true,"updatedAt":"2026-05-20T08:32:35.607Z"},"categoryId":{"__v":0,"_id":"6a0d70a0c0b00873ce7c8821","createdAt":"2026-05-20T08:28:16.325Z","image":"1779265696265Laptop icon.png","is_home":false,"is_popular":true,"is_top":false,"name":"Laptops","slug":"laptops","status":true,"updatedAt":"2026-05-21T18:28:31.662Z"},"colorId":[{"__v":0,"_id":"6a0d725b27925348208e5615","colorCode":"#000080","createdAt":"2026-05-20T08:35:39.403Z","name":"Blue","slug":"blue","status":true,"updatedAt":"2026-05-20T08:35:39.403Z"}],"createdAt":"2026-05-21T18:22:31.393Z","discount_percentage":3,"final_price":77600,"images":["1779387751385image 1.webp","1779387751387image 3.avif","1779387751387image 4.webp","1779387751388images 1.jpg","1779387751388thumbnail.jpg"],"is_best":true,"is_home":true,"is_hot":true,"is_popular":true,"is_return":true,"is_top":true,"long_description":"<p>MacBook Pro is a premium high-performance laptop developed by <a href=\"https://www.apple.com/macbook-pro/?utm_source=chatgpt.com\" rel=\"noopener noreferrer\" target=\"_blank\">Apple</a>, designed for professionals, creators, developers, and users who need powerful computing capabilities. Built with Apple’s advanced M-series chips, the MacBook Pro delivers exceptional speed, energy efficiency, and smooth multitasking performance for demanding tasks such as video editing, software development, graphic design, 3D rendering, music production, and professional workflows.</p><p>It features a stunning Liquid Retina XDR display with vibrant colors, deep contrast, and high brightness for an immersive viewing experience. The laptop also offers long-lasting battery life, fast SSD storage, high-quality speakers, an advanced cooling system, and a sleek aluminum body that combines durability with a modern minimalist design.</p><p>MacBook Pro includes features like Touch ID for secure authentication, a high-resolution webcam, studio-quality microphones, multiple connectivity ports including Thunderbolt and HDMI, and seamless integration with the Apple ecosystem. With macOS optimization and powerful hardware, it provides a smooth, reliable, and efficient user experience for both professional and everyday use.</p>","name":"MacBook Pro","original_price":80000,"short_description":"MacBook Pro is a high-performance premium laptop by Apple, designed for professionals, creators, and power users. It features Apple’s M-series chips, a Retina display, long battery life, fast performance, and advanced tools for tasks like video editing, programming, design, and multitasking.","slug":"macbook-pro","status":true,"stock":true,"thumbnail":"1779387751388thumbnail.jpg","updatedAt":"2026-05-22T07:12:00.762Z"},{"__v":0,"_id":"6a0d730c27925348208e5631","brandId":{"__v":0,"_id":"6a0d71a327925348208e55cf","categoryId":["6a0d70a0c0b00873ce7c8821","6a0d713927925348208e55b1","6a0d715027925348208e55b7"],"createdAt":"2026-05-20T08:32:35.607Z","image":"1779265955597Apple.png","is_home":false,"is_popular":false,"is_top":false,"name":"Apple","slug":"apple","status":true,"updatedAt":"2026-05-20T08:32:35.607Z"},"categoryId":{"__v":0,"_id":"6a0d713927925348208e55b1","createdAt":"2026-05-20T08:30:49.977Z","image":"1779265849957Mobile icons.png","is_home":false,"is_popular":true,"is_top":false,"name":"Phones","slug":"phones","status":true,"updatedAt":"2026-05-21T18:28:36.745Z"},"colorId":[{"__v":0,"_id":"6a0d725b27925348208e5615","colorCode":"#000080","createdAt":"2026-05-20T08:35:39.403Z","name":"Blue","slug":"blue","status":true,"updatedAt":"2026-05-20T08:35:39.403Z"}],"createdAt":"2026-05-20T08:38:36.474Z","discount_percentage":4,"final_price":172800,"images":["1779266316455i phone 2.webp","1779266316458i phone 3.webp","1779266316459i phone 4.webp","1779266316462I phone 6.avif","1779266316463i phone 6.webp"],"is_best":true,"is_home":true,"is_hot":false,"is_popular":true,"is_return":true,"is_top":true,"long_description":"<p>The iPhone 18 is designed to push smartphone innovation to the next level with cutting-edge technology, elegant craftsmanship, and powerful intelligent features. Featuring a refined aerospace-grade body and an immersive Super Retina display, the device offers vibrant colors, sharper contrast, and an ultra-smooth viewing experience for gaming, streaming, and everyday use.</p><p><br></p><p>Powered by Apple’s latest-generation chipset, the iPhone 18 delivers lightning-fast performance, enhanced power efficiency, and advanced AI capabilities that make multitasking effortless. The upgraded camera system combines professional-grade photography with intelligent computational imaging, allowing users to capture stunning photos and cinematic-quality videos in any lighting condition.</p>","name":"I phone 18, 512gb storage","original_price":180000,"short_description":"The iPhone 18 delivers next-generation performance, an ultra-advanced AI-powered camera system, a stunning edge-to-edge display, and all-day battery life in a sleek premium design. Built for speed, creativity, and seamless connectivity, it redefines the modern smartphone experience.","slug":"i-phone-18-512gb-storage","status":true,"stock":true,"thumbnail":"1779266316466i phone 2.webp","updatedAt":"2026-05-21T18:27:23.142Z"}],"total":2} sameer
+[00:08:10.905] Browser ERROR   uncaughtError: Error: Switched to client rendering because the server rendering errored:
+
+products.slice is not a function
+[00:08:13.478] Browser WARN    Image with src "/logo/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:08:13.478] Browser WARN    Image with src "/logo/vector1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:08:13.526] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/watch.png" "received" null
+[00:08:22.105] Server  LOG     {}
+[00:08:22.264] Server  LOG     {} "sameer"
+[00:08:23.919] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:08:24.988] Browser WARN    Image with src "/logo/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:08:24.988] Browser WARN    Image with src "/logo/vector1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:08:24.988] Browser LOG     {"imageBaseUrl":"https://ishop-backend-2mld.onrender.com/product","limit":8,"pages":1,"product":[{"__v":0,"_id":"6a0f4d6770dc6e38d83d0b5d","brandId":{"__v":0,"_id":"6a0d71a327925348208e55cf","categoryId":["6a0d70a0c0b00873ce7c8821","6a0d713927925348208e55b1","6a0d715027925348208e55b7"],"createdAt":"2026-05-20T08:32:35.607Z","image":"1779265955597Apple.png","is_home":false,"is_popular":false,"is_top":false,"name":"Apple","slug":"apple","status":true,"updatedAt":"2026-05-20T08:32:35.607Z"},"categoryId":{"__v":0,"_id":"6a0d70a0c0b00873ce7c8821","createdAt":"2026-05-20T08:28:16.325Z","image":"1779265696265Laptop icon.png","is_home":false,"is_popular":true,"is_top":false,"name":"Laptops","slug":"laptops","status":true,"updatedAt":"2026-05-21T18:28:31.662Z"},"colorId":[{"__v":0,"_id":"6a0d725b27925348208e5615","colorCode":"#000080","createdAt":"2026-05-20T08:35:39.403Z","name":"Blue","slug":"blue","status":true,"updatedAt":"2026-05-20T08:35:39.403Z"}],"createdAt":"2026-05-21T18:22:31.393Z","discount_percentage":3,"final_price":77600,"images":["1779387751385image 1.webp","1779387751387image 3.avif","1779387751387image 4.webp","1779387751388images 1.jpg","1779387751388thumbnail.jpg"],"is_best":true,"is_home":true,"is_hot":true,"is_popular":true,"is_return":true,"is_top":true,"long_description":"<p>MacBook Pro is a premium high-performance laptop developed by <a href=\"https://www.apple.com/macbook-pro/?utm_source=chatgpt.com\" rel=\"noopener noreferrer\" target=\"_blank\">Apple</a>, designed for professionals, creators, developers, and users who need powerful computing capabilities. Built with Apple’s advanced M-series chips, the MacBook Pro delivers exceptional speed, energy efficiency, and smooth multitasking performance for demanding tasks such as video editing, software development, graphic design, 3D rendering, music production, and professional workflows.</p><p>It features a stunning Liquid Retina XDR display with vibrant colors, deep contrast, and high brightness for an immersive viewing experience. The laptop also offers long-lasting battery life, fast SSD storage, high-quality speakers, an advanced cooling system, and a sleek aluminum body that combines durability with a modern minimalist design.</p><p>MacBook Pro includes features like Touch ID for secure authentication, a high-resolution webcam, studio-quality microphones, multiple connectivity ports including Thunderbolt and HDMI, and seamless integration with the Apple ecosystem. With macOS optimization and powerful hardware, it provides a smooth, reliable, and efficient user experience for both professional and everyday use.</p>","name":"MacBook Pro","original_price":80000,"short_description":"MacBook Pro is a high-performance premium laptop by Apple, designed for professionals, creators, and power users. It features Apple’s M-series chips, a Retina display, long battery life, fast performance, and advanced tools for tasks like video editing, programming, design, and multitasking.","slug":"macbook-pro","status":true,"stock":true,"thumbnail":"1779387751388thumbnail.jpg","updatedAt":"2026-05-22T07:12:00.762Z"},{"__v":0,"_id":"6a0d730c27925348208e5631","brandId":{"__v":0,"_id":"6a0d71a327925348208e55cf","categoryId":["6a0d70a0c0b00873ce7c8821","6a0d713927925348208e55b1","6a0d715027925348208e55b7"],"createdAt":"2026-05-20T08:32:35.607Z","image":"1779265955597Apple.png","is_home":false,"is_popular":false,"is_top":false,"name":"Apple","slug":"apple","status":true,"updatedAt":"2026-05-20T08:32:35.607Z"},"categoryId":{"__v":0,"_id":"6a0d713927925348208e55b1","createdAt":"2026-05-20T08:30:49.977Z","image":"1779265849957Mobile icons.png","is_home":false,"is_popular":true,"is_top":false,"name":"Phones","slug":"phones","status":true,"updatedAt":"2026-05-21T18:28:36.745Z"},"colorId":[{"__v":0,"_id":"6a0d725b27925348208e5615","colorCode":"#000080","createdAt":"2026-05-20T08:35:39.403Z","name":"Blue","slug":"blue","status":true,"updatedAt":"2026-05-20T08:35:39.403Z"}],"createdAt":"2026-05-20T08:38:36.474Z","discount_percentage":4,"final_price":172800,"images":["1779266316455i phone 2.webp","1779266316458i phone 3.webp","1779266316459i phone 4.webp","1779266316462I phone 6.avif","1779266316463i phone 6.webp"],"is_best":true,"is_home":true,"is_hot":false,"is_popular":true,"is_return":true,"is_top":true,"long_description":"<p>The iPhone 18 is designed to push smartphone innovation to the next level with cutting-edge technology, elegant craftsmanship, and powerful intelligent features. Featuring a refined aerospace-grade body and an immersive Super Retina display, the device offers vibrant colors, sharper contrast, and an ultra-smooth viewing experience for gaming, streaming, and everyday use.</p><p><br></p><p>Powered by Apple’s latest-generation chipset, the iPhone 18 delivers lightning-fast performance, enhanced power efficiency, and advanced AI capabilities that make multitasking effortless. The upgraded camera system combines professional-grade photography with intelligent computational imaging, allowing users to capture stunning photos and cinematic-quality videos in any lighting condition.</p>","name":"I phone 18, 512gb storage","original_price":180000,"short_description":"The iPhone 18 delivers next-generation performance, an ultra-advanced AI-powered camera system, a stunning edge-to-edge display, and all-day battery life in a sleek premium design. Built for speed, creativity, and seamless connectivity, it redefines the modern smartphone experience.","slug":"i-phone-18-512gb-storage","status":true,"stock":true,"thumbnail":"1779266316466i phone 2.webp","updatedAt":"2026-05-21T18:27:23.142Z"}],"total":2} sameer
+[00:08:24.988] Browser LOG     {"imageBaseUrl":"https://ishop-backend-2mld.onrender.com/product","limit":8,"pages":1,"product":[{"__v":0,"_id":"6a0f4d6770dc6e38d83d0b5d","brandId":{"__v":0,"_id":"6a0d71a327925348208e55cf","categoryId":["6a0d70a0c0b00873ce7c8821","6a0d713927925348208e55b1","6a0d715027925348208e55b7"],"createdAt":"2026-05-20T08:32:35.607Z","image":"1779265955597Apple.png","is_home":false,"is_popular":false,"is_top":false,"name":"Apple","slug":"apple","status":true,"updatedAt":"2026-05-20T08:32:35.607Z"},"categoryId":{"__v":0,"_id":"6a0d70a0c0b00873ce7c8821","createdAt":"2026-05-20T08:28:16.325Z","image":"1779265696265Laptop icon.png","is_home":false,"is_popular":true,"is_top":false,"name":"Laptops","slug":"laptops","status":true,"updatedAt":"2026-05-21T18:28:31.662Z"},"colorId":[{"__v":0,"_id":"6a0d725b27925348208e5615","colorCode":"#000080","createdAt":"2026-05-20T08:35:39.403Z","name":"Blue","slug":"blue","status":true,"updatedAt":"2026-05-20T08:35:39.403Z"}],"createdAt":"2026-05-21T18:22:31.393Z","discount_percentage":3,"final_price":77600,"images":["1779387751385image 1.webp","1779387751387image 3.avif","1779387751387image 4.webp","1779387751388images 1.jpg","1779387751388thumbnail.jpg"],"is_best":true,"is_home":true,"is_hot":true,"is_popular":true,"is_return":true,"is_top":true,"long_description":"<p>MacBook Pro is a premium high-performance laptop developed by <a href=\"https://www.apple.com/macbook-pro/?utm_source=chatgpt.com\" rel=\"noopener noreferrer\" target=\"_blank\">Apple</a>, designed for professionals, creators, developers, and users who need powerful computing capabilities. Built with Apple’s advanced M-series chips, the MacBook Pro delivers exceptional speed, energy efficiency, and smooth multitasking performance for demanding tasks such as video editing, software development, graphic design, 3D rendering, music production, and professional workflows.</p><p>It features a stunning Liquid Retina XDR display with vibrant colors, deep contrast, and high brightness for an immersive viewing experience. The laptop also offers long-lasting battery life, fast SSD storage, high-quality speakers, an advanced cooling system, and a sleek aluminum body that combines durability with a modern minimalist design.</p><p>MacBook Pro includes features like Touch ID for secure authentication, a high-resolution webcam, studio-quality microphones, multiple connectivity ports including Thunderbolt and HDMI, and seamless integration with the Apple ecosystem. With macOS optimization and powerful hardware, it provides a smooth, reliable, and efficient user experience for both professional and everyday use.</p>","name":"MacBook Pro","original_price":80000,"short_description":"MacBook Pro is a high-performance premium laptop by Apple, designed for professionals, creators, and power users. It features Apple’s M-series chips, a Retina display, long battery life, fast performance, and advanced tools for tasks like video editing, programming, design, and multitasking.","slug":"macbook-pro","status":true,"stock":true,"thumbnail":"1779387751388thumbnail.jpg","updatedAt":"2026-05-22T07:12:00.762Z"},{"__v":0,"_id":"6a0d730c27925348208e5631","brandId":{"__v":0,"_id":"6a0d71a327925348208e55cf","categoryId":["6a0d70a0c0b00873ce7c8821","6a0d713927925348208e55b1","6a0d715027925348208e55b7"],"createdAt":"2026-05-20T08:32:35.607Z","image":"1779265955597Apple.png","is_home":false,"is_popular":false,"is_top":false,"name":"Apple","slug":"apple","status":true,"updatedAt":"2026-05-20T08:32:35.607Z"},"categoryId":{"__v":0,"_id":"6a0d713927925348208e55b1","createdAt":"2026-05-20T08:30:49.977Z","image":"1779265849957Mobile icons.png","is_home":false,"is_popular":true,"is_top":false,"name":"Phones","slug":"phones","status":true,"updatedAt":"2026-05-21T18:28:36.745Z"},"colorId":[{"__v":0,"_id":"6a0d725b27925348208e5615","colorCode":"#000080","createdAt":"2026-05-20T08:35:39.403Z","name":"Blue","slug":"blue","status":true,"updatedAt":"2026-05-20T08:35:39.403Z"}],"createdAt":"2026-05-20T08:38:36.474Z","discount_percentage":4,"final_price":172800,"images":["1779266316455i phone 2.webp","1779266316458i phone 3.webp","1779266316459i phone 4.webp","1779266316462I phone 6.avif","1779266316463i phone 6.webp"],"is_best":true,"is_home":true,"is_hot":false,"is_popular":true,"is_return":true,"is_top":true,"long_description":"<p>The iPhone 18 is designed to push smartphone innovation to the next level with cutting-edge technology, elegant craftsmanship, and powerful intelligent features. Featuring a refined aerospace-grade body and an immersive Super Retina display, the device offers vibrant colors, sharper contrast, and an ultra-smooth viewing experience for gaming, streaming, and everyday use.</p><p><br></p><p>Powered by Apple’s latest-generation chipset, the iPhone 18 delivers lightning-fast performance, enhanced power efficiency, and advanced AI capabilities that make multitasking effortless. The upgraded camera system combines professional-grade photography with intelligent computational imaging, allowing users to capture stunning photos and cinematic-quality videos in any lighting condition.</p>","name":"I phone 18, 512gb storage","original_price":180000,"short_description":"The iPhone 18 delivers next-generation performance, an ultra-advanced AI-powered camera system, a stunning edge-to-edge display, and all-day battery life in a sleek premium design. Built for speed, creativity, and seamless connectivity, it redefines the modern smartphone experience.","slug":"i-phone-18-512gb-storage","status":true,"stock":true,"thumbnail":"1779266316466i phone 2.webp","updatedAt":"2026-05-21T18:27:23.142Z"}],"total":2} sameer
+[00:08:25.036] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/watch.png" "received" null
+[00:08:51.729] Server  LOG     ✓ Compiled in 4.6s
+[00:08:52.598] Browser ERROR   uncaughtError: TypeError: Cannot read properties of undefined (reading 'map')
+[00:08:53.378] Server  LOG     ✓ Compiled in 806ms
+[00:08:53.401] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:08:53.834] Server  LOG     env file console "https://ishop-backend-2mld.onrender.com/api/"
+[00:08:55.220] Server  LOG     {}
+[00:08:55.247] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/watch.png" "received" null
+[00:08:55.660] Server  ERROR   ⨯ TypeError: products.slice is not a function
+[00:08:56.465] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:08:57.051] Server  ERROR   ⨯ ReferenceError: clg is not defined
+[00:08:58.528] Browser WARN    Image with src "/logo/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:08:58.528] Browser WARN    Image with src "/logo/vector1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:08:58.528] Browser ERROR   uncaughtError: Error: Switched to client rendering because the server rendering errored:
+
+products.slice is not a function
+[00:08:58.863] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/watch.png" "received" null
+[00:09:04.734] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/watch.png" "received" null
+[00:09:38.787] Server  LOG     ✓ Compiled in 291ms
+[00:09:39.075] Browser ERROR   uncaughtError: TypeError: Cannot read properties of undefined (reading 'slice')
+[00:09:48.304] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:09:48.331] Server  LOG     ✓ Compiled in 204ms
+[00:09:48.649] Server  LOG     env file console "https://ishop-backend-2mld.onrender.com/api/"
+[00:09:49.605] Server  LOG     ✓ Compiled in 281ms
+[00:09:50.231] Server  LOG     {}
+[00:09:50.657] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:09:51.092] Server  LOG     ✓ Compiled in 477ms
+[00:09:51.599] Browser ERROR   ./src/app/components/user components/Home/MulitTabsClient.jsx:12:26
+Parsing ecmascript source code failed
+  10 |   const filteredProducts =
+  11 |     activeTab === "best"
+> 12 |       ? products.product>.slice(0, 8)
+     |                          ^
+  13 |       : activeTab === "new"
+  14 |       ? [...products].reverse().slice(0, 8)
+  15 |       : products.slice(4, 12);
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./src/app/components/user components/Home/MulitTabsClient.jsx
+    ./src/app/components/user components/Home/MultiTabs.jsx
+    ./src/app/(user)/page.jsx
+[00:09:51.610] Browser ERROR   ./src/app/components/user components/Home/MulitTabsClient.jsx:12:26
+Parsing ecmascript source code failed
+  10 |   const filteredProducts =
+  11 |     activeTab === "best"
+> 12 |       ? products.product>.slice(0, 8)
+     |                          ^
+  13 |       : activeTab === "new"
+  14 |       ? [...products].reverse().slice(0, 8)
+  15 |       : products.slice(4, 12);
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./src/app/components/user components/Home/MulitTabsClient.jsx
+    ./src/app/components/user components/Home/MultiTabs.jsx
+    ./src/app/(user)/page.jsx
+[00:09:51.610] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
 
 - A server/client branch `if (typeof window !== 'undefined')`.
 - Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
@@ -82,667 +312,55 @@ Check the render method of `Cart`.
 
 It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
 
-https://react.dev/link/hydration-mismatch
+%s%s https://react.dev/link/hydration-mismatch 
 
   ...
-    <LoadingBoundary name="cart/" loading={[...]}>
-      <Suspense name="cart/" fallback={<Fragment>}>
-        <HTTPAccessFallbackBoundary notFound={undefined} forbidden={undefined} unauthorized={undefined}>
-          <RedirectBoundary>
-            <RedirectErrorBoundary router={{...}}>
-              <InnerLayoutRouter url="/cart" tree={[...]} params={{}} cacheNode={{rsc:<Fragment>, ...}} ...>
-                <SegmentViewNode type="page" pagePath="(user)/car...">
-                  <SegmentTrieNode>
-                  <page>
-                    <div>
-                      <Cart>
-                        <div className="min-h-scre...">
-                          <div>
-                          <div className="max-w-7xl ...">
-                            <div className="lg:col-spa...">
-+                             <div className="bg-white rounded-xl p-4 md:p-5 flex gap-3 md:gap-5 shadow-sm">
-                            ...
-                ...
-              ...
+    <RenderFromTemplateContext>
+      <ScrollAndFocusHandler segmentPath={[...]}>
+        <InnerScrollAndFocusHandler segmentPath={[...]} focusAndScrollRef={{apply:false, ...}}>
+          <ErrorBoundary errorComponent={undefined} errorStyles={undefined} errorScripts={undefined}>
+            <LoadingBoundary name="/" loading={null}>
+              <HTTPAccessFallbackBoundary notFound={<SegmentViewNode>} forbidden={undefined} unauthorized={undefined}>
+                <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<SegmentViewNode>} forbidden={undefined} ...>
+                  <RedirectBoundary>
+                    <RedirectErrorBoundary router={{...}}>
+                      <InnerLayoutRouter url="/" tree={[...]} params={{}} cacheNode={{...}} segmentPath={[...]} ...>
+                        <SegmentViewNode type="layout" pagePath="(user)/lay...">
+                          <SegmentTrieNode>
+                          <link>
+                          <script>
+                          <script>
+                          <script>
+                          <RootLayout>
+                            <html lang="en" className="poppins_3c...">
+                              <body
+                                className="geist_fc8c4bc0-module__MPP-3a__variable geist_mono_55d3acf3-module__UNk6MG_..."
+-                               style={{padding-right:"15px",overflow-x:"hidden",overflow-y:"hidden"}}
+                              >
+                      ...
+          ...
 
-[00:15:18.662] Browser LOG     [] selected array
-[00:15:18.662] Browser LOG     [] selected array
-[00:15:30.832] Browser LOG     {"code":"ERR_BAD_RESPONSE","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"https://ishop-backend-2mld.onrender.com/api/","data":"{\"_id\":\"6a0d730c27925348208e5631\",\"flag\":\"dec\"}","env":{},"headers":{"Accept":"application/json, text/plain, */*","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"put","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"legacyInterceptorReqResOrdering":true,"silentJSONParsing":true},"url":"cart/update-qty","withCredentials":true,"xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 500","name":"AxiosError","stack":"AxiosError: Request failed with status code 500\n    at settle (http://localhost:3000/_next/static/chunks/node_modules_d7fd4a0a._.js:9856:16)\n    at XMLHttpRequest.onloadend (http://localhost:3000/_next/static/chunks/node_modules_d7fd4a0a._.js:10372:174)\n    at Axios.request (http://localhost:3000/_next/static/chunks/node_modules_d7fd4a0a._.js:11178:49)\n    at async _CartUpdateQtyInDb (http://localhost:3000/_next/static/chunks/src_app_components_user%20components_Store_Cart_jsx_ecbae2d4._.js:512:9)","status":500}
-[00:15:31.461] Browser LOG     {"code":"ERR_BAD_RESPONSE","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"https://ishop-backend-2mld.onrender.com/api/","data":"{\"_id\":\"6a0d730c27925348208e5631\",\"flag\":\"dec\"}","env":{},"headers":{"Accept":"application/json, text/plain, */*","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"put","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"legacyInterceptorReqResOrdering":true,"silentJSONParsing":true},"url":"cart/update-qty","withCredentials":true,"xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 500","name":"AxiosError","stack":"AxiosError: Request failed with status code 500\n    at settle (http://localhost:3000/_next/static/chunks/node_modules_d7fd4a0a._.js:9856:16)\n    at XMLHttpRequest.onloadend (http://localhost:3000/_next/static/chunks/node_modules_d7fd4a0a._.js:10372:174)\n    at Axios.request (http://localhost:3000/_next/static/chunks/node_modules_d7fd4a0a._.js:11178:49)\n    at async _CartUpdateQtyInDb (http://localhost:3000/_next/static/chunks/src_app_components_user%20components_Store_Cart_jsx_ecbae2d4._.js:512:9)","status":500}
-[00:15:42.036] Browser LOG     [] selected array
-[00:15:42.037] Browser LOG     [] selected array
-[00:15:49.593] Browser LOG     1779266316466i phone 2.webp
-[00:15:49.593] Browser LOG     1779266316466i phone 2.webp
-[00:15:52.200] Browser LOG     {"_id":"6a0d730c27925348208e5631","brand":"Apple","discount":4,"final_price":172800,"name":"I phone 18, 512gb storage","original_price":180000,"qty":1,"stock":true,"thumbnail":"https://ishop-backend-2mld.onrender.com/product/1779266316466i phone 2.webp"}
-[00:25:02.845] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:25:05.460] Browser WARN    Image with src "/logo/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:25:05.460] Browser WARN    Image with src "/logo/vector1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:25:05.950] Browser ERROR   Each child in a list should have a unique "key" prop.%s%s See https://react.dev/link/warning-keys for more information. 
+[00:09:52.241] Server  LOG     {}
+[00:09:53.395] Server  LOG     {}
+[00:09:53.613] Browser ERROR   uncaughtError: Error: Could not parse module '[project]/src/app/components/user components/Home/MulitTabsClient.jsx'
 
-Check the render method of `Cart`. 
-[00:25:06.829] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
-
-- A server/client branch `if (typeof window !== 'undefined')`.
-- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
-- Date formatting in a user's locale which doesn't match the server.
-- External changing data without sending a snapshot of it along with the HTML.
-- Invalid HTML tag nesting.
-
-It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
-
-https://react.dev/link/hydration-mismatch
-
-  ...
-    <LoadingBoundary name="cart/" loading={[...]}>
-      <Suspense name="cart/" fallback={<Fragment>}>
-        <HTTPAccessFallbackBoundary notFound={undefined} forbidden={undefined} unauthorized={undefined}>
-          <RedirectBoundary>
-            <RedirectErrorBoundary router={{...}}>
-              <InnerLayoutRouter url="/cart" tree={[...]} params={{}} cacheNode={{rsc:<Fragment>, ...}} ...>
-                <SegmentViewNode type="page" pagePath="(user)/car...">
-                  <SegmentTrieNode>
-                  <page>
-                    <div>
-                      <Cart>
-                        <div className="min-h-scre...">
-                          <div>
-                          <div className="max-w-7xl ...">
-                            <div className="lg:col-spa...">
-+                             <div className="bg-white rounded-xl p-4 md:p-5 flex gap-3 md:gap-5 shadow-sm">
-                            ...
-                ...
-              ...
-
-[00:25:17.641] Browser LOG     [react-razorpay]: init... (Logs won't appear in production env)
-[00:25:17.641] Browser LOG     [react-razorpay]: loading script: https://checkout.razorpay.com/v1/checkout.js
-[00:25:17.641] Browser LOG     [react-razorpay]: init... (Logs won't appear in production env)
-[00:25:17.641] Browser LOG     [react-razorpay]: loading script: https://checkout.razorpay.com/v1/checkout.js
-[00:25:18.325] Browser LOG     [react-razorpay]: script loaded success..
-[00:25:18.325] Browser LOG     [react-razorpay]: script loaded success..
-[00:25:22.703] Browser LOG     {"address":{"_id":"6a0f3ce8b2fc9798d5e2f2eb","addressLine1":"KOTKHAWADA","addressLine2":"New Colony","city":"Kot Khawada","country":"India","fullName":"Sameer Jagrawal","isDefault":false,"phone":"+919294535375","postalCode":"303908","state":"KOT KHAWADA CHAKSU JAIPUR RAJASTHAN","type":"Home"},"paymentMethod":"cod"} order data
-[00:25:24.655] Browser LOG     {"config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"https://ishop-backend-2mld.onrender.com/api/","data":"{\"address\":{\"fullName\":\"Sameer Jagrawal\",\"phone\":\"+919294535375\",\"addressLine1\":\"KOTKHAWADA\",\"addressLine2\":\"New Colony\",\"city\":\"Kot Khawada\",\"state\":\"KOT KHAWADA CHAKSU JAIPUR RAJASTHAN\",\"postalCode\":\"303908\",\"country\":\"India\",\"type\":\"Home\",\"isDefault\":false,\"_id\":\"6a0f3ce8b2fc9798d5e2f2eb\"},\"paymentMethod\":\"cod\"}","env":{},"headers":{"Accept":"application/json, text/plain, */*","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"post","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"legacyInterceptorReqResOrdering":true,"silentJSONParsing":true},"url":"order/create","withCredentials":true,"xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"data":{"data":{"orderId":"6a12d31cec7a7587a14f24c6"},"masg":"Order created successfully","meta":{},"success":true},"headers":{"content-length":"93","content-type":"application/json; charset=utf-8"},"request":{},"status":200,"statusText":""} order response
-[03:29:39.137] Server  LOG     ✓ Finished filesystem cache database compaction in 16.6s
-[03:29:39.261] Server  LOG     ✓ Finished writing to filesystem cache in 12.2s
-[03:29:54.163] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[03:29:54.832] Browser WARN    Image with src "/logo/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[03:29:54.832] Browser WARN    Image with src "/logo/vector1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[03:29:56.648] Server  LOG     {}
-[03:30:01.324] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[03:30:01.324] Browser WARN    Image with src "/logo/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[03:30:01.551] Browser WARN    Image with src "/logo/vector1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[03:30:01.622] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/watch.png" "received" null
-[03:30:40.286] Browser WARN    Image with src "/logo/vector1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[03:30:48.808] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[03:30:49.082] Browser WARN    Image with src "/logo/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[03:30:49.082] Browser WARN    Image with src "/logo/vector1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[03:33:39.662] Server  LOG     ✓ Compiled in 908ms
-[03:33:47.562] Server  LOG     ✓ Compiled in 360ms
-[03:33:47.814] Browser ERROR   ./src/app/(user)/profile/page.jsx:51:17
-Parsing ecmascript source code failed
-  49 |             <Pencil size={16} /> Edit Profile
-  50 |           </Link>
-> 51 |           </div>
-     |                 ^
-> 52 |
-     | ^
-> 53 |         </section>
-     | ^^^^^^^^^
-  54 |
-  55 |         <section className="grid grid-cols-1 md:grid-cols-[1fr_280px]">
-  56 |           <div className="divide-y divide-gray-200">
-
-Expected '</', got 'jsx text'
-[03:34:00.551] Server  LOG     ✓ Compiled in 278ms
-[03:34:03.022] Server  ERROR   ⨯ ReferenceError: BsThreeDotsVertical is not defined
-[03:34:03.658] Browser ERROR   uncaughtError: ReferenceError: BsThreeDotsVertical is not defined
-[03:34:14.538] Server  LOG     ✓ Compiled in 2.7s
-[03:34:18.719] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[03:34:19.340] Browser WARN    Image with src "/logo/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[03:34:19.340] Browser WARN    Image with src "/logo/vector1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[03:34:34.876] Server  LOG     ✓ Compiled in 657ms
-[03:34:42.124] Server  LOG     ✓ Compiled in 271ms
-[03:34:47.643] Server  LOG     ✓ Compiled in 920ms
-[03:34:55.860] Server  LOG     ✓ Compiled in 451ms
-[03:35:04.369] Server  LOG     ✓ Compiled in 482ms
-[03:35:35.227] Server  LOG     ✓ Finished filesystem cache database compaction in 23.4s
-[03:36:34.266] Server  LOG     ✓ Compiled in 448ms
-[03:36:39.116] Server  LOG     ✓ Compiled in 2.3s
-[03:37:09.654] Browser ERROR   ./src/app/(user)/profile/page.jsx:49:17
-Parsing ecmascript source code failed
-  47 |             <Pencil size={16} /> Edit Profile
-  48 |           </Link>
-> 49 |           </div>
-     |                 ^
-> 50 |
-     | ^
-> 51 |         </section>
-     | ^^^^^^^^^
-  52 |
-  53 |         <section className="grid grid-cols-1 md:grid-cols-[1fr_280px]">
-  54 |           <div className="divide-y divide-gray-200">
-
-Expected '</', got 'jsx text'
-[03:37:15.561] Server  LOG     ✓ Compiled in 246ms
-[03:37:20.535] Server  LOG     ✓ Compiled in 436ms
-[03:38:37.326] Server  LOG     ✓ Compiled in 323ms
-[03:38:50.904] Server  LOG     ✓ Compiled in 469ms
-[03:38:54.997] Server  LOG     ✓ Compiled in 813ms
-[03:39:04.924] Server  LOG     ✓ Compiled in 528ms
-[03:39:09.014] Server  LOG     ✓ Compiled in 2.8s
-[03:39:09.023] Server  LOG     ✓ Finished filesystem cache database compaction in 28.8s
-[03:39:09.024] Server  LOG     ✓ Finished writing to filesystem cache in 16.1s
-[03:39:19.679] Server  LOG     ✓ Compiled in 603ms
-[03:39:26.049] Server  LOG     ✓ Finished writing to filesystem cache in 14.9s
-[03:39:53.975] Server  LOG     ✓ Compiled in 546ms
-[03:40:24.577] Server  LOG     ✓ Compiled in 272ms
-[03:41:33.490] Server  LOG     ✓ Compiled in 3.9s
-[03:41:43.585] Server  LOG     ✓ Finished filesystem cache database compaction in 28.9s
-[03:41:50.231] Server  LOG     ✓ Compiled in 665ms
-[03:42:09.427] Server  LOG     ✓ Finished filesystem cache database compaction in 25.2s
-[03:42:09.656] Server  LOG     ✓ Finished writing to filesystem cache in 12.3s
-[03:42:14.525] Browser WARN    Image with src "/logo/vector1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[03:42:25.150] Server  LOG     ✓ Finished filesystem cache database compaction in 15.5s
-[03:42:27.853] Server  LOG     ✓ Compiled in 548ms
-[03:42:31.665] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:42:31.665] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:42:33.230] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:42:33.230] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:42:33.230] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:42:33.230] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:42:33.230] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:42:33.230] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:42:33.230] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:42:33.230] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:42:33.230] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:42:33.230] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:42:33.230] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:42:33.230] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:42:33.230] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:42:33.230] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:42:33.230] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:42:33.230] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:42:33.230] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:42:33.230] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:42:33.230] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:42:33.230] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:42:33.230] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:42:33.230] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:42:33.230] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:42:33.230] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:42:33.230] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:42:33.230] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:42:33.230] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:42:33.230] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:42:33.230] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:42:33.230] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:42:33.230] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:42:33.230] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:42:33.230] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:42:33.230] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:42:33.230] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:42:33.230] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:42:33.230] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:42:33.230] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:42:33.230] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:42:33.230] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:42:33.230] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:42:33.230] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:42:33.230] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:42:33.230] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:42:33.230] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:42:33.230] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:42:33.230] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:42:33.230] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:42:33.230] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:42:33.231] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:42:33.231] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:42:33.231] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:42:33.231] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:42:33.231] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:42:33.231] Browser ERROR   uncaughtError: Error: Maximum update depth exceeded. This can happen when a component repeatedly calls setState inside componentWillUpdate or componentDidUpdate. React limits the number of nested updates to prevent infinite loops.
-[03:42:48.827] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[03:42:50.310] Browser WARN    Image with src "/logo/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[03:42:50.430] Browser WARN    Image with src "/logo/vector1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[03:43:43.568] Browser WARN    Image with src "/logo/vector1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[03:44:04.460] Server  LOG     ✓ Compiled in 416ms
-[03:44:05.311] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:44:05.311] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:44:09.910] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:44:09.910] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:44:09.910] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:44:09.910] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:44:09.910] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:44:09.910] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:44:09.910] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:44:09.910] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:44:09.910] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:44:09.910] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:44:09.910] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:44:09.910] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:44:09.910] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:44:09.910] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:44:09.910] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:44:09.910] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:44:09.910] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:44:09.910] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:44:09.910] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:44:09.910] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:44:09.910] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:44:09.910] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:44:09.910] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:44:09.910] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:44:09.910] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:44:09.910] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:44:09.910] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:44:09.910] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:44:09.910] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:44:09.910] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:44:09.910] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:44:09.910] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:44:09.910] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:44:09.910] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:44:09.910] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:44:09.910] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:44:09.910] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:44:09.910] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:44:09.910] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:44:09.910] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:44:09.910] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:44:09.910] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:44:09.910] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:44:09.910] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:44:09.910] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:44:09.910] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:44:09.910] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:44:09.910] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:44:09.910] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:44:09.911] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:44:09.911] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:44:09.911] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:44:09.911] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:44:09.911] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:44:09.911] Browser ERROR   uncaughtError: Error: Maximum update depth exceeded. This can happen when a component repeatedly calls setState inside componentWillUpdate or componentDidUpdate. React limits the number of nested updates to prevent infinite loops.
-[03:44:40.479] Server  LOG     ✓ Compiled in 182ms
-[03:44:44.310] Server  LOG     ✓ Compiled in 252ms
-[03:44:44.771] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[03:44:48.250] Server  LOG     ✓ Compiled in 1261ms
-[03:45:35.736] Server  LOG     {}
-[03:45:37.288] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[03:45:38.387] Browser WARN    Image with src "/logo/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[03:45:38.932] Browser WARN    Image with src "/logo/vector1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[03:45:39.538] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/watch.png" "received" null
-[03:45:48.435] Browser WARN    Image with src "/logo/vector1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[03:46:01.735] Server  LOG     ✓ Compiled in 704ms
-[03:46:04.047] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:46:04.048] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:46:06.677] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:46:06.677] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:46:06.677] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:46:06.677] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:46:06.677] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:46:06.677] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:46:06.677] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:46:06.677] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:46:06.677] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:46:06.677] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:46:06.677] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:46:06.677] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:46:06.677] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:46:06.677] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:46:06.677] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:46:06.677] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:46:06.677] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:46:06.677] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:46:06.677] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:46:06.677] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:46:06.677] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:46:06.677] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:46:06.677] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:46:06.677] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:46:06.677] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:46:06.677] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:46:06.677] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:46:06.677] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:46:06.677] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:46:06.677] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:46:06.677] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:46:06.677] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:46:06.677] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:46:06.677] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:46:06.677] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:46:06.677] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:46:06.677] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:46:06.677] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:46:06.677] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:46:06.677] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:46:06.677] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:46:06.677] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:46:06.677] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:46:06.677] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:46:06.677] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:46:06.677] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:46:06.677] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:46:06.677] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:46:06.677] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:46:06.677] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:46:06.677] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:46:06.677] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:46:06.677] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:46:06.677] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:46:06.677] Browser ERROR   uncaughtError: Error: Maximum update depth exceeded. This can happen when a component repeatedly calls setState inside componentWillUpdate or componentDidUpdate. React limits the number of nested updates to prevent infinite loops.
-[03:46:21.400] Server  LOG     ✓ Compiled in 1195ms
-[03:46:25.862] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[03:46:26.278] Browser WARN    Image with src "/logo/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[03:46:29.393] Browser WARN    Image with src "/logo/vector1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[03:46:47.232] Server  LOG     ✓ Compiled in 296ms
-[03:46:49.014] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:46:49.014] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:46:49.017] Server  LOG     ✓ Compiled in 318ms
-[03:46:51.913] Server  LOG     ✓ Compiled in 682ms
-[03:46:55.580] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:46:55.581] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:46:55.581] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:46:55.581] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:46:55.581] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:46:55.581] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:46:55.581] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:46:55.581] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:46:55.581] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:46:55.581] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:46:55.581] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:46:55.581] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:46:55.581] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:46:55.581] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:46:55.581] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:46:55.581] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:46:55.581] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:46:55.581] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:46:55.581] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:46:55.581] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:46:55.581] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:46:55.581] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:46:55.581] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:46:55.581] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:46:55.581] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:46:55.581] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:46:55.581] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:46:55.581] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:46:55.581] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:46:55.581] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:46:55.581] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:46:55.581] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:46:55.581] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:46:55.581] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:46:55.581] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:46:55.581] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:46:55.581] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:46:55.581] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:46:55.581] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:46:55.581] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:46:55.581] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:46:55.581] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:46:55.581] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:46:55.581] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:46:55.581] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:46:55.581] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:46:55.581] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:46:55.581] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:46:55.581] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:46:55.581] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:46:55.581] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:46:55.581] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:46:55.581] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:46:55.581] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:46:55.581] Browser ERROR   uncaughtError: Error: Maximum update depth exceeded. This can happen when a component repeatedly calls setState inside componentWillUpdate or componentDidUpdate. React limits the number of nested updates to prevent infinite loops.
-[03:47:17.460] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[03:47:17.609] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
-
-- A server/client branch `if (typeof window !== 'undefined')`.
-- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
-- Date formatting in a user's locale which doesn't match the server.
-- External changing data without sending a snapshot of it along with the HTML.
-- Invalid HTML tag nesting.
-
-It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
-
-https://react.dev/link/hydration-mismatch
-
-  ...
-    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
-      <AppDevOverlayErrorBoundary globalError={[...]}>
-        <ReplaySsrOnlyErrors>
-        <DevRootHTTPAccessFallbackBoundary>
-          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
-            <HTTPAccessFallbackErrorBoundary pathname="/profile" notFound={<NotAllowedRootHTTPFallbackError>} ...>
-              <RedirectBoundary>
-                <RedirectErrorBoundary router={{...}}>
-                  <Head headCacheNode={{rsc:<Fragment>, ...}}>
-                    <__next_viewport_boundary__>
-                    <MetadataWrapper>
-+                     <div hidden={true}>
--                     {"\n        "}
-                    ...
-                  ...
-
-[03:47:36.835] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[03:47:37.161] Browser WARN    Image with src "/logo/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[03:47:37.161] Browser WARN    Image with src "/logo/vector1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[03:47:53.044] Browser WARN    Image with src "/logo/vector1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[03:48:08.472] Server  LOG     ✓ Compiled in 256ms
-[03:48:09.654] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:48:09.654] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:48:12.073] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:48:12.074] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:48:12.074] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:48:12.074] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:48:12.074] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:48:12.074] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:48:12.074] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:48:12.074] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:48:12.074] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:48:12.074] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:48:12.074] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:48:12.074] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:48:12.074] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:48:12.074] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:48:12.074] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:48:12.074] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:48:12.074] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:48:12.074] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:48:12.074] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:48:12.074] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:48:12.074] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:48:12.074] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:48:12.074] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:48:12.074] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:48:12.074] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:48:12.074] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:48:12.074] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:48:12.074] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:48:12.074] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:48:12.074] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:48:12.074] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:48:12.074] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:48:12.074] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:48:12.074] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:48:12.074] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:48:12.074] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:48:12.074] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:48:12.074] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:48:12.074] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:48:12.074] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:48:12.074] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:48:12.074] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:48:12.074] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:48:12.074] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:48:12.074] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:48:12.074] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:48:12.074] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:48:12.074] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:48:12.074] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:48:12.074] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:48:12.074] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:48:12.074] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:48:12.074] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:48:12.074] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:48:12.074] Browser ERROR   uncaughtError: Error: Maximum update depth exceeded. This can happen when a component repeatedly calls setState inside componentWillUpdate or componentDidUpdate. React limits the number of nested updates to prevent infinite loops.
-[03:48:14.279] Server  LOG     ✓ Compiled in 1202ms
-[03:48:19.761] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[03:48:23.443] Server  LOG     ✓ Compiled in 2.4s
-[03:48:23.445] Browser ERROR   Can't perform a React state update on a component that hasn't mounted yet. This indicates that you have a side-effect in your render function that asynchronously tries to update the component. Move this work to useEffect instead.
-[03:48:27.031] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[03:48:27.373] Browser WARN    Image with src "/logo/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[03:48:27.373] Browser WARN    Image with src "/logo/vector1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[03:48:31.489] Browser WARN    Image with src "/logo/vector1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[03:48:40.485] Server  LOG     ✓ Compiled in 548ms
-[03:48:43.836] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:48:43.836] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:48:47.663] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:48:47.663] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:48:47.663] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:48:47.663] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:48:47.663] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:48:47.663] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:48:47.663] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:48:47.663] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:48:47.664] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:48:47.664] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:48:47.664] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:48:47.664] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:48:47.664] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:48:47.664] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:48:47.664] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:48:47.664] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:48:47.664] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:48:47.664] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:48:47.664] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:48:47.664] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:48:47.664] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:48:47.664] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:48:47.664] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:48:47.664] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:48:47.664] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:48:47.664] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:48:47.664] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:48:47.664] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:48:47.664] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:48:47.664] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:48:47.664] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:48:47.664] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:48:47.664] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:48:47.664] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:48:47.664] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:48:47.664] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:48:47.664] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:48:47.664] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:48:47.664] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:48:47.664] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:48:47.664] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:48:47.664] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:48:47.664] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:48:47.664] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:48:47.664] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:48:47.664] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:48:47.665] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:48:47.665] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:48:47.665] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:48:47.665] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:48:47.665] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:48:47.665] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:48:47.665] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:48:47.665] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[03:48:47.665] Browser ERROR   uncaughtError: Error: Maximum update depth exceeded. This can happen when a component repeatedly calls setState inside componentWillUpdate or componentDidUpdate. React limits the number of nested updates to prevent infinite loops.
-[03:48:57.353] Server  LOG     ✓ Finished filesystem cache database compaction in 43s
-[03:48:57.786] Server  LOG     ✓ Finished writing to filesystem cache in 41s
-[03:49:22.922] Server  LOG     ○ Compiling /profile/edit/[id] ...
-[03:49:54.631] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[03:49:55.097] Browser WARN    Image with src "/logo/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[03:49:55.098] Browser WARN    Image with src "/logo/vector1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[03:50:17.108] Server  LOG     ✓ Compiled in 396ms
-[03:50:36.463] Server  LOG     ✓ Compiled in 457ms
-[03:50:37.547] Server  LOG     ✓ Compiled in 310ms
-[03:50:40.028] Server  LOG     ✓ Compiled in 844ms
-[03:51:02.448] Server  LOG     ✓ Compiled in 1138ms
-[03:51:40.552] Server  LOG     ✓ Finished filesystem cache database compaction in 27.0s
-[04:02:27.705] Browser ERROR   ./src/app/(user)/profile/page.jsx:17:11
-Parsing ecmascript source code failed
-  15 |     .toUpperCase() || "U";
-  16 |
-> 17 |     const handleLogout()
-     |           ^^^^^^^^^^^^
-  18 |   return (
-  19 |     <main className="mx-auto max-w-6xl px-4 py-6 md:px-6 md:py-10 ">
-  20 |       <div className="overflow-hidden rounded-lg border border-gray-200 bg-white py-2">
-
-'const' declarations must be initialized
-[04:02:27.706] Browser ERROR   ./src/app/(user)/profile/page.jsx:17:23
-Parsing ecmascript source code failed
-  15 |     .toUpperCase() || "U";
-  16 |
-> 17 |     const handleLogout()
-     |                       ^
-  18 |   return (
-  19 |     <main className="mx-auto max-w-6xl px-4 py-6 md:px-6 md:py-10 ">
-  20 |       <div className="overflow-hidden rounded-lg border border-gray-200 bg-white py-2">
-
-Expected a semicolon
-[04:02:29.952] Server  LOG     ✓ Compiled in 609ms
-[04:02:39.669] Server  LOG     ✓ Compiled in 388ms
-[04:02:42.882] Server  LOG     ✓ Compiled in 214ms
-[04:02:45.205] Server  LOG     ✓ Finished writing to filesystem cache in 11.4s
-[04:02:54.430] Server  LOG     ✓ Compiled in 463ms
-[04:03:05.865] Server  LOG     ✓ Compiled in 254ms
-[04:03:10.195] Server  LOG     ✓ Compiled in 349ms
-[04:03:24.357] Server  LOG     ✓ Compiled in 615ms
-[04:03:43.689] Server  LOG     ✓ Compiled in 454ms
-[04:03:44.934] Server  LOG     ✓ Compiled in 402ms
-[04:03:51.793] Server  LOG     ✓ Compiled in 663ms
-[04:03:52.985] Browser ERROR   Invalid event handler property `%s`. Did you mean `%s`? onclick onClick
-[04:03:52.985] Browser ERROR   ./src/app/(user)/profile/page.jsx:107:26
-Parsing ecmascript source code failed
-  105 |         <section className=" px-5  md:px-7 my-6 text-red-500 font-semibold">
-  106 |       console.log(res)
-> 107 |       <button onClick={} className="flex gap-2">
-      |                          ^^^^^^^^^
-  108 |           <FiLogOut size={20} />
-  109 |   Logout
-  110 |           </button>
-
-Expected '</', got 'ident'
-[04:03:53.680] Server  LOG     ✓ Compiled in 561ms
-[04:03:54.710] Server  ERROR   ⨯ ReferenceError: handle is not defined
-[04:03:59.956] Server  ERROR   ⨯ Error: Event handlers cannot be passed to Client Component props.
-  <button onClick={function handleLogout} className=... children=...>
-                  ^^^^^^^^^^^^^^^^^^^^^^^
-If you need interactivity, consider converting part of this to a Client Component.
-[04:04:00.818] Browser ERROR   uncaughtError: Error: Event handlers cannot be passed to Client Component props.
-  <button onClick={function handleLogout} className=... children=...>
-                  ^^^^^^^^^^^^^^^^^^^^^^^
-If you need interactivity, consider converting part of this to a Client Component.
-[04:07:57.698] Server  LOG     ✓ Finished filesystem cache database compaction in 4.1min
-[04:07:58.930] Server  LOG     ✓ Finished writing to filesystem cache in 4.0min
-[04:08:26.162] Server  LOG     ✓ Compiled in 3s
-[04:08:34.089] Server  LOG     ✓ Finished filesystem cache database compaction in 30.6s
-[04:08:34.093] Server  LOG     ✓ Finished writing to filesystem cache in 31.0s
-[04:08:46.793] Server  ERROR   ⨯ ReferenceError: handleLogout is not defined
-[04:08:49.917] Server  LOG     ✓ Compiled in 2.6s
-[04:08:58.198] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[04:09:07.255] Server  LOG     ✓ Finished filesystem cache database compaction in 37.3s
-[04:09:11.773] Server  LOG     ✓ Finished writing to filesystem cache in 39.7s
-[04:09:24.587] Server  LOG     ✓ Finished writing to filesystem cache in 10.8s
-[04:09:51.563] Server  LOG     ✓ Compiled in 915ms
-[04:09:59.795] Browser WARN    Image with src "/logo/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[04:09:59.795] Browser WARN    Image with src "/logo/vector1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[04:10:27.795] Server  LOG     ✓ Compiled in 160ms
-[04:10:29.929] Server  ERROR   ⨯ ReferenceError: Logout is not defined
-[04:10:30.671] Browser ERROR   uncaughtError: ReferenceError: Logout is not defined
-[04:10:43.106] Server  LOG     ✓ Compiled in 6.5s
-[04:10:49.646] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[04:10:50.445] Browser WARN    Image with src "/logo/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[04:10:50.445] Browser WARN    Image with src "/logo/vector1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[04:10:53.106] Browser ERROR   unhandledRejection: AxiosError: Request failed with status code 404
-[04:11:01.511] Server  LOG     ✓ Finished filesystem cache database compaction in 30.3s
-[04:11:01.908] Server  LOG     ✓ Finished writing to filesystem cache in 21.4s
-[04:11:35.932] Server  LOG     ✓ Compiled in 1547ms
-[04:14:16.527] Server  LOG     ✓ Finished writing to filesystem cache in 32.2s
-[04:17:20.860] Server  LOG     ✓ Finished writing to filesystem cache in 96s
+Expression expected
+[00:09:53.805] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/watch.png" "received" null
+[00:09:54.244] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/watch.png" "received" null
+[00:09:55.329] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:09:55.330] Server  WARN    ⚠ Fast Refresh had to perform a full reload when ./src/app/components/user components/Home/MulitTabsClient.jsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[00:09:55.331] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:09:55.353] Server  LOG     ✓ Compiled in 184ms
+[00:09:55.493] Server  LOG     env file console "https://ishop-backend-2mld.onrender.com/api/"
+[00:09:56.725] Server  LOG     {}
+[00:09:56.760] Server  LOG     {}
+[00:09:57.366] Server  LOG     ✓ Compiled in 296ms
+[00:09:57.836] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:09:58.169] Browser WARN    Image with src "/logo/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:09:58.169] Browser WARN    Image with src "/logo/vector1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:10:46.586] Server  LOG     env file console "https://ishop-backend-2mld.onrender.com/api/"
+[00:10:48.166] Server  LOG     {}
+[00:10:48.726] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:10:49.501] Browser WARN    Image with src "/logo/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:10:49.501] Browser WARN    Image with src "/logo/vector1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:10:49.706] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/watch.png" "received" null

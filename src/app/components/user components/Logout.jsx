@@ -18,7 +18,7 @@ export default function Logout() {
       }
   return (
     <section className=" px-5  md:px-7 my-6 text-red-500 font-semibold">
-    <button onClick={handleLogout} className="flex gap-2">
+    <button  onClick={handleLogout} className="flex gap-2 cursor-pointer~">
     <FiLogOut size={20} />
 Logout
     </button>

@@ -9,7 +9,7 @@ export default function MultiTabsClient({ products, user }) {
   // Fake filtering using same products
   const filteredProducts =
     activeTab === "best"
-      ? products.slice(0, 8)
+      ? products?.product?.slice(0, 8)
       : activeTab === "new"
       ? [...products].reverse().slice(0, 8)
       : products.slice(4, 12);

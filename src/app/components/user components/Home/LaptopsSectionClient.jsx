@@ -80,10 +80,11 @@ function ProductCard({ product }) {
 }
 
 export default function LaptopsSectionClient({ categories = [], products = [] }) {
+  
   const [scrollIndex, setScrollIndex] = useState(0);
   const visibleCount = 4;
   const maxIndex = Math.max(0, products.length - visibleCount);
-  const visibleProducts = products.slice(scrollIndex, scrollIndex + visibleCount);
+  const visibleProducts = products?.product?.slice(scrollIndex, scrollIndex + visibleCount);
 
   const moveBack = () => setScrollIndex((current) => Math.max(0, current - 1));
   const moveNext = () =>
@@ -118,7 +119,7 @@ export default function LaptopsSectionClient({ categories = [], products = [] })
         </div>
 
         <div className="grid flex-1 grid-cols-2 gap-3 sm:grid-cols-3">
-          {categories.map((category) => (
+          {categories?.map((category) => (
             <Link
               key={category?._id || category?.slug || category?.name}
               href={`/products?category_slug=${category?.slug || ""}`}
