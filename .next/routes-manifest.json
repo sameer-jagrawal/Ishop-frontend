@@ -154,6 +154,12 @@
       "namedRegex": "^/admin/color/addColor(?:/)?$"
     },
     {
+      "page": "/admin/notification",
+      "regex": "^/admin/notification(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin/notification(?:/)?$"
+    },
+    {
       "page": "/admin/product",
       "regex": "^/admin/product(?:/)?$",
       "routeKeys": {},
@@ -170,6 +176,18 @@
       "regex": "^/admin\\-auth/admin/login(?:/)?$",
       "routeKeys": {},
       "namedRegex": "^/admin\\-auth/admin/login(?:/)?$"
+    },
+    {
+      "page": "/api/auth/session",
+      "regex": "^/api/auth/session(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/auth/session(?:/)?$"
+    },
+    {
+      "page": "/api/user/address",
+      "regex": "^/api/user/address(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/user/address(?:/)?$"
     },
     {
       "page": "/cart",

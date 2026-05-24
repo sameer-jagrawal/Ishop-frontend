@@ -7,6 +7,7 @@
   "/(admin)/admin/category/page": "app/(admin)/admin/category/page.js",
   "/(admin)/admin/color/addColor/page": "app/(admin)/admin/color/addColor/page.js",
   "/(admin)/admin/color/page": "app/(admin)/admin/color/page.js",
+  "/(admin)/admin/notification/page": "app/(admin)/admin/notification/page.js",
   "/(admin)/admin/order/[id]/page": "app/(admin)/admin/order/[id]/page.js",
   "/(admin)/admin/page": "app/(admin)/admin/page.js",
   "/(admin)/admin/product/add/page": "app/(admin)/admin/product/add/page.js",
@@ -31,5 +32,7 @@
   "/(user-auth)/register/page": "app/(user-auth)/register/page.js",
   "/_global-error/page": "app/_global-error/page.js",
   "/_not-found/page": "app/_not-found/page.js",
-  "/admin-auth/admin/login/page": "app/admin-auth/admin/login/page.js"
+  "/admin-auth/admin/login/page": "app/admin-auth/admin/login/page.js",
+  "/api/auth/session/route": "app/api/auth/session/route.js",
+  "/api/user/address/route": "app/api/user/address/route.js"
 }

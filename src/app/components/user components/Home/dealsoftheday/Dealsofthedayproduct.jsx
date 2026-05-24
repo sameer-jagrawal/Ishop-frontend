@@ -2,6 +2,7 @@ import React from 'react'
 import Image from "next/image";
 
 export default function Dealsofthedayproduct({product}) {
+  return
   const item = product[0]
   console.log(item?.thumbnail,"thumbnail")
   return (

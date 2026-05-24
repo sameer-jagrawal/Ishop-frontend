@@ -457,8 +457,9 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$axios$2f$lib
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$toastify$2f$dist$2f$index$2e$mjs__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/react-toastify/dist/index.mjs [app-rsc] (ecmascript)");
 ;
 ;
+const API_BASE_URL = ("TURBOPACK compile-time value", "https://ishop-backend-2mld.onrender.com/api/") || "https://ishop-backend-2mld.onrender.com/api/";
 const client = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$axios$2f$lib$2f$axios$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"].create({
-    baseURL: ("TURBOPACK compile-time value", "https://ishop-backend-2mld.onrender.com/api/"),
+    baseURL: API_BASE_URL,
     withCredentials: true
 });
 const notify = (massage, flag)=>(0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$toastify$2f$dist$2f$index$2e$mjs__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["toast"])(massage, {
@@ -529,6 +530,7 @@ async function getProduct(query = {}) {
     if (query.status) filter.append("status", query.status);
     if (query.is_home) filter.append("is_home", query.is_home);
     if (query.is_top) filter.append("is_top", query.is_top);
+    if (query.is_hot) filter.append("is_hot", query.is_hot);
     if (query.limit) filter.append("limit", query.limit);
     if (query.category_slug) filter.append("category_slug", query.category_slug);
     if (query.min_price) filter.append("min_price", query.min_price);

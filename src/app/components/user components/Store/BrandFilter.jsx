@@ -1,19 +1,14 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 
 export default function BrandFilter({ brand }) {
   const router = useRouter();
   const search_params = useSearchParams();
 
-  const [selected, setSelected] = useState([]);
-
-  // read from URL
-  useEffect(() => {
-    const brandsFromUrl = search_params.getAll("brand_slug");
-    setSelected(brandsFromUrl);
-  }, [search_params]);
+  const [selected, setSelected] = useState(() => search_params.getAll("brand_slug"));
+  const brands = Array.isArray(brand) ? brand : [];
 
   const handleChange = (slug) => {
     setSelected((prev) =>
@@ -38,6 +33,7 @@ export default function BrandFilter({ brand }) {
   const handleClear = () => {
     const query = new URLSearchParams(search_params.toString());
     query.delete("brand_slug");
+    setSelected([]);
 
     router.replace(`?${query.toString()}`, { scroll: false });
   };
@@ -50,7 +46,7 @@ export default function BrandFilter({ brand }) {
       </h2>
 
       <div className="space-y-2">
-        {brand.map((item) => (
+        {brands.map((item) => (
           <label
             key={item.slug}
             className="flex items-center justify-between px-2 py-1.5 rounded-md cursor-pointer hover:bg-white"

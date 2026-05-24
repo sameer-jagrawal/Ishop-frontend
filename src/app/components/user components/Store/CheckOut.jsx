@@ -42,6 +42,7 @@ export default function CheckoutPage({ user }) {
         localCart: JSON.stringify(cart.items),
       });
 
+      console.log(orderData,"order data")
       const response = await client.post('order/create', orderData)
       console.log(response,"order response")
       if (!response.data.success) {
@@ -54,6 +55,7 @@ export default function CheckoutPage({ user }) {
           const deleteCartRes = await client.delete('cart/delete')
           if (deleteCartRes.data.success) {
             dispatcher(emptyCart())
+            
           }
         } catch (error) {
           console.log(error)

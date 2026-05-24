@@ -122,30 +122,6 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/admin/category": {
-      "experimentalBypassFor": [
-        {
-          "type": "header",
-          "key": "next-action"
-        },
-        {
-          "type": "header",
-          "key": "content-type",
-          "value": "multipart/form-data;.*"
-        }
-      ],
-      "initialRevalidateSeconds": false,
-      "srcRoute": "/admin/category",
-      "dataRoute": "/admin/category.rsc",
-      "allowHeader": [
-        "host",
-        "x-matched-path",
-        "x-prerender-revalidate",
-        "x-prerender-revalidate-if-generated",
-        "x-next-revalidated-tags",
-        "x-next-revalidate-tag-token"
-      ]
-    },
     "/admin/color/addColor": {
       "experimentalBypassFor": [
         {
@@ -170,7 +146,7 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/admin/color": {
+    "/admin/notification": {
       "experimentalBypassFor": [
         {
           "type": "header",
@@ -183,8 +159,8 @@
         }
       ],
       "initialRevalidateSeconds": false,
-      "srcRoute": "/admin/color",
-      "dataRoute": "/admin/color.rsc",
+      "srcRoute": "/admin/notification",
+      "dataRoute": "/admin/notification.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -233,30 +209,6 @@
       "initialRevalidateSeconds": false,
       "srcRoute": "/admin/product/add",
       "dataRoute": "/admin/product/add.rsc",
-      "allowHeader": [
-        "host",
-        "x-matched-path",
-        "x-prerender-revalidate",
-        "x-prerender-revalidate-if-generated",
-        "x-next-revalidated-tags",
-        "x-next-revalidate-tag-token"
-      ]
-    },
-    "/admin/product": {
-      "experimentalBypassFor": [
-        {
-          "type": "header",
-          "key": "next-action"
-        },
-        {
-          "type": "header",
-          "key": "content-type",
-          "value": "multipart/form-data;.*"
-        }
-      ],
-      "initialRevalidateSeconds": false,
-      "srcRoute": "/admin/product",
-      "dataRoute": "/admin/product.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",

@@ -98,8 +98,9 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$axios$2f$lib
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$toastify$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/react-toastify/dist/index.mjs [app-ssr] (ecmascript)");
 ;
 ;
+const API_BASE_URL = ("TURBOPACK compile-time value", "https://ishop-backend-2mld.onrender.com/api/") || "https://ishop-backend-2mld.onrender.com/api/";
 const client = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$axios$2f$lib$2f$axios$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].create({
-    baseURL: ("TURBOPACK compile-time value", "https://ishop-backend-2mld.onrender.com/api/"),
+    baseURL: API_BASE_URL,
     withCredentials: true
 });
 const notify = (massage, flag)=>(0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$toastify$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["toast"])(massage, {
@@ -193,20 +194,42 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$utils$2f$helper$2e$js
 ;
 ;
 ;
-function Status({ value, id, feild, type }) {
+function Status({ value, id, feild, type, onChange }) {
     const router = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRouter"])();
+    const [isUpdating, setIsUpdating] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(false);
+    const [localValue, setLocalValue] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(null);
+    const isActive = localValue ?? Boolean(value);
     function activeHandler() {
+        if (isUpdating || !id || !feild) return;
+        const previousValue = isActive;
+        const nextValue = !previousValue;
+        setIsUpdating(true);
+        setLocalValue(nextValue);
+        onChange?.(feild, nextValue);
         __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$utils$2f$helper$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["client"].put(`${type}/update/${id}`, {
-            feild
+            feild,
+            value: nextValue
         }).then((response)=>{
             (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$utils$2f$helper$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["notify"])(feild + response.data.masg, response.data.success);
             if (response.data.success) {
+                const updatedValue = response.data?.data?.[feild];
+                if (typeof updatedValue === "boolean") {
+                    setLocalValue(updatedValue);
+                    onChange?.(feild, updatedValue);
+                }
                 router.refresh();
+            } else {
+                setLocalValue(previousValue);
+                onChange?.(feild, previousValue);
             }
         }).catch((error)=>{
+            setLocalValue(previousValue);
+            onChange?.(feild, previousValue);
             console.log(error?.response, "user error");
             (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$utils$2f$helper$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["notify"])(error?.response?.data?.masg || "Not updated", false);
             console.log(error);
+        }).finally(()=>{
+            setIsUpdating(false);
         });
     }
     const lable = {
@@ -247,11 +270,12 @@ function Status({ value, id, feild, type }) {
     // console.log(,)
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
         onClick: activeHandler,
-        className: `cursor-pointer px-4 py-1.5 text-xs font-semibold rounded-full whitespace-nowrap transition-all duration-300 shadow-sm border ${value === true ? "bg-green-50 text-green-700 border-green-200 hover:bg-green-100" : "bg-red-50 text-red-700 border-red-200 hover:bg-red-100"}`,
-        children: value ? Trulabel : Falselabel
+        "aria-disabled": isUpdating,
+        className: `cursor-pointer px-4 py-1.5 text-xs font-semibold rounded-full whitespace-nowrap transition-all duration-300 shadow-sm border ${isUpdating ? "opacity-70" : ""} ${isActive === true ? "bg-green-50 text-green-700 border-green-200 hover:bg-green-100" : "bg-red-50 text-red-700 border-red-200 hover:bg-red-100"}`,
+        children: isActive ? Trulabel : Falselabel
     }, void 0, false, {
         fileName: "[project]/src/app/components/admin components/Status.jsx",
-        lineNumber: 42,
+        lineNumber: 67,
         columnNumber: 5
     }, this);
 }
@@ -270,8 +294,10 @@ __turbopack_context__.s([
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$headlessui$2f$react$2f$dist$2f$components$2f$menu$2f$menu$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/@headlessui/react/dist/components/menu/menu.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$down$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronDown$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/chevron-down.js [app-ssr] (ecmascript) <export default as ChevronDown>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$admin__components$2f$Status$2e$jsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/app/components/admin components/Status.jsx [app-ssr] (ecmascript)");
 "use client";
+;
 ;
 ;
 ;
@@ -328,8 +354,19 @@ const CATEGORY_STATUS_FIELDS = [
         label: "Popular"
     }
 ];
+const getStatusValues = (item, fields)=>fields.reduce((values, { field })=>{
+        values[field] = Boolean(item?.[field]);
+        return values;
+    }, {});
 function StatusDropdown({ item, type, fields }) {
-    const activeCount = fields.filter(({ field })=>item?.[field]).length;
+    const [statusValues, setStatusValues] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(()=>getStatusValues(item, fields));
+    const activeCount = fields.filter(({ field })=>statusValues[field]).length;
+    const handleStatusChange = (field, nextValue)=>{
+        setStatusValues((current)=>({
+                ...current,
+                [field]: nextValue
+            }));
+    };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$headlessui$2f$react$2f$dist$2f$components$2f$menu$2f$menu$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Menu"], {
         as: "div",
         className: "relative inline-block text-left",
@@ -347,7 +384,7 @@ function StatusDropdown({ item, type, fields }) {
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/components/admin components/StatusDropdown.jsx",
-                        lineNumber: 32,
+                        lineNumber: 50,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$down$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronDown$3e$__["ChevronDown"], {
@@ -355,13 +392,13 @@ function StatusDropdown({ item, type, fields }) {
                         className: "text-gray-500"
                     }, void 0, false, {
                         fileName: "[project]/src/app/components/admin components/StatusDropdown.jsx",
-                        lineNumber: 35,
+                        lineNumber: 53,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/components/admin components/StatusDropdown.jsx",
-                lineNumber: 30,
+                lineNumber: 48,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$headlessui$2f$react$2f$dist$2f$components$2f$menu$2f$menu$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["MenuItems"], {
@@ -375,34 +412,35 @@ function StatusDropdown({ item, type, fields }) {
                                 children: label
                             }, void 0, false, {
                                 fileName: "[project]/src/app/components/admin components/StatusDropdown.jsx",
-                                lineNumber: 47,
+                                lineNumber: 65,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$admin__components$2f$Status$2e$jsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
-                                value: item?.[field],
+                                value: statusValues[field],
                                 type: type,
                                 id: item?._id,
-                                feild: field
+                                feild: field,
+                                onChange: handleStatusChange
                             }, void 0, false, {
                                 fileName: "[project]/src/app/components/admin components/StatusDropdown.jsx",
-                                lineNumber: 48,
+                                lineNumber: 66,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, field, true, {
                         fileName: "[project]/src/app/components/admin components/StatusDropdown.jsx",
-                        lineNumber: 43,
+                        lineNumber: 61,
                         columnNumber: 11
                     }, this))
             }, void 0, false, {
                 fileName: "[project]/src/app/components/admin components/StatusDropdown.jsx",
-                lineNumber: 38,
+                lineNumber: 56,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/app/components/admin components/StatusDropdown.jsx",
-        lineNumber: 29,
+        lineNumber: 47,
         columnNumber: 5
     }, this);
 }

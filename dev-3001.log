@@ -1,0 +1,54 @@
+
+> ishop@0.1.0 dev
+> next dev -p 3001
+
+▲ Next.js 16.1.6 (Turbopack)
+- Local:         http://localhost:3001
+- Network:       http://192.168.70.1:3001
+- Environments: .env
+
+✓ Starting...
+✓ Ready in 14.7s
+✓ Finished filesystem cache database compaction in 15.1s
+✓ Finished filesystem cache database compaction in 18.8s
+○ Compiling /products ...
+env file console https://ishop-backend-2mld.onrender.com/api/
+[] selected array
+ GET /products 200 in 25.7s (compile: 21.4s, render: 4.3s)
+✓ Finished filesystem cache database compaction in 21.1s
+✓ Finished writing to filesystem cache in 12.8s
+Error [AggregateError]: 
+    at async getBrand (src\api_call\api.js:40:26)
+    at async Filters (src\app\components\user components\Store\Filters.jsx:9:48)
+  38 |         const query = filter.toString();
+  39 |
+> 40 |         const response = await client.get(
+     |                          ^
+  41 |           query ? `/brand?${query}` : "brand"
+  42 |         );
+  43 |     return response?.data {
+  isAxiosError: true,
+  code: 'ETIMEDOUT',
+  config: [Object],
+  request: [Writable],
+  [cause]: AggregateError: 
+      at ignore-listed frames {
+    code: 'ETIMEDOUT'
+  }
+}
+ GET /products 200 in 22.1s (compile: 22ms, render: 22.1s)
+✓ Compiled in 6.1s
+env file console https://ishop-backend-2mld.onrender.com/api/
+[] selected array
+ GET /products 200 in 3.2s (compile: 444ms, render: 2.7s)
+✓ Compiled in 8.2s
+env file console https://ishop-backend-2mld.onrender.com/api/
+ GET /products 200 in 3.6s (compile: 1041ms, render: 2.5s)
+[] selected array
+ GET /products 200 in 3.0s (compile: 66ms, render: 2.9s)
+[] selected array
+ GET /products 200 in 1920ms (compile: 18ms, render: 1902ms)
+✓ Compiled in 684ms
+env file console https://ishop-backend-2mld.onrender.com/api/
+[] selected array
+ GET /products 200 in 2.8s (compile: 373ms, render: 2.4s)

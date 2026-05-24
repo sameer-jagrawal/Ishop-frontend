@@ -1,18 +1,15 @@
 "use client";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import { usePathname } from "next/navigation";
 
 export default function CategoryFilter({ category }) {
   const router = useRouter();
   const search_params = useSearchParams()
-  const [selected, setSelected] = useState("");
+  const categoryFromUrl = search_params.get("category_slug") || "";
+  const [selected, setSelected] = useState(categoryFromUrl);
   const pathname = usePathname();
-
-  useEffect(() => {
-    const fromUrl = search_params.get("category_slug");
-    setSelected(fromUrl || "");
-  }, [search_params]);
+  const categories = Array.isArray(category) ? category : [];
 
 
   // Handle checkbox toggle
@@ -43,6 +40,7 @@ const handleClear = () => {
   const query = new URLSearchParams(search_params.toString());
 
     query.delete("category_slug"); 
+    setSelected("");
 
   router.push(`${pathname}?${query.toString()}`, {
   scroll: false,
@@ -60,7 +58,7 @@ const handleClear = () => {
 
       {/* Category List */}
       <div className="max-h-80 overflow-y-auto space-y-1 pr-1">
-        {category.map((item) => (
+        {categories.map((item) => (
           <label
             key={item._id}
             className="flex items-center gap-2 px-2 py-1.5 rounded-md cursor-pointer hover:bg-white transition group"

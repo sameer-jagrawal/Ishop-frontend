@@ -1,0 +1,14 @@
+(node:6460) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+⨯ TypeError: Cannot read properties of undefined (reading 'map')
+    at BrandFilter (src\app\components\user components\Store\BrandFilter.jsx:48:16)
+  46 |
+  47 |       <div className="space-y-2">
+> 48 |         {brand.map((item) => (
+     |                ^
+  49 |           <label
+  50 |             key={item.slug}
+  51 |             className="flex items-center justify-between px-2 py-1.5 rounded-md cursor-pointer hover:bg-white" {
+  digest: '2580199212'
+}
+⚠ Fast Refresh had to perform a full reload due to a runtime error.

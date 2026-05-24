@@ -15,8 +15,9 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$axios$2f$lib
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$toastify$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/react-toastify/dist/index.mjs [app-client] (ecmascript)");
 ;
 ;
+const API_BASE_URL = ("TURBOPACK compile-time value", "https://ishop-backend-2mld.onrender.com/api/") || "https://ishop-backend-2mld.onrender.com/api/";
 const client = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$axios$2f$lib$2f$axios$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].create({
-    baseURL: ("TURBOPACK compile-time value", "https://ishop-backend-2mld.onrender.com/api/"),
+    baseURL: API_BASE_URL,
     withCredentials: true
 });
 const notify = (massage, flag)=>(0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$toastify$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["toast"])(massage, {
@@ -171,40 +172,75 @@ var _s = __turbopack_context__.k.signature();
 ;
 function Status(t0) {
     _s();
-    const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(11);
-    if ($[0] !== "ae728fec25c95f33c1aa2e898cafd1afbb372971b481c300abb7d14d3b69504d") {
-        for(let $i = 0; $i < 11; $i += 1){
+    const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(15);
+    if ($[0] !== "7e0df9ef5765e9a980a63b42c2b0f322b51cc72575c632e7a6089fe90bc1de75") {
+        for(let $i = 0; $i < 15; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "ae728fec25c95f33c1aa2e898cafd1afbb372971b481c300abb7d14d3b69504d";
+        $[0] = "7e0df9ef5765e9a980a63b42c2b0f322b51cc72575c632e7a6089fe90bc1de75";
     }
-    const { value, id, feild, type } = t0;
+    const { value, id, feild, type, onChange } = t0;
     const router = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRouter"])();
+    const [isUpdating, setIsUpdating] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
+    const [localValue, setLocalValue] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(null);
+    const isActive = localValue ?? Boolean(value);
     let t1;
-    if ($[1] !== feild || $[2] !== id || $[3] !== router || $[4] !== type) {
+    if ($[1] !== feild || $[2] !== id || $[3] !== isActive || $[4] !== isUpdating || $[5] !== onChange || $[6] !== router || $[7] !== type) {
         t1 = function activeHandler() {
+            if (isUpdating || !id || !feild) {
+                return;
+            }
+            const previousValue = isActive;
+            const nextValue = !previousValue;
+            setIsUpdating(true);
+            setLocalValue(nextValue);
+            onChange?.(feild, nextValue);
             __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$utils$2f$helper$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["client"].put(`${type}/update/${id}`, {
-                feild
+                feild,
+                value: nextValue
             }).then({
                 "Status[activeHandler > (anonymous)()]": (response)=>{
                     (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$utils$2f$helper$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["notify"])(feild + response.data.masg, response.data.success);
                     if (response.data.success) {
+                        const updatedValue = response.data?.data?.[feild];
+                        if (typeof updatedValue === "boolean") {
+                            setLocalValue(updatedValue);
+                            onChange?.(feild, updatedValue);
+                        }
                         router.refresh();
+                    } else {
+                        setLocalValue(previousValue);
+                        onChange?.(feild, previousValue);
                     }
                 }
-            }["Status[activeHandler > (anonymous)()]"]).catch(_StatusActiveHandlerAnonymous);
+            }["Status[activeHandler > (anonymous)()]"]).catch({
+                "Status[activeHandler > (anonymous)()]": (error)=>{
+                    setLocalValue(previousValue);
+                    onChange?.(feild, previousValue);
+                    console.log(error?.response, "user error");
+                    (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$utils$2f$helper$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["notify"])(error?.response?.data?.masg || "Not updated", false);
+                    console.log(error);
+                }
+            }["Status[activeHandler > (anonymous)()]"]).finally({
+                "Status[activeHandler > (anonymous)()]": ()=>{
+                    setIsUpdating(false);
+                }
+            }["Status[activeHandler > (anonymous)()]"]);
         };
         $[1] = feild;
         $[2] = id;
-        $[3] = router;
-        $[4] = type;
-        $[5] = t1;
+        $[3] = isActive;
+        $[4] = isUpdating;
+        $[5] = onChange;
+        $[6] = router;
+        $[7] = type;
+        $[8] = t1;
     } else {
-        t1 = $[5];
+        t1 = $[8];
     }
     const activeHandler = t1;
     let t2;
-    if ($[6] === Symbol.for("react.memo_cache_sentinel")) {
+    if ($[9] === Symbol.for("react.memo_cache_sentinel")) {
         t2 = {
             status: [
                 "Active",
@@ -239,45 +275,42 @@ function Status(t0) {
                 "Can't return"
             ]
         };
-        $[6] = t2;
+        $[9] = t2;
     } else {
-        t2 = $[6];
+        t2 = $[9];
     }
     const lable = t2;
     const [Trulabel, Falselabel] = lable[feild];
-    const t3 = `cursor-pointer px-4 py-1.5 text-xs font-semibold rounded-full whitespace-nowrap transition-all duration-300 shadow-sm border ${value === true ? "bg-green-50 text-green-700 border-green-200 hover:bg-green-100" : "bg-red-50 text-red-700 border-red-200 hover:bg-red-100"}`;
-    const t4 = value ? Trulabel : Falselabel;
+    const t3 = `cursor-pointer px-4 py-1.5 text-xs font-semibold rounded-full whitespace-nowrap transition-all duration-300 shadow-sm border ${isUpdating ? "opacity-70" : ""} ${isActive === true ? "bg-green-50 text-green-700 border-green-200 hover:bg-green-100" : "bg-red-50 text-red-700 border-red-200 hover:bg-red-100"}`;
+    const t4 = isActive ? Trulabel : Falselabel;
     let t5;
-    if ($[7] !== activeHandler || $[8] !== t3 || $[9] !== t4) {
+    if ($[10] !== activeHandler || $[11] !== isUpdating || $[12] !== t3 || $[13] !== t4) {
         t5 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
             onClick: activeHandler,
+            "aria-disabled": isUpdating,
             className: t3,
             children: t4
         }, void 0, false, {
             fileName: "[project]/src/app/components/admin components/Status.jsx",
-            lineNumber: 67,
+            lineNumber: 103,
             columnNumber: 10
         }, this);
-        $[7] = activeHandler;
-        $[8] = t3;
-        $[9] = t4;
-        $[10] = t5;
+        $[10] = activeHandler;
+        $[11] = isUpdating;
+        $[12] = t3;
+        $[13] = t4;
+        $[14] = t5;
     } else {
-        t5 = $[10];
+        t5 = $[14];
     }
     return t5;
 }
-_s(Status, "fN7XvhJ+p5oE6+Xlo0NJmXpxjC8=", false, function() {
+_s(Status, "mXDhATRZzGiXOpaPFkcDD1TFY38=", false, function() {
     return [
         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRouter"]
     ];
 });
 _c = Status;
-function _StatusActiveHandlerAnonymous(error) {
-    console.log(error?.response, "user error");
-    (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$utils$2f$helper$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["notify"])(error?.response?.data?.masg || "Not updated", false);
-    console.log(error);
-}
 var _c;
 __turbopack_context__.k.register(_c, "Status");
 if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
@@ -299,7 +332,10 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/compiler-runtime.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$headlessui$2f$react$2f$dist$2f$components$2f$menu$2f$menu$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/@headlessui/react/dist/components/menu/menu.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$down$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronDown$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/chevron-down.js [app-client] (ecmascript) <export default as ChevronDown>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$admin__components$2f$Status$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/app/components/admin components/Status.jsx [app-client] (ecmascript)");
+;
+var _s = __turbopack_context__.k.signature();
 "use client";
 ;
 ;
@@ -358,41 +394,75 @@ const CATEGORY_STATUS_FIELDS = [
         label: "Popular"
     }
 ];
+const getStatusValues = (item, fields)=>fields.reduce((values, { field })=>{
+        values[field] = Boolean(item?.[field]);
+        return values;
+    }, {});
 function StatusDropdown(t0) {
-    const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(24);
-    if ($[0] !== "78c5d1f512fee1b0526c61e8180c3d790dd1a2c3b65cde56f5780b91e30e8d2a") {
-        for(let $i = 0; $i < 24; $i += 1){
+    _s();
+    const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(30);
+    if ($[0] !== "f3f3badd9fd1ac2f32331938db10d7c57cd426f57b6c55e2d6857f6a75f70598") {
+        for(let $i = 0; $i < 30; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "78c5d1f512fee1b0526c61e8180c3d790dd1a2c3b65cde56f5780b91e30e8d2a";
+        $[0] = "f3f3badd9fd1ac2f32331938db10d7c57cd426f57b6c55e2d6857f6a75f70598";
     }
     const { item, type, fields } = t0;
     let t1;
     if ($[1] !== fields || $[2] !== item) {
-        let t2;
-        if ($[4] !== item) {
-            t2 = ({
-                "StatusDropdown[fields.filter()]": (t3)=>{
-                    const { field } = t3;
-                    return item?.[field];
-                }
-            })["StatusDropdown[fields.filter()]"];
-            $[4] = item;
-            $[5] = t2;
-        } else {
-            t2 = $[5];
-        }
-        t1 = fields.filter(t2);
+        t1 = ({
+            "StatusDropdown[useState()]": ()=>getStatusValues(item, fields)
+        })["StatusDropdown[useState()]"];
         $[1] = fields;
         $[2] = item;
         $[3] = t1;
     } else {
         t1 = $[3];
     }
-    const activeCount = t1.length;
+    const [statusValues, setStatusValues] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(t1);
     let t2;
-    if ($[6] !== activeCount || $[7] !== fields.length) {
-        t2 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+    if ($[4] !== fields || $[5] !== statusValues) {
+        let t3;
+        if ($[7] !== statusValues) {
+            t3 = ({
+                "StatusDropdown[fields.filter()]": (t4)=>{
+                    const { field } = t4;
+                    return statusValues[field];
+                }
+            })["StatusDropdown[fields.filter()]"];
+            $[7] = statusValues;
+            $[8] = t3;
+        } else {
+            t3 = $[8];
+        }
+        t2 = fields.filter(t3);
+        $[4] = fields;
+        $[5] = statusValues;
+        $[6] = t2;
+    } else {
+        t2 = $[6];
+    }
+    const activeCount = t2.length;
+    let t3;
+    if ($[9] === Symbol.for("react.memo_cache_sentinel")) {
+        t3 = ({
+            "StatusDropdown[handleStatusChange]": (field_0, nextValue)=>{
+                setStatusValues({
+                    "StatusDropdown[handleStatusChange > setStatusValues()]": (current)=>({
+                            ...current,
+                            [field_0]: nextValue
+                        })
+                }["StatusDropdown[handleStatusChange > setStatusValues()]"]);
+            }
+        })["StatusDropdown[handleStatusChange]"];
+        $[9] = t3;
+    } else {
+        t3 = $[9];
+    }
+    const handleStatusChange = t3;
+    let t4;
+    if ($[10] !== activeCount || $[11] !== fields.length) {
+        t4 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
             className: "rounded-full bg-orange-100 px-1.5 py-0.5 text-[10px] font-bold text-orange-700",
             children: [
                 activeCount,
@@ -401,55 +471,55 @@ function StatusDropdown(t0) {
             ]
         }, void 0, true, {
             fileName: "[project]/src/app/components/admin components/StatusDropdown.jsx",
-            lineNumber: 85,
+            lineNumber: 121,
             columnNumber: 10
         }, this);
-        $[6] = activeCount;
-        $[7] = fields.length;
-        $[8] = t2;
+        $[10] = activeCount;
+        $[11] = fields.length;
+        $[12] = t4;
     } else {
-        t2 = $[8];
+        t4 = $[12];
     }
-    let t3;
-    if ($[9] === Symbol.for("react.memo_cache_sentinel")) {
-        t3 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$down$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronDown$3e$__["ChevronDown"], {
+    let t5;
+    if ($[13] === Symbol.for("react.memo_cache_sentinel")) {
+        t5 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$down$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronDown$3e$__["ChevronDown"], {
             size: 14,
             className: "text-gray-500"
         }, void 0, false, {
             fileName: "[project]/src/app/components/admin components/StatusDropdown.jsx",
-            lineNumber: 94,
+            lineNumber: 130,
             columnNumber: 10
         }, this);
-        $[9] = t3;
+        $[13] = t5;
     } else {
-        t3 = $[9];
+        t5 = $[13];
     }
-    let t4;
-    if ($[10] !== t2) {
-        t4 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$headlessui$2f$react$2f$dist$2f$components$2f$menu$2f$menu$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["MenuButton"], {
+    let t6;
+    if ($[14] !== t4) {
+        t6 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$headlessui$2f$react$2f$dist$2f$components$2f$menu$2f$menu$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["MenuButton"], {
             className: "inline-flex items-center gap-1.5 rounded-xl border border-gray-200 bg-white px-3 py-2 text-xs font-semibold text-gray-700 shadow-sm transition hover:bg-gray-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-400",
             children: [
                 "Status",
-                t2,
-                t3
+                t4,
+                t5
             ]
         }, void 0, true, {
             fileName: "[project]/src/app/components/admin components/StatusDropdown.jsx",
-            lineNumber: 101,
+            lineNumber: 137,
             columnNumber: 10
         }, this);
-        $[10] = t2;
-        $[11] = t4;
+        $[14] = t4;
+        $[15] = t6;
     } else {
-        t4 = $[11];
+        t6 = $[15];
     }
-    let t5;
-    if ($[12] !== fields || $[13] !== item || $[14] !== type) {
-        let t6;
-        if ($[16] !== item || $[17] !== type) {
-            t6 = ({
-                "StatusDropdown[fields.map()]": (t7)=>{
-                    const { field: field_0, label } = t7;
+    let t7;
+    if ($[16] !== fields || $[17] !== item?._id || $[18] !== statusValues || $[19] !== type) {
+        let t8;
+        if ($[21] !== item?._id || $[22] !== statusValues || $[23] !== type) {
+            t8 = ({
+                "StatusDropdown[fields.map()]": (t9)=>{
+                    const { field: field_1, label } = t9;
                     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "flex items-center justify-between gap-3 rounded-lg px-3 py-2.5 hover:bg-gray-50",
                         children: [
@@ -458,79 +528,83 @@ function StatusDropdown(t0) {
                                 children: label
                             }, void 0, false, {
                                 fileName: "[project]/src/app/components/admin components/StatusDropdown.jsx",
-                                lineNumber: 117,
+                                lineNumber: 153,
                                 columnNumber: 129
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$admin__components$2f$Status$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                value: item?.[field_0],
+                                value: statusValues[field_1],
                                 type: type,
                                 id: item?._id,
-                                feild: field_0
+                                feild: field_1,
+                                onChange: handleStatusChange
                             }, void 0, false, {
                                 fileName: "[project]/src/app/components/admin components/StatusDropdown.jsx",
-                                lineNumber: 117,
+                                lineNumber: 153,
                                 columnNumber: 197
                             }, this)
                         ]
-                    }, field_0, true, {
+                    }, field_1, true, {
                         fileName: "[project]/src/app/components/admin components/StatusDropdown.jsx",
-                        lineNumber: 117,
+                        lineNumber: 153,
                         columnNumber: 18
                     }, this);
                 }
             })["StatusDropdown[fields.map()]"];
-            $[16] = item;
-            $[17] = type;
-            $[18] = t6;
+            $[21] = item?._id;
+            $[22] = statusValues;
+            $[23] = type;
+            $[24] = t8;
         } else {
-            t6 = $[18];
+            t8 = $[24];
         }
-        t5 = fields.map(t6);
-        $[12] = fields;
-        $[13] = item;
-        $[14] = type;
-        $[15] = t5;
+        t7 = fields.map(t8);
+        $[16] = fields;
+        $[17] = item?._id;
+        $[18] = statusValues;
+        $[19] = type;
+        $[20] = t7;
     } else {
-        t5 = $[15];
+        t7 = $[20];
     }
-    let t6;
-    if ($[19] !== t5) {
-        t6 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$headlessui$2f$react$2f$dist$2f$components$2f$menu$2f$menu$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["MenuItems"], {
+    let t8;
+    if ($[25] !== t7) {
+        t8 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$headlessui$2f$react$2f$dist$2f$components$2f$menu$2f$menu$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["MenuItems"], {
             anchor: "bottom start",
             className: "z-20 mt-2 max-h-80 w-72 overflow-y-auto rounded-xl border border-gray-100 bg-white p-2 shadow-lg focus:outline-none",
-            children: t5
+            children: t7
         }, void 0, false, {
             fileName: "[project]/src/app/components/admin components/StatusDropdown.jsx",
-            lineNumber: 136,
+            lineNumber: 174,
             columnNumber: 10
         }, this);
-        $[19] = t5;
-        $[20] = t6;
+        $[25] = t7;
+        $[26] = t8;
     } else {
-        t6 = $[20];
+        t8 = $[26];
     }
-    let t7;
-    if ($[21] !== t4 || $[22] !== t6) {
-        t7 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$headlessui$2f$react$2f$dist$2f$components$2f$menu$2f$menu$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Menu"], {
+    let t9;
+    if ($[27] !== t6 || $[28] !== t8) {
+        t9 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$headlessui$2f$react$2f$dist$2f$components$2f$menu$2f$menu$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Menu"], {
             as: "div",
             className: "relative inline-block text-left",
             children: [
-                t4,
-                t6
+                t6,
+                t8
             ]
         }, void 0, true, {
             fileName: "[project]/src/app/components/admin components/StatusDropdown.jsx",
-            lineNumber: 144,
+            lineNumber: 182,
             columnNumber: 10
         }, this);
-        $[21] = t4;
-        $[22] = t6;
-        $[23] = t7;
+        $[27] = t6;
+        $[28] = t8;
+        $[29] = t9;
     } else {
-        t7 = $[23];
+        t9 = $[29];
     }
-    return t7;
+    return t9;
 }
+_s(StatusDropdown, "zl1dH5u6QdvCSag1xUnytN48Nro=");
 _c = StatusDropdown;
 var _c;
 __turbopack_context__.k.register(_c, "StatusDropdown");
@@ -554,11 +628,11 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$
 ;
 function ProductStatusDropdown(t0) {
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(3);
-    if ($[0] !== "115576ac3a17d965064f1e0752cc27c97f696c4d438b654472ed7693fff347f6") {
+    if ($[0] !== "422e9ad0ea2533ac1b8912697b55f5768e01475baa272e50dc88d14620e2ae97") {
         for(let $i = 0; $i < 3; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "115576ac3a17d965064f1e0752cc27c97f696c4d438b654472ed7693fff347f6";
+        $[0] = "422e9ad0ea2533ac1b8912697b55f5768e01475baa272e50dc88d14620e2ae97";
     }
     const { product } = t0;
     let t1;

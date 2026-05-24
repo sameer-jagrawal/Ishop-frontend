@@ -1,21 +1,13 @@
 'use client'
 import {useRouter, useSearchParams } from "next/navigation";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 export default function ColorFilter({colors}) {
 
   const router = useRouter()
   const search_params = useSearchParams()
-  const [selected, setSelected] = useState()
-
-
-  useEffect(
-    ()=>{
-      const colorFromUrl = search_params.getAll("color_slug")
-      setSelected(colorFromUrl)
-    },
-    [search_params]
-  )
+  const [selected, setSelected] = useState(() => search_params.getAll("color_slug"))
+  const colorOptions = Array.isArray(colors) ? colors : []
 
   const handelchange = (slug)=>{
     setSelected((prev) =>
@@ -40,6 +32,7 @@ export default function ColorFilter({colors}) {
     const query = new URLSearchParams(search_params.toString())
 
     query.delete("color_slug")
+    setSelected([])
 
     router.replace(`?${query.toString()}`, { scroll: false });
   }
@@ -64,7 +57,7 @@ export default function ColorFilter({colors}) {
   
         {/* Color List */}
         <div className="space-y-2">
-          {colors.map((color, i) => (
+          {colorOptions.map((color, i) => (
             <label
               key={i}
               className="flex items-center px-2 py-1.5 rounded-md cursor-pointer hover:bg-white transition group"

@@ -10,7 +10,13 @@ export default function Notification() {
   useEffect(() => {
 
     // join admin room
-    socket.emit("join-admin");
+    const joinAdminRoom = () => socket.emit("join-admin");
+
+    if (socket.connected) {
+      joinAdminRoom();
+    }
+
+    socket.on("connect", joinAdminRoom);
 
     socket.on("new-order", (data) => {
 
@@ -23,6 +29,7 @@ export default function Notification() {
     });
 
     return () => {
+      socket.off("connect", joinAdminRoom);
       socket.off("new-order");
     };
 

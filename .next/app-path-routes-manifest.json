@@ -7,6 +7,7 @@
   "/(admin)/admin/category/page": "/admin/category",
   "/(admin)/admin/color/addColor/page": "/admin/color/addColor",
   "/(admin)/admin/color/page": "/admin/color",
+  "/(admin)/admin/notification/page": "/admin/notification",
   "/(admin)/admin/order/[id]/page": "/admin/order/[id]",
   "/(admin)/admin/page": "/admin",
   "/(admin)/admin/product/add/page": "/admin/product/add",
@@ -31,5 +32,7 @@
   "/(user-auth)/register/page": "/register",
   "/_global-error/page": "/_global-error",
   "/_not-found/page": "/_not-found",
-  "/admin-auth/admin/login/page": "/admin-auth/admin/login"
+  "/admin-auth/admin/login/page": "/admin-auth/admin/login",
+  "/api/auth/session/route": "/api/auth/session",
+  "/api/user/address/route": "/api/user/address"
 }
