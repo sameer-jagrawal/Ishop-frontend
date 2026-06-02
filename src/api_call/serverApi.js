@@ -20,7 +20,8 @@ const getMe = async () => {
          {
             headers: {
                Authorization: token
-            }
+            },
+            timeout: 12000,
          }
       );
 

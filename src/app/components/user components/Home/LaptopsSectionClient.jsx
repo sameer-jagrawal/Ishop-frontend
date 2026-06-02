@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { ChevronLeft, ChevronRight, Heart } from "lucide-react";
 import { useState } from "react";
+import { categoryImageUrl, productImageUrl } from "@/utils/mediaUrl";
 
 function getCategoryCount(category) {
   return (
@@ -16,7 +17,7 @@ function getCategoryCount(category) {
 
 function ProductCard({ product }) {
   const imageUrl = product?.thumbnail
-    ? `https://ishop-backend-2mld.onrender.com/product/${product.thumbnail}`
+    ? productImageUrl(product.thumbnail)
     : "/headPhone.png";
   const productName = product?.name || "Premium Laptop";
   const finalPrice = Number(product?.final_price || product?.price || 0);
@@ -82,9 +83,10 @@ function ProductCard({ product }) {
 export default function LaptopsSectionClient({ categories = [], products = [] }) {
   
   const [scrollIndex, setScrollIndex] = useState(0);
+  const productList = Array.isArray(products) ? products : [];
   const visibleCount = 4;
-  const maxIndex = Math.max(0, products.length - visibleCount);
-  const visibleProducts = products?.product?.slice(scrollIndex, scrollIndex + visibleCount);
+  const maxIndex = Math.max(0, productList.length - visibleCount);
+  const visibleProducts = productList.slice(scrollIndex, scrollIndex + visibleCount);
 
   const moveBack = () => setScrollIndex((current) => Math.max(0, current - 1));
   const moveNext = () =>
@@ -128,7 +130,7 @@ export default function LaptopsSectionClient({ categories = [], products = [] })
               <img
                 src={
                   category?.image
-                    ? `https://ishop-backend-2mld.onrender.com/category/${category.image}`
+                    ? categoryImageUrl(category.image)
                     : "/headPhone.png"
                 }
                 className="h-8 w-10 rounded object-cover md:h-9 md:w-12"

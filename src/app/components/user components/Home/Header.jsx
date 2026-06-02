@@ -18,6 +18,7 @@ import {
 import { useDispatch, useSelector } from "react-redux";
 import { useEffect, useState } from "react";
 import { lsToCart } from "@/redux/features/cartslice";
+import { client } from "@/utils/helper";
 
 const navItems = [
   { path: "/", name: "Home" },
@@ -33,6 +34,7 @@ const perks = [
 ];
 
 export default function Header({ user }) {
+  const [currentUser, setCurrentUser] = useState(user || null);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const pathname = usePathname();
   const cart = useSelector((store) => store.cart);
@@ -41,6 +43,22 @@ export default function Header({ user }) {
   useEffect(() => {
     dispatch(lsToCart());
   }, [dispatch]);
+
+  useEffect(() => {
+    let mounted = true;
+    async function loadUser() {
+      try {
+        const response = await client.get("user/get");
+        if (mounted) setCurrentUser(response?.data || null);
+      } catch {
+        if (mounted) setCurrentUser(null);
+      }
+    }
+    loadUser();
+    return () => {
+      mounted = false;
+    };
+  }, []);
 
   const isActive = (path) =>
     path === "/" ? pathname === "/" : pathname?.startsWith(path);
@@ -120,13 +138,13 @@ export default function Header({ user }) {
 
         <div className="flex items-center gap-3 md:gap-4">
           <div className="hidden md:block">
-            {user ? (
+            {currentUser ? (
               <Link
                 href="/profile"
                 className="inline-flex items-center gap-2 rounded-full border border-gray-200 px-3.5 py-2 text-sm font-semibold text-gray-800 transition hover:border-[#01A49E]/40 hover:bg-[#01A49E]/10 hover:text-[#01857f]"
               >
                 <CircleUser size={18} />
-                <span className="max-w-28 truncate">{user?.data?.name}</span>
+                <span className="max-w-28 truncate">{currentUser?.data?.name}</span>
               </Link>
             ) : (
               <Link
@@ -191,14 +209,14 @@ export default function Header({ user }) {
             ))}
 
             <div className="mt-3 border-t border-gray-100 pt-3">
-              {user ? (
+              {currentUser ? (
                 <Link
                   href="/profile"
                   className="flex items-center gap-2 rounded-xl px-3 py-3 text-sm font-semibold text-gray-800 transition hover:bg-[#01A49E]/10 hover:text-[#01857f]"
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   <CircleUser size={18} />
-                  <span>{user?.data?.name}</span>
+                  <span>{currentUser?.data?.name}</span>
                 </Link>
               ) : (
                 <Link

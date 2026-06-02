@@ -10,21 +10,17 @@ import { MdBusiness } from "react-icons/md";
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
-export default function Sidebar() {
-  const pathname = usePathname()
-  const [open, setOpen] = useState(true)
-  const [mobileOpen, setMobileOpen] = useState(false)
+const pages = [
+  { name: "Dashboard", path: "/admin", icon: <LuLayoutDashboard /> },
+  { name: "Category", path: "/admin/category", icon: <MdCategory /> },
+  { name: "Brands", path: "/admin/brand", icon: <MdBusiness /> },
+  { name: "Products", path: "/admin/product", icon: <FaProductHunt /> },
+  { name: "Color", path: "/admin/color", icon: <IoMdColorPalette /> },
+  { name: "Setting", path: "/admin/setting", icon: <IoMdSettings /> },
+]
 
-  const pages = [
-    { name: "Dashboard", path: "/admin", icon: <LuLayoutDashboard /> },
-    { name: "Category", path: "/admin/category", icon: <MdCategory /> },
-    { name: "Brands", path: "/admin/brand", icon: <MdBusiness /> },
-    { name: "Products", path: "/admin/product", icon: <FaProductHunt /> },
-    { name: "Color", path: "/admin/color", icon: <IoMdColorPalette /> },
-    { name: "Setting", path: "/admin/setting", icon: <IoMdSettings /> },
-  ]
-
-  const NavLinks = ({ onLinkClick }) => (
+function NavLinks({ onLinkClick, pathname, open }) {
+  return (
     <div className='px-4 mt-6 md:mt-10'>
       {pages.map((items, index) => (
         <Link key={index} href={items.path} onClick={onLinkClick}>
@@ -36,6 +32,12 @@ export default function Sidebar() {
       ))}
     </div>
   )
+}
+
+export default function Sidebar() {
+  const pathname = usePathname()
+  const [open, setOpen] = useState(true)
+  const [mobileOpen, setMobileOpen] = useState(false)
 
   return (
     <>
@@ -64,7 +66,7 @@ export default function Sidebar() {
             <FaTimes className="text-xl cursor-pointer" />
           </button>
         </div>
-        <NavLinks onLinkClick={() => setMobileOpen(false)} />
+        <NavLinks onLinkClick={() => setMobileOpen(false)} pathname={pathname} open />
       </div>
 
       {/* Desktop sidebar */}
@@ -77,7 +79,7 @@ export default function Sidebar() {
             <FaBars className='text-xl cursor-pointer' />
           </div>
         </div>
-        <NavLinks onLinkClick={() => {}} />
+        <NavLinks onLinkClick={() => {}} pathname={pathname} open={open} />
       </div>
     </>
   )

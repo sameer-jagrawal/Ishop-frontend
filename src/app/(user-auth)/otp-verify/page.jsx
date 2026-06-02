@@ -130,7 +130,7 @@ function OTPContent() {
         </form>
 
         <div className="mt-6 text-center text-sm text-gray-600">
-          Didn't receive OTP?
+          Didn&apos;t receive OTP?
 
           <button
             className="

@@ -3,6 +3,7 @@ import Link from "next/link";
 import { MapPin, PackageCheck, Pencil, Phone, UserRound } from "lucide-react";
 import { getMe } from "@/api_call/serverApi";
 import Logout from "@/app/components/user components/Logout";
+import { userImageUrl } from "@/utils/mediaUrl";
 
 
 export default async function ProfilePage() {
@@ -23,7 +24,7 @@ export default async function ProfilePage() {
           <div className="flex items-center gap-4 ">
             {profile?.image ? (
               <Image
-                src={profile.image}
+                src={userImageUrl(profile.image)}
                 alt={profile?.name || "User"}
                 width={72}
                 height={72}

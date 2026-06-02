@@ -3,15 +3,17 @@ import Dealsofthedayproduct from "./Dealsofthedayproduct";
 
 export default async function ProductCard() {
   const product_res = await getProduct({is_hot:true,status:true})
-  const product = product_res?.data
-  // console.log(product_res,"is hot response")
+  const product = product_res?.data || []
+
   return (
-    <div>
-<div className="py-4 px-6 md:px-10 items-center bg-[#01A49E] rounded-t-xl font-semibold text-white text-lg md:text-xl">
+    <section className="mx-auto mt-4 max-w-7xl px-4 md:px-0">
+      <div className="rounded-md bg-white shadow-sm">
+        <div className="rounded-t-md bg-[#01A49E] px-4 py-4 text-lg font-semibold text-white md:px-6 md:text-xl">
         DEALS OF THE DAY
       </div>
-    <Dealsofthedayproduct product = {product}/>
-    </div>
+        <Dealsofthedayproduct product={product}/>
+      </div>
+    </section>
     
   );
 }

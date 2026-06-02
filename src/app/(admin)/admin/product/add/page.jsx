@@ -37,7 +37,18 @@ export default function Page() {
   // --- Price states ---
   const [originalPrice, setOriginalPrice] = useState("");
   const [discountPercent, setDiscountPercent] = useState("");
-  const [finalPrice, setFinalPrice] = useState("");
+  const finalPrice = (() => {
+    if (!originalPrice) return "";
+
+    const price = parseFloat(originalPrice);
+    const disc = parseFloat(discountPercent || "0");
+
+    if (Number.isNaN(price) || Number.isNaN(disc) || disc < 0 || disc > 100) {
+      return originalPrice;
+    }
+
+    return (price - (disc / 100) * price).toFixed(2);
+  })();
 
   // Helper: slug generation
 
@@ -65,24 +76,6 @@ export default function Page() {
   function getDiscount() {
     setDiscountPercent(discount?.current?.value || "");
   }
-
-  // Calculate final price
-  useEffect(() => {
-    if (originalPrice && discountPercent) {
-      const price = parseFloat(originalPrice);
-      const disc = parseFloat(discountPercent);
-      if (disc < 0 || disc > 100) {
-        notify("Discount percent must be between 0 and 100", false);
-        return;
-      }
-      const final = price - (disc / 100) * price;
-      setFinalPrice(final.toFixed(2));
-    } else if (originalPrice) {
-      setFinalPrice(originalPrice);
-    } else {
-      setFinalPrice("");
-    }
-  }, [originalPrice, discountPercent]);
 
   // --- Fetch dropdown data ---
   useEffect(() => {
@@ -112,6 +105,11 @@ export default function Page() {
     }
     if (!selectedBrand) {
       notify("Please select a brand", false);
+      return;
+    }
+    const discountValue = parseFloat(discountPercent || "0");
+    if (discountValue < 0 || discountValue > 100) {
+      notify("Discount percent must be between 0 and 100", false);
       return;
     }
 

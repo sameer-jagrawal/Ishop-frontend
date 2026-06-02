@@ -1,6 +1,7 @@
 "use client";
 
 import { client, notify } from "@/utils/helper";
+import { setAuthSession } from "@/lib/auth";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 import ButtonLoader from "@/app/components/user components/ButtonLoader";
@@ -46,7 +47,7 @@ export default function AdminLoginPage() {
       }
       
       // CHECK ADMIN ROLE
-      if (response.data.data.role !== "admin") {
+      if (!["admin", "superAdmin"].includes(response.data.data.role)) {
 
         notify(
           "Access denied. Admin only.",
@@ -61,8 +62,12 @@ export default function AdminLoginPage() {
         "admin",
         JSON.stringify(response.data.data)
       );
+      if (response.data.data.token) {
+        await setAuthSession(response.data.data.token);
+      }
 
       // REDIRECT ADMIN PANEL
+      router.refresh();
       router.push("/admin");
 
     } catch (error) {

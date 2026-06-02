@@ -20,7 +20,6 @@ const handleChange = (slug) => {
   // Apply filter (on confirm)
   const handleApply = () => {
   const query = new URLSearchParams(search_params.toString());
-  console.log(selected,"selected slug")
 
   if (!selected) {
     query.delete("category_slug");

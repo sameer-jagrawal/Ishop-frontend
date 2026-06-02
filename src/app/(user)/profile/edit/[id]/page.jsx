@@ -1,17 +1,58 @@
 "use client";
 
 import Image from "next/image";
-import { useState } from "react";
+import { useEffect, useMemo, useState } from "react";
+import { useRouter } from "next/navigation";
+import ButtonLoader from "@/app/components/user components/ButtonLoader";
+import { client, notify } from "@/utils/helper";
+import { userImageUrl } from "@/utils/mediaUrl";
 
 export default function EditProfilePage() {
+  const router = useRouter();
+  const [loader, setLoader] = useState(false);
 
   const [formData, setFormData] = useState({
-    firstName: "Mark",
-    lastName: "Cole",
-    email: "swoo@gmail.com",
-    phone: "+1 0231 4554 452",
+    name: "",
+    email: "",
+    phone: "",
     image: null,
+    currentImage: "",
   });
+
+  useEffect(() => {
+    let mounted = true;
+    async function loadProfile() {
+      try {
+        const response = await client.get("user/get");
+        const profile = response?.data?.data;
+        if (!mounted || !profile) return;
+        setFormData((prev) => ({
+          ...prev,
+          name: profile.name || "",
+          email: profile.email || "",
+          phone: profile.phone || "",
+          currentImage: profile.image || "",
+        }));
+      } catch (error) {
+        notify(error?.response?.data?.masg || "Unable to load profile", false);
+      }
+    }
+    loadProfile();
+    return () => {
+      mounted = false;
+    };
+  }, []);
+
+  const previewUrl = useMemo(() => {
+    if (formData.image) return URL.createObjectURL(formData.image);
+    return userImageUrl(formData.currentImage);
+  }, [formData.image, formData.currentImage]);
+
+  useEffect(() => {
+    return () => {
+      if (previewUrl?.startsWith("blob:")) URL.revokeObjectURL(previewUrl);
+    };
+  }, [previewUrl]);
 
   function changeHandler(e) {
 
@@ -23,10 +64,25 @@ export default function EditProfilePage() {
     });
   }
 
-  function submitHandler(e) {
+  async function submitHandler(e) {
     e.preventDefault();
 
-    console.log(formData);
+    try {
+      setLoader(true);
+      const payload = new FormData();
+      payload.append("name", formData.name);
+      payload.append("phone", formData.phone);
+      if (formData.image) payload.append("image", formData.image);
+
+      const response = await client.put("user/profile", payload);
+      notify(response?.data?.masg || "Profile updated", response?.data?.success);
+      router.refresh();
+      router.push("/profile");
+    } catch (error) {
+      notify(error?.response?.data?.masg || "Profile update is not available yet", false);
+    } finally {
+      setLoader(false);
+    }
   }
 
   return (
@@ -47,28 +103,27 @@ export default function EditProfilePage() {
           {/* First Name */}
           <div>
             <label className="text-sm text-gray-600 block mb-2">
-              First Name
+              Full Name
             </label>
 
             <input
               type="text"
-              name="firstName"
-              value={formData.firstName}
+              name="name"
+              value={formData.name}
               onChange={changeHandler}
               className="w-full border border-gray-200 rounded-lg px-4 py-3 outline-none transition-all duration-300 focus:border-cyan-500 focus:ring-2 focus:ring-cyan-100 hover:border-cyan-300"
             />
           </div>
 
-          {/* Last Name */}
           <div>
             <label className="text-sm text-gray-600 block mb-2">
-              Last Name
+              Phone Number
             </label>
 
             <input
               type="text"
-              name="lastName"
-              value={formData.lastName}
+              name="phone"
+              value={formData.phone}
               onChange={changeHandler}
               className="w-full border border-gray-200 rounded-lg px-4 py-3 outline-none transition-all duration-300 focus:border-cyan-500 focus:ring-2 focus:ring-cyan-100 hover:border-cyan-300"
             />
@@ -84,23 +139,8 @@ export default function EditProfilePage() {
               type="email"
               name="email"
               value={formData.email}
-              onChange={changeHandler}
-              className="w-full border border-gray-200 rounded-lg px-4 py-3 outline-none transition-all duration-300 focus:border-cyan-500 focus:ring-2 focus:ring-cyan-100 hover:border-cyan-300"
-            />
-          </div>
-
-          {/* Phone */}
-          <div className="md:col-span-2">
-            <label className="text-sm text-gray-600 block mb-2">
-              Phone Number
-            </label>
-
-            <input
-              type="text"
-              name="phone"
-              value={formData.phone}
-              onChange={changeHandler}
-              className="w-full border border-gray-200 rounded-lg px-4 py-3 outline-none transition-all duration-300 focus:border-cyan-500 focus:ring-2 focus:ring-cyan-100 hover:border-cyan-300"
+              disabled
+              className="w-full border border-gray-200 rounded-lg bg-gray-50 px-4 py-3 text-gray-500 outline-none"
             />
           </div>
 
@@ -120,11 +160,11 @@ export default function EditProfilePage() {
           </div>
 
           {/* Image Preview */}
-          {formData.image && (
+          {previewUrl && (
             <div className="md:col-span-2 flex justify-center">
 
               <Image
-                src={URL.createObjectURL(formData.image)}
+                src={previewUrl}
                 alt="preview"
                 width={140}
                 height={140}
@@ -139,9 +179,10 @@ export default function EditProfilePage() {
 
             <button
               type="submit"
+              disabled={loader}
               className="bg-cyan-500 text-white px-8 py-3 rounded-lg transition-all duration-300 hover:bg-cyan-600 hover:shadow-lg hover:scale-[1.02]"
             >
-              Save Changes
+              {loader ? <ButtonLoader /> : "Save Changes"}
             </button>
 
           </div>

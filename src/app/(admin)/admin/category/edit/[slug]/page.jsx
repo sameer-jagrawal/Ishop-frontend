@@ -4,7 +4,7 @@ import { useRouter } from "next/navigation";
 import React, { useEffect, useRef, useState } from "react";
 import { client, notify } from "@/utils/helper";
 import ButtonLoader from "@/app/components/user components/ButtonLoader";
-export default function page() {
+export default function Page() {
   const { slug } = useParams();
   console.log(slug);
   const router = useRouter();

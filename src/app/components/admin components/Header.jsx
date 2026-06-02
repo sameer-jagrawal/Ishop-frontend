@@ -1,6 +1,7 @@
 import React from "react";
-import { FiSearch, FiBell, FiUser } from "react-icons/fi";
+import { FiSearch, FiBell } from "react-icons/fi";
 import Link from "next/link"
+import Logout from "@/app/components/user components/Logout";
 
 export default function Header() {
   return (
@@ -30,15 +31,8 @@ export default function Header() {
         </Link>
 
 
-        {/* Login / Profile */}
-        <div className="flex items-center gap-2 cursor-pointer border px-2 md:px-3 py-1.5 md:py-2 rounded-lg hover:bg-gray-100 bg-[#ff7b00]">
-          <Link href={"/admin-auth/admin/login"}>
-          <FiUser className="text-lg md:text-xl text-gray-600" />
-          <span className="hidden sm:inline text-xs md:text-sm font-medium text-gray-700">
-            Login
-          </span>
-          </Link>
-
+        <div className="rounded-lg bg-[#ff7b00] px-2 py-1.5 text-white transition hover:bg-orange-600 md:px-3 md:py-2">
+          <Logout className="m-0 p-0 text-xs font-semibold text-white md:text-sm" />
         </div>
 
       </div>

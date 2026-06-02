@@ -1,4 +1,3 @@
-import { Geist, Geist_Mono } from "next/font/google";
 import "../../globals.css";
 import Sidebar from "@/app/components/admin components/Sidebar";
 import Header from "@/app/components/admin components/Header";
@@ -9,17 +8,8 @@ import { ToastContainer } from "react-toastify";
 const poppins = Poppins({
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700"],
-  variable: "--font-quicksand",
-});
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-poppins",
 });
 
 export const metadata = {
@@ -29,8 +19,8 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={poppins.variable}>
-      <body className="w-full h-full font-sans flex">
+    <html lang="en" className={`${poppins.className} ${poppins.variable}`}>
+      <body className="w-full h-full flex">
         <ToastContainer
           position="top-right"
           autoClose={1000}

@@ -1,6 +1,26 @@
 import { client } from "@/utils/helper"
 
-console.log("env file console",process.env.NEXT_PUBLIC_API_BASE_URL);
+function normalizeProductResponse(payload) {
+    const data = payload?.data;
+    if (Array.isArray(data)) return payload;
+    if (Array.isArray(data?.product)) {
+        return {
+            ...payload,
+            data: data.product,
+            total: data.total,
+            limit: data.limit,
+            pages: data.pages,
+            imageBaseUrl: data.imageBaseUrl,
+        };
+    }
+    return {
+        ...payload,
+        data: [],
+        total: 0,
+        limit: 0,
+        pages: 0,
+    };
+}
 
 async function  getCategories(query={}) {
     const filter = new URLSearchParams()
@@ -21,6 +41,7 @@ async function  getCategories(query={}) {
         
     } catch (error) {
         console.log(error)
+        return { success: false, data: [] }
     }
     
 }
@@ -44,6 +65,7 @@ async function  getBrand(query={}){
         
     } catch (error) {
         console.log(error)
+        return { success: false, data: [] }
     }
     
 }
@@ -58,6 +80,7 @@ async function  getProduct(query={}){
     if(query.is_top) filter.append("is_top",query.is_top);  
     if(query.is_hot) filter.append("is_hot",query.is_hot);  
     if(query.limit) filter.append("limit",query.limit);
+    if(query.page) filter.append("pages",query.page);
     if(query.category_slug) filter.append("category_slug",query.category_slug);
     if(query.min_price) filter.append("min_price",query.min_price);
     if(query.max_price) filter.append("max_price",query.max_price);
@@ -80,10 +103,11 @@ async function  getProduct(query={}){
         const response = await client.get(
           query ? `/product?${query}` : "product"
         );
-    return response?.data
+    return normalizeProductResponse(response?.data)
         
     } catch (error) {
         console.log(error)
+        return normalizeProductResponse()
     }
     
 }
@@ -101,6 +125,7 @@ async function  getColor(query={}){
         
     } catch (error) {
         console.log(error)
+        return { success: false, data: [] }
     }
     
 }
@@ -113,6 +138,7 @@ async function  getSelectData(type){
         
     } catch (error) {
         console.log(error)
+        return { success: false, data: [] }
     }
     
 }
@@ -125,6 +151,7 @@ async function  getAllOrders(){
         
     } catch (error) {
         console.log(error)
+        return { success: false, data: [] }
     }
     
 }
@@ -135,6 +162,7 @@ async function  getSingleOrder(id){
         
     } catch (error) {
         console.log(error)
+        return { success: false, data: null }
     }
     
 }

@@ -9,6 +9,11 @@ import {
   Sparkles,
 } from "lucide-react";
 
+const confettiPieces = Array.from({ length: 25 }, (_, i) => ({
+  top: `${(i * 37) % 100}%`,
+  left: `${(i * 53) % 100}%`,
+  animationDelay: `${i * 0.2}s`,
+}));
 
 export default  function OrderPlacedPage({params}) {
 
@@ -38,16 +43,12 @@ export default  function OrderPlacedPage({params}) {
       {/* CONFETTI */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
 
-        {[...Array(25)].map((_, i) => (
+        {confettiPieces.map((piece, i) => (
 
           <div
             key={i}
             className="absolute w-3 h-3 rounded-full bg-green-400 animate-bounce"
-            style={{
-              top: `${Math.random() * 100}%`,
-              left: `${Math.random() * 100}%`,
-              animationDelay: `${i * 0.2}s`,
-            }}
+            style={piece}
           />
 
         ))}

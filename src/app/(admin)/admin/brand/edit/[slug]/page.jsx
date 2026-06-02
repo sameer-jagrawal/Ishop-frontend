@@ -6,7 +6,7 @@ import { client, notify } from "@/utils/helper";
 import { getCategories } from "@/api_call/api";
 import Select from "react-select";
 import ButtonLoader from "@/app/components/user components/ButtonLoader";
-export default function page() {
+export default function Page() {
   const { slug } = useParams();
   //   console.log(slug);
   //   return

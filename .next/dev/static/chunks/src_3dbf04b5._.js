@@ -18,7 +18,17 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$toa
 const API_BASE_URL = ("TURBOPACK compile-time value", "https://ishop-backend-2mld.onrender.com/api/") || "https://ishop-backend-2mld.onrender.com/api/";
 const client = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$axios$2f$lib$2f$axios$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].create({
     baseURL: API_BASE_URL,
-    withCredentials: true
+    withCredentials: true,
+    timeout: 12000
+});
+client.interceptors.request.use((config)=>{
+    if ("TURBOPACK compile-time truthy", 1) {
+        const token = localStorage.getItem("jwt") || JSON.parse(localStorage.getItem("admin") || "null")?.token;
+        if (token) {
+            config.headers.Authorization = token;
+        }
+    }
+    return config;
 });
 const notify = (massage, flag)=>(0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$toastify$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["toast"])(massage, {
         type: flag === true ? "success" : "error"
@@ -108,6 +118,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$utils$2f$helper$2e$js
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/navigation.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$user__components$2f$ButtonLoader$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/app/components/user components/ButtonLoader.jsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/client/app-dir/link.js [app-client] (ecmascript)");
 ;
 var _s = __turbopack_context__.k.signature();
 "use client";
@@ -116,14 +127,15 @@ var _s = __turbopack_context__.k.signature();
 ;
 ;
 ;
+;
 function RegisterPage() {
     _s();
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(20);
-    if ($[0] !== "f1c45047e6289a4ee05ba63c354fa39d5ec4c724b87e610c825604af075d9992") {
+    if ($[0] !== "e35f7347ba8a11e1d41ce644fbb18e5fc0e3af050d523394107a7bd89a0f863d") {
         for(let $i = 0; $i < 20; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "f1c45047e6289a4ee05ba63c354fa39d5ec4c724b87e610c825604af075d9992";
+        $[0] = "e35f7347ba8a11e1d41ce644fbb18e5fc0e3af050d523394107a7bd89a0f863d";
     }
     const [loader, setLoader] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
     const router = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRouter"])();
@@ -195,7 +207,7 @@ function RegisterPage() {
                     children: "Create Account"
                 }, void 0, false, {
                     fileName: "[project]/src/app/(user-auth)/register/page.jsx",
-                    lineNumber: 78,
+                    lineNumber: 79,
                     columnNumber: 44
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -203,13 +215,13 @@ function RegisterPage() {
                     children: "Create your IShop account and continue shopping"
                 }, void 0, false, {
                     fileName: "[project]/src/app/(user-auth)/register/page.jsx",
-                    lineNumber: 78,
+                    lineNumber: 79,
                     columnNumber: 127
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/app/(user-auth)/register/page.jsx",
-            lineNumber: 78,
+            lineNumber: 79,
             columnNumber: 10
         }, this);
         $[6] = t3;
@@ -229,7 +241,7 @@ function RegisterPage() {
                             children: "Full Name"
                         }, void 0, false, {
                             fileName: "[project]/src/app/(user-auth)/register/page.jsx",
-                            lineNumber: 85,
+                            lineNumber: 86,
                             columnNumber: 56
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -240,13 +252,13 @@ function RegisterPage() {
                             className: "w-full border border-gray-300 rounded-xl px-4 py-2.5 text-sm outline-none focus:ring-2 focus:ring-[#01A49E] focus:border-transparent transition"
                         }, void 0, false, {
                             fileName: "[project]/src/app/(user-auth)/register/page.jsx",
-                            lineNumber: 85,
+                            lineNumber: 86,
                             columnNumber: 137
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/app/(user-auth)/register/page.jsx",
-                    lineNumber: 85,
+                    lineNumber: 86,
                     columnNumber: 34
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -256,7 +268,7 @@ function RegisterPage() {
                             children: "Email Address"
                         }, void 0, false, {
                             fileName: "[project]/src/app/(user-auth)/register/page.jsx",
-                            lineNumber: 85,
+                            lineNumber: 86,
                             columnNumber: 397
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -267,19 +279,19 @@ function RegisterPage() {
                             className: "w-full border border-gray-300 rounded-xl px-4 py-2.5 text-sm outline-none focus:ring-2 focus:ring-[#01A49E] focus:border-transparent transition"
                         }, void 0, false, {
                             fileName: "[project]/src/app/(user-auth)/register/page.jsx",
-                            lineNumber: 85,
+                            lineNumber: 86,
                             columnNumber: 482
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/app/(user-auth)/register/page.jsx",
-                    lineNumber: 85,
+                    lineNumber: 86,
                     columnNumber: 392
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/app/(user-auth)/register/page.jsx",
-            lineNumber: 85,
+            lineNumber: 86,
             columnNumber: 10
         }, this);
         $[7] = t4;
@@ -297,7 +309,7 @@ function RegisterPage() {
                         children: "Password"
                     }, void 0, false, {
                         fileName: "[project]/src/app/(user-auth)/register/page.jsx",
-                        lineNumber: 92,
+                        lineNumber: 93,
                         columnNumber: 33
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -308,18 +320,18 @@ function RegisterPage() {
                         className: "w-full border border-gray-300 rounded-xl px-4 py-2.5 text-sm outline-none focus:ring-2 focus:ring-[#01A49E] focus:border-transparent transition"
                     }, void 0, false, {
                         fileName: "[project]/src/app/(user-auth)/register/page.jsx",
-                        lineNumber: 92,
+                        lineNumber: 93,
                         columnNumber: 113
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/(user-auth)/register/page.jsx",
-                lineNumber: 92,
+                lineNumber: 93,
                 columnNumber: 28
             }, this)
         }, void 0, false, {
             fileName: "[project]/src/app/(user-auth)/register/page.jsx",
-            lineNumber: 92,
+            lineNumber: 93,
             columnNumber: 10
         }, this);
         $[8] = t5;
@@ -330,7 +342,7 @@ function RegisterPage() {
     if ($[9] !== loader) {
         t6 = loader ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$user__components$2f$ButtonLoader$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
             fileName: "[project]/src/app/(user-auth)/register/page.jsx",
-            lineNumber: 99,
+            lineNumber: 100,
             columnNumber: 19
         }, this) : "Create Account";
         $[9] = loader;
@@ -347,7 +359,7 @@ function RegisterPage() {
             children: t6
         }, void 0, false, {
             fileName: "[project]/src/app/(user-auth)/register/page.jsx",
-            lineNumber: 107,
+            lineNumber: 108,
             columnNumber: 10
         }, this);
         $[11] = loader;
@@ -368,7 +380,7 @@ function RegisterPage() {
             ]
         }, void 0, true, {
             fileName: "[project]/src/app/(user-auth)/register/page.jsx",
-            lineNumber: 116,
+            lineNumber: 117,
             columnNumber: 10
         }, this);
         $[14] = submitHandler;
@@ -384,18 +396,25 @@ function RegisterPage() {
             children: [
                 "Already have an account?",
                 " ",
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                    className: "text-[#01A49E] font-semibold cursor-pointer hover:underline",
-                    children: "Login"
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                    href: "/login",
+                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                        className: "text-[#01A49E] font-semibold cursor-pointer hover:underline",
+                        children: "Login"
+                    }, void 0, false, {
+                        fileName: "[project]/src/app/(user-auth)/register/page.jsx",
+                        lineNumber: 126,
+                        columnNumber: 115
+                    }, this)
                 }, void 0, false, {
                     fileName: "[project]/src/app/(user-auth)/register/page.jsx",
-                    lineNumber: 125,
+                    lineNumber: 126,
                     columnNumber: 95
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/app/(user-auth)/register/page.jsx",
-            lineNumber: 125,
+            lineNumber: 126,
             columnNumber: 10
         }, this);
         $[17] = t9;
@@ -415,12 +434,12 @@ function RegisterPage() {
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/(user-auth)/register/page.jsx",
-                lineNumber: 132,
+                lineNumber: 133,
                 columnNumber: 98
             }, this)
         }, void 0, false, {
             fileName: "[project]/src/app/(user-auth)/register/page.jsx",
-            lineNumber: 132,
+            lineNumber: 133,
             columnNumber: 11
         }, this);
         $[18] = t8;

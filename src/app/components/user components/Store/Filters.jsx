@@ -14,10 +14,10 @@ export default async function Filters() {
   return (
     <div>
       <SortingFilter />
-      <CategoryFilter category={category_res?.data} />
-      <BrandFilter brand={brand_res?.data} />
+      <CategoryFilter category={category_res?.data || []} />
+      <BrandFilter brand={brand_res?.data || []} />
       <PriceFilter />
-      <ColorFilter colors={color_res?.data} />
+      <ColorFilter colors={color_res?.data || []} />
     </div>
   );
 }

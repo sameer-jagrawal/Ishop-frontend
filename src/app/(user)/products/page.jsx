@@ -1,10 +1,9 @@
 import React from 'react'
 import ProductCard from '@/app/components/user components/Store/ProductCard'
 import { getProduct } from "@/api_call/api";
-import { getMe } from '@/api_call/serverApi';
 import Link from 'next/link';
 
-export default async function page({ searchParams }) {
+export default async function Page({ searchParams }) {
   const searchPromise = await searchParams;
   const page = Number(searchPromise.page) || 1;
 const limit = Number(searchPromise.limit) || 12;
@@ -24,20 +23,26 @@ const limit = Number(searchPromise.limit) || 12;
   const category_slug = searchPromise?.category_slug || null;
 
   const Products_res = await getProduct({ status: true, brand_slug, category_slug, color_slug, min_price, max_price, sort,page,limit })
-  const user = await getMe()
-  const products = Products_res?.data;
-  const pages = Products_res?.pages;
+  const products = Products_res?.data || [];
+  const pages = Products_res?.pages || 1;
   return (
     <>
       <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 pt-6 gap-3">
-        {products?.map((items) => (
+        {products.map((items) => (
           <Link key={items._id} href={`/singleProduct/${items?.slug}`}>
-            <ProductCard items={items} user={user} />
+            <ProductCard items={items} user={null} />
           </Link>
         ))}
       </div>
+
+      {!products.length && (
+        <div className="my-10 rounded-md border border-gray-100 bg-white px-4 py-12 text-center">
+          <p className="text-lg font-semibold text-gray-900">No products found</p>
+          <p className="mt-2 text-sm text-gray-500">Try changing filters or search again later.</p>
+        </div>
+      )}
   
-      <div className="flex justify-center items-center gap-4 mt-8">
+      <div className="flex justify-center items-center gap-4 mt-8 pb-8">
         {page > 1 && (
           <Link
             href={`?page=${page - 1}&limit=${limit}`}

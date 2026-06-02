@@ -37,9 +37,6 @@ export default function ColorFilter({colors}) {
     router.replace(`?${query.toString()}`, { scroll: false });
   }
 
-  console.log(selected,"selected array")
-
- 
     return (
       <div className="w-full  border-r border-gray-300   px-5 p-4">
         

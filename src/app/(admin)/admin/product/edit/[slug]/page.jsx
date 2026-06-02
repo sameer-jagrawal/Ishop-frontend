@@ -1,6 +1,6 @@
 "use client";
 import { useParams, useRouter } from "next/navigation";
-import React, { use, useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Select from "react-select";
 import { client, notify } from "@/utils/helper";
 import { getSelectData } from "@/api_call/api";
@@ -9,7 +9,7 @@ import { Editor } from 'primereact/editor';
 import ButtonLoader from "@/app/components/user components/ButtonLoader";
 
 
-export default function page() {
+export default function Page() {
   const { slug } = useParams();
   const router = useRouter();
   const nameRef = useRef(null);
@@ -39,33 +39,34 @@ const [newImages, setNewImages] = useState([]); // uploaded files
   // --- Price states ---
   const [originalPrice, setOriginalPrice] = useState("");
   const [discountPercent, setDiscountPercent] = useState("");
-  const [finalPrice, setFinalPrice] = useState("");
+  const finalPrice = (() => {
+    if (!originalPrice) return "";
 
-  // pre select
-  const [preselcategories, setPreselcategories] = useState(null);
+    const price = parseFloat(originalPrice);
+    const disc = parseFloat(discountPercent || "0");
+
+    if (Number.isNaN(price) || Number.isNaN(disc) || disc < 0 || disc > 100) {
+      return originalPrice;
+    }
+
+    return (price - (disc / 100) * price).toFixed(2);
+  })();
+
+  const selectedCategoryOption =
+    categoryList
+      .map((cat) => ({
+        value: cat._id,
+        label: cat.name,
+      }))
+      .find((opt) => opt.value === categoryId) || null;
 
   // descripition
   const [text,setText] = useState("")
 
 
   function categorySelect(cat) {
-    setPreselcategories(cat); // UI
     setCategoryId(cat ? cat.value : null); // backend
   }
-
-  useEffect(() => {
-    if (data && categoryList.length) {
-      const selected = categoryList
-        .map((cat) => ({
-          value: cat._id,
-          label: cat.name,
-        }))
-        .find((opt) => opt.value === data.categoryId);
-
-      setPreselcategories(selected);
-      setCategoryId(selected?.value || null);
-    }
-  }, [data, categoryList]);
 
   // get data by slug
   useEffect(() => {
@@ -76,7 +77,13 @@ const [newImages, setNewImages] = useState([]); // uploaded files
         const formdata = response.data.data;
         console.log(formdata);
         setData(formdata);
-        setExistingImages(formdata.images);
+        setCategoryId(formdata.categoryId || null);
+        setSelectedBrand(formdata.brandId || null);
+        setSelectedColors(formdata.colorId || []);
+        setOriginalPrice(formdata.original_price || "");
+        setDiscountPercent(formdata.discount_percentage || "");
+        setText(formdata.long_description || "");
+        setExistingImages(formdata.images || []);
         // const formatted = formdata.categoryId.map((item) => ({
         //   value: item._id,
         //   label: item.name,
@@ -112,24 +119,6 @@ const [newImages, setNewImages] = useState([]); // uploaded files
   function getDiscount() {
     setDiscountPercent(discount?.current?.value || "");
   }
-
-  // Calculate final price
-  useEffect(() => {
-    if (originalPrice && discountPercent) {
-      const price = parseFloat(originalPrice);
-      const disc = parseFloat(discountPercent);
-      if (disc < 0 || disc > 100) {
-        notify("Discount percent must be between 0 and 100", false);
-        return;
-      }
-      const final = price - (disc / 100) * price;
-      setFinalPrice(final.toFixed(2));
-    } else if (originalPrice) {
-      setFinalPrice(originalPrice);
-    } else {
-      setFinalPrice("");
-    }
-  }, [originalPrice, discountPercent]);
 
   // --- Fetch dropdown data ---
   useEffect(() => {
@@ -180,6 +169,11 @@ const [newImages, setNewImages] = useState([]); // uploaded files
     // }
     if (!selectedBrand) {
       notify("Please select a brand", false);
+      return;
+    }
+    const discountValue = parseFloat(discountPercent || "0");
+    if (discountValue < 0 || discountValue > 100) {
+      notify("Discount percent must be between 0 and 100", false);
       return;
     }
 
@@ -239,7 +233,7 @@ const [newImages, setNewImages] = useState([]); // uploaded files
       setPreview(URL.createObjectURL(file));
     }
   };
-  console.log("pre select categories", preselcategories);
+  console.log("pre select categories", selectedCategoryOption);
 
   return (
     <div className="min-h-screen bg-gray-50 flex justify-center items-start p-4 md:p-8">
@@ -301,7 +295,7 @@ const [newImages, setNewImages] = useState([]); // uploaded files
                     label: cat.name,
                   }))}
                   onChange={categorySelect}
-                  value={preselcategories}
+                  value={selectedCategoryOption}
                   isClearable
                   placeholder="Select a category..."
                   styles={selectStyles}
@@ -401,7 +395,6 @@ const [newImages, setNewImages] = useState([]); // uploaded files
                   type="number"
                   placeholder="0.00"
                   value={finalPrice}
-                  defaultValue={data?.final_price}
                   readOnly
                   className="w-full px-3 py-2.5 rounded-lg border border-gray-200 bg-gray-50 text-sm text-gray-600"
                 />

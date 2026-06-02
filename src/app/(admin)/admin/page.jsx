@@ -2,7 +2,7 @@ import AdminDashboardStats from '@/app/components/admin components/dashBoard/Das
 import RecentOrdersTable from '@/app/components/admin components/dashBoard/Orders'
 import React from 'react'
 
-export default function page() {
+export default function Page() {
   return (
     <div className=''>
       <AdminDashboardStats/>

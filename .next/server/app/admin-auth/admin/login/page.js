@@ -9,7 +9,7 @@ R.c("server/chunks/ssr/node_modules_next_dist_client_components_builtin_global-e
 R.c("server/chunks/ssr/node_modules_next_dist_client_components_9774470f._.js")
 R.c("server/chunks/ssr/node_modules_next_dist_client_components_builtin_forbidden_45780354.js")
 R.c("server/chunks/ssr/node_modules_next_dist_client_components_builtin_unauthorized_15817684.js")
-R.c("server/chunks/ssr/[root-of-the-server]__0a2c1183._.js")
+R.c("server/chunks/ssr/[root-of-the-server]__06207cf2._.js")
 R.c("server/chunks/ssr/src_app_c390836f._.js")
 R.c("server/chunks/ssr/_next-internal_server_app_admin-auth_admin_login_page_actions_3a7394e1.js")
 R.m(44452)

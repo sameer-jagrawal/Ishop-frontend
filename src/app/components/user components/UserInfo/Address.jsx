@@ -4,13 +4,14 @@ import Link from "next/link";
 import { MapPin, Plus, Check, Pencil, Trash2 } from "lucide-react";
 import { useState } from "react";
 import DeleteBtn from "../../admin components/DeleteBtn";
+import { useRouter } from "next/navigation";
 
 export default function AddressPage({user}) {
-  
+  const router = useRouter();
 
   const handleEdit = (e, id) => {
     e.stopPropagation();
-    window.location.href = `/profile/address/edit/${id}`;
+    router.push(`/profile/address/edit/${id}`);
   };
 
   const handleDelete = (e, id) => {

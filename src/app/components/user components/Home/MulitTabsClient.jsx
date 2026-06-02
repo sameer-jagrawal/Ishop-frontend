@@ -5,14 +5,14 @@ import Link from "next/link";
 
 export default function MultiTabsClient({ products, user }) {
   const [activeTab, setActiveTab] = useState("best");
+  const productList = Array.isArray(products) ? products : [];
 
-  // Fake filtering using same products
   const filteredProducts =
     activeTab === "best"
-      ? products?.product?.slice(0, 8)
+      ? productList.slice(0, 8)
       : activeTab === "new"
-      ? [...products].reverse().slice(0, 8)
-      : products.slice(4, 12);
+      ? [...productList].reverse().slice(0, 8)
+      : productList.slice(4, 12);
 
   return (
     <div className="max-w-7xl mt-2 mx-auto bg-gray-100 rounded-2xl p-4 md:p-6 px-4 md:px-6">

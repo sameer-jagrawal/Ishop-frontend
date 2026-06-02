@@ -5,7 +5,7 @@ import Select from "react-select";
 import { client, notify } from "@/utils/helper";
 import { getCategories } from "@/api_call/api";
 import ButtonLoader from "@/app/components/user components/ButtonLoader";
-export default function page() {
+export default function Page() {
   const router = useRouter();
   const [loader, setLoader] = useState(false);
   const nameRef = useRef(null);

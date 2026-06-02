@@ -1,10 +1,10 @@
 import { getBrand } from "@/api_call/api";
 import React from "react";
 import Link from "next/link";
+import { brandImageUrl } from "@/utils/mediaUrl";
 export default async function FeatureBrand() {
 const brand_res = await getBrand();
-const brand = brand_res?.data;
-const imagePath = brand_res?.data?.meta?.imagebaseurl;
+const brand = brand_res?.data || [];
 
 return (
   <div className=" hidden md:block flex-1 max-h-fit bg-white md:rounded-xl shadow-md p-4 md:p-6">
@@ -21,7 +21,7 @@ return (
           >
             <Link href="/">
               <img
-                src={`https://ishop-backend-2mld.onrender.com/brand/${item.image}`}
+                src={brandImageUrl(item.image)}
                 alt="brand"
                 className="w-full md:w-14 md:h-14 object-contain rounded-xl"
               />

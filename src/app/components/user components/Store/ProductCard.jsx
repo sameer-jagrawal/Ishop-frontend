@@ -1,10 +1,10 @@
 import React from "react";
 import { Eye, Heart, ShieldCheck, Star, Truck } from "lucide-react";
-import AddToCartButton from "./AddToCart";
+import { productImageUrl } from "@/utils/mediaUrl";
 
 export default function ProductCard({ items, user }) {
   const imageUrl = items?.thumbnail
-    ? `https://ishop-backend-2mld.onrender.com/product/${items.thumbnail}`
+    ? productImageUrl(items.thumbnail)
     : "/headPhone.png";
 
   const brandName = items?.brandId?.name || items?.brand || "Premium";
