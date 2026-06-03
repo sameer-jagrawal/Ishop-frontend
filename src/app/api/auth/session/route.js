@@ -1,7 +1,10 @@
 import { cookies } from "next/headers";
 import { NextResponse } from "next/server";
 
-const COOKIE_NAME = "jwt";
+const COOKIE_NAMES = {
+  user: "jwt",
+  admin: "admin_jwt",
+};
 
 const cookieOptions = {
   httpOnly: true,
@@ -13,7 +16,8 @@ const cookieOptions = {
 
 export async function POST(request) {
   try {
-    const { token } = await request.json();
+    const { token, type = "user" } = await request.json();
+    const cookieName = COOKIE_NAMES[type] || COOKIE_NAMES.user;
 
     if (!token) {
       return NextResponse.json(
@@ -23,7 +27,7 @@ export async function POST(request) {
     }
 
     const cookieStore = await cookies();
-    cookieStore.set(COOKIE_NAME, token, cookieOptions);
+    cookieStore.set(cookieName, token, cookieOptions);
 
     return NextResponse.json({ success: true });
   } catch {
@@ -34,8 +38,17 @@ export async function POST(request) {
   }
 }
 
-export async function DELETE() {
+export async function DELETE(request) {
+  const { searchParams } = new URL(request.url);
+  const type = searchParams.get("type");
+  const cookie = searchParams.get("cookie");
   const cookieStore = await cookies();
-  cookieStore.delete(COOKIE_NAME);
+
+  if (type === "all") {
+    Object.values(COOKIE_NAMES).forEach((cookieName) => cookieStore.delete(cookieName));
+  } else {
+    cookieStore.delete(cookie || COOKIE_NAMES.user);
+  }
+
   return NextResponse.json({ success: true });
 }

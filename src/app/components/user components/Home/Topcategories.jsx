@@ -1,6 +1,7 @@
 import React from "react";
 import { getCategories } from "@/api_call/api";
 import { categoryImageUrl } from "@/utils/mediaUrl";
+import Link from "next/link";
 export default async function Topcategories() {
   const category_res = await getCategories({is_top:true,status:true})
   const categories = category_res?.data || [];
@@ -18,11 +19,14 @@ export default async function Topcategories() {
               key={index}
               className="flex flex-col items-center text-center"
             >
+                <Link href={`/products?category_slug=${item?.slug || ""}`}>
                 <img
                   src={categoryImageUrl(item.image)}
                   alt="category"
                   className="w-10 h-10 md:w-14 md:h-14 object-contain rounded-xl"
                 />
+                </Link>
+
             </div>
           );
         })}

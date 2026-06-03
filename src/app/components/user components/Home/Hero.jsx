@@ -3,6 +3,7 @@ import { IoMdShareAlt } from "react-icons/io";
 import Link from "next/link";
 import { getCategories } from "@/api_call/api";
 import Image from "next/image";
+import { categoryImageUrl } from "@/utils/mediaUrl";
 
 export default async function Hero() {
   const catRes = await getCategories({ limit: 5, is_home: true, status: true });
@@ -23,7 +24,7 @@ export default async function Hero() {
                   <li className="flex border border-gray-300 py-2 px-2 rounded-xl justify-between my-4 md:my-5 items-center gap-4">
                     <div className="flex justify-between items-center gap-3">
                       <img
-                        src={`https://ishop-backend-2mld.onrender.com/category/${items.image}`}
+                        src={categoryImageUrl(items.image)}
                         width={20}
                         height={20}
                         alt={items.name}

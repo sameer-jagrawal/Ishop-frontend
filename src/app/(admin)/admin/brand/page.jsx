@@ -4,6 +4,8 @@ import React from "react";
 import { getBrand } from "@/api_call/api";
 import Link from "next/link";
 import DeleteBtn from "@/app/components/admin components/DeleteBtn";
+import { brandImageUrl } from "@/utils/mediaUrl";
+import BrandStatusDropdown from "@/app/components/admin components/BrandStatusDropdown";
 
 export default async function UserManagementTable() {
   
@@ -53,6 +55,9 @@ export default async function UserManagementTable() {
           <th className="px-6 py-4 text-xs font-semibold text-gray-500 uppercase tracking-wider">
             Category
           </th>
+          <th className="px-6 py-4 text-xs font-semibold text-gray-500 uppercase tracking-wider">
+            Status
+          </th>
           <th className="px-6 py-4 text-xs font-semibold text-gray-500 uppercase tracking-wider text-center">
             Actions
           </th>
@@ -69,7 +74,7 @@ export default async function UserManagementTable() {
             {/* Image */}
             <td className="px-6 py-4">
               <img
-                src={`https://ishop-backend-2mld.onrender.com/brand/${user?.image}`}
+                src={brandImageUrl(user?.image)}
                 alt={user.name}
                 className="w-12 h-12 rounded-xl object-cover border"
               />
@@ -98,6 +103,10 @@ export default async function UserManagementTable() {
                   );
                 })}
               </div>
+            </td>
+
+            <td className="px-6 py-4">
+              <BrandStatusDropdown brand={user} />
             </td>
 
             {/* Actions */}

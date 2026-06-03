@@ -63,7 +63,7 @@ export default function AdminLoginPage() {
         JSON.stringify(response.data.data)
       );
       if (response.data.data.token) {
-        await setAuthSession(response.data.data.token);
+        await setAuthSession(response.data.data.token, "admin");
       }
 
       // REDIRECT ADMIN PANEL

@@ -13,9 +13,12 @@ const client = axios.create({
 
 client.interceptors.request.use((config) => {
   if (typeof window !== "undefined") {
+    const isAdminRoute = window.location.pathname.startsWith("/admin");
+    const adminToken = JSON.parse(localStorage.getItem("admin") || "null")?.token;
+    const userToken = localStorage.getItem("jwt");
     const token =
-      localStorage.getItem("jwt") ||
-      JSON.parse(localStorage.getItem("admin") || "null")?.token;
+      isAdminRoute ? adminToken || userToken : userToken || adminToken;
+
     if (token) {
       config.headers.Authorization = token;
     }

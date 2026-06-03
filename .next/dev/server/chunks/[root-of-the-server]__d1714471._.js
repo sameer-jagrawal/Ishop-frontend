@@ -61,30 +61,37 @@ const protectedRoutes = [
 const adminRoutes = [
     '/admin'
 ];
-const authoRoutes = [
+const userAuthRoutes = [
     '/login',
     '/register',
-    '/otp-verify',
+    '/otp-verify'
+];
+const adminAuthRoutes = [
     '/admin-auth/admin/login'
 ];
 function proxy(request) {
     const { pathname } = request.nextUrl;
-    const token = request.cookies.get('jwt')?.value || null;
+    const userToken = request.cookies.get('jwt')?.value || null;
+    const adminToken = request.cookies.get('admin_jwt')?.value || null;
     const isProtectedRoute = protectedRoutes.some((route)=>pathname === route || pathname.startsWith(`${route}/`));
     const isAdminRoute = adminRoutes.some((route)=>pathname === route || pathname.startsWith(`${route}/`));
-    const isAuthRoute = authoRoutes.includes(pathname);
-    if (isProtectedRoute && !token) {
+    const isUserAuthRoute = userAuthRoutes.includes(pathname);
+    const isAdminAuthRoute = adminAuthRoutes.includes(pathname);
+    if (isProtectedRoute && !userToken) {
         const loginUrl = new URL('/login', request.url);
         loginUrl.searchParams.set('next', pathname);
         return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$server$2e$js__$5b$middleware$5d$__$28$ecmascript$29$__["NextResponse"].redirect(loginUrl);
     }
-    if (isAdminRoute && !token) {
+    if (isAdminRoute && !adminToken) {
         const loginUrl = new URL('/admin-auth/admin/login', request.url);
         loginUrl.searchParams.set('next', pathname);
         return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$server$2e$js__$5b$middleware$5d$__$28$ecmascript$29$__["NextResponse"].redirect(loginUrl);
     }
-    if (isAuthRoute && token) {
+    if (isUserAuthRoute && userToken) {
         return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$server$2e$js__$5b$middleware$5d$__$28$ecmascript$29$__["NextResponse"].redirect(new URL('/', request.url));
+    }
+    if (isAdminAuthRoute && adminToken) {
+        return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$server$2e$js__$5b$middleware$5d$__$28$ecmascript$29$__["NextResponse"].redirect(new URL('/admin', request.url));
     }
     return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$server$2e$js__$5b$middleware$5d$__$28$ecmascript$29$__["NextResponse"].next();
 }

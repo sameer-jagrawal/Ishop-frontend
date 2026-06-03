@@ -15,7 +15,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$axios$2f$lib
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$toastify$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/react-toastify/dist/index.mjs [app-client] (ecmascript)");
 ;
 ;
-const API_BASE_URL = ("TURBOPACK compile-time value", "https://ishop-backend-2mld.onrender.com/api/") || "https://ishop-backend-2mld.onrender.com/api/";
+const API_BASE_URL = ("TURBOPACK compile-time value", "http://localhost:5000/api/") || "https://ishop-backend-2mld.onrender.com/api/";
 const client = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$axios$2f$lib$2f$axios$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].create({
     baseURL: API_BASE_URL,
     withCredentials: true,
@@ -23,7 +23,10 @@ const client = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$a
 });
 client.interceptors.request.use((config)=>{
     if ("TURBOPACK compile-time truthy", 1) {
-        const token = localStorage.getItem("jwt") || JSON.parse(localStorage.getItem("admin") || "null")?.token;
+        const isAdminRoute = window.location.pathname.startsWith("/admin");
+        const adminToken = JSON.parse(localStorage.getItem("admin") || "null")?.token;
+        const userToken = localStorage.getItem("jwt");
+        const token = isAdminRoute ? adminToken || userToken : userToken || adminToken;
         if (token) {
             config.headers.Authorization = token;
         }

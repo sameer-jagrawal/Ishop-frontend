@@ -9,6 +9,10 @@ const nextConfig = {
         hostname: "ishop-backend-2mld.onrender.com",
       },
       {
+        protocol: "https",
+        hostname: "res.cloudinary.com",
+      },
+      {
         protocol: "http",
         hostname: "localhost",
       },

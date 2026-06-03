@@ -5,6 +5,7 @@ import { client } from "@/utils/helper";
 import { useParams } from "next/navigation";
 import Status from "@/app/components/admin components/Status";
 import { ProductDetailsSkeleton } from "@/app/components/user components/LoadingSkeletons";
+import { productImageUrl } from "@/utils/mediaUrl";
 import {
   Package,
   Tag,
@@ -31,7 +32,7 @@ export default function ProductDetails() {
 
         // Default Thumbnail
         setSelectedImage(
-          `https://ishop-backend-2mld.onrender.com/product/${formdata?.thumbnail}`
+          productImageUrl(formdata?.thumbnail)
         );
       })
       .catch((error) => {
@@ -65,18 +66,18 @@ export default function ProductDetails() {
                 <div
                   onClick={() =>
                     setSelectedImage(
-                      `https://ishop-backend-2mld.onrender.com/product/${data?.thumbnail}`
+                      productImageUrl(data?.thumbnail)
                     )
                   }
                   className={`min-w-[90px] h-[90px] rounded-2xl border-2 cursor-pointer overflow-hidden bg-white transition-all ${
                     selectedImage ===
-                    `https://ishop-backend-2mld.onrender.com/product/${data?.thumbnail}`
+                    productImageUrl(data?.thumbnail)
                       ? "border-black"
                       : "border-gray-200"
                   }`}
                 >
                   <img
-                    src={`https://ishop-backend-2mld.onrender.com/product/${data?.thumbnail}`}
+                    src={productImageUrl(data?.thumbnail)}
                     alt="thumbnail"
                     className="w-full h-full object-cover"
                   />
@@ -85,7 +86,7 @@ export default function ProductDetails() {
 
               {/* Other Images */}
               {data?.images?.map((img, index) => {
-                const imageUrl = `https://ishop-backend-2mld.onrender.com/product/${img}`;
+                const imageUrl = productImageUrl(img);
 
                 return (
                   <div

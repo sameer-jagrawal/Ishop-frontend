@@ -5,6 +5,7 @@ import { useRouter } from "next/navigation";
 import { useState } from "react";
 import ButtonLoader from "@/app/components/user components/ButtonLoader";
 import Link from "next/link";
+import { productImageUrl } from "@/utils/mediaUrl";
 
 export default function LoginPage() {
   // const next = searchParams.get("next");
@@ -40,7 +41,7 @@ export default function LoginPage() {
 
       const token = response.data?.data?.token;
       if (token) {
-        await setAuthSession(token);
+        await setAuthSession(token, "user");
       }
 
       // GET LATEST LOCAL CART DIRECTLY
@@ -86,7 +87,7 @@ export default function LoginPage() {
             final_price,
             discount_percentage,
             price,
-            thumbnail: cartRes.data.data.imageBaseUrl + thumbnail,
+            thumbnail: productImageUrl(thumbnail),
             stock,
             qty: item.qty,
           };

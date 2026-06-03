@@ -2,6 +2,7 @@
 
 import React, { useEffect, useMemo, useState } from "react";
 import { Heart, Share2 } from "lucide-react";
+import { productImageUrl } from "@/utils/mediaUrl";
 
 export default function ProductGallery({ product }) {
   console.log(product?.thumbnail)
@@ -12,9 +13,7 @@ export default function ProductGallery({ product }) {
     const uniqueImages = [...new Set(allImages)];
 
     if (uniqueImages.length > 0) {
-      return uniqueImages.map(
-        (image) => `https://ishop-backend-2mld.onrender.com/product/${image}`,
-      );
+      return uniqueImages.map((image) => productImageUrl(image));
     }
 
     return ["/headPhone.png", "/hero.png", "/dealsoftheday/mainImage.png"];

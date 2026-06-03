@@ -23,6 +23,11 @@ export const CATEGORY_STATUS_FIELDS = [
   { field: "is_popular", label: "Popular" },
 ];
 
+export const BRAND_STATUS_FIELDS = [
+  { field: "status", label: "Visibility" },
+  { field: "is_top", label: "Top" },
+];
+
 const getStatusValues = (item, fields) =>
   fields.reduce((values, { field }) => {
     values[field] = Boolean(item?.[field]);

@@ -1,34 +1,1868 @@
-[00:00:08.255] Server  LOG     ✓ Ready in 6.9s
-[00:00:17.743] Server  LOG     ○ Compiling / ...
-[00:00:35.792] Server  LOG     ✓ Finished filesystem cache database compaction in 24.8s
-[00:00:40.653] Server  ERROR   (node:18928) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+[00:00:13.783] Server  LOG     ✓ Ready in 11.9s
+[00:00:20.642] Server  LOG     ○ Compiling / ...
+[00:00:31.849] Server  ERROR   (node:25188) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
 (Use `node --trace-deprecation ...` to show where the warning was created)
-[00:00:46.807] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:47.157] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:48.957] Browser WARN    Image with src "/logo/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:00:48.957] Browser WARN    Image with src "/logo/vector1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:00:49.209] Browser WARN    Image with src "/logo/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:00:49.209] Browser WARN    Image with src "/logo/vector1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:00:52.287] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/watch.png" "received" null
-[00:00:52.752] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/watch.png" "received" null
-[00:01:19.876] Server  LOG     ✓ Finished filesystem cache database compaction in 12.4s
-[00:01:24.130] Server  LOG     ○ Compiling /login ...
-[00:01:28.307] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:01:34.254] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:01:35.206] Browser WARN    Image with src "/logo/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:01:35.206] Browser WARN    Image with src "/logo/vector1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:01:37.509] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:01:42.386] Browser LOG     [] sameer
-[00:01:43.901] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:01:44.239] Browser WARN    Image with src "/logo/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:01:44.239] Browser WARN    Image with src "/logo/vector1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:01:44.255] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/watch.png" "received" null
-[00:01:50.415] Server  LOG     ○ Compiling /profile ...
-[00:01:56.855] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/watch.png" "received" null
-[00:02:00.612] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:02:05.178] Browser LOG     [] sameer
-[00:02:05.628] Server  LOG     ✓ Finished filesystem cache database compaction in 10.2s
-[00:02:06.926] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:02:07.256] Browser WARN    Image with src "/logo/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:02:07.256] Browser WARN    Image with src "/logo/vector1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:02:07.265] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/watch.png" "received" null
+[00:00:41.561] Server  LOG     [] "categories data"
+[00:00:42.578] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:43.333] Server  LOG     ✓ Finished filesystem cache database compaction in 23.2s
+[00:00:44.073] Server  LOG     ✓ Finished writing to filesystem cache in 11.0s
+[00:00:47.814] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:50.189] Browser WARN    Image with src "/logo/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:00:50.190] Browser WARN    Image with src "/logo/vector1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:01:01.787] Server  LOG     ✓ Finished filesystem cache database compaction in 17.7s
+[00:01:01.879] Server  LOG     ✓ Finished writing to filesystem cache in 11.0s
+[00:02:35.964] Server  LOG     ✓ Compiled in 8.7s
+[00:02:39.180] Server  LOG     [] "categories data"
+[00:04:58.360] Server  LOG     ✓ Finished filesystem cache database compaction in 21.1s
+[00:07:47.328] Server  LOG     [] "categories data"
+[00:07:48.401] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:07:59.645] Browser LOG     {}
+[00:08:03.089] Server  LOG     [{...}] "categories data"
+[00:08:03.272] Browser LOG     category user delete address 
+[00:08:03.272] Browser LOG     category user delete address 
+[00:08:35.538] Browser LOG     {}
+[00:08:39.373] Server  LOG     [{...},{...}] "categories data"
+[00:08:39.549] Browser LOG     category user delete address 
+[00:08:39.549] Browser LOG     category user delete address 
+[00:08:39.549] Browser LOG     category user delete address 
+[00:08:39.549] Browser LOG     category user delete address 
+[00:08:46.746] Browser LOG     {}
+[00:08:46.747] Browser LOG     {"code":"ERR_BAD_REQUEST","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:5000/api/","data":{},"env":{},"headers":{"Accept":"application/json, text/plain, */*","Authorization":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhMWZmY2JlMmUyYzg0N2M3YzUzNzcyZSIsImlhdCI6MTc4MDQ4MTI2MiwiZXhwIjoxNzgzMDczMjYyfQ.8czmQV-HasFEeeFmx4E1pzjuaTQ6-d_PbHj0jjOTTGg","Content-Type":"application/x-www-form-urlencoded"},"maxBodyLength":-1,"maxContentLength":-1,"method":"post","timeout":12000,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"legacyInterceptorReqResOrdering":true,"silentJSONParsing":true},"url":"/category/create","withCredentials":true,"xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 400","name":"AxiosError","stack":"AxiosError: Request failed with status code 400\n    at settle (http://localhost:3000/_next/static/chunks/node_modules_axios_lib_99e19c7d._.js:2033:16)\n    at XMLHttpRequest.onloadend (http://localhost:3000/_next/static/chunks/node_modules_axios_lib_99e19c7d._.js:2549:174)\n    at Axios.request (http://localhost:3000/_next/static/chunks/node_modules_axios_lib_99e19c7d._.js:3355:49)","status":400}
+[00:09:02.277] Browser LOG     {}
+[00:09:05.377] Server  LOG     [{...},{...},{...}] "categories data"
+[00:09:05.554] Browser LOG     category user delete address 
+[00:09:05.554] Browser LOG     category user delete address 
+[00:09:05.554] Browser LOG     category user delete address 
+[00:09:05.554] Browser LOG     category user delete address 
+[00:09:05.554] Browser LOG     category user delete address 
+[00:09:05.554] Browser LOG     category user delete address 
+[00:09:20.804] Browser LOG     {}
+[00:09:24.119] Server  LOG     [{...},{...},{...},{...}] "categories data"
+[00:09:24.305] Browser LOG     category user delete address 
+[00:09:24.305] Browser LOG     category user delete address 
+[00:09:24.305] Browser LOG     category user delete address 
+[00:09:24.305] Browser LOG     category user delete address 
+[00:09:24.305] Browser LOG     category user delete address 
+[00:09:24.305] Browser LOG     category user delete address 
+[00:09:24.305] Browser LOG     category user delete address 
+[00:09:24.305] Browser LOG     category user delete address 
+[00:10:08.882] Browser LOG     {}
+[00:10:12.883] Server  LOG     [{...},{...},{...},{...},{...}] "categories data"
+[00:10:13.077] Browser LOG     category user delete address 
+[00:10:13.077] Browser LOG     category user delete address 
+[00:10:13.077] Browser LOG     category user delete address 
+[00:10:13.077] Browser LOG     category user delete address 
+[00:10:13.077] Browser LOG     category user delete address 
+[00:10:13.077] Browser LOG     category user delete address 
+[00:10:13.077] Browser LOG     category user delete address 
+[00:10:13.077] Browser LOG     category user delete address 
+[00:10:13.077] Browser LOG     category user delete address 
+[00:10:13.077] Browser LOG     category user delete address 
+[00:11:31.368] Browser LOG     {}
+[00:11:34.555] Server  LOG     [{...},{...},{...},{...},{...},{...}] "categories data"
+[00:11:34.779] Browser LOG     category user delete address 
+[00:11:34.779] Browser LOG     category user delete address 
+[00:11:34.779] Browser LOG     category user delete address 
+[00:11:34.779] Browser LOG     category user delete address 
+[00:11:34.779] Browser LOG     category user delete address 
+[00:11:34.779] Browser LOG     category user delete address 
+[00:11:34.779] Browser LOG     category user delete address 
+[00:11:34.780] Browser LOG     category user delete address 
+[00:11:34.780] Browser LOG     category user delete address 
+[00:11:34.780] Browser LOG     category user delete address 
+[00:11:34.780] Browser LOG     category user delete address 
+[00:11:34.780] Browser LOG     category user delete address 
+[00:12:37.504] Browser LOG     {}
+[00:12:41.154] Server  LOG     [{...},{...},{...},{...},{...},{...},{...}] "categories data"
+[00:12:41.350] Browser LOG     category user delete address 
+[00:12:41.350] Browser LOG     category user delete address 
+[00:12:41.350] Browser LOG     category user delete address 
+[00:12:41.350] Browser LOG     category user delete address 
+[00:12:41.350] Browser LOG     category user delete address 
+[00:12:41.350] Browser LOG     category user delete address 
+[00:12:41.350] Browser LOG     category user delete address 
+[00:12:41.350] Browser LOG     category user delete address 
+[00:12:41.350] Browser LOG     category user delete address 
+[00:12:41.350] Browser LOG     category user delete address 
+[00:12:41.350] Browser LOG     category user delete address 
+[00:12:41.350] Browser LOG     category user delete address 
+[00:12:41.350] Browser LOG     category user delete address 
+[00:12:41.350] Browser LOG     category user delete address 
+[00:13:15.337] Browser LOG     {}
+[00:13:18.813] Server  LOG     [{...},{...},{...},{...},{...},{...},{...},{...}] "categories data"
+[00:13:19.049] Browser LOG     category user delete address 
+[00:13:19.049] Browser LOG     category user delete address 
+[00:13:19.049] Browser LOG     category user delete address 
+[00:13:19.049] Browser LOG     category user delete address 
+[00:13:19.049] Browser LOG     category user delete address 
+[00:13:19.049] Browser LOG     category user delete address 
+[00:13:19.049] Browser LOG     category user delete address 
+[00:13:19.049] Browser LOG     category user delete address 
+[00:13:19.049] Browser LOG     category user delete address 
+[00:13:19.049] Browser LOG     category user delete address 
+[00:13:19.049] Browser LOG     category user delete address 
+[00:13:19.049] Browser LOG     category user delete address 
+[00:13:19.049] Browser LOG     category user delete address 
+[00:13:19.049] Browser LOG     category user delete address 
+[00:13:19.049] Browser LOG     category user delete address 
+[00:13:19.049] Browser LOG     category user delete address 
+[00:13:59.255] Browser LOG     {}
+[00:14:02.779] Server  LOG     [{...},{...},{...},{...},{...},{...},{...},{...},{...}] "categories data"
+[00:14:03.025] Browser LOG     category user delete address 
+[00:14:03.025] Browser LOG     category user delete address 
+[00:14:03.025] Browser LOG     category user delete address 
+[00:14:03.025] Browser LOG     category user delete address 
+[00:14:03.025] Browser LOG     category user delete address 
+[00:14:03.025] Browser LOG     category user delete address 
+[00:14:03.025] Browser LOG     category user delete address 
+[00:14:03.025] Browser LOG     category user delete address 
+[00:14:03.025] Browser LOG     category user delete address 
+[00:14:03.025] Browser LOG     category user delete address 
+[00:14:03.025] Browser LOG     category user delete address 
+[00:14:03.025] Browser LOG     category user delete address 
+[00:14:03.025] Browser LOG     category user delete address 
+[00:14:03.025] Browser LOG     category user delete address 
+[00:14:03.025] Browser LOG     category user delete address 
+[00:14:03.025] Browser LOG     category user delete address 
+[00:14:03.025] Browser LOG     category user delete address 
+[00:14:03.025] Browser LOG     category user delete address 
+[00:14:20.053] Browser LOG     {}
+[00:14:22.583] Server  LOG     [{...},{...},{...},{...},{...},{...},{...},{...},{...},{...}] "categories data"
+[00:14:22.853] Browser LOG     category user delete address 
+[00:14:22.853] Browser LOG     category user delete address 
+[00:14:22.853] Browser LOG     category user delete address 
+[00:14:22.853] Browser LOG     category user delete address 
+[00:14:22.853] Browser LOG     category user delete address 
+[00:14:22.853] Browser LOG     category user delete address 
+[00:14:22.853] Browser LOG     category user delete address 
+[00:14:22.853] Browser LOG     category user delete address 
+[00:14:22.853] Browser LOG     category user delete address 
+[00:14:22.853] Browser LOG     category user delete address 
+[00:14:22.853] Browser LOG     category user delete address 
+[00:14:22.853] Browser LOG     category user delete address 
+[00:14:22.853] Browser LOG     category user delete address 
+[00:14:22.853] Browser LOG     category user delete address 
+[00:14:22.853] Browser LOG     category user delete address 
+[00:14:22.853] Browser LOG     category user delete address 
+[00:14:22.853] Browser LOG     category user delete address 
+[00:14:22.853] Browser LOG     category user delete address 
+[00:14:22.853] Browser LOG     category user delete address 
+[00:14:22.853] Browser LOG     category user delete address 
+[00:14:29.710] Browser LOG     undefined user error
+[00:14:29.710] Browser LOG     {"code":"ERR_NETWORK","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:5000/api/","data":"{\"feild\":\"is_home\",\"value\":true}","env":{},"headers":{"Accept":"application/json, text/plain, */*","Authorization":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhMWZmY2JlMmUyYzg0N2M3YzUzNzcyZSIsImlhdCI6MTc4MDQ4MTI2MiwiZXhwIjoxNzgzMDczMjYyfQ.8czmQV-HasFEeeFmx4E1pzjuaTQ6-d_PbHj0jjOTTGg","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"put","timeout":12000,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"legacyInterceptorReqResOrdering":true,"silentJSONParsing":true},"url":"category/update/6a2012b8cf46b666dce12c92","withCredentials":true,"xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Network Error","name":"AxiosError","stack":"AxiosError: Network Error\n    at XMLHttpRequest.handleError (http://localhost:3000/_next/static/chunks/node_modules_axios_lib_99e19c7d._.js:2595:25)\n    at Axios.request (http://localhost:3000/_next/static/chunks/node_modules_axios_lib_99e19c7d._.js:3355:49)"}
+[00:14:29.981] Browser LOG     undefined user error
+[00:14:29.982] Browser LOG     {"code":"ERR_NETWORK","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:5000/api/","data":"{\"feild\":\"is_top\",\"value\":true}","env":{},"headers":{"Accept":"application/json, text/plain, */*","Authorization":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhMWZmY2JlMmUyYzg0N2M3YzUzNzcyZSIsImlhdCI6MTc4MDQ4MTI2MiwiZXhwIjoxNzgzMDczMjYyfQ.8czmQV-HasFEeeFmx4E1pzjuaTQ6-d_PbHj0jjOTTGg","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"put","timeout":12000,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"legacyInterceptorReqResOrdering":true,"silentJSONParsing":true},"url":"category/update/6a2012b8cf46b666dce12c92","withCredentials":true,"xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Network Error","name":"AxiosError","stack":"AxiosError: Network Error\n    at XMLHttpRequest.handleError (http://localhost:3000/_next/static/chunks/node_modules_axios_lib_99e19c7d._.js:2595:25)\n    at Axios.request (http://localhost:3000/_next/static/chunks/node_modules_axios_lib_99e19c7d._.js:3355:49)"}
+[00:14:30.246] Browser LOG     undefined user error
+[00:14:30.246] Browser LOG     {"code":"ERR_NETWORK","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:5000/api/","data":"{\"feild\":\"is_popular\",\"value\":true}","env":{},"headers":{"Accept":"application/json, text/plain, */*","Authorization":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhMWZmY2JlMmUyYzg0N2M3YzUzNzcyZSIsImlhdCI6MTc4MDQ4MTI2MiwiZXhwIjoxNzgzMDczMjYyfQ.8czmQV-HasFEeeFmx4E1pzjuaTQ6-d_PbHj0jjOTTGg","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"put","timeout":12000,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"legacyInterceptorReqResOrdering":true,"silentJSONParsing":true},"url":"category/update/6a2012b8cf46b666dce12c92","withCredentials":true,"xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Network Error","name":"AxiosError","stack":"AxiosError: Network Error\n    at XMLHttpRequest.handleError (http://localhost:3000/_next/static/chunks/node_modules_axios_lib_99e19c7d._.js:2595:25)\n    at Axios.request (http://localhost:3000/_next/static/chunks/node_modules_axios_lib_99e19c7d._.js:3355:49)"}
+[00:14:50.089] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:15:02.476] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:15:03.127] Browser WARN    Image with src "/logo/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:15:03.127] Browser WARN    Image with src "/logo/vector1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:15:36.484] Server  LOG     ○ Compiling /login ...
+[00:15:44.897] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:15:45.529] Browser WARN    Image with src "/logo/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:15:45.529] Browser WARN    Image with src "/logo/vector1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:15:47.586] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:16:05.605] Browser LOG     {"code":"ERR_BAD_REQUEST","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:5000/api/","data":"{\"email\":\"sameerjagrawal2@gmail.com\",\"password\":\"123456\"}","env":{},"headers":{"Accept":"application/json, text/plain, */*","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"post","timeout":12000,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"legacyInterceptorReqResOrdering":true,"silentJSONParsing":true},"url":"user/login","withCredentials":true,"xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 404","name":"AxiosError","stack":"AxiosError: Request failed with status code 404\n    at settle (http://localhost:3000/_next/static/chunks/node_modules_86e77ea7._.js:3785:16)\n    at XMLHttpRequest.onloadend (http://localhost:3000/_next/static/chunks/node_modules_86e77ea7._.js:4301:174)\n    at Axios.request (http://localhost:3000/_next/static/chunks/node_modules_86e77ea7._.js:5107:49)\n    at async submitHandler (http://localhost:3000/_next/static/chunks/src_89eb0b0f._.js:228:30)","status":404}
+[00:16:06.804] Browser LOG     {"code":"ERR_BAD_REQUEST","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:5000/api/","data":"{\"email\":\"sameerjagrawal2@gmail.com\",\"password\":\"123456\"}","env":{},"headers":{"Accept":"application/json, text/plain, */*","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"post","timeout":12000,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"legacyInterceptorReqResOrdering":true,"silentJSONParsing":true},"url":"user/login","withCredentials":true,"xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 404","name":"AxiosError","stack":"AxiosError: Request failed with status code 404\n    at settle (http://localhost:3000/_next/static/chunks/node_modules_86e77ea7._.js:3785:16)\n    at XMLHttpRequest.onloadend (http://localhost:3000/_next/static/chunks/node_modules_86e77ea7._.js:4301:174)\n    at Axios.request (http://localhost:3000/_next/static/chunks/node_modules_86e77ea7._.js:5107:49)\n    at async submitHandler (http://localhost:3000/_next/static/chunks/src_89eb0b0f._.js:228:30)","status":404}
+[00:16:10.446] Browser LOG     [] sameer
+[00:16:11.997] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:16:12.451] Browser WARN    Image with src "/logo/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:16:12.451] Browser WARN    Image with src "/logo/vector1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:16:22.308] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:16:22.616] Browser WARN    Image with src "/logo/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:16:22.616] Browser WARN    Image with src "/logo/vector1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:21:37.455] Server  LOG     ✓ Compiled in 133ms
+[00:21:55.600] Server  LOG     ✓ Compiled in 2.1s
+[00:22:18.723] Server  LOG     ✓ Finished filesystem cache database compaction in 20.1s
+[00:23:17.475] Server  WARN    ⚠ Fast Refresh had to perform a full reload when ./node_modules/next/dist/client/image-component.js changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[00:23:17.493] Server  LOG     ✓ Compiled in 9.3s
+[00:23:17.503] Server  WARN    ⚠ Fast Refresh had to perform a full reload when ./node_modules/next/dist/client/image-component.js changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[00:23:28.047] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:23:28.222] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:23:29.359] Browser WARN    Image with src "/logo/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:23:30.199] Browser WARN    Image with src "/logo/vector1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:23:31.606] Server  LOG     ✓ Finished writing to filesystem cache in 14.5s
+[00:24:11.726] Server  LOG     ✓ Finished filesystem cache database compaction in 40s
+[00:26:45.712] Browser WARN    Image with src "/logo/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:26:45.918] Browser WARN    Image with src "/logo/vector1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:27:13.364] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:27:13.837] Browser WARN    Image with src "/logo/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:27:13.838] Browser WARN    Image with src "/logo/vector1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:27:15.791] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:27:18.545] Browser LOG     [] sameer
+[00:27:19.760] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:27:20.201] Browser WARN    Image with src "/logo/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:27:20.201] Browser WARN    Image with src "/logo/vector1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:27:29.581] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:27:35.754] Browser LOG     {"code":"ERR_BAD_REQUEST","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:5000/api/","data":"{\"email\":\"sameerjagrawal2@gmail.com\",\"password\":\"123456\"}","env":{},"headers":{"Accept":"application/json, text/plain, */*","Authorization":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhMWZmYzQxMmUyYzg0N2M3YzUzNzY5MCIsImlhdCI6MTc4MDQ4Nzk5NiwiZXhwIjoxNzgzMDc5OTk2fQ.J-SHS7EzWGXS_QfpVsi07pstALwZX1gWugr-H1A9t54","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"post","timeout":12000,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"legacyInterceptorReqResOrdering":true,"silentJSONParsing":true},"url":"user/login","withCredentials":true,"xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 404","name":"AxiosError","stack":"AxiosError: Request failed with status code 404\n    at settle (http://localhost:3000/_next/static/chunks/node_modules_1c2acfac._.js:3785:16)\n    at XMLHttpRequest.onloadend (http://localhost:3000/_next/static/chunks/node_modules_1c2acfac._.js:4301:174)\n    at Axios.request (http://localhost:3000/_next/static/chunks/node_modules_1c2acfac._.js:5107:49)\n    at async submitHandler (http://localhost:3000/_next/static/chunks/src_9b1b4129._.js:209:30)","status":404}
+[00:27:46.257] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:27:51.660] Server  LOG     ○ Compiling /admin/profile ...
+[00:28:14.737] Server  LOG     ○ Compiling /admin/brand ...
+[00:28:16.911] Server  LOG     [{...},{...},{...},{...},{...},{...},{...},{...},{...},{...}] "categories data"
+[00:28:17.603] Browser LOG     category user delete address 
+[00:28:17.603] Browser LOG     category user delete address 
+[00:28:17.603] Browser LOG     category user delete address 
+[00:28:17.603] Browser LOG     category user delete address 
+[00:28:17.604] Browser LOG     category user delete address 
+[00:28:17.604] Browser LOG     category user delete address 
+[00:28:17.604] Browser LOG     category user delete address 
+[00:28:17.604] Browser LOG     category user delete address 
+[00:28:17.604] Browser LOG     category user delete address 
+[00:28:17.604] Browser LOG     category user delete address 
+[00:28:17.604] Browser LOG     category user delete address 
+[00:28:17.604] Browser LOG     category user delete address 
+[00:28:17.604] Browser LOG     category user delete address 
+[00:28:17.604] Browser LOG     category user delete address 
+[00:28:17.604] Browser LOG     category user delete address 
+[00:28:17.604] Browser LOG     category user delete address 
+[00:28:17.604] Browser LOG     category user delete address 
+[00:28:17.604] Browser LOG     category user delete address 
+[00:28:17.604] Browser LOG     category user delete address 
+[00:28:17.604] Browser LOG     category user delete address 
+[00:28:22.825] Server  LOG     [{...},{...},{...},{...},{...},{...},{...},{...},{...},{...}] "categories data"
+[00:28:23.741] Server  LOG     [{...},{...},{...},{...},{...},{...},{...},{...},{...},{...}] "categories data"
+[00:28:24.022] Browser LOG     category user delete address 
+[00:28:24.022] Browser LOG     category user delete address 
+[00:28:24.022] Browser LOG     category user delete address 
+[00:28:24.022] Browser LOG     category user delete address 
+[00:28:24.022] Browser LOG     category user delete address 
+[00:28:24.022] Browser LOG     category user delete address 
+[00:28:24.022] Browser LOG     category user delete address 
+[00:28:24.022] Browser LOG     category user delete address 
+[00:28:24.022] Browser LOG     category user delete address 
+[00:28:24.022] Browser LOG     category user delete address 
+[00:28:24.022] Browser LOG     category user delete address 
+[00:28:24.023] Browser LOG     category user delete address 
+[00:28:24.023] Browser LOG     category user delete address 
+[00:28:24.023] Browser LOG     category user delete address 
+[00:28:24.023] Browser LOG     category user delete address 
+[00:28:24.023] Browser LOG     category user delete address 
+[00:28:24.023] Browser LOG     category user delete address 
+[00:28:24.023] Browser LOG     category user delete address 
+[00:28:24.023] Browser LOG     category user delete address 
+[00:28:24.023] Browser LOG     category user delete address 
+[00:28:26.438] Server  LOG     ✓ Finished filesystem cache database compaction in 15.9s
+[00:28:27.278] Server  LOG     [{...},{...},{...},{...},{...},{...},{...},{...},{...},{...}] "categories data"
+[00:28:27.451] Browser LOG     category user delete address 
+[00:28:27.452] Browser LOG     category user delete address 
+[00:28:27.452] Browser LOG     category user delete address 
+[00:28:27.452] Browser LOG     category user delete address 
+[00:28:27.452] Browser LOG     category user delete address 
+[00:28:27.452] Browser LOG     category user delete address 
+[00:28:27.452] Browser LOG     category user delete address 
+[00:28:27.452] Browser LOG     category user delete address 
+[00:28:27.452] Browser LOG     category user delete address 
+[00:28:27.452] Browser LOG     category user delete address 
+[00:28:27.452] Browser LOG     category user delete address 
+[00:28:27.452] Browser LOG     category user delete address 
+[00:28:27.452] Browser LOG     category user delete address 
+[00:28:27.452] Browser LOG     category user delete address 
+[00:28:27.452] Browser LOG     category user delete address 
+[00:28:27.452] Browser LOG     category user delete address 
+[00:28:27.452] Browser LOG     category user delete address 
+[00:28:27.452] Browser LOG     category user delete address 
+[00:28:27.452] Browser LOG     category user delete address 
+[00:28:27.452] Browser LOG     category user delete address 
+[00:28:28.001] Server  LOG     [{...},{...},{...},{...},{...},{...},{...},{...},{...},{...}] "categories data"
+[00:28:28.185] Browser LOG     category user delete address 
+[00:28:28.185] Browser LOG     category user delete address 
+[00:28:28.185] Browser LOG     category user delete address 
+[00:28:28.185] Browser LOG     category user delete address 
+[00:28:28.185] Browser LOG     category user delete address 
+[00:28:28.185] Browser LOG     category user delete address 
+[00:28:28.185] Browser LOG     category user delete address 
+[00:28:28.185] Browser LOG     category user delete address 
+[00:28:28.185] Browser LOG     category user delete address 
+[00:28:28.185] Browser LOG     category user delete address 
+[00:28:28.185] Browser LOG     category user delete address 
+[00:28:28.185] Browser LOG     category user delete address 
+[00:28:28.185] Browser LOG     category user delete address 
+[00:28:28.185] Browser LOG     category user delete address 
+[00:28:28.185] Browser LOG     category user delete address 
+[00:28:28.185] Browser LOG     category user delete address 
+[00:28:28.185] Browser LOG     category user delete address 
+[00:28:28.185] Browser LOG     category user delete address 
+[00:28:28.185] Browser LOG     category user delete address 
+[00:28:28.185] Browser LOG     category user delete address 
+[00:28:28.787] Server  LOG     [{...},{...},{...},{...},{...},{...},{...},{...},{...},{...}] "categories data"
+[00:28:28.969] Browser LOG     category user delete address 
+[00:28:28.969] Browser LOG     category user delete address 
+[00:28:28.969] Browser LOG     category user delete address 
+[00:28:28.969] Browser LOG     category user delete address 
+[00:28:28.969] Browser LOG     category user delete address 
+[00:28:28.969] Browser LOG     category user delete address 
+[00:28:28.969] Browser LOG     category user delete address 
+[00:28:28.969] Browser LOG     category user delete address 
+[00:28:28.969] Browser LOG     category user delete address 
+[00:28:28.969] Browser LOG     category user delete address 
+[00:28:28.969] Browser LOG     category user delete address 
+[00:28:28.969] Browser LOG     category user delete address 
+[00:28:28.969] Browser LOG     category user delete address 
+[00:28:28.969] Browser LOG     category user delete address 
+[00:28:28.969] Browser LOG     category user delete address 
+[00:28:28.969] Browser LOG     category user delete address 
+[00:28:28.969] Browser LOG     category user delete address 
+[00:28:28.969] Browser LOG     category user delete address 
+[00:28:28.969] Browser LOG     category user delete address 
+[00:28:28.969] Browser LOG     category user delete address 
+[00:28:34.482] Server  LOG     [{...},{...},{...},{...},{...},{...},{...},{...},{...},{...}] "categories data"
+[00:28:34.709] Browser LOG     category user delete address 
+[00:28:34.709] Browser LOG     category user delete address 
+[00:28:34.709] Browser LOG     category user delete address 
+[00:28:34.709] Browser LOG     category user delete address 
+[00:28:34.709] Browser LOG     category user delete address 
+[00:28:34.709] Browser LOG     category user delete address 
+[00:28:34.709] Browser LOG     category user delete address 
+[00:28:34.709] Browser LOG     category user delete address 
+[00:28:34.709] Browser LOG     category user delete address 
+[00:28:34.709] Browser LOG     category user delete address 
+[00:28:34.709] Browser LOG     category user delete address 
+[00:28:34.709] Browser LOG     category user delete address 
+[00:28:34.709] Browser LOG     category user delete address 
+[00:28:34.709] Browser LOG     category user delete address 
+[00:28:34.709] Browser LOG     category user delete address 
+[00:28:34.709] Browser LOG     category user delete address 
+[00:28:34.709] Browser LOG     category user delete address 
+[00:28:34.709] Browser LOG     category user delete address 
+[00:28:34.709] Browser LOG     category user delete address 
+[00:28:34.709] Browser LOG     category user delete address 
+[00:28:35.441] Server  LOG     [{...},{...},{...},{...},{...},{...},{...},{...},{...},{...}] "categories data"
+[00:28:35.836] Browser LOG     category user delete address 
+[00:28:35.836] Browser LOG     category user delete address 
+[00:28:35.836] Browser LOG     category user delete address 
+[00:28:35.837] Browser LOG     category user delete address 
+[00:28:35.837] Browser LOG     category user delete address 
+[00:28:35.837] Browser LOG     category user delete address 
+[00:28:35.837] Browser LOG     category user delete address 
+[00:28:35.837] Browser LOG     category user delete address 
+[00:28:35.837] Browser LOG     category user delete address 
+[00:28:35.837] Browser LOG     category user delete address 
+[00:28:35.837] Browser LOG     category user delete address 
+[00:28:35.837] Browser LOG     category user delete address 
+[00:28:35.837] Browser LOG     category user delete address 
+[00:28:35.837] Browser LOG     category user delete address 
+[00:28:35.837] Browser LOG     category user delete address 
+[00:28:35.837] Browser LOG     category user delete address 
+[00:28:35.837] Browser LOG     category user delete address 
+[00:28:35.837] Browser LOG     category user delete address 
+[00:28:35.837] Browser LOG     category user delete address 
+[00:28:35.837] Browser LOG     category user delete address 
+[00:28:36.730] Server  LOG     [{...},{...},{...},{...},{...},{...},{...},{...},{...},{...}] "categories data"
+[00:28:37.058] Browser LOG     category user delete address 
+[00:28:37.058] Browser LOG     category user delete address 
+[00:28:37.058] Browser LOG     category user delete address 
+[00:28:37.058] Browser LOG     category user delete address 
+[00:28:37.058] Browser LOG     category user delete address 
+[00:28:37.058] Browser LOG     category user delete address 
+[00:28:37.058] Browser LOG     category user delete address 
+[00:28:37.058] Browser LOG     category user delete address 
+[00:28:37.058] Browser LOG     category user delete address 
+[00:28:37.058] Browser LOG     category user delete address 
+[00:28:37.058] Browser LOG     category user delete address 
+[00:28:37.058] Browser LOG     category user delete address 
+[00:28:37.058] Browser LOG     category user delete address 
+[00:28:37.058] Browser LOG     category user delete address 
+[00:28:37.058] Browser LOG     category user delete address 
+[00:28:37.058] Browser LOG     category user delete address 
+[00:28:37.058] Browser LOG     category user delete address 
+[00:28:37.058] Browser LOG     category user delete address 
+[00:28:37.058] Browser LOG     category user delete address 
+[00:28:37.058] Browser LOG     category user delete address 
+[00:28:44.073] Server  LOG     ✓ Finished filesystem cache database compaction in 17.0s
+[00:28:49.210] Server  LOG     [{...},{...},{...},{...},{...},{...},{...},{...},{...},{...}] "categories data"
+[00:28:49.837] Browser LOG     category user delete address 
+[00:28:49.837] Browser LOG     category user delete address 
+[00:28:49.837] Browser LOG     category user delete address 
+[00:28:49.837] Browser LOG     category user delete address 
+[00:28:49.837] Browser LOG     category user delete address 
+[00:28:49.837] Browser LOG     category user delete address 
+[00:28:49.837] Browser LOG     category user delete address 
+[00:28:49.837] Browser LOG     category user delete address 
+[00:28:49.837] Browser LOG     category user delete address 
+[00:28:49.837] Browser LOG     category user delete address 
+[00:28:49.837] Browser LOG     category user delete address 
+[00:28:49.837] Browser LOG     category user delete address 
+[00:28:49.837] Browser LOG     category user delete address 
+[00:28:49.837] Browser LOG     category user delete address 
+[00:28:49.837] Browser LOG     category user delete address 
+[00:28:49.837] Browser LOG     category user delete address 
+[00:28:49.837] Browser LOG     category user delete address 
+[00:28:49.837] Browser LOG     category user delete address 
+[00:28:49.837] Browser LOG     category user delete address 
+[00:28:49.837] Browser LOG     category user delete address 
+[00:28:52.027] Server  LOG     [{...},{...},{...},{...},{...},{...},{...},{...},{...},{...}] "categories data"
+[00:28:52.242] Browser LOG     category user delete address 
+[00:28:52.242] Browser LOG     category user delete address 
+[00:28:52.242] Browser LOG     category user delete address 
+[00:28:52.242] Browser LOG     category user delete address 
+[00:28:52.242] Browser LOG     category user delete address 
+[00:28:52.242] Browser LOG     category user delete address 
+[00:28:52.242] Browser LOG     category user delete address 
+[00:28:52.242] Browser LOG     category user delete address 
+[00:28:52.242] Browser LOG     category user delete address 
+[00:28:52.242] Browser LOG     category user delete address 
+[00:28:52.242] Browser LOG     category user delete address 
+[00:28:52.242] Browser LOG     category user delete address 
+[00:28:52.242] Browser LOG     category user delete address 
+[00:28:52.242] Browser LOG     category user delete address 
+[00:28:52.242] Browser LOG     category user delete address 
+[00:28:52.242] Browser LOG     category user delete address 
+[00:28:52.242] Browser LOG     category user delete address 
+[00:28:52.242] Browser LOG     category user delete address 
+[00:28:52.242] Browser LOG     category user delete address 
+[00:28:52.242] Browser LOG     category user delete address 
+[00:28:52.964] Server  LOG     [{...},{...},{...},{...},{...},{...},{...},{...},{...},{...}] "categories data"
+[00:28:53.147] Browser LOG     category user delete address 
+[00:28:53.147] Browser LOG     category user delete address 
+[00:28:53.147] Browser LOG     category user delete address 
+[00:28:53.147] Browser LOG     category user delete address 
+[00:28:53.147] Browser LOG     category user delete address 
+[00:28:53.147] Browser LOG     category user delete address 
+[00:28:53.147] Browser LOG     category user delete address 
+[00:28:53.148] Browser LOG     category user delete address 
+[00:28:53.148] Browser LOG     category user delete address 
+[00:28:53.148] Browser LOG     category user delete address 
+[00:28:53.148] Browser LOG     category user delete address 
+[00:28:53.148] Browser LOG     category user delete address 
+[00:28:53.148] Browser LOG     category user delete address 
+[00:28:53.148] Browser LOG     category user delete address 
+[00:28:53.148] Browser LOG     category user delete address 
+[00:28:53.148] Browser LOG     category user delete address 
+[00:28:53.148] Browser LOG     category user delete address 
+[00:28:53.148] Browser LOG     category user delete address 
+[00:28:53.148] Browser LOG     category user delete address 
+[00:28:53.148] Browser LOG     category user delete address 
+[00:28:58.488] Server  LOG     [{...},{...},{...},{...},{...},{...},{...},{...},{...},{...}] "categories data"
+[00:28:58.820] Browser LOG     category user delete address 
+[00:28:58.820] Browser LOG     category user delete address 
+[00:28:58.820] Browser LOG     category user delete address 
+[00:28:58.820] Browser LOG     category user delete address 
+[00:28:58.820] Browser LOG     category user delete address 
+[00:28:58.820] Browser LOG     category user delete address 
+[00:28:58.820] Browser LOG     category user delete address 
+[00:28:58.820] Browser LOG     category user delete address 
+[00:28:58.820] Browser LOG     category user delete address 
+[00:28:58.820] Browser LOG     category user delete address 
+[00:28:58.820] Browser LOG     category user delete address 
+[00:28:58.820] Browser LOG     category user delete address 
+[00:28:58.820] Browser LOG     category user delete address 
+[00:28:58.820] Browser LOG     category user delete address 
+[00:28:58.820] Browser LOG     category user delete address 
+[00:28:58.820] Browser LOG     category user delete address 
+[00:28:58.820] Browser LOG     category user delete address 
+[00:28:58.820] Browser LOG     category user delete address 
+[00:28:58.820] Browser LOG     category user delete address 
+[00:28:58.820] Browser LOG     category user delete address 
+[00:28:58.958] Server  LOG     [{...},{...},{...},{...},{...},{...},{...},{...},{...},{...}] "categories data"
+[00:28:59.134] Browser LOG     category user delete address 
+[00:28:59.134] Browser LOG     category user delete address 
+[00:28:59.134] Browser LOG     category user delete address 
+[00:28:59.134] Browser LOG     category user delete address 
+[00:28:59.134] Browser LOG     category user delete address 
+[00:28:59.134] Browser LOG     category user delete address 
+[00:28:59.134] Browser LOG     category user delete address 
+[00:28:59.134] Browser LOG     category user delete address 
+[00:28:59.134] Browser LOG     category user delete address 
+[00:28:59.134] Browser LOG     category user delete address 
+[00:28:59.134] Browser LOG     category user delete address 
+[00:28:59.134] Browser LOG     category user delete address 
+[00:28:59.134] Browser LOG     category user delete address 
+[00:28:59.134] Browser LOG     category user delete address 
+[00:28:59.134] Browser LOG     category user delete address 
+[00:28:59.134] Browser LOG     category user delete address 
+[00:28:59.134] Browser LOG     category user delete address 
+[00:28:59.134] Browser LOG     category user delete address 
+[00:28:59.134] Browser LOG     category user delete address 
+[00:28:59.134] Browser LOG     category user delete address 
+[00:28:59.576] Server  LOG     [{...},{...},{...},{...},{...},{...},{...},{...},{...},{...}] "categories data"
+[00:28:59.757] Browser LOG     category user delete address 
+[00:28:59.757] Browser LOG     category user delete address 
+[00:28:59.757] Browser LOG     category user delete address 
+[00:28:59.757] Browser LOG     category user delete address 
+[00:28:59.757] Browser LOG     category user delete address 
+[00:28:59.757] Browser LOG     category user delete address 
+[00:28:59.757] Browser LOG     category user delete address 
+[00:28:59.757] Browser LOG     category user delete address 
+[00:28:59.757] Browser LOG     category user delete address 
+[00:28:59.757] Browser LOG     category user delete address 
+[00:28:59.757] Browser LOG     category user delete address 
+[00:28:59.757] Browser LOG     category user delete address 
+[00:28:59.757] Browser LOG     category user delete address 
+[00:28:59.757] Browser LOG     category user delete address 
+[00:28:59.757] Browser LOG     category user delete address 
+[00:28:59.757] Browser LOG     category user delete address 
+[00:28:59.757] Browser LOG     category user delete address 
+[00:28:59.757] Browser LOG     category user delete address 
+[00:28:59.757] Browser LOG     category user delete address 
+[00:28:59.757] Browser LOG     category user delete address 
+[00:29:06.241] Server  LOG     [{...},{...},{...},{...},{...},{...},{...},{...},{...},{...}] "categories data"
+[00:29:06.443] Browser LOG     category user delete address 
+[00:29:06.443] Browser LOG     category user delete address 
+[00:29:06.443] Browser LOG     category user delete address 
+[00:29:06.443] Browser LOG     category user delete address 
+[00:29:06.443] Browser LOG     category user delete address 
+[00:29:06.443] Browser LOG     category user delete address 
+[00:29:06.443] Browser LOG     category user delete address 
+[00:29:06.443] Browser LOG     category user delete address 
+[00:29:06.443] Browser LOG     category user delete address 
+[00:29:06.443] Browser LOG     category user delete address 
+[00:29:06.443] Browser LOG     category user delete address 
+[00:29:06.443] Browser LOG     category user delete address 
+[00:29:06.443] Browser LOG     category user delete address 
+[00:29:06.443] Browser LOG     category user delete address 
+[00:29:06.443] Browser LOG     category user delete address 
+[00:29:06.443] Browser LOG     category user delete address 
+[00:29:06.443] Browser LOG     category user delete address 
+[00:29:06.443] Browser LOG     category user delete address 
+[00:29:06.443] Browser LOG     category user delete address 
+[00:29:06.443] Browser LOG     category user delete address 
+[00:29:06.952] Server  LOG     [{...},{...},{...},{...},{...},{...},{...},{...},{...},{...}] "categories data"
+[00:29:07.133] Browser LOG     category user delete address 
+[00:29:07.133] Browser LOG     category user delete address 
+[00:29:07.133] Browser LOG     category user delete address 
+[00:29:07.133] Browser LOG     category user delete address 
+[00:29:07.133] Browser LOG     category user delete address 
+[00:29:07.133] Browser LOG     category user delete address 
+[00:29:07.133] Browser LOG     category user delete address 
+[00:29:07.133] Browser LOG     category user delete address 
+[00:29:07.134] Browser LOG     category user delete address 
+[00:29:07.134] Browser LOG     category user delete address 
+[00:29:07.134] Browser LOG     category user delete address 
+[00:29:07.134] Browser LOG     category user delete address 
+[00:29:07.134] Browser LOG     category user delete address 
+[00:29:07.134] Browser LOG     category user delete address 
+[00:29:07.134] Browser LOG     category user delete address 
+[00:29:07.134] Browser LOG     category user delete address 
+[00:29:07.134] Browser LOG     category user delete address 
+[00:29:07.134] Browser LOG     category user delete address 
+[00:29:07.134] Browser LOG     category user delete address 
+[00:29:07.134] Browser LOG     category user delete address 
+[00:29:08.196] Server  LOG     [{...},{...},{...},{...},{...},{...},{...},{...},{...},{...}] "categories data"
+[00:29:08.367] Browser LOG     category user delete address 
+[00:29:08.367] Browser LOG     category user delete address 
+[00:29:08.367] Browser LOG     category user delete address 
+[00:29:08.367] Browser LOG     category user delete address 
+[00:29:08.367] Browser LOG     category user delete address 
+[00:29:08.367] Browser LOG     category user delete address 
+[00:29:08.367] Browser LOG     category user delete address 
+[00:29:08.367] Browser LOG     category user delete address 
+[00:29:08.367] Browser LOG     category user delete address 
+[00:29:08.367] Browser LOG     category user delete address 
+[00:29:08.367] Browser LOG     category user delete address 
+[00:29:08.367] Browser LOG     category user delete address 
+[00:29:08.367] Browser LOG     category user delete address 
+[00:29:08.367] Browser LOG     category user delete address 
+[00:29:08.367] Browser LOG     category user delete address 
+[00:29:08.367] Browser LOG     category user delete address 
+[00:29:08.367] Browser LOG     category user delete address 
+[00:29:08.367] Browser LOG     category user delete address 
+[00:29:08.367] Browser LOG     category user delete address 
+[00:29:08.367] Browser LOG     category user delete address 
+[00:29:14.795] Server  LOG     [{...},{...},{...},{...},{...},{...},{...},{...},{...},{...}] "categories data"
+[00:29:15.085] Server  LOG     category "user delete address "
+[00:29:15.100] Server  LOG     category "user delete address "
+[00:29:15.108] Server  LOG     category "user delete address "
+[00:29:15.122] Server  LOG     category "user delete address "
+[00:29:15.127] Server  LOG     category "user delete address "
+[00:29:15.137] Server  LOG     category "user delete address "
+[00:29:15.149] Server  LOG     category "user delete address "
+[00:29:15.157] Server  LOG     category "user delete address "
+[00:29:15.165] Server  LOG     category "user delete address "
+[00:29:15.176] Server  LOG     category "user delete address "
+[00:29:15.783] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:29:16.423] Browser LOG     category user delete address 
+[00:29:16.423] Browser LOG     category user delete address 
+[00:29:16.423] Browser LOG     category user delete address 
+[00:29:16.423] Browser LOG     category user delete address 
+[00:29:16.423] Browser LOG     category user delete address 
+[00:29:16.423] Browser LOG     category user delete address 
+[00:29:16.423] Browser LOG     category user delete address 
+[00:29:16.423] Browser LOG     category user delete address 
+[00:29:16.423] Browser LOG     category user delete address 
+[00:29:16.423] Browser LOG     category user delete address 
+[00:29:16.423] Browser LOG     category user delete address 
+[00:29:16.423] Browser LOG     category user delete address 
+[00:29:16.423] Browser LOG     category user delete address 
+[00:29:16.423] Browser LOG     category user delete address 
+[00:29:16.423] Browser LOG     category user delete address 
+[00:29:16.423] Browser LOG     category user delete address 
+[00:29:16.423] Browser LOG     category user delete address 
+[00:29:16.423] Browser LOG     category user delete address 
+[00:29:16.423] Browser LOG     category user delete address 
+[00:29:16.423] Browser LOG     category user delete address 
+[00:29:48.847] Server  LOG     [{...},{...},{...},{...},{...},{...},{...},{...},{...},{...}] "categories data"
+[00:29:48.961] Server  LOG     category "user delete address "
+[00:29:48.969] Server  LOG     category "user delete address "
+[00:29:48.976] Server  LOG     category "user delete address "
+[00:29:48.992] Server  LOG     category "user delete address "
+[00:29:49.001] Server  LOG     category "user delete address "
+[00:29:49.006] Server  LOG     category "user delete address "
+[00:29:49.015] Server  LOG     category "user delete address "
+[00:29:49.025] Server  LOG     category "user delete address "
+[00:29:49.034] Server  LOG     category "user delete address "
+[00:29:49.042] Server  LOG     category "user delete address "
+[00:29:51.848] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:29:52.180] Browser WARN    Image with src "/logo/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:29:52.180] Browser WARN    Image with src "/logo/vector1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:30:14.134] Server  LOG     ○ Compiling /admin/brand/addBrand ...
+[00:30:42.802] Server  LOG     ✓ Finished filesystem cache database compaction in 15.7s
+[00:31:23.245] Browser LOG     SUBMIT CALLED
+[00:31:28.536] Browser LOG     brand user delete address 
+[00:31:28.536] Browser LOG     brand user delete address 
+[00:32:11.679] Browser LOG     SUBMIT CALLED
+[00:32:14.421] Browser LOG     brand user delete address 
+[00:32:14.421] Browser LOG     brand user delete address 
+[00:32:14.421] Browser LOG     brand user delete address 
+[00:32:14.421] Browser LOG     brand user delete address 
+[00:33:00.894] Browser LOG     SUBMIT CALLED
+[00:33:01.034] Browser LOG     {"code":"ERR_BAD_REQUEST","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:5000/api/","data":{},"env":{},"headers":{"Accept":"application/json, text/plain, */*","Authorization":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhMWZmY2JlMmUyYzg0N2M3YzUzNzcyZSIsImlhdCI6MTc4MDQ4ODAxOCwiZXhwIjoxNzgzMDgwMDE4fQ.xSIjno4SVxwozDA3yFjlfx3QEXfO0Pk9ukAu3KiLEXY","Content-Type":"application/x-www-form-urlencoded"},"maxBodyLength":-1,"maxContentLength":-1,"method":"post","timeout":12000,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"legacyInterceptorReqResOrdering":true,"silentJSONParsing":true},"url":"/brand/create","withCredentials":true,"xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 400","name":"AxiosError","stack":"AxiosError: Request failed with status code 400\n    at settle (http://localhost:3000/_next/static/chunks/node_modules_axios_lib_99e19c7d._.js:2033:16)\n    at XMLHttpRequest.onloadend (http://localhost:3000/_next/static/chunks/node_modules_axios_lib_99e19c7d._.js:2549:174)\n    at Axios.request (http://localhost:3000/_next/static/chunks/node_modules_axios_lib_99e19c7d._.js:3355:49)","status":400}
+[00:33:09.562] Browser LOG     SUBMIT CALLED
+[00:33:12.657] Browser LOG     brand user delete address 
+[00:33:12.657] Browser LOG     brand user delete address 
+[00:33:12.657] Browser LOG     brand user delete address 
+[00:33:12.657] Browser LOG     brand user delete address 
+[00:33:12.657] Browser LOG     brand user delete address 
+[00:33:12.657] Browser LOG     brand user delete address 
+[00:33:45.011] Browser LOG     SUBMIT CALLED
+[00:33:47.755] Browser LOG     brand user delete address 
+[00:33:47.755] Browser LOG     brand user delete address 
+[00:33:47.755] Browser LOG     brand user delete address 
+[00:33:47.755] Browser LOG     brand user delete address 
+[00:33:47.755] Browser LOG     brand user delete address 
+[00:33:47.755] Browser LOG     brand user delete address 
+[00:33:47.755] Browser LOG     brand user delete address 
+[00:33:47.755] Browser LOG     brand user delete address 
+[00:34:23.114] Browser LOG     SUBMIT CALLED
+[00:34:26.165] Browser LOG     brand user delete address 
+[00:34:26.165] Browser LOG     brand user delete address 
+[00:34:26.165] Browser LOG     brand user delete address 
+[00:34:26.165] Browser LOG     brand user delete address 
+[00:34:26.165] Browser LOG     brand user delete address 
+[00:34:26.165] Browser LOG     brand user delete address 
+[00:34:26.165] Browser LOG     brand user delete address 
+[00:34:26.165] Browser LOG     brand user delete address 
+[00:34:26.165] Browser LOG     brand user delete address 
+[00:34:26.165] Browser LOG     brand user delete address 
+[00:35:04.435] Browser LOG     SUBMIT CALLED
+[00:35:06.479] Browser LOG     brand user delete address 
+[00:35:06.479] Browser LOG     brand user delete address 
+[00:35:06.479] Browser LOG     brand user delete address 
+[00:35:06.479] Browser LOG     brand user delete address 
+[00:35:06.479] Browser LOG     brand user delete address 
+[00:35:06.479] Browser LOG     brand user delete address 
+[00:35:06.479] Browser LOG     brand user delete address 
+[00:35:06.479] Browser LOG     brand user delete address 
+[00:35:06.479] Browser LOG     brand user delete address 
+[00:35:06.479] Browser LOG     brand user delete address 
+[00:35:06.479] Browser LOG     brand user delete address 
+[00:35:06.479] Browser LOG     brand user delete address 
+[00:35:23.404] Server  LOG     [{...},{...},{...},{...},{...},{...},{...},{...},{...},{...}] "categories data"
+[00:35:23.616] Browser LOG     category user delete address 
+[00:35:23.616] Browser LOG     category user delete address 
+[00:35:23.616] Browser LOG     category user delete address 
+[00:35:23.616] Browser LOG     category user delete address 
+[00:35:23.616] Browser LOG     category user delete address 
+[00:35:23.616] Browser LOG     category user delete address 
+[00:35:23.616] Browser LOG     category user delete address 
+[00:35:23.616] Browser LOG     category user delete address 
+[00:35:23.616] Browser LOG     category user delete address 
+[00:35:23.616] Browser LOG     category user delete address 
+[00:35:23.616] Browser LOG     category user delete address 
+[00:35:23.616] Browser LOG     category user delete address 
+[00:35:23.616] Browser LOG     category user delete address 
+[00:35:23.616] Browser LOG     category user delete address 
+[00:35:23.616] Browser LOG     category user delete address 
+[00:35:23.616] Browser LOG     category user delete address 
+[00:35:23.616] Browser LOG     category user delete address 
+[00:35:23.616] Browser LOG     category user delete address 
+[00:35:23.616] Browser LOG     category user delete address 
+[00:35:23.616] Browser LOG     category user delete address 
+[00:35:56.573] Browser LOG     brand user delete address 
+[00:35:56.573] Browser LOG     brand user delete address 
+[00:35:56.573] Browser LOG     brand user delete address 
+[00:35:56.573] Browser LOG     brand user delete address 
+[00:35:56.573] Browser LOG     brand user delete address 
+[00:35:56.573] Browser LOG     brand user delete address 
+[00:35:56.573] Browser LOG     brand user delete address 
+[00:35:56.573] Browser LOG     brand user delete address 
+[00:35:56.573] Browser LOG     brand user delete address 
+[00:35:56.573] Browser LOG     brand user delete address 
+[00:35:56.573] Browser LOG     brand user delete address 
+[00:35:56.573] Browser LOG     brand user delete address 
+[00:35:59.768] Server  LOG     [{...},{...},{...},{...},{...},{...},{...},{...},{...},{...}] "categories data"
+[00:35:59.974] Browser LOG     category user delete address 
+[00:35:59.974] Browser LOG     category user delete address 
+[00:35:59.974] Browser LOG     category user delete address 
+[00:35:59.974] Browser LOG     category user delete address 
+[00:35:59.974] Browser LOG     category user delete address 
+[00:35:59.974] Browser LOG     category user delete address 
+[00:35:59.974] Browser LOG     category user delete address 
+[00:35:59.974] Browser LOG     category user delete address 
+[00:35:59.974] Browser LOG     category user delete address 
+[00:35:59.974] Browser LOG     category user delete address 
+[00:35:59.974] Browser LOG     category user delete address 
+[00:35:59.974] Browser LOG     category user delete address 
+[00:35:59.974] Browser LOG     category user delete address 
+[00:35:59.974] Browser LOG     category user delete address 
+[00:35:59.974] Browser LOG     category user delete address 
+[00:35:59.974] Browser LOG     category user delete address 
+[00:35:59.974] Browser LOG     category user delete address 
+[00:35:59.974] Browser LOG     category user delete address 
+[00:35:59.974] Browser LOG     category user delete address 
+[00:35:59.974] Browser LOG     category user delete address 
+[00:38:34.795] Browser LOG     brand user delete address 
+[00:38:34.795] Browser LOG     brand user delete address 
+[00:38:34.795] Browser LOG     brand user delete address 
+[00:38:34.795] Browser LOG     brand user delete address 
+[00:38:34.795] Browser LOG     brand user delete address 
+[00:38:34.795] Browser LOG     brand user delete address 
+[00:38:34.795] Browser LOG     brand user delete address 
+[00:38:34.795] Browser LOG     brand user delete address 
+[00:38:34.795] Browser LOG     brand user delete address 
+[00:38:34.795] Browser LOG     brand user delete address 
+[00:38:34.795] Browser LOG     brand user delete address 
+[00:38:34.795] Browser LOG     brand user delete address 
+[00:38:53.064] Browser LOG     SUBMIT CALLED
+[00:38:55.947] Browser LOG     brand user delete address 
+[00:38:55.947] Browser LOG     brand user delete address 
+[00:38:55.947] Browser LOG     brand user delete address 
+[00:38:55.947] Browser LOG     brand user delete address 
+[00:38:55.947] Browser LOG     brand user delete address 
+[00:38:55.947] Browser LOG     brand user delete address 
+[00:38:55.947] Browser LOG     brand user delete address 
+[00:38:55.947] Browser LOG     brand user delete address 
+[00:38:55.947] Browser LOG     brand user delete address 
+[00:38:55.947] Browser LOG     brand user delete address 
+[00:38:55.947] Browser LOG     brand user delete address 
+[00:38:55.947] Browser LOG     brand user delete address 
+[00:38:55.947] Browser LOG     brand user delete address 
+[00:38:55.947] Browser LOG     brand user delete address 
+[00:39:15.207] Browser LOG     SUBMIT CALLED
+[00:39:17.996] Browser LOG     brand user delete address 
+[00:39:17.997] Browser LOG     brand user delete address 
+[00:39:17.997] Browser LOG     brand user delete address 
+[00:39:17.997] Browser LOG     brand user delete address 
+[00:39:17.997] Browser LOG     brand user delete address 
+[00:39:17.997] Browser LOG     brand user delete address 
+[00:39:17.997] Browser LOG     brand user delete address 
+[00:39:17.997] Browser LOG     brand user delete address 
+[00:39:17.997] Browser LOG     brand user delete address 
+[00:39:17.997] Browser LOG     brand user delete address 
+[00:39:17.997] Browser LOG     brand user delete address 
+[00:39:17.997] Browser LOG     brand user delete address 
+[00:39:17.997] Browser LOG     brand user delete address 
+[00:39:17.997] Browser LOG     brand user delete address 
+[00:39:17.997] Browser LOG     brand user delete address 
+[00:39:17.997] Browser LOG     brand user delete address 
+[00:41:28.070] Browser LOG     SUBMIT CALLED
+[00:41:30.940] Browser LOG     brand user delete address 
+[00:41:30.940] Browser LOG     brand user delete address 
+[00:41:30.940] Browser LOG     brand user delete address 
+[00:41:30.940] Browser LOG     brand user delete address 
+[00:41:30.940] Browser LOG     brand user delete address 
+[00:41:30.940] Browser LOG     brand user delete address 
+[00:41:30.940] Browser LOG     brand user delete address 
+[00:41:30.940] Browser LOG     brand user delete address 
+[00:41:30.946] Browser LOG     brand user delete address 
+[00:41:30.946] Browser LOG     brand user delete address 
+[00:41:30.946] Browser LOG     brand user delete address 
+[00:41:30.946] Browser LOG     brand user delete address 
+[00:41:30.946] Browser LOG     brand user delete address 
+[00:41:30.946] Browser LOG     brand user delete address 
+[00:41:30.946] Browser LOG     brand user delete address 
+[00:41:30.946] Browser LOG     brand user delete address 
+[00:41:30.946] Browser LOG     brand user delete address 
+[00:41:30.946] Browser LOG     brand user delete address 
+[00:41:51.141] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:41:51.541] Browser WARN    Image with src "/logo/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:41:51.541] Browser WARN    Image with src "/logo/vector1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:45:20.236] Server  LOG     ✓ Compiled in 14.3s
+[00:45:25.189] Browser LOG     brand user delete address 
+[00:45:25.189] Browser LOG     brand user delete address 
+[00:45:25.189] Browser LOG     brand user delete address 
+[00:45:25.189] Browser LOG     brand user delete address 
+[00:45:25.189] Browser LOG     brand user delete address 
+[00:45:25.189] Browser LOG     brand user delete address 
+[00:45:25.189] Browser LOG     brand user delete address 
+[00:45:25.189] Browser LOG     brand user delete address 
+[00:45:25.189] Browser LOG     brand user delete address 
+[00:45:25.189] Browser LOG     brand user delete address 
+[00:45:25.189] Browser LOG     brand user delete address 
+[00:45:25.189] Browser LOG     brand user delete address 
+[00:45:25.189] Browser LOG     brand user delete address 
+[00:45:25.189] Browser LOG     brand user delete address 
+[00:45:25.189] Browser LOG     brand user delete address 
+[00:45:25.189] Browser LOG     brand user delete address 
+[00:45:25.189] Browser LOG     brand user delete address 
+[00:45:25.189] Browser LOG     brand user delete address 
+[00:45:53.671] Server  LOG     ✓ Finished filesystem cache database compaction in 24.8s
+[00:47:00.577] Server  LOG     ✓ Compiled in 2.4s
+[00:47:04.158] Server  ERROR   ⨯ ReferenceError: is is not defined
+[00:47:04.587] Server  ERROR   ⨯ ReferenceError: is is not defined
+[00:47:05.394] Server  LOG     ✓ Compiled in 3.3s
+[00:47:12.072] Browser LOG     brand user delete address 
+[00:47:12.072] Browser LOG     brand user delete address 
+[00:47:12.072] Browser LOG     brand user delete address 
+[00:47:12.072] Browser LOG     brand user delete address 
+[00:47:12.072] Browser LOG     brand user delete address 
+[00:47:12.072] Browser LOG     brand user delete address 
+[00:47:12.072] Browser LOG     brand user delete address 
+[00:47:12.072] Browser LOG     brand user delete address 
+[00:47:12.072] Browser LOG     brand user delete address 
+[00:47:12.072] Browser LOG     brand user delete address 
+[00:47:12.072] Browser LOG     brand user delete address 
+[00:47:12.072] Browser LOG     brand user delete address 
+[00:47:12.072] Browser LOG     brand user delete address 
+[00:47:12.072] Browser LOG     brand user delete address 
+[00:47:12.072] Browser LOG     brand user delete address 
+[00:47:12.072] Browser LOG     brand user delete address 
+[00:47:12.072] Browser LOG     brand user delete address 
+[00:47:12.072] Browser LOG     brand user delete address 
+[00:47:21.968] Browser LOG     brand user delete address 
+[00:47:21.968] Browser LOG     brand user delete address 
+[00:47:21.968] Browser LOG     brand user delete address 
+[00:47:21.968] Browser LOG     brand user delete address 
+[00:47:21.968] Browser LOG     brand user delete address 
+[00:47:21.968] Browser LOG     brand user delete address 
+[00:47:21.968] Browser LOG     brand user delete address 
+[00:47:21.968] Browser LOG     brand user delete address 
+[00:47:21.968] Browser LOG     brand user delete address 
+[00:47:21.968] Browser LOG     brand user delete address 
+[00:47:21.968] Browser LOG     brand user delete address 
+[00:47:21.968] Browser LOG     brand user delete address 
+[00:47:21.968] Browser LOG     brand user delete address 
+[00:47:21.968] Browser LOG     brand user delete address 
+[00:47:21.968] Browser LOG     brand user delete address 
+[00:47:21.968] Browser LOG     brand user delete address 
+[00:47:21.968] Browser LOG     brand user delete address 
+[00:47:21.968] Browser LOG     brand user delete address 
+[00:47:25.631] Browser LOG     brand user delete address 
+[00:47:25.632] Browser LOG     brand user delete address 
+[00:47:25.632] Browser LOG     brand user delete address 
+[00:47:25.632] Browser LOG     brand user delete address 
+[00:47:25.632] Browser LOG     brand user delete address 
+[00:47:25.632] Browser LOG     brand user delete address 
+[00:47:25.632] Browser LOG     brand user delete address 
+[00:47:25.632] Browser LOG     brand user delete address 
+[00:47:25.632] Browser LOG     brand user delete address 
+[00:47:25.632] Browser LOG     brand user delete address 
+[00:47:25.632] Browser LOG     brand user delete address 
+[00:47:25.632] Browser LOG     brand user delete address 
+[00:47:25.632] Browser LOG     brand user delete address 
+[00:47:25.632] Browser LOG     brand user delete address 
+[00:47:25.632] Browser LOG     brand user delete address 
+[00:47:25.632] Browser LOG     brand user delete address 
+[00:47:25.632] Browser LOG     brand user delete address 
+[00:47:25.632] Browser LOG     brand user delete address 
+[00:47:26.136] Server  LOG     ✓ Finished filesystem cache database compaction in 17.1s
+[00:47:26.191] Server  LOG     ✓ Finished writing to filesystem cache in 13.6s
+[00:47:33.270] Browser LOG     brand user delete address 
+[00:47:33.270] Browser LOG     brand user delete address 
+[00:47:33.270] Browser LOG     brand user delete address 
+[00:47:33.270] Browser LOG     brand user delete address 
+[00:47:33.270] Browser LOG     brand user delete address 
+[00:47:33.270] Browser LOG     brand user delete address 
+[00:47:33.270] Browser LOG     brand user delete address 
+[00:47:33.271] Browser LOG     brand user delete address 
+[00:47:33.271] Browser LOG     brand user delete address 
+[00:47:33.271] Browser LOG     brand user delete address 
+[00:47:33.271] Browser LOG     brand user delete address 
+[00:47:33.271] Browser LOG     brand user delete address 
+[00:47:33.271] Browser LOG     brand user delete address 
+[00:47:33.271] Browser LOG     brand user delete address 
+[00:47:33.271] Browser LOG     brand user delete address 
+[00:47:33.271] Browser LOG     brand user delete address 
+[00:47:33.271] Browser LOG     brand user delete address 
+[00:47:33.271] Browser LOG     brand user delete address 
+[00:47:38.372] Browser LOG     brand user delete address 
+[00:47:38.372] Browser LOG     brand user delete address 
+[00:47:38.372] Browser LOG     brand user delete address 
+[00:47:38.372] Browser LOG     brand user delete address 
+[00:47:38.372] Browser LOG     brand user delete address 
+[00:47:38.372] Browser LOG     brand user delete address 
+[00:47:38.372] Browser LOG     brand user delete address 
+[00:47:38.372] Browser LOG     brand user delete address 
+[00:47:38.372] Browser LOG     brand user delete address 
+[00:47:38.372] Browser LOG     brand user delete address 
+[00:47:38.372] Browser LOG     brand user delete address 
+[00:47:38.372] Browser LOG     brand user delete address 
+[00:47:38.372] Browser LOG     brand user delete address 
+[00:47:38.372] Browser LOG     brand user delete address 
+[00:47:38.372] Browser LOG     brand user delete address 
+[00:47:38.372] Browser LOG     brand user delete address 
+[00:47:38.372] Browser LOG     brand user delete address 
+[00:47:38.372] Browser LOG     brand user delete address 
+[00:47:43.666] Browser LOG     brand user delete address 
+[00:47:43.666] Browser LOG     brand user delete address 
+[00:47:43.666] Browser LOG     brand user delete address 
+[00:47:43.666] Browser LOG     brand user delete address 
+[00:47:43.666] Browser LOG     brand user delete address 
+[00:47:43.666] Browser LOG     brand user delete address 
+[00:47:43.666] Browser LOG     brand user delete address 
+[00:47:43.666] Browser LOG     brand user delete address 
+[00:47:43.666] Browser LOG     brand user delete address 
+[00:47:43.666] Browser LOG     brand user delete address 
+[00:47:43.666] Browser LOG     brand user delete address 
+[00:47:43.666] Browser LOG     brand user delete address 
+[00:47:43.666] Browser LOG     brand user delete address 
+[00:47:43.666] Browser LOG     brand user delete address 
+[00:47:43.667] Browser LOG     brand user delete address 
+[00:47:43.667] Browser LOG     brand user delete address 
+[00:47:43.667] Browser LOG     brand user delete address 
+[00:47:43.667] Browser LOG     brand user delete address 
+[00:47:48.116] Browser LOG     brand user delete address 
+[00:47:48.116] Browser LOG     brand user delete address 
+[00:47:48.116] Browser LOG     brand user delete address 
+[00:47:48.116] Browser LOG     brand user delete address 
+[00:47:48.116] Browser LOG     brand user delete address 
+[00:47:48.116] Browser LOG     brand user delete address 
+[00:47:48.116] Browser LOG     brand user delete address 
+[00:47:48.116] Browser LOG     brand user delete address 
+[00:47:48.116] Browser LOG     brand user delete address 
+[00:47:48.116] Browser LOG     brand user delete address 
+[00:47:48.116] Browser LOG     brand user delete address 
+[00:47:48.116] Browser LOG     brand user delete address 
+[00:47:48.116] Browser LOG     brand user delete address 
+[00:47:48.116] Browser LOG     brand user delete address 
+[00:47:48.116] Browser LOG     brand user delete address 
+[00:47:48.116] Browser LOG     brand user delete address 
+[00:47:48.116] Browser LOG     brand user delete address 
+[00:47:48.116] Browser LOG     brand user delete address 
+[00:47:51.733] Browser LOG     brand user delete address 
+[00:47:51.733] Browser LOG     brand user delete address 
+[00:47:51.733] Browser LOG     brand user delete address 
+[00:47:51.733] Browser LOG     brand user delete address 
+[00:47:51.733] Browser LOG     brand user delete address 
+[00:47:51.733] Browser LOG     brand user delete address 
+[00:47:51.733] Browser LOG     brand user delete address 
+[00:47:51.733] Browser LOG     brand user delete address 
+[00:47:51.733] Browser LOG     brand user delete address 
+[00:47:51.733] Browser LOG     brand user delete address 
+[00:47:51.733] Browser LOG     brand user delete address 
+[00:47:51.733] Browser LOG     brand user delete address 
+[00:47:51.733] Browser LOG     brand user delete address 
+[00:47:51.733] Browser LOG     brand user delete address 
+[00:47:51.733] Browser LOG     brand user delete address 
+[00:47:51.733] Browser LOG     brand user delete address 
+[00:47:51.733] Browser LOG     brand user delete address 
+[00:47:51.733] Browser LOG     brand user delete address 
+[00:47:55.516] Browser LOG     brand user delete address 
+[00:47:55.516] Browser LOG     brand user delete address 
+[00:47:55.516] Browser LOG     brand user delete address 
+[00:47:55.516] Browser LOG     brand user delete address 
+[00:47:55.516] Browser LOG     brand user delete address 
+[00:47:55.516] Browser LOG     brand user delete address 
+[00:47:55.516] Browser LOG     brand user delete address 
+[00:47:55.516] Browser LOG     brand user delete address 
+[00:47:55.516] Browser LOG     brand user delete address 
+[00:47:55.516] Browser LOG     brand user delete address 
+[00:47:55.516] Browser LOG     brand user delete address 
+[00:47:55.516] Browser LOG     brand user delete address 
+[00:47:55.516] Browser LOG     brand user delete address 
+[00:47:55.516] Browser LOG     brand user delete address 
+[00:47:55.516] Browser LOG     brand user delete address 
+[00:47:55.516] Browser LOG     brand user delete address 
+[00:47:55.516] Browser LOG     brand user delete address 
+[00:47:55.516] Browser LOG     brand user delete address 
+[00:48:07.571] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:48:08.010] Browser WARN    Image with src "/logo/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:48:08.010] Browser WARN    Image with src "/logo/vector1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:49:21.600] Server  ERROR   ⨯ ReferenceError: items is not defined
+[00:49:21.642] Server  ERROR   ⨯ ReferenceError: items is not defined
+[00:49:22.283] Browser ERROR   uncaughtError: ReferenceError: items is not defined
+[00:49:23.188] Browser ERROR   uncaughtError: ReferenceError: items is not defined
+[00:49:23.195] Browser LOG     brand user delete address 
+[00:49:23.195] Browser LOG     brand user delete address 
+[00:49:23.195] Browser LOG     brand user delete address 
+[00:49:23.195] Browser LOG     brand user delete address 
+[00:49:23.195] Browser LOG     brand user delete address 
+[00:49:23.195] Browser LOG     brand user delete address 
+[00:49:23.195] Browser LOG     brand user delete address 
+[00:49:23.195] Browser LOG     brand user delete address 
+[00:49:23.195] Browser LOG     brand user delete address 
+[00:49:23.195] Browser LOG     brand user delete address 
+[00:49:23.195] Browser LOG     brand user delete address 
+[00:49:23.195] Browser LOG     brand user delete address 
+[00:49:23.195] Browser LOG     brand user delete address 
+[00:49:23.195] Browser LOG     brand user delete address 
+[00:49:23.195] Browser LOG     brand user delete address 
+[00:49:23.195] Browser LOG     brand user delete address 
+[00:49:23.195] Browser LOG     brand user delete address 
+[00:49:23.195] Browser LOG     brand user delete address 
+[00:49:25.072] Server  LOG     ✓ Compiled in 415ms
+[00:49:27.548] Server  ERROR   ⨯ ReferenceError: items is not defined
+[00:49:27.931] Server  ERROR   ⨯ ReferenceError: items is not defined
+[00:49:28.579] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:49:28.981] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:49:29.217] Browser LOG     brand user delete address 
+[00:49:29.217] Browser LOG     brand user delete address 
+[00:49:29.217] Browser LOG     brand user delete address 
+[00:49:29.217] Browser LOG     brand user delete address 
+[00:49:29.217] Browser LOG     brand user delete address 
+[00:49:29.217] Browser LOG     brand user delete address 
+[00:49:29.217] Browser LOG     brand user delete address 
+[00:49:29.217] Browser LOG     brand user delete address 
+[00:49:29.217] Browser LOG     brand user delete address 
+[00:49:29.217] Browser LOG     brand user delete address 
+[00:49:29.217] Browser LOG     brand user delete address 
+[00:49:29.217] Browser LOG     brand user delete address 
+[00:49:29.217] Browser LOG     brand user delete address 
+[00:49:29.217] Browser LOG     brand user delete address 
+[00:49:29.217] Browser LOG     brand user delete address 
+[00:49:29.217] Browser LOG     brand user delete address 
+[00:49:29.217] Browser LOG     brand user delete address 
+[00:49:29.217] Browser LOG     brand user delete address 
+[00:49:30.185] Browser WARN    Image with src "/logo/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:49:30.185] Browser WARN    Image with src "/logo/vector1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:49:35.760] Browser WARN    Image with src "/logo/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:49:35.760] Browser WARN    Image with src "/logo/vector1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:49:36.185] Browser LOG     brand user delete address 
+[00:49:36.185] Browser LOG     brand user delete address 
+[00:49:36.185] Browser LOG     brand user delete address 
+[00:49:36.185] Browser LOG     brand user delete address 
+[00:49:36.185] Browser LOG     brand user delete address 
+[00:49:36.185] Browser LOG     brand user delete address 
+[00:49:36.185] Browser LOG     brand user delete address 
+[00:49:36.185] Browser LOG     brand user delete address 
+[00:49:36.185] Browser LOG     brand user delete address 
+[00:49:36.185] Browser LOG     brand user delete address 
+[00:49:36.185] Browser LOG     brand user delete address 
+[00:49:36.185] Browser LOG     brand user delete address 
+[00:49:36.185] Browser LOG     brand user delete address 
+[00:49:36.185] Browser LOG     brand user delete address 
+[00:49:36.185] Browser LOG     brand user delete address 
+[00:49:36.185] Browser LOG     brand user delete address 
+[00:49:36.185] Browser LOG     brand user delete address 
+[00:49:36.185] Browser LOG     brand user delete address 
+[00:50:02.689] Server  LOG     ✓ Compiled in 245ms
+[00:50:05.931] Browser LOG     brand user delete address 
+[00:50:05.931] Browser LOG     brand user delete address 
+[00:50:05.931] Browser LOG     brand user delete address 
+[00:50:05.931] Browser LOG     brand user delete address 
+[00:50:05.931] Browser LOG     brand user delete address 
+[00:50:05.931] Browser LOG     brand user delete address 
+[00:50:05.931] Browser LOG     brand user delete address 
+[00:50:05.931] Browser LOG     brand user delete address 
+[00:50:05.931] Browser LOG     brand user delete address 
+[00:50:05.931] Browser LOG     brand user delete address 
+[00:50:05.931] Browser LOG     brand user delete address 
+[00:50:05.931] Browser LOG     brand user delete address 
+[00:50:05.931] Browser LOG     brand user delete address 
+[00:50:05.931] Browser LOG     brand user delete address 
+[00:50:05.931] Browser LOG     brand user delete address 
+[00:50:05.931] Browser LOG     brand user delete address 
+[00:50:05.931] Browser LOG     brand user delete address 
+[00:50:05.931] Browser LOG     brand user delete address 
+[00:50:11.112] Server  ERROR   ⨯ ReferenceError: Link is not defined
+[00:50:13.242] Browser LOG     brand user delete address 
+[00:50:13.242] Browser LOG     brand user delete address 
+[00:50:13.242] Browser LOG     brand user delete address 
+[00:50:13.242] Browser LOG     brand user delete address 
+[00:50:13.242] Browser LOG     brand user delete address 
+[00:50:13.242] Browser LOG     brand user delete address 
+[00:50:13.242] Browser LOG     brand user delete address 
+[00:50:13.242] Browser LOG     brand user delete address 
+[00:50:13.242] Browser LOG     brand user delete address 
+[00:50:13.242] Browser LOG     brand user delete address 
+[00:50:13.242] Browser LOG     brand user delete address 
+[00:50:13.242] Browser LOG     brand user delete address 
+[00:50:13.242] Browser LOG     brand user delete address 
+[00:50:13.242] Browser LOG     brand user delete address 
+[00:50:13.242] Browser LOG     brand user delete address 
+[00:50:13.242] Browser LOG     brand user delete address 
+[00:50:13.242] Browser LOG     brand user delete address 
+[00:50:13.242] Browser LOG     brand user delete address 
+[00:50:14.188] Browser ERROR   ./src/app/components/user components/Home/Topcategories.jsx:29:11
+Parsing ecmascript source code failed
+  27 |             </div>
+  28 |           );
+> 29 |         })}
+     |           ^
+  30 |       </div>
+  31 |     </div>
+  32 |   );
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import trace:
+  Server Component:
+    ./src/app/components/user components/Home/Topcategories.jsx
+    ./src/app/(user)/page.jsx
+[00:50:14.189] Browser ERROR   ./src/app/components/user components/Home/Topcategories.jsx:29:11
+Parsing ecmascript source code failed
+  27 |             </div>
+  28 |           );
+> 29 |         })}
+     |           ^
+  30 |       </div>
+  31 |     </div>
+  32 |   );
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import trace:
+  Server Component:
+    ./src/app/components/user components/Home/Topcategories.jsx
+    ./src/app/(user)/page.jsx
+[00:50:14.189] Browser ERROR   uncaughtError: ReferenceError: Link is not defined
+[00:50:14.189] Browser ERROR   ./src/app/components/user components/Home/Topcategories.jsx:29:11
+Parsing ecmascript source code failed
+  27 |             </div>
+  28 |           );
+> 29 |         })}
+     |           ^
+  30 |       </div>
+  31 |     </div>
+  32 |   );
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import trace:
+  Server Component:
+    ./src/app/components/user components/Home/Topcategories.jsx
+    ./src/app/(user)/page.jsx
+[00:50:16.183] Server  LOG     ✓ Compiled in 153ms
+[00:50:19.511] Server  LOG     ✓ Compiled in 480ms
+[00:50:19.819] Server  ERROR   ⨯ ReferenceError: Link is not defined
+[00:50:20.607] Server  LOG     ✓ Compiled in 185ms
+[00:50:21.212] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:50:22.191] Browser WARN    Image with src "/logo/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:50:22.191] Browser WARN    Image with src "/logo/vector1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:50:22.196] Browser LOG     brand user delete address 
+[00:50:22.196] Browser LOG     brand user delete address 
+[00:50:22.196] Browser LOG     brand user delete address 
+[00:50:22.196] Browser LOG     brand user delete address 
+[00:50:22.196] Browser LOG     brand user delete address 
+[00:50:22.196] Browser LOG     brand user delete address 
+[00:50:22.196] Browser LOG     brand user delete address 
+[00:50:22.196] Browser LOG     brand user delete address 
+[00:50:22.196] Browser LOG     brand user delete address 
+[00:50:22.196] Browser LOG     brand user delete address 
+[00:50:22.196] Browser LOG     brand user delete address 
+[00:50:22.196] Browser LOG     brand user delete address 
+[00:50:22.196] Browser LOG     brand user delete address 
+[00:50:22.196] Browser LOG     brand user delete address 
+[00:50:22.196] Browser LOG     brand user delete address 
+[00:50:22.196] Browser LOG     brand user delete address 
+[00:50:22.196] Browser LOG     brand user delete address 
+[00:50:22.196] Browser LOG     brand user delete address 
+[00:50:26.333] Browser ERROR   ./src/app/components/user components/Home/Topcategories.jsx:21:38
+Parsing ecmascript source code failed
+  19 |               className="flex flex-col items-center text-center"
+  20 |             >
+> 21 |                 <Link                </Link>
+     |                                      ^
+  22 | >
+  23 |                 <img
+  24 |                   src={categoryImageUrl(item.image)}
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./src/app/components/user components/Home/Topcategories.jsx
+    ./src/app/(user)/page.jsx
+[00:50:26.333] Browser ERROR   ./src/app/components/user components/Home/Topcategories.jsx:21:39
+Parsing ecmascript source code failed
+  19 |               className="flex flex-col items-center text-center"
+  20 |             >
+> 21 |                 <Link                </Link>
+     |                                       ^^^^^^
+  22 | >
+  23 |                 <img
+  24 |                   src={categoryImageUrl(item.image)}
+
+Unterminated regexp literal
+
+Import trace:
+  Server Component:
+    ./src/app/components/user components/Home/Topcategories.jsx
+    ./src/app/(user)/page.jsx
+[00:50:26.335] Browser ERROR   ./src/app/components/user components/Home/Topcategories.jsx:21:38
+Parsing ecmascript source code failed
+  19 |               className="flex flex-col items-center text-center"
+  20 |             >
+> 21 |                 <Link                </Link>
+     |                                      ^
+  22 | >
+  23 |                 <img
+  24 |                   src={categoryImageUrl(item.image)}
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./src/app/components/user components/Home/Topcategories.jsx
+    ./src/app/(user)/page.jsx
+[00:50:26.335] Browser ERROR   ./src/app/components/user components/Home/Topcategories.jsx:21:39
+Parsing ecmascript source code failed
+  19 |               className="flex flex-col items-center text-center"
+  20 |             >
+> 21 |                 <Link                </Link>
+     |                                       ^^^^^^
+  22 | >
+  23 |                 <img
+  24 |                   src={categoryImageUrl(item.image)}
+
+Unterminated regexp literal
+
+Import trace:
+  Server Component:
+    ./src/app/components/user components/Home/Topcategories.jsx
+    ./src/app/(user)/page.jsx
+[00:50:26.363] Server  LOG     ✓ Compiled in 439ms
+[00:50:26.712] Browser ERROR   ./src/app/components/user components/Home/Topcategories.jsx:21:38
+Parsing ecmascript source code failed
+  19 |               className="flex flex-col items-center text-center"
+  20 |             >
+> 21 |                 <Link                </Link>
+     |                                      ^
+  22 | >
+  23 |                 <img
+  24 |                   src={categoryImageUrl(item.image)}
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./src/app/components/user components/Home/Topcategories.jsx
+    ./src/app/(user)/page.jsx
+[00:50:26.712] Browser ERROR   ./src/app/components/user components/Home/Topcategories.jsx:21:39
+Parsing ecmascript source code failed
+  19 |               className="flex flex-col items-center text-center"
+  20 |             >
+> 21 |                 <Link                </Link>
+     |                                       ^^^^^^
+  22 | >
+  23 |                 <img
+  24 |                   src={categoryImageUrl(item.image)}
+
+Unterminated regexp literal
+
+Import trace:
+  Server Component:
+    ./src/app/components/user components/Home/Topcategories.jsx
+    ./src/app/(user)/page.jsx
+[00:50:28.043] Server  ERROR   ⨯ ReferenceError: Link is not defined
+[00:50:29.193] Browser LOG     brand user delete address 
+[00:50:29.193] Browser LOG     brand user delete address 
+[00:50:29.193] Browser LOG     brand user delete address 
+[00:50:29.193] Browser LOG     brand user delete address 
+[00:50:29.193] Browser LOG     brand user delete address 
+[00:50:29.193] Browser LOG     brand user delete address 
+[00:50:29.193] Browser LOG     brand user delete address 
+[00:50:29.193] Browser LOG     brand user delete address 
+[00:50:29.193] Browser LOG     brand user delete address 
+[00:50:29.193] Browser LOG     brand user delete address 
+[00:50:29.193] Browser LOG     brand user delete address 
+[00:50:29.193] Browser LOG     brand user delete address 
+[00:50:29.193] Browser LOG     brand user delete address 
+[00:50:29.193] Browser LOG     brand user delete address 
+[00:50:29.193] Browser LOG     brand user delete address 
+[00:50:29.193] Browser LOG     brand user delete address 
+[00:50:29.193] Browser LOG     brand user delete address 
+[00:50:29.193] Browser LOG     brand user delete address 
+[00:50:29.198] Browser ERROR   uncaughtError: ReferenceError: Link is not defined
+[00:50:32.802] Server  LOG     ✓ Compiled in 832ms
+[00:50:36.979] Server  ERROR   ⨯ ReferenceError: Link is not defined
+[00:50:39.434] Server  LOG     ✓ Compiled in 670ms
+[00:50:40.912] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:50:42.197] Browser LOG     brand user delete address 
+[00:50:42.197] Browser LOG     brand user delete address 
+[00:50:42.197] Browser LOG     brand user delete address 
+[00:50:42.197] Browser LOG     brand user delete address 
+[00:50:42.197] Browser LOG     brand user delete address 
+[00:50:42.197] Browser LOG     brand user delete address 
+[00:50:42.197] Browser LOG     brand user delete address 
+[00:50:42.197] Browser LOG     brand user delete address 
+[00:50:42.197] Browser LOG     brand user delete address 
+[00:50:42.197] Browser LOG     brand user delete address 
+[00:50:42.197] Browser LOG     brand user delete address 
+[00:50:42.197] Browser LOG     brand user delete address 
+[00:50:42.197] Browser LOG     brand user delete address 
+[00:50:42.197] Browser LOG     brand user delete address 
+[00:50:42.197] Browser LOG     brand user delete address 
+[00:50:42.197] Browser LOG     brand user delete address 
+[00:50:42.197] Browser LOG     brand user delete address 
+[00:50:42.197] Browser LOG     brand user delete address 
+[00:50:43.216] Browser WARN    Image with src "/logo/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:50:43.216] Browser WARN    Image with src "/logo/vector1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:50:53.904] Server  LOG     ✓ Finished filesystem cache database compaction in 38.0s
+[00:50:54.190] Browser LOG     brand user delete address 
+[00:50:54.190] Browser LOG     brand user delete address 
+[00:50:54.190] Browser LOG     brand user delete address 
+[00:50:54.190] Browser LOG     brand user delete address 
+[00:50:54.190] Browser LOG     brand user delete address 
+[00:50:54.190] Browser LOG     brand user delete address 
+[00:50:54.190] Browser LOG     brand user delete address 
+[00:50:54.190] Browser LOG     brand user delete address 
+[00:50:54.190] Browser LOG     brand user delete address 
+[00:50:54.190] Browser LOG     brand user delete address 
+[00:50:54.190] Browser LOG     brand user delete address 
+[00:50:54.190] Browser LOG     brand user delete address 
+[00:50:54.190] Browser LOG     brand user delete address 
+[00:50:54.190] Browser LOG     brand user delete address 
+[00:50:54.190] Browser LOG     brand user delete address 
+[00:50:54.190] Browser LOG     brand user delete address 
+[00:50:54.190] Browser LOG     brand user delete address 
+[00:50:54.190] Browser LOG     brand user delete address 
+[00:50:55.311] Server  LOG     ✓ Finished writing to filesystem cache in 36.9s
+[00:52:41.030] Server  LOG     ○ Compiling /admin/product ...
+[00:52:47.820] Server  LOG     ○ Compiling /admin/product/add ...
+[00:57:51.955] Browser LOG     product user delete address 
+[00:57:51.955] Browser LOG     product user delete address 
+[01:01:02.750] Browser LOG     product user delete address 
+[01:01:02.750] Browser LOG     product user delete address 
+[01:01:02.750] Browser LOG     product user delete address 
+[01:01:02.750] Browser LOG     product user delete address 
+[01:08:02.199] Browser LOG     product user delete address 
+[01:08:02.199] Browser LOG     product user delete address 
+[01:08:02.199] Browser LOG     product user delete address 
+[01:08:02.199] Browser LOG     product user delete address 
+[01:08:02.199] Browser LOG     product user delete address 
+[01:08:02.199] Browser LOG     product user delete address 
+[01:12:46.181] Browser LOG     product user delete address 
+[01:12:46.181] Browser LOG     product user delete address 
+[01:12:46.181] Browser LOG     product user delete address 
+[01:12:46.181] Browser LOG     product user delete address 
+[01:12:46.181] Browser LOG     product user delete address 
+[01:12:46.181] Browser LOG     product user delete address 
+[01:12:46.181] Browser LOG     product user delete address 
+[01:12:46.181] Browser LOG     product user delete address 
+[01:12:56.852] Server  LOG     [{...},{...},{...},{...},{...},{...},{...},{...},{...},{...}] "categories data"
+[01:12:57.134] Browser LOG     category user delete address 
+[01:12:57.134] Browser LOG     category user delete address 
+[01:12:57.134] Browser LOG     category user delete address 
+[01:12:57.134] Browser LOG     category user delete address 
+[01:12:57.134] Browser LOG     category user delete address 
+[01:12:57.134] Browser LOG     category user delete address 
+[01:12:57.134] Browser LOG     category user delete address 
+[01:12:57.134] Browser LOG     category user delete address 
+[01:12:57.134] Browser LOG     category user delete address 
+[01:12:57.134] Browser LOG     category user delete address 
+[01:12:57.134] Browser LOG     category user delete address 
+[01:12:57.134] Browser LOG     category user delete address 
+[01:12:57.134] Browser LOG     category user delete address 
+[01:12:57.134] Browser LOG     category user delete address 
+[01:12:57.134] Browser LOG     category user delete address 
+[01:12:57.134] Browser LOG     category user delete address 
+[01:12:57.134] Browser LOG     category user delete address 
+[01:12:57.134] Browser LOG     category user delete address 
+[01:12:57.134] Browser LOG     category user delete address 
+[01:12:57.134] Browser LOG     category user delete address 
+[01:13:05.301] Browser LOG     brand user delete address 
+[01:13:05.301] Browser LOG     brand user delete address 
+[01:13:05.301] Browser LOG     brand user delete address 
+[01:13:05.301] Browser LOG     brand user delete address 
+[01:13:05.301] Browser LOG     brand user delete address 
+[01:13:05.301] Browser LOG     brand user delete address 
+[01:13:05.302] Browser LOG     brand user delete address 
+[01:13:05.302] Browser LOG     brand user delete address 
+[01:13:05.302] Browser LOG     brand user delete address 
+[01:13:05.302] Browser LOG     brand user delete address 
+[01:13:05.302] Browser LOG     brand user delete address 
+[01:13:05.302] Browser LOG     brand user delete address 
+[01:13:05.302] Browser LOG     brand user delete address 
+[01:13:05.302] Browser LOG     brand user delete address 
+[01:13:05.302] Browser LOG     brand user delete address 
+[01:13:05.302] Browser LOG     brand user delete address 
+[01:13:05.302] Browser LOG     brand user delete address 
+[01:13:05.302] Browser LOG     brand user delete address 
+[01:13:27.803] Server  LOG     ✓ Finished filesystem cache database compaction in 19.0s
+[01:14:36.434] Browser LOG     SUBMIT CALLED
+[01:14:40.598] Browser LOG     brand user delete address 
+[01:14:40.598] Browser LOG     brand user delete address 
+[01:14:40.598] Browser LOG     brand user delete address 
+[01:14:40.598] Browser LOG     brand user delete address 
+[01:14:40.598] Browser LOG     brand user delete address 
+[01:14:40.598] Browser LOG     brand user delete address 
+[01:14:40.598] Browser LOG     brand user delete address 
+[01:14:40.598] Browser LOG     brand user delete address 
+[01:14:40.598] Browser LOG     brand user delete address 
+[01:14:40.599] Browser LOG     brand user delete address 
+[01:14:40.599] Browser LOG     brand user delete address 
+[01:14:40.599] Browser LOG     brand user delete address 
+[01:14:40.599] Browser LOG     brand user delete address 
+[01:14:40.599] Browser LOG     brand user delete address 
+[01:14:40.599] Browser LOG     brand user delete address 
+[01:14:40.599] Browser LOG     brand user delete address 
+[01:14:40.599] Browser LOG     brand user delete address 
+[01:14:40.599] Browser LOG     brand user delete address 
+[01:14:40.599] Browser LOG     brand user delete address 
+[01:14:40.599] Browser LOG     brand user delete address 
+[01:16:04.860] Browser LOG     SUBMIT CALLED
+[01:16:07.821] Browser LOG     brand user delete address 
+[01:16:07.821] Browser LOG     brand user delete address 
+[01:16:07.821] Browser LOG     brand user delete address 
+[01:16:07.821] Browser LOG     brand user delete address 
+[01:16:07.821] Browser LOG     brand user delete address 
+[01:16:07.821] Browser LOG     brand user delete address 
+[01:16:07.821] Browser LOG     brand user delete address 
+[01:16:07.821] Browser LOG     brand user delete address 
+[01:16:07.821] Browser LOG     brand user delete address 
+[01:16:07.821] Browser LOG     brand user delete address 
+[01:16:07.821] Browser LOG     brand user delete address 
+[01:16:07.821] Browser LOG     brand user delete address 
+[01:16:07.821] Browser LOG     brand user delete address 
+[01:16:07.821] Browser LOG     brand user delete address 
+[01:16:07.821] Browser LOG     brand user delete address 
+[01:16:07.821] Browser LOG     brand user delete address 
+[01:16:07.821] Browser LOG     brand user delete address 
+[01:16:07.821] Browser LOG     brand user delete address 
+[01:16:07.821] Browser LOG     brand user delete address 
+[01:16:07.821] Browser LOG     brand user delete address 
+[01:16:07.821] Browser LOG     brand user delete address 
+[01:16:07.821] Browser LOG     brand user delete address 
+[01:16:07.821] Browser LOG     brand user delete address 
+[01:16:07.821] Browser LOG     brand user delete address 
+[01:16:07.821] Browser LOG     brand user delete address 
+[01:16:07.821] Browser LOG     brand user delete address 
+[01:16:07.821] Browser LOG     brand user delete address 
+[01:16:07.821] Browser LOG     brand user delete address 
+[01:16:10.592] Browser LOG     product user delete address 
+[01:16:10.592] Browser LOG     product user delete address 
+[01:16:10.592] Browser LOG     product user delete address 
+[01:16:10.592] Browser LOG     product user delete address 
+[01:16:10.592] Browser LOG     product user delete address 
+[01:16:10.592] Browser LOG     product user delete address 
+[01:16:10.592] Browser LOG     product user delete address 
+[01:16:10.592] Browser LOG     product user delete address 
+[01:17:59.693] Browser LOG     product user delete address 
+[01:17:59.693] Browser LOG     product user delete address 
+[01:17:59.693] Browser LOG     product user delete address 
+[01:17:59.693] Browser LOG     product user delete address 
+[01:17:59.693] Browser LOG     product user delete address 
+[01:17:59.693] Browser LOG     product user delete address 
+[01:17:59.693] Browser LOG     product user delete address 
+[01:17:59.693] Browser LOG     product user delete address 
+[01:17:59.693] Browser LOG     product user delete address 
+[01:17:59.693] Browser LOG     product user delete address 
+[01:27:20.594] Server  LOG     [{...},{...},{...},{...},{...},{...},{...},{...},{...},{...}] "categories data"
+[01:27:20.835] Browser LOG     category user delete address 
+[01:27:20.835] Browser LOG     category user delete address 
+[01:27:20.835] Browser LOG     category user delete address 
+[01:27:20.835] Browser LOG     category user delete address 
+[01:27:20.835] Browser LOG     category user delete address 
+[01:27:20.835] Browser LOG     category user delete address 
+[01:27:20.835] Browser LOG     category user delete address 
+[01:27:20.835] Browser LOG     category user delete address 
+[01:27:20.835] Browser LOG     category user delete address 
+[01:27:20.835] Browser LOG     category user delete address 
+[01:27:20.835] Browser LOG     category user delete address 
+[01:27:20.835] Browser LOG     category user delete address 
+[01:27:20.835] Browser LOG     category user delete address 
+[01:27:20.835] Browser LOG     category user delete address 
+[01:27:20.835] Browser LOG     category user delete address 
+[01:27:20.835] Browser LOG     category user delete address 
+[01:27:20.835] Browser LOG     category user delete address 
+[01:27:20.835] Browser LOG     category user delete address 
+[01:27:20.835] Browser LOG     category user delete address 
+[01:27:20.835] Browser LOG     category user delete address 
+[01:27:26.372] Browser LOG     brand user delete address 
+[01:27:26.372] Browser LOG     brand user delete address 
+[01:27:26.372] Browser LOG     brand user delete address 
+[01:27:26.372] Browser LOG     brand user delete address 
+[01:27:26.372] Browser LOG     brand user delete address 
+[01:27:26.372] Browser LOG     brand user delete address 
+[01:27:26.372] Browser LOG     brand user delete address 
+[01:27:26.372] Browser LOG     brand user delete address 
+[01:27:26.372] Browser LOG     brand user delete address 
+[01:27:26.372] Browser LOG     brand user delete address 
+[01:27:26.372] Browser LOG     brand user delete address 
+[01:27:26.372] Browser LOG     brand user delete address 
+[01:27:26.372] Browser LOG     brand user delete address 
+[01:27:26.372] Browser LOG     brand user delete address 
+[01:27:26.372] Browser LOG     brand user delete address 
+[01:27:26.372] Browser LOG     brand user delete address 
+[01:27:26.372] Browser LOG     brand user delete address 
+[01:27:26.372] Browser LOG     brand user delete address 
+[01:27:26.372] Browser LOG     brand user delete address 
+[01:27:26.372] Browser LOG     brand user delete address 
+[01:27:26.372] Browser LOG     brand user delete address 
+[01:27:26.372] Browser LOG     brand user delete address 
+[01:27:28.960] Browser LOG     product user delete address 
+[01:27:28.960] Browser LOG     product user delete address 
+[01:27:28.960] Browser LOG     product user delete address 
+[01:27:28.960] Browser LOG     product user delete address 
+[01:27:28.960] Browser LOG     product user delete address 
+[01:27:28.960] Browser LOG     product user delete address 
+[01:27:28.960] Browser LOG     product user delete address 
+[01:27:28.960] Browser LOG     product user delete address 
+[01:27:28.960] Browser LOG     product user delete address 
+[01:27:28.960] Browser LOG     product user delete address 
+[01:29:46.259] Browser LOG     product user delete address 
+[01:29:46.259] Browser LOG     product user delete address 
+[01:29:46.259] Browser LOG     product user delete address 
+[01:29:46.259] Browser LOG     product user delete address 
+[01:29:46.259] Browser LOG     product user delete address 
+[01:29:46.259] Browser LOG     product user delete address 
+[01:29:46.259] Browser LOG     product user delete address 
+[01:29:46.259] Browser LOG     product user delete address 
+[01:29:46.259] Browser LOG     product user delete address 
+[01:29:46.259] Browser LOG     product user delete address 
+[01:29:46.259] Browser LOG     product user delete address 
+[01:29:46.259] Browser LOG     product user delete address 
+[01:30:04.330] Server  LOG     ○ Compiling /admin/color ...
+[01:30:13.087] Server  LOG     {}
+[01:30:13.293] Browser LOG     color user delete address 
+[01:30:13.293] Browser LOG     color user delete address 
+[01:30:13.293] Browser LOG     color user delete address 
+[01:30:13.293] Browser LOG     color user delete address 
+[01:30:19.437] Server  LOG     ○ Compiling /admin/color/addColor ...
+[01:30:38.016] Server  LOG     ✓ Finished filesystem cache database compaction in 16.8s
+[01:30:38.476] Server  LOG     ✓ Finished writing to filesystem cache in 12.7s
+[01:30:49.008] Server  LOG     ✓ Finished filesystem cache database compaction in 10.5s
+[01:31:05.548] Server  LOG     {}
+[01:31:05.729] Browser LOG     color user delete address 
+[01:31:05.729] Browser LOG     color user delete address 
+[01:31:05.729] Browser LOG     color user delete address 
+[01:31:05.729] Browser LOG     color user delete address 
+[01:31:05.729] Browser LOG     color user delete address 
+[01:31:05.729] Browser LOG     color user delete address 
+[01:32:05.744] Server  LOG     {}
+[01:32:05.881] Browser LOG     color user delete address 
+[01:32:05.881] Browser LOG     color user delete address 
+[01:32:05.881] Browser LOG     color user delete address 
+[01:32:05.881] Browser LOG     color user delete address 
+[01:32:05.881] Browser LOG     color user delete address 
+[01:32:05.881] Browser LOG     color user delete address 
+[01:32:05.881] Browser LOG     color user delete address 
+[01:32:05.881] Browser LOG     color user delete address 
+[01:32:06.003] Browser LOG     color user delete address 
+[01:32:06.003] Browser LOG     color user delete address 
+[01:32:06.003] Browser LOG     color user delete address 
+[01:32:06.003] Browser LOG     color user delete address 
+[01:32:06.003] Browser LOG     color user delete address 
+[01:32:06.003] Browser LOG     color user delete address 
+[01:32:06.003] Browser LOG     color user delete address 
+[01:32:06.003] Browser LOG     color user delete address 
+[01:32:30.229] Server  LOG     {}
+[01:32:30.367] Browser LOG     color user delete address 
+[01:32:30.367] Browser LOG     color user delete address 
+[01:32:30.367] Browser LOG     color user delete address 
+[01:32:30.367] Browser LOG     color user delete address 
+[01:32:30.367] Browser LOG     color user delete address 
+[01:32:30.367] Browser LOG     color user delete address 
+[01:32:30.367] Browser LOG     color user delete address 
+[01:32:30.367] Browser LOG     color user delete address 
+[01:32:30.367] Browser LOG     color user delete address 
+[01:32:30.367] Browser LOG     color user delete address 
+[01:33:04.299] Server  LOG     {}
+[01:33:04.458] Browser LOG     color user delete address 
+[01:33:04.458] Browser LOG     color user delete address 
+[01:33:04.458] Browser LOG     color user delete address 
+[01:33:04.458] Browser LOG     color user delete address 
+[01:33:04.458] Browser LOG     color user delete address 
+[01:33:04.458] Browser LOG     color user delete address 
+[01:33:04.458] Browser LOG     color user delete address 
+[01:33:04.458] Browser LOG     color user delete address 
+[01:33:04.458] Browser LOG     color user delete address 
+[01:33:04.458] Browser LOG     color user delete address 
+[01:33:04.458] Browser LOG     color user delete address 
+[01:33:04.458] Browser LOG     color user delete address 
+[01:33:35.033] Server  LOG     {}
+[01:33:35.213] Browser LOG     color user delete address 
+[01:33:35.213] Browser LOG     color user delete address 
+[01:33:35.213] Browser LOG     color user delete address 
+[01:33:35.213] Browser LOG     color user delete address 
+[01:33:35.213] Browser LOG     color user delete address 
+[01:33:35.213] Browser LOG     color user delete address 
+[01:33:35.213] Browser LOG     color user delete address 
+[01:33:35.213] Browser LOG     color user delete address 
+[01:33:35.213] Browser LOG     color user delete address 
+[01:33:35.213] Browser LOG     color user delete address 
+[01:33:35.213] Browser LOG     color user delete address 
+[01:33:35.213] Browser LOG     color user delete address 
+[01:33:35.213] Browser LOG     color user delete address 
+[01:33:35.213] Browser LOG     color user delete address 
+[01:33:42.739] Server  LOG     {}
+[01:33:42.891] Browser LOG     color user delete address 
+[01:33:42.892] Browser LOG     color user delete address 
+[01:33:42.892] Browser LOG     color user delete address 
+[01:33:42.892] Browser LOG     color user delete address 
+[01:33:42.892] Browser LOG     color user delete address 
+[01:33:42.892] Browser LOG     color user delete address 
+[01:33:42.892] Browser LOG     color user delete address 
+[01:33:42.892] Browser LOG     color user delete address 
+[01:33:42.892] Browser LOG     color user delete address 
+[01:33:42.892] Browser LOG     color user delete address 
+[01:33:42.892] Browser LOG     color user delete address 
+[01:33:42.892] Browser LOG     color user delete address 
+[01:33:42.892] Browser LOG     color user delete address 
+[01:33:42.892] Browser LOG     color user delete address 
+[01:33:42.892] Browser LOG     color user delete address 
+[01:33:42.892] Browser LOG     color user delete address 
+[01:34:02.820] Browser LOG     product user delete address 
+[01:34:02.820] Browser LOG     product user delete address 
+[01:34:02.820] Browser LOG     product user delete address 
+[01:34:02.820] Browser LOG     product user delete address 
+[01:34:02.820] Browser LOG     product user delete address 
+[01:34:02.820] Browser LOG     product user delete address 
+[01:34:02.820] Browser LOG     product user delete address 
+[01:34:02.820] Browser LOG     product user delete address 
+[01:34:02.820] Browser LOG     product user delete address 
+[01:34:02.820] Browser LOG     product user delete address 
+[01:34:02.820] Browser LOG     product user delete address 
+[01:34:02.820] Browser LOG     product user delete address 
+[01:34:45.991] Browser LOG     brand user delete address 
+[01:34:45.992] Browser LOG     brand user delete address 
+[01:34:45.992] Browser LOG     brand user delete address 
+[01:34:45.992] Browser LOG     brand user delete address 
+[01:34:45.992] Browser LOG     brand user delete address 
+[01:34:45.992] Browser LOG     brand user delete address 
+[01:34:45.992] Browser LOG     brand user delete address 
+[01:34:45.992] Browser LOG     brand user delete address 
+[01:34:45.992] Browser LOG     brand user delete address 
+[01:34:45.992] Browser LOG     brand user delete address 
+[01:34:45.992] Browser LOG     brand user delete address 
+[01:34:45.992] Browser LOG     brand user delete address 
+[01:34:45.992] Browser LOG     brand user delete address 
+[01:34:45.992] Browser LOG     brand user delete address 
+[01:34:45.992] Browser LOG     brand user delete address 
+[01:34:45.992] Browser LOG     brand user delete address 
+[01:34:45.992] Browser LOG     brand user delete address 
+[01:34:45.992] Browser LOG     brand user delete address 
+[01:34:45.992] Browser LOG     brand user delete address 
+[01:34:45.992] Browser LOG     brand user delete address 
+[01:34:45.992] Browser LOG     brand user delete address 
+[01:34:45.992] Browser LOG     brand user delete address 
+[01:35:43.426] Browser LOG     SUBMIT CALLED
+[01:35:46.970] Browser LOG     brand user delete address 
+[01:35:46.970] Browser LOG     brand user delete address 
+[01:35:46.970] Browser LOG     brand user delete address 
+[01:35:46.970] Browser LOG     brand user delete address 
+[01:35:46.970] Browser LOG     brand user delete address 
+[01:35:46.970] Browser LOG     brand user delete address 
+[01:35:46.970] Browser LOG     brand user delete address 
+[01:35:46.970] Browser LOG     brand user delete address 
+[01:35:46.970] Browser LOG     brand user delete address 
+[01:35:46.970] Browser LOG     brand user delete address 
+[01:35:46.970] Browser LOG     brand user delete address 
+[01:35:46.970] Browser LOG     brand user delete address 
+[01:35:46.970] Browser LOG     brand user delete address 
+[01:35:46.970] Browser LOG     brand user delete address 
+[01:35:46.970] Browser LOG     brand user delete address 
+[01:35:46.970] Browser LOG     brand user delete address 
+[01:35:46.970] Browser LOG     brand user delete address 
+[01:35:46.970] Browser LOG     brand user delete address 
+[01:35:46.970] Browser LOG     brand user delete address 
+[01:35:46.970] Browser LOG     brand user delete address 
+[01:35:46.970] Browser LOG     brand user delete address 
+[01:35:46.970] Browser LOG     brand user delete address 
+[01:35:46.970] Browser LOG     brand user delete address 
+[01:35:46.970] Browser LOG     brand user delete address 
+[01:35:48.290] Browser LOG     product user delete address 
+[01:35:48.290] Browser LOG     product user delete address 
+[01:35:48.290] Browser LOG     product user delete address 
+[01:35:48.290] Browser LOG     product user delete address 
+[01:35:48.290] Browser LOG     product user delete address 
+[01:35:48.290] Browser LOG     product user delete address 
+[01:35:48.290] Browser LOG     product user delete address 
+[01:35:48.290] Browser LOG     product user delete address 
+[01:35:48.290] Browser LOG     product user delete address 
+[01:35:48.290] Browser LOG     product user delete address 
+[01:35:48.290] Browser LOG     product user delete address 
+[01:35:48.290] Browser LOG     product user delete address 
+[01:37:53.733] Browser LOG     product user delete address 
+[01:37:53.733] Browser LOG     product user delete address 
+[01:37:53.733] Browser LOG     product user delete address 
+[01:37:53.733] Browser LOG     product user delete address 
+[01:37:53.733] Browser LOG     product user delete address 
+[01:37:53.733] Browser LOG     product user delete address 
+[01:37:53.733] Browser LOG     product user delete address 
+[01:37:53.733] Browser LOG     product user delete address 
+[01:37:53.733] Browser LOG     product user delete address 
+[01:37:53.733] Browser LOG     product user delete address 
+[01:37:53.733] Browser LOG     product user delete address 
+[01:37:53.733] Browser LOG     product user delete address 
+[01:37:53.733] Browser LOG     product user delete address 
+[01:37:53.733] Browser LOG     product user delete address 
+[01:40:06.252] Browser LOG     product user delete address 
+[01:40:06.252] Browser LOG     product user delete address 
+[01:40:06.252] Browser LOG     product user delete address 
+[01:40:06.252] Browser LOG     product user delete address 
+[01:40:06.252] Browser LOG     product user delete address 
+[01:40:06.252] Browser LOG     product user delete address 
+[01:40:06.252] Browser LOG     product user delete address 
+[01:40:06.252] Browser LOG     product user delete address 
+[01:40:06.252] Browser LOG     product user delete address 
+[01:40:06.252] Browser LOG     product user delete address 
+[01:40:06.252] Browser LOG     product user delete address 
+[01:40:06.252] Browser LOG     product user delete address 
+[01:40:06.252] Browser LOG     product user delete address 
+[01:40:06.252] Browser LOG     product user delete address 
+[01:40:06.252] Browser LOG     product user delete address 
+[01:40:06.252] Browser LOG     product user delete address 
+[01:42:50.436] Browser LOG     product user delete address 
+[01:42:50.436] Browser LOG     product user delete address 
+[01:42:50.436] Browser LOG     product user delete address 
+[01:42:50.436] Browser LOG     product user delete address 
+[01:42:50.436] Browser LOG     product user delete address 
+[01:42:50.436] Browser LOG     product user delete address 
+[01:42:50.436] Browser LOG     product user delete address 
+[01:42:50.436] Browser LOG     product user delete address 
+[01:42:50.436] Browser LOG     product user delete address 
+[01:42:50.436] Browser LOG     product user delete address 
+[01:42:50.436] Browser LOG     product user delete address 
+[01:42:50.436] Browser LOG     product user delete address 
+[01:42:50.436] Browser LOG     product user delete address 
+[01:42:50.436] Browser LOG     product user delete address 
+[01:42:50.436] Browser LOG     product user delete address 
+[01:42:50.436] Browser LOG     product user delete address 
+[01:42:50.436] Browser LOG     product user delete address 
+[01:42:50.436] Browser LOG     product user delete address 
+[01:45:18.745] Browser LOG     product user delete address 
+[01:45:18.745] Browser LOG     product user delete address 
+[01:45:18.745] Browser LOG     product user delete address 
+[01:45:18.745] Browser LOG     product user delete address 
+[01:45:18.745] Browser LOG     product user delete address 
+[01:45:18.745] Browser LOG     product user delete address 
+[01:45:18.745] Browser LOG     product user delete address 
+[01:45:18.745] Browser LOG     product user delete address 
+[01:45:18.745] Browser LOG     product user delete address 
+[01:45:18.745] Browser LOG     product user delete address 
+[01:45:18.745] Browser LOG     product user delete address 
+[01:45:18.745] Browser LOG     product user delete address 
+[01:45:18.745] Browser LOG     product user delete address 
+[01:45:18.745] Browser LOG     product user delete address 
+[01:45:18.745] Browser LOG     product user delete address 
+[01:45:18.745] Browser LOG     product user delete address 
+[01:45:18.745] Browser LOG     product user delete address 
+[01:45:18.745] Browser LOG     product user delete address 
+[01:45:18.745] Browser LOG     product user delete address 
+[01:45:18.745] Browser LOG     product user delete address 
+[01:45:21.653] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:45:22.780] Browser WARN    Image with src "/logo/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:45:22.780] Browser WARN    Image with src "/logo/vector1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:46:35.226] Browser LOG     product user delete address 
+[01:46:35.226] Browser LOG     product user delete address 
+[01:46:35.226] Browser LOG     product user delete address 
+[01:46:35.226] Browser LOG     product user delete address 
+[01:46:35.226] Browser LOG     product user delete address 
+[01:46:35.226] Browser LOG     product user delete address 
+[01:46:35.226] Browser LOG     product user delete address 
+[01:46:35.226] Browser LOG     product user delete address 
+[01:46:35.226] Browser LOG     product user delete address 
+[01:46:35.226] Browser LOG     product user delete address 
+[01:46:35.226] Browser LOG     product user delete address 
+[01:46:35.226] Browser LOG     product user delete address 
+[01:46:35.226] Browser LOG     product user delete address 
+[01:46:35.226] Browser LOG     product user delete address 
+[01:46:35.226] Browser LOG     product user delete address 
+[01:46:35.226] Browser LOG     product user delete address 
+[01:46:35.226] Browser LOG     product user delete address 
+[01:46:35.226] Browser LOG     product user delete address 
+[01:46:35.226] Browser LOG     product user delete address 
+[01:46:35.226] Browser LOG     product user delete address 
+[01:46:40.654] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:46:41.028] Browser WARN    Image with src "/logo/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:46:41.028] Browser WARN    Image with src "/logo/vector1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:48:57.234] Browser LOG     product user delete address 
+[01:48:57.234] Browser LOG     product user delete address 
+[01:48:57.234] Browser LOG     product user delete address 
+[01:48:57.234] Browser LOG     product user delete address 
+[01:48:57.234] Browser LOG     product user delete address 
+[01:48:57.234] Browser LOG     product user delete address 
+[01:48:57.234] Browser LOG     product user delete address 
+[01:48:57.234] Browser LOG     product user delete address 
+[01:48:57.234] Browser LOG     product user delete address 
+[01:48:57.234] Browser LOG     product user delete address 
+[01:48:57.234] Browser LOG     product user delete address 
+[01:48:57.234] Browser LOG     product user delete address 
+[01:48:57.234] Browser LOG     product user delete address 
+[01:48:57.234] Browser LOG     product user delete address 
+[01:48:57.234] Browser LOG     product user delete address 
+[01:48:57.234] Browser LOG     product user delete address 
+[01:48:57.234] Browser LOG     product user delete address 
+[01:48:57.234] Browser LOG     product user delete address 
+[01:48:57.234] Browser LOG     product user delete address 
+[01:48:57.234] Browser LOG     product user delete address 
+[01:51:22.742] Browser LOG     product user delete address 
+[01:51:22.743] Browser LOG     product user delete address 
+[01:51:22.743] Browser LOG     product user delete address 
+[01:51:22.743] Browser LOG     product user delete address 
+[01:51:22.743] Browser LOG     product user delete address 
+[01:51:22.743] Browser LOG     product user delete address 
+[01:51:22.743] Browser LOG     product user delete address 
+[01:51:22.743] Browser LOG     product user delete address 
+[01:51:22.743] Browser LOG     product user delete address 
+[01:51:22.743] Browser LOG     product user delete address 
+[01:51:22.743] Browser LOG     product user delete address 
+[01:51:22.743] Browser LOG     product user delete address 
+[01:51:22.743] Browser LOG     product user delete address 
+[01:51:22.743] Browser LOG     product user delete address 
+[01:51:22.743] Browser LOG     product user delete address 
+[01:51:22.743] Browser LOG     product user delete address 
+[01:51:22.743] Browser LOG     product user delete address 
+[01:51:22.743] Browser LOG     product user delete address 
+[01:51:22.743] Browser LOG     product user delete address 
+[01:51:22.743] Browser LOG     product user delete address 
+[01:53:37.017] Browser LOG     {"code":"ECONNABORTED","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:5000/api/","data":{},"env":{},"headers":{"Accept":"application/json, text/plain, */*","Authorization":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhMWZmY2JlMmUyYzg0N2M3YzUzNzcyZSIsImlhdCI6MTc4MDQ4ODAxOCwiZXhwIjoxNzgzMDgwMDE4fQ.xSIjno4SVxwozDA3yFjlfx3QEXfO0Pk9ukAu3KiLEXY","Content-Type":"application/x-www-form-urlencoded"},"maxBodyLength":-1,"maxContentLength":-1,"method":"post","timeout":12000,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"legacyInterceptorReqResOrdering":true,"silentJSONParsing":true},"url":"/product/create","withCredentials":true,"xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"timeout of 12000ms exceeded","name":"AxiosError","stack":"AxiosError: timeout of 12000ms exceeded\n    at XMLHttpRequest.handleTimeout (http://localhost:3000/_next/static/chunks/node_modules_axios_lib_99e19c7d._.js:2608:20)\n    at Axios.request (http://localhost:3000/_next/static/chunks/node_modules_axios_lib_99e19c7d._.js:3355:49)"}
+[01:53:47.152] Browser LOG     {"code":"ERR_BAD_REQUEST","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:5000/api/","data":{},"env":{},"headers":{"Accept":"application/json, text/plain, */*","Authorization":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhMWZmY2JlMmUyYzg0N2M3YzUzNzcyZSIsImlhdCI6MTc4MDQ4ODAxOCwiZXhwIjoxNzgzMDgwMDE4fQ.xSIjno4SVxwozDA3yFjlfx3QEXfO0Pk9ukAu3KiLEXY","Content-Type":"application/x-www-form-urlencoded"},"maxBodyLength":-1,"maxContentLength":-1,"method":"post","timeout":12000,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"legacyInterceptorReqResOrdering":true,"silentJSONParsing":true},"url":"/product/create","withCredentials":true,"xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 409","name":"AxiosError","stack":"AxiosError: Request failed with status code 409\n    at settle (http://localhost:3000/_next/static/chunks/node_modules_axios_lib_99e19c7d._.js:2033:16)\n    at XMLHttpRequest.onloadend (http://localhost:3000/_next/static/chunks/node_modules_axios_lib_99e19c7d._.js:2549:174)\n    at Axios.request (http://localhost:3000/_next/static/chunks/node_modules_axios_lib_99e19c7d._.js:3355:49)","status":409}
+[01:53:59.157] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:54:00.212] Browser WARN    Image with src "/logo/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:54:00.212] Browser WARN    Image with src "/logo/vector1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:54:09.388] Browser LOG     product user delete address 
+[01:54:09.388] Browser LOG     product user delete address 
+[01:54:09.388] Browser LOG     product user delete address 
+[01:54:09.388] Browser LOG     product user delete address 
+[01:54:09.388] Browser LOG     product user delete address 
+[01:54:09.388] Browser LOG     product user delete address 
+[01:54:09.388] Browser LOG     product user delete address 
+[01:54:09.388] Browser LOG     product user delete address 
+[01:54:09.388] Browser LOG     product user delete address 
+[01:54:09.388] Browser LOG     product user delete address 
+[01:54:09.388] Browser LOG     product user delete address 
+[01:54:09.388] Browser LOG     product user delete address 
+[01:54:09.388] Browser LOG     product user delete address 
+[01:54:09.388] Browser LOG     product user delete address 
+[01:54:09.388] Browser LOG     product user delete address 
+[01:54:09.388] Browser LOG     product user delete address 
+[01:54:09.388] Browser LOG     product user delete address 
+[01:54:09.388] Browser LOG     product user delete address 
+[01:54:09.388] Browser LOG     product user delete address 
+[01:54:09.388] Browser LOG     product user delete address 
+[01:56:37.706] Browser LOG     product user delete address 
+[01:56:37.706] Browser LOG     product user delete address 
+[01:56:37.706] Browser LOG     product user delete address 
+[01:56:37.706] Browser LOG     product user delete address 
+[01:56:37.706] Browser LOG     product user delete address 
+[01:56:37.706] Browser LOG     product user delete address 
+[01:56:37.706] Browser LOG     product user delete address 
+[01:56:37.706] Browser LOG     product user delete address 
+[01:56:37.706] Browser LOG     product user delete address 
+[01:56:37.707] Browser LOG     product user delete address 
+[01:56:37.707] Browser LOG     product user delete address 
+[01:56:37.707] Browser LOG     product user delete address 
+[01:56:37.707] Browser LOG     product user delete address 
+[01:56:37.707] Browser LOG     product user delete address 
+[01:56:37.707] Browser LOG     product user delete address 
+[01:56:37.707] Browser LOG     product user delete address 
+[01:56:37.707] Browser LOG     product user delete address 
+[01:56:37.707] Browser LOG     product user delete address 
+[01:56:37.707] Browser LOG     product user delete address 
+[01:56:37.707] Browser LOG     product user delete address 
+[01:58:34.935] Browser LOG     product user delete address 
+[01:58:34.943] Browser LOG     product user delete address 
+[01:58:34.944] Browser LOG     product user delete address 
+[01:58:34.944] Browser LOG     product user delete address 
+[01:58:34.944] Browser LOG     product user delete address 
+[01:58:34.944] Browser LOG     product user delete address 
+[01:58:34.945] Browser LOG     product user delete address 
+[01:58:34.945] Browser LOG     product user delete address 
+[01:58:34.945] Browser LOG     product user delete address 
+[01:58:34.945] Browser LOG     product user delete address 
+[01:58:34.945] Browser LOG     product user delete address 
+[01:58:34.945] Browser LOG     product user delete address 
+[01:58:34.945] Browser LOG     product user delete address 
+[01:58:34.945] Browser LOG     product user delete address 
+[01:58:34.945] Browser LOG     product user delete address 
+[01:58:34.945] Browser LOG     product user delete address 
+[01:58:34.945] Browser LOG     product user delete address 
+[01:58:34.945] Browser LOG     product user delete address 
+[01:58:34.945] Browser LOG     product user delete address 
+[01:58:34.945] Browser LOG     product user delete address 
+[01:58:49.834] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:58:50.816] Browser WARN    Image with src "/logo/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:58:50.816] Browser WARN    Image with src "/logo/vector1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.

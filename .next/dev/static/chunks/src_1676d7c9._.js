@@ -15,9 +15,20 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$axios$2f$lib
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$toastify$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/react-toastify/dist/index.mjs [app-client] (ecmascript)");
 ;
 ;
+const API_BASE_URL = ("TURBOPACK compile-time value", "http://localhost:5000/api/") || "https://ishop-backend-2mld.onrender.com/api/";
 const client = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$axios$2f$lib$2f$axios$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].create({
-    baseURL: ("TURBOPACK compile-time value", "http://localhost:5000/api/"),
-    withCredentials: true
+    baseURL: API_BASE_URL,
+    withCredentials: true,
+    timeout: 12000
+});
+client.interceptors.request.use((config)=>{
+    if ("TURBOPACK compile-time truthy", 1) {
+        const token = localStorage.getItem("jwt") || JSON.parse(localStorage.getItem("admin") || "null")?.token;
+        if (token) {
+            config.headers.Authorization = token;
+        }
+    }
+    return config;
 });
 const notify = (massage, flag)=>(0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$toastify$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["toast"])(massage, {
         type: flag === true ? "success" : "error"
@@ -118,11 +129,11 @@ var _s = __turbopack_context__.k.signature();
 function OTPContent() {
     _s();
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(40);
-    if ($[0] !== "5b37feae68179889eba69d5f28c9feb43b55b73b26a6586ec47ed75d17a6de62") {
+    if ($[0] !== "50a06cbce2af4fb292c4785ea0ade0b645dd97923fc8007bd75b7229f3a69053") {
         for(let $i = 0; $i < 40; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "5b37feae68179889eba69d5f28c9feb43b55b73b26a6586ec47ed75d17a6de62";
+        $[0] = "50a06cbce2af4fb292c4785ea0ade0b645dd97923fc8007bd75b7229f3a69053";
     }
     const router = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRouter"])();
     const searchParams = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useSearchParams"])();
@@ -450,11 +461,11 @@ function _OTPContentSubmitHandlerAnonymous(error) {
 }
 function OTPVerificationPage() {
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(2);
-    if ($[0] !== "5b37feae68179889eba69d5f28c9feb43b55b73b26a6586ec47ed75d17a6de62") {
+    if ($[0] !== "50a06cbce2af4fb292c4785ea0ade0b645dd97923fc8007bd75b7229f3a69053") {
         for(let $i = 0; $i < 2; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "5b37feae68179889eba69d5f28c9feb43b55b73b26a6586ec47ed75d17a6de62";
+        $[0] = "50a06cbce2af4fb292c4785ea0ade0b645dd97923fc8007bd75b7229f3a69053";
     }
     let t0;
     if ($[1] === Symbol.for("react.memo_cache_sentinel")) {

@@ -4,6 +4,7 @@ import React from "react";
 import { getCategories } from "@/api_call/api";
 import Link from "next/link";
 import DeleteBtn from "@/app/components/admin components/DeleteBtn";
+import { categoryImageUrl } from "@/utils/mediaUrl";
 
 export const dynamic = "force-dynamic";
 export const revalidate = 0;
@@ -14,6 +15,7 @@ export default async function UserManagementTable() {
   // console.log(data)
   // return
   const categories = data?.data;
+  console.log(categories,'categories data')
   const meta = data?.meta;
   // console.log(meta)
   return (
@@ -73,7 +75,7 @@ export default async function UserManagementTable() {
                   {/* Image */}
                   <td className="px-2 py-4">
                     <img
-                      src={`https://ishop-backend-2mld.onrender.com/category/${user?.image}`}
+                      src={categoryImageUrl(user?.image)}
                       alt={user.name}
                       className="w-12 h-12 rounded-lg object-cover"
                     />

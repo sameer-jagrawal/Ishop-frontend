@@ -3,7 +3,7 @@ import React from "react";
 import Link from "next/link";
 import { brandImageUrl } from "@/utils/mediaUrl";
 export default async function FeatureBrand() {
-const brand_res = await getBrand();
+const brand_res = await getBrand({status:true,is_top:true});
 const brand = brand_res?.data || [];
 
 return (
@@ -19,7 +19,7 @@ return (
             key={index}
             className="flex   flex-col items-center text-center"
           >
-            <Link href="/">
+            <Link  href={`/products?brand_slug=${item?.slug || ""}`}>
               <img
                 src={brandImageUrl(item.image)}
                 alt="brand"

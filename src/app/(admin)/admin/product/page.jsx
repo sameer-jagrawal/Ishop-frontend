@@ -5,6 +5,7 @@ import Link from "next/link";
 import DeleteBtn from "@/app/components/admin components/DeleteBtn";
 import ProductStatusDropdown from "@/app/components/admin components/ProductStatusDropdown";
 import { FaEye } from "react-icons/fa";
+import { productImageUrl } from "@/utils/mediaUrl";
 
 export const dynamic = "force-dynamic";
 export const revalidate = 0;
@@ -73,7 +74,7 @@ export default async function UserManagementTable() {
                   {/* Image */}
                   <td className="px-6 py-4">
                     <img
-                      src={`https://ishop-backend-2mld.onrender.com/product/${user?.thumbnail}`}
+                      src={productImageUrl(user?.thumbnail)}
                       alt={user.name}
                       className="w-12 h-12 rounded-xl object-cover border"
                     />

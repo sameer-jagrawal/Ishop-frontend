@@ -1,6 +1,7 @@
 import { getAllOrders } from "@/api_call/api";
 import { client } from "@/utils/helper";
 import React from "react";
+import { productImageUrl } from "@/utils/mediaUrl";
 
 export default async function MyOrdersPage() {
   const ordersRes = await getAllOrders();
@@ -71,9 +72,7 @@ export default async function MyOrdersPage() {
                   >
                     <div className="flex items-center gap-4">
                       <img
-                        src={`
-                          https://ishop-backend-2mld.onrender.com/product/${item?.product_id?.thumbnail}
-                        `}
+                        src={productImageUrl(item?.product_id?.thumbnail)}
                         alt={item?.product_id?.name}
                         className="w-24 h-24 object-cover rounded-2xl border"
                       />

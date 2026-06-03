@@ -7,7 +7,7 @@ export default function PreOrder() {
         {/* Background Image */}
         <div className="absolute inset-0">
           <Image
-            src="/images/watch.png"
+            src="/headPhone.png"
             alt="background product"
             fill
             className="object-cover opacity-80"

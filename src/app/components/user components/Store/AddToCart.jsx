@@ -1,6 +1,7 @@
 'use client'
 import { addToCart, qtyChanges } from "@/redux/features/cartslice";
 import { client } from "@/utils/helper";
+import { productImageUrl } from "@/utils/mediaUrl";
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 
@@ -84,7 +85,7 @@ className="w-10 h-full flex items-center justify-center text-[#01A49E] text-lg f
           final_price: product?.final_price,
           _id: product?._id,
           discount: product?.discount_percentage,
-          thumbnail: `https://ishop-backend-2mld.onrender.com/product/${product.thumbnail}`,
+          thumbnail: productImageUrl(product.thumbnail),
           stock: product?.stock,
           brand: product?.brandId?.name,
           qty : 1

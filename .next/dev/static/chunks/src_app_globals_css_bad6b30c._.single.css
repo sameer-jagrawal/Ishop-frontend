@@ -3611,6 +3611,12 @@
   }
 
   @media (hover: hover) {
+    .hover\:bg-orange-100:hover {
+      background-color: var(--color-orange-100);
+    }
+  }
+
+  @media (hover: hover) {
     .hover\:bg-orange-500:hover {
       background-color: var(--color-orange-500);
     }
@@ -4304,6 +4310,12 @@
   @media (min-width: 48rem) {
     .md\:hidden {
       display: none;
+    }
+  }
+
+  @media (min-width: 48rem) {
+    .md\:inline-flex {
+      display: inline-flex;
     }
   }
 

@@ -7,6 +7,7 @@ import { getSelectData } from "@/api_call/api";
 import { CiCircleRemove } from "react-icons/ci";
 import { Editor } from 'primereact/editor';
 import ButtonLoader from "@/app/components/user components/ButtonLoader";
+import { productImageUrl } from "@/utils/mediaUrl";
 
 
 export default function Page() {
@@ -141,8 +142,11 @@ const [newImages, setNewImages] = useState([]); // uploaded files
  
 
   function handleRemove(image_name) {
+    const imageIndex = existingImages.findIndex((img) => img === image_name);
+    const imagePublicId = data?.imagePublicIds?.[imageIndex];
+
     client
-      .put(`/product/image_delete/${slug}`, { image_name })
+      .put(`/product/image_delete/${slug}`, { image_name, imagePublicId })
       .then((response) => {
         if (response.data.success) {
           notify("Image deleted successfully", true);
@@ -465,7 +469,7 @@ const [newImages, setNewImages] = useState([]); // uploaded files
 
                 <div className=" w-auto items-center gap-3 mt-2 p-3 border rounded-lg bg-gray-50">
                   <img
-                    src={`https://ishop-backend-2mld.onrender.com/product/${data?.thumbnail}`}
+                    src={preview || productImageUrl(data?.thumbnail)}
                     alt="preview"
                     className=" rounded-md object-cover"
                     width={200}
@@ -521,7 +525,8 @@ const [newImages, setNewImages] = useState([]); // uploaded files
 {existingImages.map((img, index) => (
   <div key={index} className="relative border rounded-md">
     <img
-      src={`https://ishop-backend-2mld.onrender.com/product/${img}`}
+      src={productImageUrl(img)}
+      alt={`product-${index}`}
       className="object-cover w-full h-full rounded-md"
     />
 
@@ -538,6 +543,7 @@ const [newImages, setNewImages] = useState([]); // uploaded files
   <div key={index} className="relative border rounded-md">
     <img
       src={URL.createObjectURL(file)}
+      alt={`new-product-${index}`}
       className="object-cover w-full h-full rounded-md"
     />
   </div>

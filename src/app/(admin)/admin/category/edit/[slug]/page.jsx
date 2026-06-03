@@ -4,6 +4,7 @@ import { useRouter } from "next/navigation";
 import React, { useEffect, useRef, useState } from "react";
 import { client, notify } from "@/utils/helper";
 import ButtonLoader from "@/app/components/user components/ButtonLoader";
+import { categoryImageUrl } from "@/utils/mediaUrl";
 export default function Page() {
   const { slug } = useParams();
   console.log(slug);
@@ -152,7 +153,7 @@ export default function Page() {
           {/* Existing image preview */}
           <div className="flex items-center gap-3 mt-2 px-3 py-2.5 rounded-lg  bg-gray-50">
             <img
-              src={`https://ishop-backend-2mld.onrender.com/category/${image}`}
+              src={categoryImageUrl(image)}
               alt="preview"
               width={100}
               className="rounded-md object-cover border border-gray-200"

@@ -1,7 +1,7 @@
 import React from "react";
 import { FiSearch, FiBell } from "react-icons/fi";
 import Link from "next/link"
-import Logout from "@/app/components/user components/Logout";
+import AdminAccount from "@/app/components/admin components/AdminAccount";
 
 export default function Header() {
   return (
@@ -30,10 +30,7 @@ export default function Header() {
         </div>
         </Link>
 
-
-        <div className="rounded-lg bg-[#ff7b00] px-2 py-1.5 text-white transition hover:bg-orange-600 md:px-3 md:py-2">
-          <Logout className="m-0 p-0 text-xs font-semibold text-white md:text-sm" />
-        </div>
+        <AdminAccount />
 
       </div>
     </header>
