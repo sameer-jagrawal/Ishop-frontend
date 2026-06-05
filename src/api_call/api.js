@@ -85,6 +85,7 @@ async function  getProduct(query={}){
     if(query.min_price) filter.append("min_price",query.min_price);
     if(query.max_price) filter.append("max_price",query.max_price);
     if(query.sort) filter.append("sort",query.sort);
+    if(query.search) filter.append("search",query.search);
 
     // brand_slug is an array — append each value separately
     if(query.brand_slug && query.brand_slug.length > 0){

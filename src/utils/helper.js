@@ -3,7 +3,7 @@ import { toast } from 'react-toastify'
 
 const API_BASE_URL =
   process.env.NEXT_PUBLIC_API_BASE_URL ||
-  "https://ishop-backend-2mld.onrender.com/api/";
+  "http://localhost:5000/api/";
 
 const client = axios.create({
     baseURL: API_BASE_URL,

@@ -116,7 +116,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$axios$2f$lib
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$toastify$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/react-toastify/dist/index.mjs [app-ssr] (ecmascript)");
 ;
 ;
-const API_BASE_URL = ("TURBOPACK compile-time value", "http://localhost:5000/api/") || "https://ishop-backend-2mld.onrender.com/api/";
+const API_BASE_URL = ("TURBOPACK compile-time value", "https://ishop-backend-2mld.onrender.com/api/") || "http://localhost:5000/api/";
 const client = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$axios$2f$lib$2f$axios$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].create({
     baseURL: API_BASE_URL,
     withCredentials: true,
@@ -244,6 +244,24 @@ function OTPContent() {
             setLoader(false);
         });
     };
+    const resendOtp = async ()=>{
+        if (!email) {
+            (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$utils$2f$helper$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["notify"])("Email is missing. Please register again.", false);
+            return;
+        }
+        try {
+            setLoader(true);
+            const response = await __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$utils$2f$helper$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["client"].post("user/resend-otp", {
+                email
+            });
+            (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$utils$2f$helper$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["notify"])(response.data.masg, response.data.success);
+        } catch (error) {
+            const message = error?.response?.data?.masg || "Internal Server Error";
+            (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$utils$2f$helper$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["notify"])(message, false);
+        } finally{
+            setLoader(false);
+        }
+    };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         className: "min-h-screen bg-[#f4f7f7] flex items-center justify-center px-4 py-10",
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -257,7 +275,7 @@ function OTPContent() {
                             children: "OTP Verification"
                         }, void 0, false, {
                             fileName: "[project]/src/app/(user-auth)/otp-verify/page.jsx",
-                            lineNumber: 75,
+                            lineNumber: 96,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -265,7 +283,7 @@ function OTPContent() {
                             children: "Enter the 6 digit OTP sent to"
                         }, void 0, false, {
                             fileName: "[project]/src/app/(user-auth)/otp-verify/page.jsx",
-                            lineNumber: 79,
+                            lineNumber: 100,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -273,13 +291,13 @@ function OTPContent() {
                             children: email
                         }, void 0, false, {
                             fileName: "[project]/src/app/(user-auth)/otp-verify/page.jsx",
-                            lineNumber: 83,
+                            lineNumber: 104,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/app/(user-auth)/otp-verify/page.jsx",
-                    lineNumber: 74,
+                    lineNumber: 95,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("form", {
@@ -298,12 +316,12 @@ function OTPContent() {
                                     className: "   w-12 h-14 md:w-14 md:h-16   text-center text-xl md:text-2xl   font-semibold border border-gray-300   rounded-2xl outline-none   focus:ring-2 focus:ring-[#01A49E]   focus:border-transparent transition   "
                                 }, index, false, {
                                     fileName: "[project]/src/app/(user-auth)/otp-verify/page.jsx",
-                                    lineNumber: 92,
+                                    lineNumber: 113,
                                     columnNumber: 15
                                 }, this))
                         }, void 0, false, {
                             fileName: "[project]/src/app/(user-auth)/otp-verify/page.jsx",
-                            lineNumber: 90,
+                            lineNumber: 111,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -312,18 +330,18 @@ function OTPContent() {
                             disabled: loader,
                             children: loader ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$user__components$2f$ButtonLoader$2e$jsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                                 fileName: "[project]/src/app/(user-auth)/otp-verify/page.jsx",
-                                lineNumber: 127,
+                                lineNumber: 148,
                                 columnNumber: 23
                             }, this) : "Verify OTP"
                         }, void 0, false, {
                             fileName: "[project]/src/app/(user-auth)/otp-verify/page.jsx",
-                            lineNumber: 116,
+                            lineNumber: 137,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/app/(user-auth)/otp-verify/page.jsx",
-                    lineNumber: 88,
+                    lineNumber: 109,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -331,28 +349,31 @@ function OTPContent() {
                     children: [
                         "Didn't receive OTP?",
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                            className: "   ml-2 text-[#01A49E]   font-semibold hover:underline   ",
+                            type: "button",
+                            onClick: resendOtp,
+                            disabled: loader,
+                            className: " ml-2 text-[#01A49E] font-semibold hover:underline disabled:opacity-60 ",
                             children: "Resend"
                         }, void 0, false, {
                             fileName: "[project]/src/app/(user-auth)/otp-verify/page.jsx",
-                            lineNumber: 135,
+                            lineNumber: 156,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/app/(user-auth)/otp-verify/page.jsx",
-                    lineNumber: 132,
+                    lineNumber: 153,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/app/(user-auth)/otp-verify/page.jsx",
-            lineNumber: 72,
+            lineNumber: 93,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/src/app/(user-auth)/otp-verify/page.jsx",
-        lineNumber: 71,
+        lineNumber: 92,
         columnNumber: 5
     }, this);
 }
@@ -362,17 +383,17 @@ function OTPVerificationPage() {
             children: "Loading..."
         }, void 0, false, {
             fileName: "[project]/src/app/(user-auth)/otp-verify/page.jsx",
-            lineNumber: 152,
+            lineNumber: 176,
             columnNumber: 25
         }, void 0),
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(OTPContent, {}, void 0, false, {
             fileName: "[project]/src/app/(user-auth)/otp-verify/page.jsx",
-            lineNumber: 153,
+            lineNumber: 177,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/src/app/(user-auth)/otp-verify/page.jsx",
-        lineNumber: 152,
+        lineNumber: 176,
         columnNumber: 5
     }, this);
 }

@@ -36,9 +36,10 @@ export default function RegisterPage() {
       })
       .catch((error) => {
 
+        console.log(error,"register error")
         const message =
            error?.response?.data?.masg ||
-           "Internal Server Error"
+           "Internal Server Error jfhfhfhfhj"
      
         notify(message, false)
      

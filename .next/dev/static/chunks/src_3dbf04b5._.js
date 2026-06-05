@@ -15,7 +15,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$axios$2f$lib
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$toastify$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/react-toastify/dist/index.mjs [app-client] (ecmascript)");
 ;
 ;
-const API_BASE_URL = ("TURBOPACK compile-time value", "http://localhost:5000/api/") || "https://ishop-backend-2mld.onrender.com/api/";
+const API_BASE_URL = ("TURBOPACK compile-time value", "https://ishop-backend-2mld.onrender.com/api/") || "http://localhost:5000/api/";
 const client = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$axios$2f$lib$2f$axios$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].create({
     baseURL: API_BASE_URL,
     withCredentials: true,
@@ -134,11 +134,11 @@ var _s = __turbopack_context__.k.signature();
 function RegisterPage() {
     _s();
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(20);
-    if ($[0] !== "e35f7347ba8a11e1d41ce644fbb18e5fc0e3af050d523394107a7bd89a0f863d") {
+    if ($[0] !== "c1864da438bf06735dc9389f4fe35a90609166bb20f1065e10c20c944a6d506e") {
         for(let $i = 0; $i < 20; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "e35f7347ba8a11e1d41ce644fbb18e5fc0e3af050d523394107a7bd89a0f863d";
+        $[0] = "c1864da438bf06735dc9389f4fe35a90609166bb20f1065e10c20c944a6d506e";
     }
     const [loader, setLoader] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
     const router = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRouter"])();
@@ -459,7 +459,8 @@ _s(RegisterPage, "eVYwiossKcFvsLf2ggFIZ1rpnrY=", false, function() {
 });
 _c = RegisterPage;
 function _RegisterPageSubmitHandlerAnonymous(error) {
-    const message = error?.response?.data?.masg || "Internal Server Error";
+    console.log(error, "register error");
+    const message = error?.response?.data?.masg || "Internal Server Error jfhfhfhfhj";
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$utils$2f$helper$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["notify"])(message, false);
 }
 var _c;

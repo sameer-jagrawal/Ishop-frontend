@@ -21,10 +21,25 @@ const limit = Number(searchPromise.limit) || 12;
       : [searchPromise.color_slug]
     : [];
   const category_slug = searchPromise?.category_slug || null;
+  const search = searchPromise?.search || null;
 
-  const Products_res = await getProduct({ status: true, brand_slug, category_slug, color_slug, min_price, max_price, sort,page,limit })
+  const Products_res = await getProduct({ status: true, brand_slug, category_slug, color_slug, min_price, max_price, sort,page,limit,search })
   const products = Products_res?.data || [];
   const pages = Products_res?.pages || 1;
+
+  const pageHref = (nextPage) => {
+    const params = new URLSearchParams();
+    params.set("page", nextPage);
+    params.set("limit", limit);
+    if (sort) params.set("sort", sort);
+    if (min_price) params.set("min_price", min_price);
+    if (max_price) params.set("max_price", max_price);
+    if (category_slug) params.set("category_slug", category_slug);
+    if (search) params.set("search", search);
+    brand_slug.forEach((slug) => params.append("brand_slug", slug));
+    color_slug.forEach((slug) => params.append("color_slug", slug));
+    return `?${params.toString()}`;
+  };
   return (
     <>
       <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 pt-6 gap-3">
@@ -45,7 +60,7 @@ const limit = Number(searchPromise.limit) || 12;
       <div className="flex justify-center items-center gap-4 mt-8 pb-8">
         {page > 1 && (
           <Link
-            href={`?page=${page - 1}&limit=${limit}`}
+            href={pageHref(page - 1)}
             className="px-4 py-2 border rounded-lg"
           >
             Prev
@@ -58,7 +73,7 @@ const limit = Number(searchPromise.limit) || 12;
   
         {page < pages && (
           <Link
-            href={`?page=${page + 1}&limit=${limit}`}
+            href={pageHref(page + 1)}
             className="px-4 py-2 border rounded-lg"
           >
             Next
