@@ -629,6 +629,10 @@
     top: calc(var(--spacing) * -1);
   }
 
+  .-top-2 {
+    top: calc(var(--spacing) * -2);
+  }
+
   .top-0 {
     top: calc(var(--spacing) * 0);
   }
@@ -671,6 +675,10 @@
 
   .-right-1 {
     right: calc(var(--spacing) * -1);
+  }
+
+  .-right-2 {
+    right: calc(var(--spacing) * -2);
   }
 
   .-right-3 {
@@ -1376,6 +1384,10 @@
     max-width: 90%;
   }
 
+  .max-w-\[210px\] {
+    max-width: 210px;
+  }
+
   .max-w-full {
     max-width: 100%;
   }
@@ -1392,6 +1404,10 @@
     min-width: calc(var(--spacing) * 0);
   }
 
+  .min-w-5 {
+    min-width: calc(var(--spacing) * 5);
+  }
+
   .min-w-10 {
     min-width: calc(var(--spacing) * 10);
   }
@@ -1404,8 +1420,16 @@
     min-width: 90px;
   }
 
+  .min-w-\[680px\] {
+    min-width: 680px;
+  }
+
   .min-w-\[700px\] {
     min-width: 700px;
+  }
+
+  .min-w-\[760px\] {
+    min-width: 760px;
   }
 
   .min-w-full {
@@ -3038,6 +3062,10 @@
 
   .accent-gray-700 {
     accent-color: var(--color-gray-700);
+  }
+
+  .accent-orange-400 {
+    accent-color: var(--color-orange-400);
   }
 
   .opacity-35 {
@@ -5109,6 +5137,12 @@
   @media (min-width: 80rem) {
     .xl\:grid-cols-4 {
       grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+  }
+
+  @media (min-width: 80rem) {
+    .xl\:grid-cols-\[1fr_340px\] {
+      grid-template-columns: 1fr 340px;
     }
   }
 

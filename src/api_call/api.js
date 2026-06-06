@@ -156,6 +156,17 @@ async function  getAllOrders(){
     }
     
 }
+async function getDashboardData(){
+    try {
+    const response = await client.get("dashboard")
+    return response?.data
+        
+    } catch (error) {
+        console.log(error)
+        return { success: false, data: null }
+    }
+    
+}
 async function  getSingleOrder(id){
     try {
     const response =  await client.get(`order/${id}`)
@@ -168,5 +179,5 @@ async function  getSingleOrder(id){
     
 }
 
-export{getCategories,getBrand,getColor,getSelectData,getProduct,getAllOrders,getSingleOrder}
+export{getCategories,getBrand,getColor,getSelectData,getProduct,getAllOrders,getDashboardData,getSingleOrder}
 

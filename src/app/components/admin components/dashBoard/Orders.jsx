@@ -1,160 +1,91 @@
-import { getAllOrders } from "@/api_call/api";
+import { getDashboardData } from "@/api_call/api";
 import Link from "next/link";
-export default async function RecentOrdersTable() {
-  const ordersRes = await getAllOrders();
-  const orders = ordersRes?.data?.orders || [];
-      
 
-  const statusStyles = {
-    Delivered: "bg-emerald-50 text-emerald-600 border border-emerald-200",
-    Pending: "bg-yellow-50 text-yellow-600 border border-yellow-200",
-    Shipped: "bg-blue-50 text-blue-600 border border-blue-200",
-    Cancelled: "bg-red-50 text-red-600 border border-red-200",
-    Processing: "bg-orange-50 text-orange-500 border border-orange-200",
-  };
+const money = new Intl.NumberFormat("en-IN", {
+  style: "currency",
+  currency: "INR",
+  maximumFractionDigits: 0,
+});
+
+function formatDate(dateValue) {
+  return new Date(dateValue).toLocaleDateString("en-IN", {
+    day: "2-digit",
+    month: "short",
+    year: "numeric",
+  });
+}
+
+export default async function RecentOrdersTable() {
+  const dashboardRes = await getDashboardData();
+  const orders = dashboardRes?.data?.recentOrders || [];
 
   return (
-    <div className="mt-4 overflow-x-auto border border-gray-200 bg-white p-4 shadow-sm">
-      {/* Header */}
-      <div className="flex items-center justify-between mb-6">
+    <div className="mt-4 overflow-x-auto border border-gray-200 bg-white p-4">
+      <div className="mb-5 flex items-center justify-between gap-3">
         <div>
-          <h2 className="text-2xl font-bold text-gray-900">Recent Orders</h2>
-
-          <p className="text-sm text-gray-500 mt-1">
-            Latest customer purchases
-          </p>
+          <h2 className="text-lg font-medium text-gray-900">Recent Orders</h2>
+          <p className="mt-1 text-sm text-gray-500">Latest customer purchases</p>
         </div>
-
-        <button className="border border-gray-200 px-4 py-2 text-sm font-medium text-gray-700 transition hover:bg-gray-50">
-          View All
-        </button>
       </div>
 
-      {/* Mobile card view */}
-      <div className="md:hidden space-y-4">
-        {orders?.map((order, index) => (
-          <div key={index} className="border border-gray-200 p-4 transition hover:bg-gray-50">
-            <div className="flex items-start justify-between gap-2 mb-3">
-              <div>
-                <p className="text-xs text-gray-500 mb-0.5">Order ID</p>
-                <p className="text-xs font-semibold text-gray-800 break-all">{order?._id}</p>
+      <div className="space-y-3 md:hidden">
+        {orders.map((order) => (
+          <div key={order?._id} className="border border-gray-200 p-3">
+            <div className="flex items-start justify-between gap-3">
+              <div className="min-w-0">
+                <p className="truncate text-sm font-medium text-gray-800">{order?._id}</p>
+                <p className="mt-1 text-sm text-gray-500">{order?.user?.name || "Customer"}</p>
               </div>
-              <Link href={`/admin/order/${order?._id}`}>
-                <button className="flex-shrink-0 border border-gray-200 px-3 py-1.5 text-xs font-medium text-gray-700 transition hover:bg-gray-50">
-                  View
-                </button>
+              <Link href={`/admin/order/${order?._id}`} className="border border-gray-200 px-3 py-1.5 text-xs text-gray-700 hover:bg-gray-50">
+                View
               </Link>
             </div>
-            <div className="grid grid-cols-2 gap-2 text-sm">
-              <div>
-                <p className="text-xs text-gray-500">Customer</p>
-                <p className="font-medium text-gray-700">{order?.user?.name}</p>
-              </div>
-              <div>
-                <p className="text-xs text-gray-500">Amount</p>
-                <p className="font-medium text-gray-800">${order?.totalAmount}</p>
-              </div>
-              <div>
-                <p className="text-xs text-gray-500">Payment</p>
-                <p className="font-medium text-gray-700">{order?.paymentMethod}</p>
-              </div>
-              <div>
-                <p className="text-xs text-gray-500">Date</p>
-                <p className="text-gray-500 text-xs">
-                  {new Date(order.createdAt).toLocaleDateString("en-IN", {
-                    day: "2-digit",
-                    month: "short",
-                    year: "numeric",
-                  })}
-                </p>
-              </div>
+            <div className="mt-3 grid grid-cols-2 gap-2 text-sm text-gray-600">
+              <p>{money.format(order?.totalAmount || 0)}</p>
+              <p className="capitalize">{order?.paymentMethod}</p>
+              <p className="capitalize">{order?.orderStatus?.replaceAll("_", " ")}</p>
+              <p>{formatDate(order?.createdAt)}</p>
             </div>
           </div>
         ))}
       </div>
 
-      {/* Desktop Table */}
-      <table className="hidden md:table w-full min-w-[700px]">
+      <table className="hidden w-full min-w-[760px] md:table">
         <thead>
-          <tr className="border-b border-gray-200 text-left">
-            <th className="py-4  text-sm font-semibold text-gray-600">
-              Order ID
-            </th>
-
-            <th className="py-4 px-3 text-sm font-semibold text-gray-600">
-              Customer
-            </th>
-
-            <th className="py-4 px-3 text-sm font-semibold text-gray-600">
-              Amount
-            </th>
-
-            {/* <th className="py-4 px-3 text-sm font-semibold text-gray-600">
-                Status
-              </th> */}
-
-            <th className="py-4 px-3 text-sm font-semibold text-gray-600">
-              Payment
-            </th>
-
-            <th className="py-4 px-3 text-sm font-semibold text-gray-600">
-              Date
-            </th>
-
-            <th className="py-4 px-3 text-sm font-semibold text-gray-600 text-center">
-              Action
-            </th>
+          <tr className="border-b border-gray-200 text-left text-sm text-gray-500">
+            <th className="py-3 font-medium">Order</th>
+            <th className="px-3 py-3 font-medium">Customer</th>
+            <th className="px-3 py-3 font-medium">Amount</th>
+            <th className="px-3 py-3 font-medium">Payment</th>
+            <th className="px-3 py-3 font-medium">Status</th>
+            <th className="px-3 py-3 font-medium">Date</th>
+            <th className="px-3 py-3 text-right font-medium">Action</th>
           </tr>
         </thead>
-
         <tbody>
-          {orders.map((order, index) => (
-            <tr
-              key={index}
-              className="border-b border-gray-100 transition hover:bg-gray-50"
-            >
-              <td className="py-4  font-semibold text-gray-800">
-                {order?._id}
-              </td>
-
-              <td className="py-4 px-3 text-gray-700">{order?.user?.name}</td>
-
-              <td className="py-4 px-3 font-medium text-gray-800">
-                ${order?.totalAmount}
-              </td>
-
-              {/* <td className="py-4 px-3">
-                  <span
-                    className={`px-3 py-1 rounded-full text-xs font-semibold ${statusStyles[order.status]}`}
-                  >
-                    {order.status}
-                  </span>
-                </td> */}
-
-              <td className="py-4 px-3 text-gray-700 font-medium">
-                {order?.paymentMethod}
-              </td>
-
-              <td className="py-4 px-3 text-gray-500 text-sm">
-                {new Date(order.createdAt).toLocaleDateString("en-IN", {
-                  day: "2-digit",
-                  month: "short",
-                  year: "numeric",
-                })}
-              </td>
-
-              <td className="py-4 px-3 text-center">
-                <Link href={`/admin/order/${order?._id}`}>
-                <button className="border border-gray-200 px-4 py-2 text-sm font-medium text-gray-700 transition hover:bg-gray-50">
+          {orders.map((order) => (
+            <tr key={order?._id} className="border-b border-gray-100 text-sm text-gray-700 hover:bg-gray-50">
+              <td className="max-w-[210px] truncate py-3 text-gray-900">{order?._id}</td>
+              <td className="px-3 py-3">{order?.user?.name || "Customer"}</td>
+              <td className="px-3 py-3">{money.format(order?.totalAmount || 0)}</td>
+              <td className="px-3 py-3 capitalize">{order?.paymentMethod}</td>
+              <td className="px-3 py-3 capitalize">{order?.orderStatus?.replaceAll("_", " ")}</td>
+              <td className="px-3 py-3">{formatDate(order?.createdAt)}</td>
+              <td className="px-3 py-3 text-right">
+                <Link href={`/admin/order/${order?._id}`} className="border border-gray-200 px-3 py-1.5 text-xs text-gray-700 hover:bg-gray-50">
                   View
-                </button>
                 </Link>
-               
               </td>
             </tr>
           ))}
         </tbody>
       </table>
+
+      {!orders.length && (
+        <div className="py-10 text-center text-sm text-gray-500">
+          No orders found.
+        </div>
+      )}
     </div>
   );
 }

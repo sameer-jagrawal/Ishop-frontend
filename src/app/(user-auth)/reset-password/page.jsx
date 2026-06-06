@@ -13,6 +13,7 @@ function ResetPasswordContent() {
   const email = searchParams.get("email") || "";
 
   const [loader, setLoader] = useState(false);
+  const [showPassword, setShowPassword] = useState(false);
   const [otp, setOtp] = useState(["", "", "", "", "", ""]);
   const [form, setForm] = useState({
     password: "",
@@ -140,7 +141,7 @@ function ResetPasswordContent() {
               New Password
             </label>
             <input
-              type="password"
+              type={showPassword ? "text" : "password"}
               name="password"
               value={form.password}
               onChange={handleChange}
@@ -154,13 +155,22 @@ function ResetPasswordContent() {
               Confirm Password
             </label>
             <input
-              type="password"
+              type={showPassword ? "text" : "password"}
               name="confirmPassword"
               value={form.confirmPassword}
               onChange={handleChange}
               placeholder="Confirm new password"
               className="w-full border border-gray-300 rounded-xl px-4 py-2.5 text-sm outline-none focus:ring-2 focus:ring-[#01A49E] focus:border-transparent transition"
             />
+            <label className="mt-3 flex w-fit items-center gap-2 text-sm text-gray-600">
+              <input
+                type="checkbox"
+                checked={showPassword}
+                onChange={(e) => setShowPassword(e.target.checked)}
+                className="h-4 w-4 accent-[#01A49E]"
+              />
+              Show password
+            </label>
           </div>
 
           <button

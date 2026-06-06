@@ -1,7 +1,7 @@
 import React from "react";
-import { FiSearch, FiBell } from "react-icons/fi";
-import Link from "next/link"
+import { FiSearch } from "react-icons/fi";
 import AdminAccount from "@/app/components/admin components/AdminAccount";
+import AdminNotificationBell from "@/app/components/admin components/AdminNotificationBell";
 
 export default function Header() {
   return (
@@ -20,15 +20,7 @@ export default function Header() {
       {/* RIGHT: Notification + Login */}
       <div className="flex items-center gap-3 md:gap-6">
 
-        {/* Notification */}
-        <Link href="/admin/notification">
-        <div className="relative cursor-pointer">
-          <FiBell className="text-xl md:text-2xl text-gray-600" />
-          <span className="absolute -top-1 -right-1 bg-red-500 text-white text-xs w-4 h-4 flex items-center justify-center rounded-full">
-            2
-          </span>
-        </div>
-        </Link>
+        <AdminNotificationBell />
 
         <AdminAccount />
 

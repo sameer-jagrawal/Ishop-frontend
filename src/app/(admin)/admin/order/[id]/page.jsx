@@ -1,311 +1,165 @@
 import { getSingleOrder } from "@/api_call/api";
+import Link from "next/link";
+
+const money = new Intl.NumberFormat("en-IN", {
+  style: "currency",
+  currency: "INR",
+  maximumFractionDigits: 0,
+});
+
+function formatDate(dateValue) {
+  if (!dateValue) return "Not available";
+
+  return new Date(dateValue).toLocaleDateString("en-IN", {
+    day: "2-digit",
+    month: "short",
+    year: "numeric",
+  });
+}
+
+function DetailRow({ label, value }) {
+  return (
+    <div>
+      <p className="text-xs text-gray-500">{label}</p>
+      <p className="mt-1 text-sm text-gray-800">{value || "Not available"}</p>
+    </div>
+  );
+}
 
 export default async function OrderViewPage({ params }) {
-
-  const {id} = await params;
+  const { id } = await params;
   const orderRes = await getSingleOrder(id);
   const order = orderRes?.data?.order;
-  const address = order?.shippingAddress
-  // console.log(order)
+  const address = order?.shippingAddress;
 
-  // console.log(order)
-    const statusStyle = {
-      Processing:
-        "bg-orange-50 text-orange-500 border border-orange-200",
-      Delivered:
-        "bg-emerald-50 text-emerald-600 border border-emerald-200",
-      Pending:
-        "bg-yellow-50 text-yellow-600 border border-yellow-200",
-      Cancelled:
-        "bg-red-50 text-red-600 border border-red-200",
-    };
-  
-   
-
+  if (!order) {
     return (
-      <div className="min-h-screen bg-[#fff7f2] p-6 md:p-10">
-  
-        {/* Top Header */}
-        <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-5 mb-8">
-  
-          <div>
-            <h1 className="text-3xl font-bold text-gray-900">
-              Order Details
-            </h1>
-  
-            <p className="text-gray-500 mt-2 text-sm">
-              Complete overview of customer order
-            </p>
-          </div>
-  
-          <div className="flex flex-wrap gap-3">
-  
-            <button className="px-5 py-2.5 rounded-xl bg-orange-400 text-white font-medium hover:bg-orange-500 transition">
-              Update Status
-            </button>
-  
-            <button className="px-5 py-2.5 rounded-xl border border-orange-200 text-orange-500 font-medium hover:bg-orange-50 transition">
-              Print Invoice
-            </button>
-  
-          </div>
-  
-        </div>
-        <div className="w-fit bg-white border border-orange-100 rounded-2xl p-2 shadow-sm">
-            <p className="text-sm text-gray-500">
-              Order ID
-            </p>
-  
-            <h2 className="text-xl font-bold text-gray-900">
-              {order?._id}
-            </h2>
-          </div>
-        {/* Order Summary */}
-        
-        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4 mb-8">
-
-{/* 
-          <div className="bg-white border border-orange-100 rounded-2xl p-5 shadow-sm">
-            <p className="text-sm text-gray-500">
-              Order ID
-            </p>
-  
-            <h2 className="text-xl font-bold text-gray-900 mt-2">
-              {order?._id}
-            </h2>
-          </div> */}
-  
-          <div className="bg-white border border-blue-100 rounded-2xl p-5 shadow-sm">
-            <p className="text-sm text-gray-500">
-              Order Date
-            </p>
-  
-            <h2 className="text-xl font-bold text-gray-900 mt-2">
-            {new Date(order.createdAt).toLocaleDateString("en-IN", {
-                  day: "2-digit",
-                  month: "short",
-                  year: "numeric",
-                })}
-            </h2>
-          </div>
-  
-          <div className="bg-white border border-green-100 rounded-2xl p-5 shadow-sm">
-            <p className="text-sm text-gray-500">
-              Payment
-            </p>
-  
-            <h2 className="text-xl font-bold text-gray-900 mt-2">
-              {order?.paymentMethod}
-            </h2>
-          </div>
-  
-          <div className="bg-white border border-orange-100 rounded-2xl p-5 shadow-sm">
-            <p className="text-sm text-gray-500">
-              Status
-            </p>
-  
-            <div className="mt-3">
-              <span
-                className={`px-3 py-1 rounded-full text-sm font-semibold ${statusStyle[order.status]}`}
-              >
-                {order?.status}
-              </span>
-            </div>
-          </div>
-  
-        </div>
-  
-        {/* Main Grid */}
-        <div className="grid grid-cols-1 xl:grid-cols-3 gap-6">
-  
-          {/* Left Section */}
-          <div className="xl:col-span-2 space-y-6">
-  
-            {/* Products */}
-            <div className="bg-white border border-orange-100 rounded-3xl p-6 shadow-sm">
-  
-              <div className="flex items-center justify-between mb-6">
-                <div>
-                  <h2 className="text-2xl font-bold text-gray-900">
-                    Ordered Products
-                  </h2>
-  
-                  <p className="text-sm text-gray-500 mt-1">
-                    Products included in this order
-                  </p>
-                </div>
-              </div>
-  
-              <div className="space-y-4">
-  
-                {order.items.map((product, index) => (
-                  <div
-                    key={index}
-                    className="flex items-center gap-4 border border-orange-50 rounded-2xl p-4 hover:bg-orange-50/30 transition"
-                  >
-  
-                    <img
-                      src={product?.product_id?.image}
-                      alt={product?.product_id?.name}
-                      className="w-20 h-20 object-cover rounded-xl border border-orange-100"
-                    />
-  
-                    <div className="flex-1">
-                      <h3 className="font-semibold text-gray-900 text-lg">
-                        {product?.product_id?.name}
-                      </h3>
-  
-                      <p className="text-sm text-gray-500 mt-1">
-                        Quantity : {product?.qty}
-                      </p>
-                    </div>
-  
-                    <div className="text-right">
-                      <h4 className="text-lg font-bold text-orange-500">
-                        {product?.price}
-                      </h4>
-                    </div>
-  
-                  </div>
-                ))}
-  
-              </div>
-  
-            </div>
-  
-            {/* Shipping Address */}
-            <div className="bg-white border border-orange-100 rounded-3xl p-6 shadow-sm">
-  
-              <h2 className="text-2xl font-bold text-gray-900 mb-5">
-                Shipping Address
-              </h2>
-  
-              <div className="space-y-3 text-gray-700">
-  
-                <p className="text-md font-semibold">
-                  {address?.fullName}
-                </p>
-  
-                <p>
-                  {address?.addressLine1}, {address?.addressLine2}
-                </p>
-                <p>
-                  {address?.city}, {address?.state}, {address?.country}
-                </p>
-  
-                <p className="text-sky-500 font-semibold">
-                   {address?.postalCode}, {address.phone} 
-                </p>
-  
-              </div>
-  
-            </div>
-  
-          </div>
-  
-          {/* Right Sidebar */}
-          <div className="space-y-6">
-  
-            {/* Customer Info */}
-            <div className="bg-white border border-orange-100 rounded-3xl p-6 shadow-sm">
-  
-              <h2 className="text-2xl font-bold text-gray-900 mb-5">
-                Customer Details
-              </h2>
-  
-              <div className="space-y-4">
-  
-                <div>
-                  <p className="text-sm text-gray-500">
-                    Full Name
-                  </p>
-  
-                  <h3 className="font-semibold text-gray-900 mt-1">
-                    {order?.user?.name}
-                  </h3>
-                </div>
-  
-                <div>
-                  <p className="text-sm text-gray-500">
-                    Email Address
-                  </p>
-  
-                  <h3 className="font-semibold text-gray-900 mt-1 break-all">
-                    {order?.user?.email}
-                  </h3>
-                </div>
-  
-                <div>
-                  <p className="text-sm text-gray-500">
-                    Phone Number
-                  </p>
-  
-                  <h3 className="font-semibold text-gray-900 mt-1">
-                    9832744638
-                  </h3>
-                </div>
-  
-              </div>
-  
-            </div>
-  
-            {/* Payment Summary */}
-            <div className="bg-white border border-orange-100 rounded-3xl p-6 shadow-sm">
-  
-              <h2 className="text-2xl font-bold text-gray-900 mb-5">
-                Payment Summary
-              </h2>
-  
-              <div className="space-y-4">
-  
-                {/* <div className="flex items-center justify-between text-gray-600">
-                  <span>Subtotal</span>
-                  <span>{order.}</span>
-                </div> */}
-  
-                {/* <div className="flex items-center justify-between text-gray-600">
-                  <span>Shipping</span>
-                  <span>{order.shippingCharge}</span>
-                </div> */}
-  
-                <div className="border-t border-orange-100 pt-4 flex items-center justify-between">
-                  <span className="text-lg font-semibold text-gray-900">
-                    Total
-                  </span>
-  
-                  <span className="text-2xl font-bold text-orange-500">
-                    {order.totalAmount}
-                  </span>
-                </div>
-  
-              </div>
-  
-            </div>
-  
-            {/* Order Notes */}
-            <div className="bg-white border border-orange-100 rounded-3xl p-6 shadow-sm">
-  
-              <h2 className="text-2xl font-bold text-gray-900 mb-4">
-                Order Notes
-              </h2>
-  
-              <textarea
-                rows="5"
-                placeholder="Add internal admin notes..."
-                className="w-full border border-orange-200 rounded-2xl p-4 outline-none resize-none focus:ring-2 focus:ring-orange-400"
-              />
-  
-              <button className="w-full mt-4 bg-orange-400 text-white py-3 rounded-2xl font-semibold hover:bg-orange-500 transition">
-                Save Notes
-              </button>
-  
-            </div>
-  
-          </div>
-  
-        </div>
-  
+      <div className="border border-gray-200 bg-white p-6">
+        <h1 className="text-xl font-medium text-gray-900">Order not found</h1>
+        <Link href="/admin" className="mt-4 inline-block text-sm text-[#01A49E] hover:underline">
+          Back to dashboard
+        </Link>
       </div>
     );
   }
-  
+
+  return (
+    <main className="bg-gray-50 p-2">
+      <div className="mb-5 flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
+        <div>
+          <h1 className="text-2xl font-medium text-gray-900">Order Details</h1>
+          <p className="mt-1 break-all text-sm text-gray-500">Order ID: {order._id}</p>
+        </div>
+        <Link href="/admin" className="w-fit border border-gray-200 bg-white px-4 py-2 text-sm text-gray-700 hover:bg-gray-50">
+          Back
+        </Link>
+      </div>
+
+      <section className="grid grid-cols-1 gap-3 md:grid-cols-4">
+        <div className="border border-gray-200 bg-white p-4">
+          <p className="text-sm text-gray-500">Order Date</p>
+          <p className="mt-2 text-lg font-medium text-gray-900">{formatDate(order.createdAt)}</p>
+        </div>
+        <div className="border border-gray-200 bg-white p-4">
+          <p className="text-sm text-gray-500">Payment Method</p>
+          <p className="mt-2 text-lg font-medium capitalize text-gray-900">{order.paymentMethod}</p>
+        </div>
+        <div className="border border-gray-200 bg-white p-4">
+          <p className="text-sm text-gray-500">Payment Status</p>
+          <p className="mt-2 text-lg font-medium capitalize text-gray-900">{order.paymentStatus}</p>
+        </div>
+        <div className="border border-gray-200 bg-white p-4">
+          <p className="text-sm text-gray-500">Order Status</p>
+          <p className="mt-2 text-lg font-medium capitalize text-gray-900">
+            {order.orderStatus?.replaceAll("_", " ")}
+          </p>
+        </div>
+      </section>
+
+      <section className="mt-4 grid grid-cols-1 gap-4 xl:grid-cols-[1fr_340px]">
+        <div className="border border-gray-200 bg-white p-4">
+          <div className="mb-4">
+            <h2 className="text-lg font-medium text-gray-900">Products</h2>
+            <p className="text-sm text-gray-500">Items included in this order</p>
+          </div>
+
+          <div className="overflow-x-auto">
+            <table className="w-full min-w-[680px]">
+              <thead>
+                <tr className="border-b border-gray-200 text-left text-sm text-gray-500">
+                  <th className="py-3 font-medium">Thumbnail</th>
+                  <th className="px-3 py-3 font-medium">Product</th>
+                  <th className="px-3 py-3 font-medium">Qty</th>
+                  <th className="px-3 py-3 font-medium">Price</th>
+                  <th className="px-3 py-3 text-right font-medium">Total</th>
+                </tr>
+              </thead>
+              <tbody>
+                {order.items?.map((item, index) => {
+                  const product = item?.product_id;
+                  const thumbnail = product?.thumbnail;
+
+                  return (
+                    <tr key={`${product?._id || "deleted"}-${index}`} className="border-b border-gray-100 text-sm text-gray-700">
+                      <td className="py-3">
+                        <div className="h-16 w-16 overflow-hidden border border-gray-200 bg-gray-50">
+                          {thumbnail ? (
+                            <img
+                              src={thumbnail}
+                              alt={product?.name || "Product thumbnail"}
+                              className="h-full w-full object-cover"
+                            />
+                          ) : (
+                            <div className="grid h-full w-full place-items-center text-xs text-gray-400">
+                              No image
+                            </div>
+                          )}
+                        </div>
+                      </td>
+                      <td className="px-3 py-3">
+                        <p className="text-gray-900">{product?.name || "Deleted product"}</p>
+                        <p className="mt-1 text-xs text-gray-500">{product?._id || "Product no longer exists"}</p>
+                      </td>
+                      <td className="px-3 py-3">{item.qty}</td>
+                      <td className="px-3 py-3">{money.format(item.price || 0)}</td>
+                      <td className="px-3 py-3 text-right">{money.format(item.total || 0)}</td>
+                    </tr>
+                  );
+                })}
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <aside className="space-y-4">
+          <div className="border border-gray-200 bg-white p-4">
+            <h2 className="text-lg font-medium text-gray-900">Customer</h2>
+            <div className="mt-4 space-y-4">
+              <DetailRow label="Name" value={order.user?.name} />
+              <DetailRow label="Email" value={order.user?.email} />
+              <DetailRow label="Phone" value={address?.phone} />
+            </div>
+          </div>
+
+          <div className="border border-gray-200 bg-white p-4">
+            <h2 className="text-lg font-medium text-gray-900">Shipping Address</h2>
+            <div className="mt-4 space-y-4">
+              <DetailRow label="Full Name" value={address?.fullName} />
+              <DetailRow label="Address" value={[address?.addressLine1, address?.addressLine2].filter(Boolean).join(", ")} />
+              <DetailRow label="City" value={[address?.city, address?.state, address?.country].filter(Boolean).join(", ")} />
+              <DetailRow label="Postal Code" value={address?.postalCode} />
+            </div>
+          </div>
+
+          <div className="border border-gray-200 bg-white p-4">
+            <h2 className="text-lg font-medium text-gray-900">Payment Summary</h2>
+            <div className="mt-4 flex items-center justify-between border-t border-gray-100 pt-4">
+              <span className="text-sm text-gray-600">Total Amount</span>
+              <span className="text-lg font-medium text-gray-900">{money.format(order.totalAmount || 0)}</span>
+            </div>
+          </div>
+        </aside>
+      </section>
+    </main>
+  );
+}

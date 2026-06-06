@@ -6,6 +6,7 @@ import ButtonLoader from "@/app/components/user components/ButtonLoader";
 import Link from "next/link";
 export default function RegisterPage() {
   const [loader, setLoader] = useState(false);
+  const [showPassword, setShowPassword] = useState(false);
   const router = useRouter();
   const [form, setForm] = useState({
     name: "",
@@ -96,12 +97,21 @@ export default function RegisterPage() {
                 Password
               </label>
               <input
-                type="password"
+                type={showPassword ? "text" : "password"}
                 name="password"
                 onChange={handleChanges}
                 placeholder="Create password"
                 className="w-full border border-gray-300 rounded-xl px-4 py-2.5 text-sm outline-none focus:ring-2 focus:ring-[#01A49E] focus:border-transparent transition"
               />
+              <label className="mt-3 flex w-fit items-center gap-2 text-sm text-gray-600">
+                <input
+                  type="checkbox"
+                  checked={showPassword}
+                  onChange={(e) => setShowPassword(e.target.checked)}
+                  className="h-4 w-4 accent-[#01A49E]"
+                />
+                Show password
+              </label>
             </div>
           </div>
 
