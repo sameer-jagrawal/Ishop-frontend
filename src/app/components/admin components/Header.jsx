@@ -7,17 +7,7 @@ export default function Header() {
   return (
     <header className="w-full h-16 md:h-20 bg-white shadow-md rounded-xl mb-4 px-4 md:px-6 py-3 md:py-4 flex justify-between items-center sticky top-0 z-100">
 
-      {/* LEFT: Search Bar */}
-      <div className="flex items-center bg-gray-100 px-3 md:px-4 py-2 rounded-lg w-40 sm:w-64 md:w-100">
-        <FiSearch className="text-gray-400 mr-2 flex-shrink-0" />
-        <input
-          type="text"
-          placeholder="Search here..."
-          className="bg-transparent outline-none w-full text-xs md:text-sm"
-        />
-      </div>
-
-      {/* RIGHT: Notification + Login */}
+        {/* RIGHT: Notification + Login */}
       <div className="flex items-center gap-3 md:gap-6">
 
         <AdminNotificationBell />

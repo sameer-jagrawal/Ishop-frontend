@@ -1,12 +1,10 @@
 import PopularCategories from "@/app/components/user components/Store/PopularCategories";
-import TopPhonesBanner from "@/app/components/user components/Store/TopPhones&Tablets";
 import Filters from "@/app/components/user components/Store/Filters";
 import FilterDrawer from "@/app/components/user components/Store/FilterDrawer";
 
 export default function ProductsLayout({ children }) {
   return (
     <div>
-      <TopPhonesBanner />
       <PopularCategories />
 
       {/* Products & Filters */}
