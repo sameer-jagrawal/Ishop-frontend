@@ -1,12 +1,11 @@
 import axios from 'axios';
 import { toast } from 'react-toastify'
+import { normalizeApiBaseUrl } from './apiBaseUrl';
 
-// const API_BASE_URL =
-//   ||
-//   "http://localhost:5000/api/";
+const API_BASE_URL = normalizeApiBaseUrl();
 
 const client = axios.create({
-    baseURL:  process.env.NEXT_PUBLIC_API_BASE_URL,
+    baseURL: API_BASE_URL,
     withCredentials:true,
     timeout: 30000,
   });
@@ -40,8 +39,8 @@ client.interceptors.request.use((config) => {
     const token =
       isAdminRoute ? adminToken || userToken : userToken || adminToken;
 
-    if (token) {
-      config.headers.Authorization = token;
+    if (token && token !== "undefined" && token !== "null") {
+      config.headers.Authorization = `Bearer ${token}`;
     }
   }
   return config;
@@ -50,7 +49,7 @@ client.interceptors.request.use((config) => {
 const notify = (massage,flag) => toast(massage, {type: flag === true ? "success" : "error"});
 
 const deleteRequest = (type, id) => {
-  return client.delete(`/${type}/delete/${id}`);
+  return client.delete(`${type}/delete/${id}`);
 };
 export {
     notify,client,deleteRequest

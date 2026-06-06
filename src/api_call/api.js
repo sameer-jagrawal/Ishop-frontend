@@ -34,7 +34,7 @@ async function  getCategories(query={}) {
         const query = filter.toString();
 
         const response = await client.get(
-          query ? `/category?${query}` : "category"
+          query ? `category?${query}` : "category"
         );
     // console.log(response.data)
     return response?.data
@@ -59,7 +59,7 @@ async function  getBrand(query={}){
         const query = filter.toString();
 
         const response = await client.get(
-          query ? `/brand?${query}` : "brand"
+          query ? `brand?${query}` : "brand"
         );
     return response?.data
         
@@ -102,7 +102,7 @@ async function  getProduct(query={}){
         const query = filter.toString();
 
         const response = await client.get(
-          query ? `/product?${query}` : "product"
+          query ? `product?${query}` : "product"
         );
     return normalizeProductResponse(response?.data)
         
@@ -120,7 +120,7 @@ async function  getColor(query={}){
         const query = filter.toString();
 
         const response = await client.get(
-          query ? `/color?${query}` : "color"
+          query ? `color?${query}` : "color"
         );
     return response?.data
         

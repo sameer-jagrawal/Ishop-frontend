@@ -116,11 +116,23 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$axios$2f$lib
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$toastify$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/react-toastify/dist/index.mjs [app-ssr] (ecmascript)");
 ;
 ;
-const API_BASE_URL = ("TURBOPACK compile-time value", "https://ishop-backend-2mld.onrender.com/api/") || "http://localhost:5000/api/";
+const API_BASE_URL = ("TURBOPACK compile-time value", "https://ishop-backend-2mld.onrender.com/api/") || "";
 const client = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$axios$2f$lib$2f$axios$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].create({
-    baseURL: API_BASE_URL,
+    baseURL: "http://localhost:5000/api/",
     withCredentials: true,
-    timeout: 12000
+    timeout: 30000
+});
+client.interceptors.response.use((response)=>response, async (error)=>{
+    const config = error.config;
+    const isGetRequest = config?.method?.toLowerCase() === "get";
+    const status = error.response?.status;
+    const shouldRetry = isGetRequest && !config.__retryCount && (!status || status >= 500 || error.code === "ECONNABORTED");
+    if (shouldRetry) {
+        config.__retryCount = 1;
+        await new Promise((resolve)=>setTimeout(resolve, 800));
+        return client(config);
+    }
+    return Promise.reject(error);
 });
 client.interceptors.request.use((config)=>{
     if ("TURBOPACK compile-time falsy", 0) //TURBOPACK unreachable

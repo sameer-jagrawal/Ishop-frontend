@@ -1,6 +1,7 @@
 import axios from "axios";
 import { cookies } from "next/headers";
 import { NextResponse } from "next/server";
+import { normalizeApiBaseUrl } from "@/utils/apiBaseUrl";
 
 export async function POST(request) {
   try {
@@ -15,14 +16,13 @@ export async function POST(request) {
     }
 
     const body = await request.json();
-    const baseURL =
-      process.env.NEXT_PUBLIC_API_BASE_URL ||
-      "https://ishop-backend-2mld.onrender.com/api/";
+    const baseURL = normalizeApiBaseUrl();
 
     const response = await axios.post(`${baseURL}user/address`, body, {
       headers: {
-        Authorization: token,
+        Authorization: `Bearer ${token}`,
       },
+      withCredentials: true,
     });
 
     return NextResponse.json(response.data, { status: response.status });

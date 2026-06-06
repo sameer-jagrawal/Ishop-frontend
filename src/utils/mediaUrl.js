@@ -1,7 +1,8 @@
+import { backendOriginFromApiBaseUrl } from "./apiBaseUrl";
+
 export const MEDIA_BASE_URL = (
   process.env.NEXT_PUBLIC_MEDIA_BASE_URL ||
-  process.env.NEXT_PUBLIC_API_BASE_URL?.replace(/\/api\/?$/, "") ||
-  "https://ishop-backend-2mld.onrender.com"
+  backendOriginFromApiBaseUrl()
 ).replace(/\/$/, "");
 
 function mediaUrl(folder, filename) {

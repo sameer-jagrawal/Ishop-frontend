@@ -1,5 +1,6 @@
 import axios from "axios";
 import { cookies } from "next/headers";
+import { normalizeApiBaseUrl } from "@/utils/apiBaseUrl";
 
 const getMe = async () => {
 
@@ -13,14 +14,15 @@ const getMe = async () => {
    }
 
    try {
-      const baseURL = process.env.NEXT_PUBLIC_API_BASE_URL || "https://ishop-backend-2mld.onrender.com/api/";
+      const baseURL = normalizeApiBaseUrl();
 
       const response = await axios.get(
          `${baseURL}user/get`,
          {
             headers: {
-               Authorization: token
+               Authorization: `Bearer ${token}`
             },
+            withCredentials: true,
             timeout: 12000,
          }
       );
