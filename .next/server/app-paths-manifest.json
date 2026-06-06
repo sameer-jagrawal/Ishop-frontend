@@ -14,6 +14,7 @@
   "/(admin)/admin/product/edit/[slug]/page": "app/(admin)/admin/product/edit/[slug]/page.js",
   "/(admin)/admin/product/page": "app/(admin)/admin/product/page.js",
   "/(admin)/admin/product/view/[id]/page": "app/(admin)/admin/product/view/[id]/page.js",
+  "/(admin)/admin/profile/page": "app/(admin)/admin/profile/page.js",
   "/(user)/about/page": "app/(user)/about/page.js",
   "/(user)/cart/page": "app/(user)/cart/page.js",
   "/(user)/checkout/[id]/page": "app/(user)/checkout/[id]/page.js",

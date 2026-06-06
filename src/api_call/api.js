@@ -80,7 +80,7 @@ async function  getProduct(query={}){
     if(query.is_top) filter.append("is_top",query.is_top);  
     if(query.is_hot) filter.append("is_hot",query.is_hot);  
     if(query.limit) filter.append("limit",query.limit);
-    if(query.page) filter.append("pages",query.page);
+    if(query.page) filter.append("page",query.page);
     if(query.category_slug) filter.append("category_slug",query.category_slug);
     if(query.min_price) filter.append("min_price",query.min_price);
     if(query.max_price) filter.append("max_price",query.max_price);

@@ -172,6 +172,12 @@
       "namedRegex": "^/admin/product/add(?:/)?$"
     },
     {
+      "page": "/admin/profile",
+      "regex": "^/admin/profile(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin/profile(?:/)?$"
+    },
+    {
       "page": "/admin-auth/admin/login",
       "regex": "^/admin\\-auth/admin/login(?:/)?$",
       "routeKeys": {},

@@ -14,6 +14,7 @@
   "/(admin)/admin/product/edit/[slug]/page": "/admin/product/edit/[slug]",
   "/(admin)/admin/product/page": "/admin/product",
   "/(admin)/admin/product/view/[id]/page": "/admin/product/view/[id]",
+  "/(admin)/admin/profile/page": "/admin/profile",
   "/(user)/about/page": "/about",
   "/(user)/cart/page": "/cart",
   "/(user)/checkout/[id]/page": "/checkout/[id]",
