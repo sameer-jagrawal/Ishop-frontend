@@ -19,6 +19,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { useEffect, useState } from "react";
 import { lsToCart } from "@/redux/features/cartslice";
 import { client } from "@/utils/helper";
+import { clearAuthSession, getAuthSession } from "@/lib/auth";
 
 const navItems = [
   { path: "/", name: "Home" },
@@ -50,9 +51,17 @@ export default function Header({ user }) {
     let mounted = true;
     async function loadUser() {
       try {
+        const session = await getAuthSession("user");
+        if (!session.authenticated) {
+          if (mounted) setCurrentUser(null);
+          if (typeof window !== "undefined") localStorage.removeItem("jwt");
+          return;
+        }
+
         const response = await client.get("user/get");
         if (mounted) setCurrentUser(response?.data || null);
       } catch {
+        await clearAuthSession("user");
         if (mounted) setCurrentUser(null);
       }
     }
@@ -76,6 +85,13 @@ export default function Header({ user }) {
     event?.preventDefault();
     const query = searchQuery.trim();
     router.push(query ? `/products?search=${encodeURIComponent(query)}` : "/products");
+  };
+
+  const goToLogin = async (event) => {
+    event.preventDefault();
+    setMobileMenuOpen(false);
+    await clearAuthSession("user");
+    router.push("/login");
   };
 
   return (
@@ -157,6 +173,7 @@ export default function Header({ user }) {
             ) : (
               <Link
                 href="/login"
+                onClick={goToLogin}
                 className="inline-flex items-center gap-2 rounded-full border border-gray-200 px-4 py-2 text-sm font-bold text-gray-800 transition hover:border-[#01A49E]/40 hover:bg-[#01A49E]/10 hover:text-[#01857f]"
               >
                 <CircleUser size={18} />
@@ -229,8 +246,8 @@ export default function Header({ user }) {
               ) : (
                 <Link
                   href="/login"
+                  onClick={goToLogin}
                   className="flex items-center gap-2 rounded-xl px-3 py-3 text-sm font-bold text-gray-800 transition hover:bg-[#01A49E]/10 hover:text-[#01857f]"
-                  onClick={() => setMobileMenuOpen(false)}
                 >
                   <CircleUser size={18} />
                   Log In

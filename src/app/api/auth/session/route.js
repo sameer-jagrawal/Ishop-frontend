@@ -38,6 +38,19 @@ export async function POST(request) {
   }
 }
 
+export async function GET(request) {
+  const { searchParams } = new URL(request.url);
+  const type = searchParams.get("type");
+  const cookie = searchParams.get("cookie");
+  const cookieName = cookie || COOKIE_NAMES[type] || COOKIE_NAMES.user;
+  const cookieStore = await cookies();
+
+  return NextResponse.json({
+    success: true,
+    authenticated: Boolean(cookieStore.get(cookieName)?.value),
+  });
+}
+
 export async function DELETE(request) {
   const { searchParams } = new URL(request.url);
   const type = searchParams.get("type");

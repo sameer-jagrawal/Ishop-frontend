@@ -1,6 +1,7 @@
 import axios from 'axios';
 import { toast } from 'react-toastify'
 import { normalizeApiBaseUrl } from './apiBaseUrl';
+import { clearAuthSession } from '@/lib/auth';
 
 const API_BASE_URL = normalizeApiBaseUrl();
 
@@ -16,6 +17,13 @@ client.interceptors.response.use(
     const config = error.config;
     const isGetRequest = config?.method?.toLowerCase() === "get";
     const status = error.response?.status;
+
+    if (typeof window !== "undefined" && status === 401 && !config?.__handledAuthFailure) {
+      config.__handledAuthFailure = true;
+      const isAdminRoute = window.location.pathname.startsWith("/admin");
+      await clearAuthSession(isAdminRoute ? "admin" : "user");
+    }
+
     const shouldRetry =
       isGetRequest &&
       !config.__retryCount &&
@@ -35,9 +43,7 @@ client.interceptors.request.use((config) => {
   if (typeof window !== "undefined") {
     const isAdminRoute = window.location.pathname.startsWith("/admin");
     const adminToken = JSON.parse(localStorage.getItem("admin") || "null")?.token;
-    const userToken = localStorage.getItem("jwt");
-    const token =
-      isAdminRoute ? adminToken || userToken : userToken || adminToken;
+    const token = isAdminRoute ? adminToken : null;
 
     if (token && token !== "undefined" && token !== "null") {
       config.headers.Authorization = `Bearer ${token}`;

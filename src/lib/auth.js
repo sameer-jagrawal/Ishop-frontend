@@ -9,7 +9,7 @@ export async function setAuthSession(token, type = "user") {
       const admin = JSON.parse(localStorage.getItem("admin") || "{}");
       localStorage.setItem("admin", JSON.stringify({ ...admin, token }));
     } else {
-      localStorage.setItem("jwt", token);
+      localStorage.removeItem("jwt");
     }
   }
 
@@ -39,4 +39,18 @@ export async function clearAuthSession(type = "user") {
     : `/api/auth/session?cookie=${encodeURIComponent(cookieName)}`;
 
   await fetch(url, { method: "DELETE" });
+}
+
+export async function getAuthSession(type = "user") {
+  const cookieName = SESSION_COOKIE_BY_TYPE[type] || type;
+  const res = await fetch(`/api/auth/session?cookie=${encodeURIComponent(cookieName)}`, {
+    method: "GET",
+    cache: "no-store",
+  });
+
+  if (!res.ok) {
+    return { authenticated: false };
+  }
+
+  return res.json();
 }
