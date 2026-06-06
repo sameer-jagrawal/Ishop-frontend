@@ -4,6 +4,7 @@ import Link from "next/link";
 import { MapPin, Plus, Check, Pencil, Trash2 } from "lucide-react";
 import { useState } from "react";
 import DeleteBtn from "../../admin components/DeleteBtn";
+import { client, notify } from "@/utils/helper";
 import { useRouter } from "next/navigation";
 
 export default function AddressPage({user}) {
@@ -18,6 +19,17 @@ export default function AddressPage({user}) {
     e.stopPropagation();
     // UI only (no logic)
     console.log("Delete address:", id);
+  };
+
+  const setDefaultAddress = async (e, id) => {
+    e.stopPropagation();
+    try {
+      const response = await client.put(`user/address/default/${id}`);
+      notify(response.data.masg, response.data.success);
+      router.refresh();
+    } catch (error) {
+      notify(error?.response?.data?.masg || "Default address not updated", false);
+    }
   };
 
   return (
@@ -60,6 +72,11 @@ export default function AddressPage({user}) {
                       <span className="text-xs md:text-sm font-medium bg-[#01A49E]/10 text-[#01A49E] px-3 py-1 rounded-full">
                         {item?.type}
                       </span>
+                      {item?.isDefault && (
+                        <span className="text-xs md:text-sm font-medium bg-emerald-50 text-emerald-600 px-3 py-1 rounded-full">
+                          Default
+                        </span>
+                      )}
                     </div>
 
                     <div className="bg-white border border-gray-200 rounded-2xl p-3 md:p-5 shadow-sm hover:shadow-md transition">
@@ -96,6 +113,15 @@ export default function AddressPage({user}) {
                     <Pencil size={13} />
                     Edit
                   </button>
+                  {!item?.isDefault && (
+                    <button
+                      onClick={(e) => setDefaultAddress(e, item?._id)}
+                      className="inline-flex items-center gap-1.5 px-2 md:px-3 py-1.5 rounded-lg text-xs md:text-sm bg-emerald-50 text-emerald-700 hover:bg-emerald-100 transition"
+                    >
+                      <Check size={13} />
+                      Default
+                    </button>
+                  )}
                   <DeleteBtn type={"user/address"} id={item?._id} />
                 </div>
               </div>

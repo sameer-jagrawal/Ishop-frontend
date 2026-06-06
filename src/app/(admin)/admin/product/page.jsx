@@ -10,8 +10,10 @@ import { productImageUrl } from "@/utils/mediaUrl";
 export const dynamic = "force-dynamic";
 export const revalidate = 0;
 
-export default async function UserManagementTable() {
-  const data = await getProduct();
+export default async function UserManagementTable({ searchParams }) {
+  const params = await searchParams;
+  const search = String(params?.search || "").trim();
+  const data = await getProduct({ search });
   const Brands = data?.data || [];
   // console.log("console", Brands[0].brandId);
   // console.log(Brands.thumbnail)
@@ -23,7 +25,9 @@ export default async function UserManagementTable() {
       <div className="flex items-center justify-between mb-6 md:mb-8">
         <div>
           <h1 className="text-xl md:text-3xl font-semibold text-gray-800">Products</h1>
-          <p className="text-xs md:text-sm text-gray-500 mt-1">Manage Products</p>
+          <p className="text-xs md:text-sm text-gray-500 mt-1">
+            {search ? `Search results for "${search}"` : "Manage Products"}
+          </p>
         </div>
 
         <Link href={"product/add"}>

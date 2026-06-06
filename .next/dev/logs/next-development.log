@@ -174,3 +174,30 @@ https://nextjs.org/docs/messages/module-not-found
 [04:09:19.424] Server  LOG     ✓ Finished filesystem cache database compaction in 26.8s
 [04:09:27.385] Server  LOG     ✓ Compiled in 463ms
 [04:12:38.679] Server  LOG     ✓ Finished writing to filesystem cache in 39.2s
+[05:02:32.714] Server  LOG     ✓ Compiled in 1843ms
+[05:03:12.891] Server  LOG     ✓ Finished filesystem cache database compaction in 32.4s
+[05:03:12.960] Server  LOG     ✓ Finished writing to filesystem cache in 30.5s
+[05:04:18.525] Server  WARN    ⚠ Fast Refresh had to perform a full reload when ./node_modules/next/dist/client/image-component.js changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[05:04:28.869] Server  LOG     ✓ Finished writing to filesystem cache in 18.1s
+[05:04:41.115] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[05:04:42.088] Server  LOG     ✓ Compiled in 3.8s
+[05:05:21.034] Server  LOG     ✓ Finished writing to filesystem cache in 15.0s
+[05:05:35.256] Server  LOG     ✓ Finished writing to filesystem cache in 11.6s
+[05:06:16.154] Server  LOG     ✓ Finished filesystem cache database compaction in 34.2s
+[05:06:16.493] Server  LOG     ✓ Finished writing to filesystem cache in 17.6s
+[05:08:36.410] Server  LOG     ✓ Compiled in 2.4s
+[05:08:46.073] Server  LOG     ✓ Finished writing to filesystem cache in 11.3s
+[05:09:34.217] Server  LOG     ✓ Compiled in 3.2s
+[05:10:08.681] Server  LOG     ✓ Compiled in 1105ms
+[05:11:36.527] Server  LOG     ✓ Finished filesystem cache database compaction in 80s
+[05:11:37.113] Server  LOG     ✓ Finished writing to filesystem cache in 66s
+[05:11:53.982] Server  LOG     ✓ Finished writing to filesystem cache in 14.9s
+[05:13:44.454] Server  LOG     ✓ Compiled in 11.2s
+[05:14:00.479] Server  LOG     ✓ Compiled in 1171ms
+[05:14:31.125] Server  LOG     ✓ Finished filesystem cache database compaction in 25.5s
+[05:14:55.879] Server  LOG     ✓ Finished filesystem cache database compaction in 24.5s
+[05:18:16.729] Server  LOG     ✓ Finished writing to filesystem cache in 63s
+[05:20:52.879] Server  LOG     ✓ Finished writing to filesystem cache in 63s
+[05:23:17.117] Server  LOG     ✓ Finished filesystem cache database compaction in 56s
+[05:26:43.250] Server  LOG     ✓ Finished writing to filesystem cache in 60s
+[05:29:33.311] Server  LOG     ✓ Finished writing to filesystem cache in 47s

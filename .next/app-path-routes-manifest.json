@@ -15,6 +15,7 @@
   "/(admin)/admin/product/page": "/admin/product",
   "/(admin)/admin/product/view/[id]/page": "/admin/product/view/[id]",
   "/(admin)/admin/profile/page": "/admin/profile",
+  "/(admin)/admin/users/page": "/admin/users",
   "/(user)/about/page": "/about",
   "/(user)/cart/page": "/cart",
   "/(user)/checkout/[id]/page": "/checkout/[id]",

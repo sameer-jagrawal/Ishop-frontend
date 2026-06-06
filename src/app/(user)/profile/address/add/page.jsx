@@ -18,6 +18,7 @@ export default function AddAddressPage() {
     state: "",
     postalCode: "",
     country: "India",
+    isDefault: false,
   });
 
   const [loader,setLoader] = useState(false)
@@ -203,6 +204,17 @@ export default function AddAddressPage() {
                     disabled
                   />
                 </div>
+
+                <label className="flex w-fit items-center gap-2 text-sm text-gray-600">
+                  <input
+                    type="checkbox"
+                    name="isDefault"
+                    checked={form.isDefault}
+                    onChange={(e) => setForm({ ...form, isDefault: e.target.checked })}
+                    className="h-4 w-4 accent-[#01A49E]"
+                  />
+                  Set as default delivery address
+                </label>
       
                 {/* Actions */}
                 <div className="flex justify-end gap-3 pt-4">

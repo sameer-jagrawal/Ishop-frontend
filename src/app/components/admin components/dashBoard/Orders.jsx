@@ -15,16 +15,29 @@ function formatDate(dateValue) {
   });
 }
 
-export default async function RecentOrdersTable() {
+export default async function RecentOrdersTable({ search = "" }) {
   const dashboardRes = await getDashboardData();
-  const orders = dashboardRes?.data?.recentOrders || [];
+  const query = String(search || "").trim().toLowerCase();
+  const orders = (dashboardRes?.data?.recentOrders || []).filter((order) => {
+    if (!query) return true;
+    return [
+      order?._id,
+      order?.user?.name,
+      order?.user?.email,
+      order?.paymentMethod,
+      order?.paymentStatus,
+      order?.orderStatus,
+    ].some((value) => String(value || "").toLowerCase().includes(query));
+  });
 
   return (
     <div className="mt-4 overflow-x-auto border border-gray-200 bg-white p-4">
       <div className="mb-5 flex items-center justify-between gap-3">
         <div>
           <h2 className="text-lg font-medium text-gray-900">Recent Orders</h2>
-          <p className="mt-1 text-sm text-gray-500">Latest customer purchases</p>
+          <p className="mt-1 text-sm text-gray-500">
+            {query ? `Search results for "${search}"` : "Latest customer purchases"}
+          </p>
         </div>
       </div>
 

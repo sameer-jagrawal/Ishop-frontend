@@ -9,12 +9,19 @@ import { categoryImageUrl } from "@/utils/mediaUrl";
 export const dynamic = "force-dynamic";
 export const revalidate = 0;
 
-export default async function UserManagementTable() {
+export default async function UserManagementTable({ searchParams }) {
+  const params = await searchParams;
+  const search = String(params?.search || "").trim().toLowerCase();
   
-  const data  = await getCategories();
+  const data  = await getCategories({ limit: 100 });
   // console.log(data)
   // return
-  const categories = data?.data;
+  const categories = (data?.data || []).filter((category) => {
+    if (!search) return true;
+    return [category.name, category.slug].some((value) =>
+      String(value || "").toLowerCase().includes(search)
+    );
+  });
   console.log(categories,'categories data')
   const meta = data?.meta;
   // console.log(meta)
@@ -27,7 +34,7 @@ export default async function UserManagementTable() {
             Product Categories
           </h1>
           <p className="text-xs md:text-sm text-gray-500 mt-1">
-            Manage your product categories
+            {search ? `Search results for "${search}"` : "Manage your product categories"}
           </p>
         </div>
 

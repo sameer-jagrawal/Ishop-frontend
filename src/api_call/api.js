@@ -157,6 +157,21 @@ async function  getAllOrders(){
     }
     
 }
+async function getAllUsers(query = {}){
+    const filter = new URLSearchParams()
+    if(query.search) filter.append("search",query.search);
+
+    try {
+    const queryString = filter.toString();
+    const response = await client.get(queryString ? `user/all?${queryString}` : "user/all")
+    return response?.data 
+        
+    } catch (error) {
+        console.log(error)
+        return { success: false, data: { users: [], analytics: {} } }
+    }
+    
+}
 async function getDashboardData(){
     try {
     const response = await client.get("dashboard")
@@ -231,5 +246,5 @@ async function  getSingleOrder(id){
     
 }
 
-export{getCategories,getBrand,getColor,getSelectData,getProduct,getAllOrders,getDashboardData,getSingleOrder}
+export{getCategories,getBrand,getColor,getSelectData,getProduct,getAllOrders,getAllUsers,getDashboardData,getSingleOrder}
 

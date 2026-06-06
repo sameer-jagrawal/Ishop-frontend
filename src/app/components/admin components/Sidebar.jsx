@@ -7,6 +7,7 @@ import { FaProductHunt } from "react-icons/fa";
 import { IoMdColorPalette } from "react-icons/io";
 import { IoMdSettings } from "react-icons/io";
 import { MdBusiness } from "react-icons/md";
+import { FaUsers } from "react-icons/fa";
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
@@ -15,6 +16,7 @@ const pages = [
   { name: "Category", path: "/admin/category", icon: <MdCategory /> },
   { name: "Brands", path: "/admin/brand", icon: <MdBusiness /> },
   { name: "Products", path: "/admin/product", icon: <FaProductHunt /> },
+  { name: "Users", path: "/admin/users", icon: <FaUsers /> },
   { name: "Color", path: "/admin/color", icon: <IoMdColorPalette /> },
   { name: "Setting", path: "/admin/setting", icon: <IoMdSettings /> },
 ]

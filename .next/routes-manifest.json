@@ -178,6 +178,12 @@
       "namedRegex": "^/admin/profile(?:/)?$"
     },
     {
+      "page": "/admin/users",
+      "regex": "^/admin/users(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin/users(?:/)?$"
+    },
+    {
       "page": "/admin-auth/admin/login",
       "regex": "^/admin\\-auth/admin/login(?:/)?$",
       "routeKeys": {},

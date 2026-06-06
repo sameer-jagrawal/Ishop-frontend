@@ -625,6 +625,10 @@
     inset-inline-start: var(--spacing);
   }
 
+  .end {
+    inset-inline-end: var(--spacing);
+  }
+
   .-top-1 {
     top: calc(var(--spacing) * -1);
   }
@@ -1310,6 +1314,10 @@
 
   .w-40 {
     width: calc(var(--spacing) * 40);
+  }
+
+  .w-44 {
+    width: calc(var(--spacing) * 44);
   }
 
   .w-48 {
@@ -3585,6 +3593,12 @@
   }
 
   @media (hover: hover) {
+    .hover\:bg-emerald-100:hover {
+      background-color: var(--color-emerald-100);
+    }
+  }
+
+  @media (hover: hover) {
     .hover\:bg-gray-50:hover {
       background-color: var(--color-gray-50);
     }
@@ -4516,6 +4530,12 @@
   }
 
   @media (min-width: 48rem) {
+    .md\:w-96 {
+      width: calc(var(--spacing) * 96);
+    }
+  }
+
+  @media (min-width: 48rem) {
     .md\:w-100 {
       width: calc(var(--spacing) * 100);
     }
@@ -5149,6 +5169,12 @@
   }
 
   @media (min-width: 80rem) {
+    .xl\:col-span-3 {
+      grid-column: span 3 / span 3;
+    }
+  }
+
+  @media (min-width: 80rem) {
     .xl\:flex {
       display: flex;
     }
@@ -5169,6 +5195,12 @@
   @media (min-width: 80rem) {
     .xl\:grid-cols-\[1fr_340px\] {
       grid-template-columns: 1fr 340px;
+    }
+  }
+
+  @media (min-width: 80rem) {
+    .xl\:grid-cols-\[320px_1fr_260px\] {
+      grid-template-columns: 320px 1fr 260px;
     }
   }
 

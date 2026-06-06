@@ -2,11 +2,13 @@ import AdminDashboardStats from '@/app/components/admin components/dashBoard/Das
 import RecentOrdersTable from '@/app/components/admin components/dashBoard/Orders'
 import React from 'react'
 
-export default function Page() {
+export default async function Page({ searchParams }) {
+  const params = await searchParams;
+  const search = params?.search || "";
   return (
     <div className=''>
       <AdminDashboardStats/>
-      <RecentOrdersTable/>
+      <RecentOrdersTable search={search}/>
     </div>
   )
 }

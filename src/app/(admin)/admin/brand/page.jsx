@@ -7,10 +7,19 @@ import DeleteBtn from "@/app/components/admin components/DeleteBtn";
 import { brandImageUrl } from "@/utils/mediaUrl";
 import BrandStatusDropdown from "@/app/components/admin components/BrandStatusDropdown";
 
-export default async function UserManagementTable() {
+export default async function UserManagementTable({ searchParams }) {
+  const params = await searchParams;
+  const search = String(params?.search || "").trim().toLowerCase();
   
-  const data  = await getBrand();
-  const Brands = data?.data  || []
+  const data  = await getBrand({ limit: 100 });
+  const Brands = (data?.data  || []).filter((brand) => {
+    if (!search) return true;
+    return [
+      brand.name,
+      brand.slug,
+      ...(brand.categoryId || []).map((category) => category.name),
+    ].some((value) => String(value || "").toLowerCase().includes(search));
+  })
   // console.log(Brands)
   const meta = data?.meta || {}
   return (
@@ -22,7 +31,7 @@ export default async function UserManagementTable() {
             Brand
           </h1>
           <p className="text-xs md:text-sm text-gray-500 mt-1">
-            Manage Brands
+            {search ? `Search results for "${search}"` : "Manage Brands"}
           </p>
         </div>
 

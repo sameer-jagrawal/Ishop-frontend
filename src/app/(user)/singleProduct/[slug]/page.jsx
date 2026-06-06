@@ -2,6 +2,7 @@ import AddToCartButton from "@/app/components/user components/Store/AddToCart";
 import ProductGallery from "@/app/components/user components/Store/ProductGallery";
 import { getMe } from "@/api_call/serverApi";
 import { client } from "@/utils/helper";
+import Link from "next/link";
 import {
   BadgeCheck,
   ChevronRight,
@@ -49,6 +50,10 @@ export default async function Page({ params }) {
   const productRes = await client.get(`product/slug/${slug}`);
   const product = productRes?.data?.data || {};
   const user = await getMe();
+  const profile = user?.data;
+  const defaultAddress =
+    profile?.addresses?.find((address) => address.isDefault) ||
+    profile?.addresses?.[0];
 
   const finalPrice = Number(product?.final_price || 0);
   const originalPrice = Number(product?.original_price || 0);
@@ -141,13 +146,23 @@ export default async function Page({ params }) {
                 Delivery details
               </h2>
               <div className="rounded-2xl overflow-hidden border border-gray-200 bg-white">
-                {/* Address */}{" "}
                 <div className="flex items-center justify-between px-4 py-3 bg-slate-50 border-b border-gray-200">
                   <div className="flex items-center gap-2 ">
                     <MapPin size={17} className="text-gray-500 flex-shrink-0" />
-                    <p className="text-[13px] text-gray-600 ">
-                      Kirana king Shambu lal Jagrawal, Kotkhwada, Jaipur,...
-                    </p>
+                    {defaultAddress ? (
+                      <div className="min-w-0">
+                        <p className="truncate text-[13px] text-gray-600">
+                          {defaultAddress.fullName}, {defaultAddress.addressLine1}, {defaultAddress.city}, {defaultAddress.state} - {defaultAddress.postalCode}
+                        </p>
+                        <Link href="/profile/address" className="mt-1 inline-block text-[12px] font-medium text-blue-600 hover:underline">
+                          Change delivery address
+                        </Link>
+                      </div>
+                    ) : (
+                      <Link href="/profile/address" className="text-[13px] font-medium text-blue-600 hover:underline">
+                        Add delivery address
+                      </Link>
+                    )}
                   </div>
                 </div>
                 {/* Delivery date */}

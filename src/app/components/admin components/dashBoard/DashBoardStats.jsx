@@ -1,4 +1,5 @@
 import { getDashboardData } from "@/api_call/api";
+import { PieChart } from "@/app/components/admin components/AdminCharts";
 import {
   Boxes,
   CreditCard,
@@ -146,7 +147,11 @@ export default async function AdminDashboardStats() {
 
         <div className="grid gap-4">
           <Breakdown title="Order Status" items={charts.statusBreakdown || []} />
-          <Breakdown title="Payment Method" items={charts.paymentBreakdown || []} />
+          <div className="border border-gray-200 bg-white p-4">
+            <h2 className="text-base font-medium text-gray-900">Payment Method</h2>
+            <p className="mb-4 mt-1 text-sm text-gray-500">COD vs online orders</p>
+            <PieChart data={charts.paymentBreakdown || []} />
+          </div>
         </div>
       </div>
 
