@@ -23,9 +23,28 @@ export default function Notification() {
   const [notifications, setNotifications] = useState([]);
 
   useEffect(() => {
-    const refresh = () => setNotifications(readNotifications());
+    const markAllAsRead = (notifyBell = true) => {
+      const currentNotifications = readNotifications();
+      const hasUnread = currentNotifications.some((item) => !item.read);
+      const nextNotifications = currentNotifications.map((item) => ({
+        ...item,
+        read: true,
+      }));
 
-    refresh();
+      if (hasUnread) {
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(nextNotifications));
+      }
+
+      setNotifications(nextNotifications);
+
+      if (hasUnread && notifyBell) {
+        window.dispatchEvent(new Event("admin-notifications-updated"));
+      }
+    };
+
+    const refresh = () => markAllAsRead(false);
+
+    markAllAsRead();
     window.addEventListener("admin-notifications-updated", refresh);
 
     return () => {

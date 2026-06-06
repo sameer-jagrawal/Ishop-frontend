@@ -105,3 +105,14 @@ It is disabled in production builds, so you don't need to worry about that.
 [02:11:16.354] Server  LOG     ✓ Finished filesystem cache database compaction in 15.9s
 [02:12:15.586] Server  LOG     ✓ Finished filesystem cache database compaction in 46s
 [02:12:15.639] Server  LOG     ✓ Finished writing to filesystem cache in 42s
+[03:09:19.416] Server  LOG     ✓ Compiled in 10.1s
+[03:11:10.783] Server  LOG     ✓ Finished writing to filesystem cache in 61s
+[03:11:11.173] Server  LOG     ✓ Compiled in 58.6s
+[03:11:48.323] Server  LOG     ✓ Finished writing to filesystem cache in 60s
+[03:11:53.879] Server  LOG     ✓ Compiled in 13.4s
+[03:11:59.544] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[03:12:29.222] Server  LOG     ✓ Compiled in 2.4s
+[03:12:57.921] Server  LOG     ✓ Finished filesystem cache database compaction in 56s
+[03:12:58.339] Server  LOG     ✓ Finished writing to filesystem cache in 27.2s
+[03:13:20.599] Server  LOG     ✓ Finished writing to filesystem cache in 20.2s
+[03:18:13.917] Server  LOG     ✓ Finished writing to filesystem cache in 62s

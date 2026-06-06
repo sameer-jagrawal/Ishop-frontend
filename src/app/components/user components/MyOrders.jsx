@@ -1,120 +1,107 @@
-import { getAllOrders } from "@/api_call/api";
-import { client } from "@/utils/helper";
-import React from "react";
+import { getMyOrders } from "@/api_call/serverApi";
 import { productImageUrl } from "@/utils/mediaUrl";
 
+const money = new Intl.NumberFormat("en-IN", {
+  style: "currency",
+  currency: "INR",
+  maximumFractionDigits: 0,
+});
+
+function formatDate(dateValue) {
+  if (!dateValue) return "Not available";
+
+  return new Date(dateValue).toLocaleDateString("en-IN", {
+    day: "2-digit",
+    month: "short",
+    year: "numeric",
+  });
+}
+
 export default async function MyOrdersPage() {
-  const ordersRes = await getAllOrders();
-  console.log(ordersRes);
+  const ordersRes = await getMyOrders();
+  const orders = ordersRes?.data?.orders || [];
 
-  const products = ordersRes?.data?.orders.flatMap((order) => order.items);
-  console.log(products)
-
-  // console.log(products)
-
-  // return;
   return (
-    <div className="min-h-screen bg-gray-100 py-10 px-4">
-      <div className="max-w-6xl mx-auto">
-        {/* HEADER */}
-        <div className="mb-8">
-          <h1 className="text-3xl font-bold text-gray-800">My Orders</h1>
-
-          <p className="text-gray-500 mt-2">View and track all your orders</p>
+    <main className="min-h-screen bg-gray-50 px-4 py-8">
+      <div className="mx-auto max-w-6xl">
+        <div className="mb-6">
+          <h1 className="text-2xl font-medium text-gray-900">My Orders</h1>
+          <p className="mt-1 text-sm text-gray-500">View your recent purchases and order status</p>
         </div>
 
-        {/* ORDERS */}
-        <div className="space-y-6">
-          {ordersRes?.data?.orders?.map((order, index) => (
-            <div
-              key={index}
-              className="bg-white rounded-3xl shadow-sm border border-gray-200 overflow-hidden"
-            >
-              {/* TOP */}
-              <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 border-b p-6 bg-gray-50">
-                <div>
-                  <h2 className="text-lg font-bold text-gray-800">
-                    Order {order._id}
-                  </h2>
-
-                  <p className="text-sm text-gray-500 mt-1">
-                    Placed on {order.date}
-                  </p>
+        <div className="space-y-4">
+          {orders.map((order) => (
+            <section key={order._id} className="border border-gray-200 bg-white">
+              <div className="flex flex-col gap-3 border-b border-gray-100 bg-gray-50 p-4 md:flex-row md:items-center md:justify-between">
+                <div className="min-w-0">
+                  <p className="truncate text-sm text-gray-500">Order ID: {order._id}</p>
+                  <p className="mt-1 text-sm text-gray-700">Placed on {formatDate(order.createdAt)}</p>
                 </div>
 
-                <div className="flex flex-wrap gap-3 items-center">
-                  <span
-                    className={`px-4 py-2 rounded-full text-sm font-semibold ${
-                      order.status === "Delivered"
-                        ? "bg-green-100 text-green-700"
-                        : "bg-yellow-100 text-yellow-700"
-                    }`}
-                  >
-                    {order.status}
+                <div className="flex flex-wrap items-center gap-2 text-sm">
+                  <span className="border border-gray-200 bg-white px-3 py-1 capitalize text-gray-700">
+                    {order.orderStatus?.replaceAll("_", " ")}
                   </span>
-
-                  <span className="bg-sky-100 text-sky-700 px-4 py-2 rounded-full text-sm font-semibold">
-                    {order?.paymentMethod}
+                  <span className="border border-gray-200 bg-white px-3 py-1 capitalize text-gray-700">
+                    {order.paymentMethod}
                   </span>
-
-                  <span className="text-xl font-bold text-[#01A49E]">
-                    ${order?.totalAmount}
+                  <span className="text-base font-medium text-[#01A49E]">
+                    {money.format(order.totalAmount || 0)}
                   </span>
                 </div>
               </div>
 
-              {/* PRODUCTS */}
-              <div className="p-6 space-y-5">
-                {products.map((item, idx) => (
-                  <div
-                    key={idx}
-                    className="flex flex-col sm:flex-row gap-5 sm:items-center justify-between border border-gray-100 rounded-2xl p-4"
-                  >
-                    <div className="flex items-center gap-4">
-                      <img
-                        src={productImageUrl(item?.product_id?.thumbnail)}
-                        alt={item?.product_id?.name}
-                        className="w-24 h-24 object-cover rounded-2xl border"
-                      />
+              <div className="divide-y divide-gray-100">
+                {order.items?.map((item, index) => {
+                  const product = item.product_id;
+                  const thumbnail = product?.thumbnail;
 
-                      <div>
-                        <h3 className="font-semibold text-lg text-gray-800">
-                          {item?.product_id?.name}
-                        </h3>
+                  return (
+                    <div key={`${order._id}-${product?._id || index}`} className="flex flex-col gap-4 p-4 sm:flex-row sm:items-center sm:justify-between">
+                      <div className="flex items-center gap-4">
+                        <div className="h-20 w-20 overflow-hidden border border-gray-200 bg-gray-50">
+                          {thumbnail ? (
+                            <img
+                              src={productImageUrl(thumbnail)}
+                              alt={product?.name || "Product"}
+                              className="h-full w-full object-cover"
+                            />
+                          ) : (
+                            <div className="grid h-full w-full place-items-center text-xs text-gray-400">
+                              No image
+                            </div>
+                          )}
+                        </div>
 
-                        <p className="text-gray-500 text-sm mt-1">
-                          Quantity: {item?.qty}
+                        <div>
+                          <h2 className="text-sm font-medium text-gray-900">
+                            {product?.name || "Product unavailable"}
+                          </h2>
+                          <p className="mt-1 text-sm text-gray-500">Quantity: {item.qty}</p>
+                        </div>
+                      </div>
+
+                      <div className="text-left sm:text-right">
+                        <p className="text-sm text-gray-500">Item price</p>
+                        <p className="mt-1 text-base font-medium text-gray-900">
+                          {money.format(item.price || 0)}
                         </p>
                       </div>
                     </div>
-
-                    <div className="text-right">
-                      <p className="text-xl font-bold text-[#01A49E]">
-                        ${item?.price}
-                      </p>
-
-                      <button className="mt-3 px-5 py-2 rounded-xl border border-[#01A49E] text-[#01A49E] hover:bg-[#01A49E] hover:text-white transition-all">
-                        View Details
-                      </button>
-                    </div>
-                  </div>
-                ))}
+                  );
+                })}
               </div>
-
-              {/* FOOTER */}
-              <div className="border-t p-6 flex flex-col sm:flex-row gap-4 justify-between items-center bg-white">
-                <button className="w-full sm:w-auto px-6 py-3 rounded-xl bg-[#01A49E] text-white font-semibold hover:opacity-90 transition-all">
-                  Track Order
-                </button>
-
-                <button className="w-full sm:w-auto px-6 py-3 rounded-xl border border-red-500 text-red-500 font-semibold hover:bg-red-500 hover:text-white transition-all">
-                  Cancel Order
-                </button>
-              </div>
-            </div>
+            </section>
           ))}
         </div>
+
+        {!orders.length && (
+          <div className="border border-gray-200 bg-white p-10 text-center">
+            <p className="text-base font-medium text-gray-900">No orders yet</p>
+            <p className="mt-2 text-sm text-gray-500">Your orders will appear here after checkout.</p>
+          </div>
+        )}
       </div>
-    </div>
+    </main>
   );
 }

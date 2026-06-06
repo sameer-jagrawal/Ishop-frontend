@@ -244,13 +244,6 @@ export default function Header({ user }) {
       <div className="bg-[#01A49E]">
         <div className="mx-auto flex max-w-7xl flex-col gap-3 px-4 py-3 md:px-6 lg:flex-row lg:items-center lg:justify-between">
           <form onSubmit={submitSearch} className="flex min-h-12 flex-1 items-center gap-3 rounded-full bg-white px-4 shadow-sm ring-1 ring-white/20 transition focus-within:ring-4 focus-within:ring-white/25">
-            <button
-              type="button"
-              className="hidden items-center gap-2 rounded-full bg-gray-50 px-3 py-2 text-sm font-semibold text-gray-700 transition hover:bg-[#01A49E]/10 hover:text-[#01857f] sm:inline-flex"
-            >
-              All Categories
-              <ChevronDown size={15} />
-            </button>
             <input
               className="min-w-0 flex-1 bg-transparent text-sm font-medium text-gray-800 outline-none placeholder:text-gray-400"
               type="text"

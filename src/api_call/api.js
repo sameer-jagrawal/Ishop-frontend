@@ -163,7 +163,58 @@ async function getDashboardData(){
         
     } catch (error) {
         console.log(error)
-        return { success: false, data: null }
+        try {
+            const [ordersRes, productsRes] = await Promise.all([
+                getAllOrders(),
+                getProduct({ limit: 1000 }),
+            ]);
+            const orders = ordersRes?.data?.orders || [];
+            const products = productsRes?.data || [];
+            const totalRevenue = orders.reduce((sum, order) => sum + Number(order?.totalAmount || 0), 0);
+            const statusMap = orders.reduce((acc, order) => {
+                const status = order?.orderStatus || "placed";
+                acc[status] = (acc[status] || 0) + 1;
+                return acc;
+            }, {});
+            const paymentMap = orders.reduce((acc, order) => {
+                const payment = order?.paymentMethod || "unknown";
+                acc[payment] = (acc[payment] || 0) + 1;
+                return acc;
+            }, {});
+            const revenueMap = orders.slice(0, 20).reduce((acc, order) => {
+                const date = new Date(order?.createdAt).toISOString().slice(0, 10);
+                acc[date] = (acc[date] || 0) + Number(order?.totalAmount || 0);
+                return acc;
+            }, {});
+
+            return {
+                success: true,
+                data: {
+                    stats: {
+                        totalRevenue,
+                        averageOrderValue: orders.length ? totalRevenue / orders.length : 0,
+                        totalOrders: orders.length,
+                        totalProducts: products.length,
+                        activeProducts: products.filter((product) => product?.status && product?.stock).length,
+                        totalCustomers: new Set(orders.map((order) => order?.user?._id || order?.user?.email).filter(Boolean)).size,
+                        totalCategories: 0,
+                        totalBrands: 0,
+                        paidOrdersCount: orders.filter((order) => order?.paymentStatus === "paid").length,
+                        pendingPaymentCount: orders.filter((order) => order?.paymentStatus === "pending").length,
+                        deliveredOrdersCount: orders.filter((order) => order?.orderStatus === "delivered").length,
+                    },
+                    recentOrders: orders.slice(0, 8),
+                    charts: {
+                        revenueByDay: Object.entries(revenueMap).map(([date, revenue]) => ({ _id: date, revenue })),
+                        statusBreakdown: Object.entries(statusMap).map(([_id, count]) => ({ _id, count })),
+                        paymentBreakdown: Object.entries(paymentMap).map(([_id, count]) => ({ _id, count })),
+                    },
+                },
+            };
+        } catch (fallbackError) {
+            console.log(fallbackError)
+            return { success: false, data: null }
+        }
     }
     
 }

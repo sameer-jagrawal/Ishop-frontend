@@ -27,7 +27,7 @@ export default function AdminNotificationBell() {
 
   useEffect(() => {
     const refreshCount = () => {
-      setCount(readNotifications().length);
+      setCount(readNotifications().filter((item) => !item.read).length);
     };
 
     const joinAdminRoom = () => {
