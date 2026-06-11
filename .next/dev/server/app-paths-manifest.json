@@ -1,12 +1,5 @@
 {
-  "/(user)/cart/page": "app/(user)/cart/page.js",
-  "/(user)/checkout/page": "app/(user)/checkout/page.js",
-  "/(user)/page": "app/(user)/page.js",
-  "/(user)/products/page": "app/(user)/products/page.js",
-  "/(user)/profile/page": "app/(user)/profile/page.js",
-  "/(user)/singleProduct/[slug]/page": "app/(user)/singleProduct/[slug]/page.js",
-  "/(user-auth)/login/page": "app/(user-auth)/login/page.js",
+  "/(user-auth)/forgot-password/page": "app/(user-auth)/forgot-password/page.js",
   "/(user-auth)/otp-verify/page": "app/(user-auth)/otp-verify/page.js",
-  "/(user-auth)/register/page": "app/(user-auth)/register/page.js",
-  "/api/auth/session/route": "app/api/auth/session/route.js"
+  "/(user-auth)/reset-password/page": "app/(user-auth)/reset-password/page.js"
 }

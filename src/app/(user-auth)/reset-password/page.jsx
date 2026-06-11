@@ -107,9 +107,9 @@ function ResetPasswordContent() {
 
   return (
     <div className="min-h-screen bg-[#f4f7f7] flex items-center justify-center px-4 py-10">
-      <div className="w-full max-w-xl bg-white rounded-[28px] shadow-lg p-8 md:p-10 border border-gray-100">
+      <div className="w-full max-w-xl bg-white rounded-[28px] shadow-lg p-6 sm:p-8 md:p-10 border border-gray-100">
         <div className="text-center mb-8">
-          <h1 className="text-4xl font-bold text-gray-900 tracking-tight">
+          <h1 className="text-3xl md:text-4xl font-bold text-gray-900 tracking-tight">
             Reset Password
           </h1>
           <p className="text-gray-500 mt-3 text-sm md:text-base">
@@ -121,7 +121,7 @@ function ResetPasswordContent() {
         </div>
 
         <form onSubmit={submitHandler} className="space-y-6">
-          <div className="flex items-center justify-center gap-3 md:gap-4">
+          <div className="flex items-center justify-center gap-2 sm:gap-3 md:gap-4">
             {otp.map((digit, index) => (
               <input
                 key={index}
@@ -131,7 +131,7 @@ function ResetPasswordContent() {
                 onChange={(e) => handleOtpChange(e.target.value, index)}
                 onKeyDown={(e) => handleKeyDown(e, index)}
                 maxLength={1}
-                className="w-12 h-14 md:w-14 md:h-16 text-center text-xl md:text-2xl font-semibold border border-gray-300 rounded-2xl outline-none focus:ring-2 focus:ring-[#01A49E] focus:border-transparent transition"
+                className="w-10 h-12 sm:w-12 sm:h-14 md:w-14 md:h-16 text-center text-xl md:text-2xl font-semibold border border-gray-300 rounded-2xl outline-none focus:ring-2 focus:ring-[#01A49E] focus:border-transparent transition"
               />
             ))}
           </div>

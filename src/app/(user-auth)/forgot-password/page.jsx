@@ -36,9 +36,9 @@ export default function ForgotPasswordPage() {
 
   return (
     <div className="min-h-screen bg-[#f4f7f7] flex items-center justify-center px-4 py-10">
-      <div className="w-full max-w-xl bg-white rounded-[28px] shadow-lg p-8 md:p-10 border border-gray-100">
+      <div className="w-full max-w-xl bg-white rounded-[28px] shadow-lg p-6 sm:p-8 md:p-10 border border-gray-100">
         <div className="text-center mb-8">
-          <h1 className="text-4xl font-bold text-gray-900 tracking-tight">
+          <h1 className="text-3xl md:text-4xl font-bold text-gray-900 tracking-tight">
             Forgot Password
           </h1>
           <p className="text-gray-500 mt-3 text-sm md:text-base">
