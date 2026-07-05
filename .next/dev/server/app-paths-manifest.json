@@ -1,5 +1,1 @@
-{
-  "/(user-auth)/forgot-password/page": "app/(user-auth)/forgot-password/page.js",
-  "/(user-auth)/otp-verify/page": "app/(user-auth)/otp-verify/page.js",
-  "/(user-auth)/reset-password/page": "app/(user-auth)/reset-password/page.js"
-}
+{}
