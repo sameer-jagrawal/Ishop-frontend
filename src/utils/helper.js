@@ -1,9 +1,9 @@
 import axios from 'axios';
 import { toast } from 'react-toastify'
-import { normalizeApiBaseUrl } from './apiBaseUrl';
+import { getApiBaseUrl } from './apiBaseUrl';
 import { clearAuthSession } from '@/lib/auth';
 
-const API_BASE_URL = normalizeApiBaseUrl();
+const API_BASE_URL = getApiBaseUrl();
 
 const client = axios.create({
     baseURL: API_BASE_URL,

@@ -1,6 +1,6 @@
 import axios from "axios";
 import { cookies } from "next/headers";
-import { normalizeApiBaseUrl } from "@/utils/apiBaseUrl";
+import { getApiBaseUrl } from "@/utils/apiBaseUrl";
 
 const getMe = async () => {
 
@@ -14,7 +14,7 @@ const getMe = async () => {
    }
 
    try {
-      const baseURL = normalizeApiBaseUrl();
+      const baseURL = getApiBaseUrl();
 
       const response = await axios.get(
          `${baseURL}user/get`,
@@ -43,7 +43,7 @@ const getMyOrders = async () => {
    }
 
    try {
-      const baseURL = normalizeApiBaseUrl();
+      const baseURL = getApiBaseUrl();
 
       const response = await axios.get(
          `${baseURL}order/my`,
@@ -74,7 +74,7 @@ const getAdminUsers = async (query = {}) => {
    }
 
    try {
-      const baseURL = normalizeApiBaseUrl();
+      const baseURL = getApiBaseUrl();
       const filter = new URLSearchParams();
       if (query.search) filter.append("search", query.search);
       const queryString = filter.toString();
